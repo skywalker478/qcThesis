@@ -1,3 +1,8 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{bernstein2017post}
+Daniel~J Bernstein and Tanja Lange.
+\newblock Post-quantum cryptography.
+\newblock {\em Nature}, 549(7671):188--194, 2017.
 
 \end{thebibliography}

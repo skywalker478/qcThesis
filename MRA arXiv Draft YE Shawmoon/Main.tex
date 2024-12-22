@@ -1,11 +1,7 @@
 \documentclass{article}
-
-
-
 \usepackage{arxiv}
-
 \usepackage[utf8]{inputenc} % allow utf-8 input
-\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+%\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
 \usepackage{hyperref}      % hyperlinks
 \usepackage{url}            % simple URL typesetting
 \usepackage{booktabs}       % professional-quality tables
@@ -17,9 +13,7 @@
 \usepackage{doi}
 \usepackage{authblk}
 \usepackage{framed,multirow}
-
 %% The amssymb package provides various useful mathematical symbols
-
 \usepackage{amssymb}
 \usepackage{latexsym}
 \usepackage{graphicx}
@@ -37,17 +31,12 @@
 \usepackage{authblk}
 \usepackage{float}
 \usepackage[nameinlink, noabbrev]{cleveref} % Load cleveref after hyperref
-
 % Define the format and colors for different reference types
 \crefformat{figure}{#2{\color{red}Figure~#1}#3}
 \crefformat{section}{#2{\color{red}Section~#1}#3}
 \crefformat{equation}{#2{\color{red}Equation~#1}#3}
 \crefformat{table}{#2{\color{red}Table~#1}#3}
 \crefformat{algorithm}{#2{\color{red}Algorithm~#1}#3}
-
-
-
-
 % Following three lines are needed for this document.
 % If you are not loading colors or url, then these are
 % not required.
@@ -55,17 +44,12 @@
 \usepackage{xcolor}
 % Define a new centered column type with a fixed width
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
-
 % Define a new centered column type for tabularx
 \newcolumntype{H}{>{\centering\arraybackslash}X}
-
-
 \usepackage{enumitem}
 \newlist{boldenum}{enumerate}{1}
 \setlist[boldenum]{label=\textbf{(\arabic*)}}
-
 \definecolor{newcolor}{rgb}{.8,.349,.1}
-
 \newcommand{\nonumfootnote}[1]{
     \begingroup
     \renewcommand\thefootnote{}
@@ -74,30 +58,21 @@
 }
 
 \title{\Large A novel approach to secure audio transmission using Steganography and Quantum Key Distribution protocol.}
-
 %\date{September 9, 1985}	% Here you can change the date presented in the paper title
 %\date{} 					% Or removing it
-
 \author[1]{\large Md. Mizanur Rahman}
 \author[2]{\large Md. Raisul Islam Rifat}
 \author[2]{\large Md. Abdul Kader Nayon}
-
 \author[3, *]{\large M.R.C. Mahdy}
-
-
 \affil[1]{Department of CSE, RUET}
 \affil[2]{Department of EEE, CUET}
 \affil[3]{Department of Electrical and Computer Engineering, North South University, Bashundhara, Dhaka}
-
-
 % Uncomment to remove the date
 %\date{}
-
 % Uncomment to override  the `A preprint' in the header
 %\renewcommand{\headeright}{Research Article}
 %\renewcommand{\undertitle}{Research Article}
 %\renewcommand{\shorttitle}{\textit{Research Article}}
-
 %%% Add PDF metadata to help others organize their library
 %%% Once the PDF is generated, you can check the metadata with
 %%% $ pdfinfo template.pdf
@@ -107,7 +82,6 @@
 % pdfauthor={David S.~Hippocampus, Elias D.~Striatum},
 % pdfkeywords={First keyword, Second keyword, More},
 % }
-
 
 \begin{document}
 
@@ -122,13 +96,14 @@
 
 % Corresponding Author footnote
 \nonumfootnote{* Corresponding author.
-    \textit{E-mail address}: \href{mahdy.chowdhury@northsouth.edu}{mahdy.chowdhury@northsouth.edu} (M.R.C. Mahdy).}
+  \textit{E-mail address}: \href{mahdy.chowdhury@northsouth.edu}{mahdy.chowdhury@northsouth.edu} (M.R.C. Mahdy).}
 
 % hold ctrl & / to comment a line or paragraph.
 
 
 \section{Introduction}
 \label{sec:introduction}
+The most simplest, as well as the most important, form of exchange for human beings is verbal communications. The invention of the Telephone by Alexander Graham Bell in 1876 transformed the verbal communication demography - making the transmission of human voice, which are essentially audio signals, over long distances possible. In the subsequent centuries, technological improvements has broadened the scope of audio transmission. With the rise of the Internet, the amount of information exchanged through audio signals increased rapidly. This increase number audio transmission resulted in the development of different encryption techniques and cryptographic algorithms. However, with the advent of Quantum Computers, these classical cryptography and encryption schemes face an imposing threat \cite{bernstein2017post}.
 \section{Related Works}
 \label{sec:relatedWorks}
 
