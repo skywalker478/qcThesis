@@ -1,0 +1,147 @@
+\documentclass{article}
+
+
+
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}      % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}		% Can be removed after putting your text content
+\usepackage{graphicx}
+\usepackage{doi}
+\usepackage{authblk}
+\usepackage{framed,multirow}
+
+%% The amssymb package provides various useful mathematical symbols
+
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs} % for better looking tables
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs} % For better looking tables
+\usepackage{tabularx, multirow}
+\usepackage{tabularx, multirow, booktabs}
+\usepackage{subcaption}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{authblk}
+\usepackage{float}
+\usepackage[nameinlink, noabbrev]{cleveref} % Load cleveref after hyperref
+
+% Define the format and colors for different reference types
+\crefformat{figure}{#2{\color{red}Figure~#1}#3}
+\crefformat{section}{#2{\color{red}Section~#1}#3}
+\crefformat{equation}{#2{\color{red}Equation~#1}#3}
+\crefformat{table}{#2{\color{red}Table~#1}#3}
+\crefformat{algorithm}{#2{\color{red}Algorithm~#1}#3}
+
+
+
+
+% Following three lines are needed for this document.
+% If you are not loading colors or url, then these are
+% not required.
+\usepackage{url}
+\usepackage{xcolor}
+% Define a new centered column type with a fixed width
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% Define a new centered column type for tabularx
+\newcolumntype{H}{>{\centering\arraybackslash}X}
+
+
+\usepackage{enumitem}
+\newlist{boldenum}{enumerate}{1}
+\setlist[boldenum]{label=\textbf{(\arabic*)}}
+
+\definecolor{newcolor}{rgb}{.8,.349,.1}
+
+\newcommand{\nonumfootnote}[1]{
+    \begingroup
+    \renewcommand\thefootnote{}
+    \footnotetext{#1}
+    \endgroup
+}
+
+\title{\Large A novel approach to secure audio transmission using Steganography and Quantum Key Distribution protocol.}
+
+%\date{September 9, 1985}	% Here you can change the date presented in the paper title
+%\date{} 					% Or removing it
+
+\author[1]{\large Md. Mizanur Rahman}
+\author[2]{\large Md. Raisul Islam Rifat}
+\author[2]{\large Md. Abdul Kader Nayon}
+
+\author[3, *]{\large M.R.C. Mahdy}
+
+
+\affil[1]{Department of CSE, RUET}
+\affil[2]{Department of EEE, CUET}
+\affil[3]{Department of Electrical and Computer Engineering, North South University, Bashundhara, Dhaka}
+
+
+% Uncomment to remove the date
+%\date{}
+
+% Uncomment to override  the `A preprint' in the header
+%\renewcommand{\headeright}{Research Article}
+%\renewcommand{\undertitle}{Research Article}
+%\renewcommand{\shorttitle}{\textit{Research Article}}
+
+%%% Add PDF metadata to help others organize their library
+%%% Once the PDF is generated, you can check the metadata with
+%%% $ pdfinfo template.pdf
+% \hypersetup{
+% pdftitle={A template for the arxiv style},
+% pdfsubject={q-bio.NC, q-bio.QM},
+% pdfauthor={David S.~Hippocampus, Elias D.~Striatum},
+% pdfkeywords={First keyword, Second keyword, More},
+% }
+
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+\end{abstract}
+
+% keywords can be removed
+\keywords{}
+
+% Corresponding Author footnote
+\nonumfootnote{* Corresponding author.
+    \textit{E-mail address}: \href{mahdy.chowdhury@northsouth.edu}{mahdy.chowdhury@northsouth.edu} (M.R.C. Mahdy).}
+
+% hold ctrl & / to comment a line or paragraph.
+
+
+\section{Introduction}
+\label{sec:introduction}
+\section{Related Works}
+\label{sec:relatedWorks}
+
+\section{Methodology}
+\label{sec:methodology}
+\section{Experiments and Results}
+\label{sec:experminats}
+\section{Findings and Discussion}
+\label{sec:discussion}
+\section{Conclusion and Future Work}
+\label{sec:conclusion}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
