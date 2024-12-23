@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{rijmen2001advanced}
 V.~Rijmen and J.~Daemen, ``Advanced encryption standard,'' {\em Proceedings of
@@ -41,5 +41,14 @@ V.~Bu{\v{z}}ek and M.~Hillery, ``Quantum copying: Beyond the no-cloning
 \bibitem{sen2014uncertainty}
 D.~Sen, ``The uncertainty relations in quantum mechanics,'' {\em Current
   Science}, pp.~203--218, 2014.
+
+\bibitem{Kahn1996}
+D.~Kahn, {\em The history of steganography}, p.~1–5.
+\newblock Springer Berlin Heidelberg, 1996.
+
+\bibitem{anderson1998limits}
+R.~J. Anderson and F.~A. Petitcolas, ``On the limits of steganography,'' {\em
+  IEEE Journal on selected areas in communications}, vol.~16, no.~4,
+  pp.~474--481, 1998.
 
 \end{thebibliography}
