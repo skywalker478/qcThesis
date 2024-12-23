@@ -28,6 +28,12 @@ P.~W. Shor, ``Polynomial-time algorithms for prime factorization and discrete
   logarithms on a quantum computer,'' {\em SIAM Journal on Computing}, vol.~26,
   p.~1484–1509, Oct. 1997.
 
+\bibitem{alleaume2014using}
+R.~All{\'e}aume, C.~Branciard, J.~Bouda, T.~Debuisschert, M.~Dianati, N.~Gisin,
+  M.~Godfrey, P.~Grangier, T.~L{\"a}nger, N.~L{\"u}tkenhaus, {\em et~al.},
+  ``Using quantum key distribution for cryptographic purposes: a survey,'' {\em
+  Theoretical Computer Science}, vol.~560, pp.~62--81, 2014.
+
 \bibitem{buvzek1996quantum}
 V.~Bu{\v{z}}ek and M.~Hillery, ``Quantum copying: Beyond the no-cloning
   theorem,'' {\em Physical Review A}, vol.~54, no.~3, p.~1844, 1996.
