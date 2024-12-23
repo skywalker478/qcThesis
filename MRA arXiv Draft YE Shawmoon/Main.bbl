@@ -51,4 +51,30 @@ R.~J. Anderson and F.~A. Petitcolas, ``On the limits of steganography,'' {\em
   IEEE Journal on selected areas in communications}, vol.~16, no.~4,
   pp.~474--481, 1998.
 
+\bibitem{Ekert1991}
+A.~K. Ekert, ``Quantum cryptography based on bell’s theorem,'' {\em Physical
+  Review Letters}, vol.~67, p.~661–663, Aug. 1991.
+
+\bibitem{dworkin2015sha}
+M.~J. Dworkin, ``Sha-3 standard: Permutation-based hash and extendable-output
+  functions,'' 2015.
+
+\bibitem{nir2015chacha20}
+Y.~Nir and A.~Langley, ``Chacha20 and poly1305 for ietf protocols,'' tech.
+  rep., 2015.
+
+\bibitem{bernstein2008chacha}
+D.~J. Bernstein {\em et~al.}, ``Chacha, a variant of salsa20,'' in {\em
+  Workshop record of SASC}, vol.~8, pp.~3--5, Citeseer, 2008.
+
+\bibitem{bernstein2005poly1305}
+D.~J. Bernstein, ``The poly1305-aes message-authentication code,'' in {\em
+  International workshop on fast software encryption}, pp.~32--49, Springer,
+  2005.
+
+\bibitem{cvejic2002increasing}
+N.~Cvejic and T.~Seppanen, ``Increasing the capacity of lsb-based audio
+  steganography,'' in {\em 2002 IEEE Workshop on Multimedia Signal
+  Processing.}, pp.~336--338, IEEE, 2002.
+
 \end{thebibliography}
