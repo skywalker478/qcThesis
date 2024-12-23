@@ -1,8 +1,39 @@
 \begin{thebibliography}{1}
 
+\bibitem{rijmen2001advanced}
+V.~Rijmen and J.~Daemen, ``Advanced encryption standard,'' {\em Proceedings of
+  federal information processing standards publications, national institute of
+  standards and technology}, vol.~19, p.~22, 2001.
+
+\bibitem{rivest1978method}
+R.~L. Rivest, A.~Shamir, and L.~Adleman, ``A method for obtaining digital
+  signatures and public-key cryptosystems,'' {\em Communications of the ACM},
+  vol.~21, no.~2, pp.~120--126, 1978.
+
 \bibitem{bernstein2017post}
-Daniel~J Bernstein and Tanja Lange.
-\newblock Post-quantum cryptography.
-\newblock {\em Nature}, 549(7671):188--194, 2017.
+D.~J. Bernstein and T.~Lange, ``Post-quantum cryptography,'' {\em Nature},
+  vol.~549, no.~7671, pp.~188--194, 2017.
+
+\bibitem{grover1996fast}
+L.~K. Grover, ``A fast quantum mechanical algorithm for database search,'' in
+  {\em Proceedings of the twenty-eighth annual ACM symposium on Theory of
+  computing}, pp.~212--219, 1996.
+
+\bibitem{Daemen2002}
+J.~Daemen and V.~Rijmen, {\em The Design of Rijndael}.
+\newblock Springer Berlin Heidelberg, 2002.
+
+\bibitem{Shor1997}
+P.~W. Shor, ``Polynomial-time algorithms for prime factorization and discrete
+  logarithms on a quantum computer,'' {\em SIAM Journal on Computing}, vol.~26,
+  p.~1484–1509, Oct. 1997.
+
+\bibitem{buvzek1996quantum}
+V.~Bu{\v{z}}ek and M.~Hillery, ``Quantum copying: Beyond the no-cloning
+  theorem,'' {\em Physical Review A}, vol.~54, no.~3, p.~1844, 1996.
+
+\bibitem{sen2014uncertainty}
+D.~Sen, ``The uncertainty relations in quantum mechanics,'' {\em Current
+  Science}, pp.~203--218, 2014.
 
 \end{thebibliography}

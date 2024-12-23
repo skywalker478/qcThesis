@@ -1,8 +1,11 @@
 \documentclass{article}
 \usepackage{arxiv}
 \usepackage[utf8]{inputenc} % allow utf-8 input
-%\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
 \usepackage{hyperref}      % hyperlinks
+\usepackage[none]{hyphenat}
+\usepackage{tikz}
+\usetikzlibrary{quantikz2}
 \usepackage{url}            % simple URL typesetting
 \usepackage{booktabs}       % professional-quality tables
 \usepackage{amsfonts}       % blackboard math symbols
@@ -84,26 +87,33 @@
 % }
 
 \begin{document}
+\emergencystretch 3em
 
 \maketitle
 
 
 \begin{abstract}
 \end{abstract}
-
+\lipsum[1]
 % keywords can be removed
-\keywords{}
+\keywords{Lorem ipsum, Placeholder text, Text generation, Typography, LaTeX formatting, Document design, Content management, Semantic analysis, Latin text, Formatting templates, Filler content, Automated writing, Document structure
+}
 
 % Corresponding Author footnote
 \nonumfootnote{* Corresponding author.
-  \textit{E-mail address}: \href{mahdy.chowdhury@northsouth.edu}{mahdy.chowdhury@northsouth.edu} (M.R.C. Mahdy).}
+    \textit{E-mail address}: \href{mahdy.chowdhury@northsouth.edu}{mahdy.chowdhury@northsouth.edu} (M.R.C. Mahdy).}
 
 % hold ctrl & / to comment a line or paragraph.
 
 
 \section{Introduction}
 \label{sec:introduction}
-The most simplest, as well as the most important, form of exchange for human beings is verbal communications. The invention of the Telephone by Alexander Graham Bell in 1876 transformed the verbal communication demography - making the transmission of human voice, which are essentially audio signals, over long distances possible. In the subsequent centuries, technological improvements has broadened the scope of audio transmission. With the rise of the Internet, the amount of information exchanged through audio signals increased rapidly. This increase number audio transmission resulted in the development of different encryption techniques and cryptographic algorithms. However, with the advent of Quantum Computers, these classical cryptography and encryption schemes face an imposing threat \cite{bernstein2017post}.
+The most simplest, as well as the most important, form of exchange for human beings is verbal communications. The invention of the Telephone by Alexander Graham Bell in 1876 transformed the verbal communication demography - making the transmission of human voice, which are essentially audio signals, over long distances possible. In the subsequent centuries, technological improvements has broadened the scope of audio transmission. With the rise of the Internet, the amount of information exchanged through audio signals increased rapidly. This increase number audio transmission resulted in the development of different encryption techniques and cryptographic algorithms. The most popular among these algorithms are the symmetric AES and the asymmetric RSA encryption schemes. AES \cite{rijmen2001advanced} is a block cipher scheme that utilizes multiple matrix operation to encrypt and decrypt data using the same key. Without any knowledge of the cipher key, it is computationally infeasible to reverse the orations performed during encryption. RSA \cite{rivest1978method}, on the other hand, utilizes prime number factorization to generate public-private key-pairs for each user that are used to encrypt and decrypt data. The security of the RSA scheme relies on the insane amount of computational power required to obtain the private key from a public through prime number factoring.
+
+However, with the advent of Quantum Computers with increasing number of functional qubits, these classical cryptography and encryption schemes face an imposing threat \cite{bernstein2017post}. In 1996, Lov K. Grover proposed an algorithm to search an unordered database of size $N$ using $\sqrt{N}$ quantum queries \cite{grover1996fast}. Using Grover's algorithm, the number of trials required to brute-force a key of length $k$ reduces from $2^{k}$ to $2^{k/2}$. This reduction in number of brute-force trials effectively reduces the security level of symmetric encryption schemes such as AES \cite{Daemen2002}. For example, the AES-128 encryption scheme with a pre-quantum security level of 128 reduces to a post-quantum security level of 64, which is much easier to brute-force. In 1994, P.W. Shor presented a quantum algorithm that can quickly find the prime factorization of any positive integer $N$ \cite{Shor1997}. As the security of the RSA algorithm relies on the arduousness of prime number factorization to derive private key from public key, it is currently facing an existential threat due to the exponential speed of Shor's algorithm. It is estimated that the time complexity for Shor' algorithm is $\mathcal{O}(72(log(N))^{3})$, as opposed to $\mathcal{O}(N^3)$ for classical computers.
+
+To address these arising challenges, new research is being done on the field of quantum augmented communication systems. These systems exploits the principles of quantum mechanics to attain secure data transmission. One of the most promising area of research in the field of quantum communications is Quantum Key Distribution (QKD). QKD protocols works by establishing a secure cryptographic key between two users over an insecure channel. QKD employ properties unique to quantum mechanics, such as the no-cloning theorem \cite{buvzek1996quantum} and the uncertainty principle \cite{sen2014uncertainty}, that ensures the detection of any eavesdropping attempts and thereby guarantees the security of the key.
+
 \section{Related Works}
 \label{sec:relatedWorks}
 
@@ -116,7 +126,7 @@ The most simplest, as well as the most important, form of exchange for human bei
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
 
-\bibliographystyle{unsrt}
+\bibliographystyle{ieeetr}
 \bibliography{references}
 
 \end{document}
