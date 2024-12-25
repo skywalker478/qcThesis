@@ -126,13 +126,26 @@ The new vulnerabilities in secure data transmission due to quantum computer and 
     \item Assessed the performance and reliability of the proposed scheme by measuring the security through end-to-end encryption.
 \end{itemize}
 
-Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrates the present sate of the field through the review of existing research and their development, laying the foundation for our our proposed scheme. Section \ref{sec:methodology} describes the proposed methodology, presenting a detailed piecemeal explanation of our proposed architecture. In section \ref{sec:experminats}, we present the experimental methods as well as the findings. Section \ref{sec:discussion} explore deeper into an extensive analysis of the results, construing the findings and excerpting key insights. Finally, section \ref{sec:conclusion} concludes the paper by indicating the direction of future work, highlighting the potential application and extension of our research.
+Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrates the present sate of the field through the review of existing research and their development, laying the foundation for our our proposed scheme. Section \ref{sec:preliminaries} describes the foundational concepts of our proposed schemes. Section \ref{sec:methodology} describes the proposed methodology, presenting a detailed piecemeal explanation of our proposed architecture. In section \ref{sec:experminats}, we present the experimental methods as well as the findings. Section \ref{sec:discussion} explore deeper into an extensive analysis of the results, construing the findings and excerpting key insights. Finally, section \ref{sec:conclusion} concludes the paper by indicating the direction of future work, highlighting the potential application and extension of our research.
 \section{Related Works}
 \label{sec:relatedWorks}
+\section{Preliminaries}
+\label{sec:preliminaries}
+\subsection{Ekert 91 Protocol}
+\label{sec:e91}
+
+\subsection{SHA3-256}
+\label{sec:sha3}
+
+\subsection{ChaCha20-poly1305}
+\label{sec:chacha20}
+
+\subsection{LSB Steganography}
+\label{sec:steganography}
 
 \section{Methodology}
 \label{sec:methodology}
-The architecture that we proposed is a system that integrates E91 QKD protocol with classical cryptographic schemes and lsb steganography to ensure a heavily secure audio data encryption system. The system utilizes the E91 for QKD to generate and exchange the cryptographic keys called the Ekert key, SHA3 to derive a high-entropy 256 bit key from the Ekert key for ChaCha20-Poly1305 encryption and LSB substitution for steganography. The architecture ensures augmented data security through the combination of classical and quantum techniques. Figure \ref{fig:methodology} provides a high level overview of our proposed system. 
+The architecture that we proposed is a system that integrates E91 QKD protocol with classical cryptographic schemes and lsb steganography to ensure a heavily secure audio data encryption system. The system utilizes the E91 for QKD to generate and exchange the cryptographic keys called the Ekert key, SHA3 to derive a high-entropy 256 bit key from the Ekert key for ChaCha20-Poly1305 encryption and LSB substitution for steganography. The architecture ensures augmented data security through the combination of classical and quantum techniques. Figure \ref{fig:methodology} provides a high level overview of our proposed system.
 \begin{figure}[!h]
     \begin{center}
         \includesvg[width=\textwidth]{methodology.svg}
