@@ -77,4 +77,26 @@ N.~Cvejic and T.~Seppanen, ``Increasing the capacity of lsb-based audio
   steganography,'' in {\em 2002 IEEE Workshop on Multimedia Signal
   Processing.}, pp.~336--338, IEEE, 2002.
 
+\bibitem{nistHashFunctions}
+``{H}ash {F}unctions | {C}{S}{R}{C} | {C}{S}{R}{C} --- csrc.nist.gov.''
+  \url{https://csrc.nist.gov/projects/hash-functions}, June 22, 2020.
+
+\bibitem{Bbbbbbb2011}
+M.~P. Guido~Bertoni, Joan~Daemen and G.~van Assche, ``The keccak sha-3
+  submission,'' 2011.
+\newblock [Accessed 26-12-2024].
+
+\bibitem{rivest1992md5}
+R.~Rivest, ``The md5 message-digest algorithm,'' tech. rep., 1992.
+
+\bibitem{penard2008secure}
+W.~Penard and T.~Van~Werkhoven, ``On the secure hash algorithm family,'' {\em
+  Cryptography in context}, pp.~1--18, 2008.
+
+\bibitem{keccakKeccakTeam}
+T.~sponge and duplex constructions, ``Team keccak - guido bertoni, joan daemen,
+  seth hoffert, michaël peeters, gilles van assche and ronny van keer.''
+  \url{https://keccak.team/sponge_duplex.html}.
+\newblock [Accessed 26-12-2024].
+
 \end{thebibliography}

@@ -23,13 +23,9 @@
 \usepackage{latexsym}
 \usepackage{graphicx}
 \usepackage{amsmath}
-\usepackage{amssymb}
 \usepackage{booktabs} % for better looking tables
 \usepackage{tabularx}
 \usepackage{array}
-\usepackage{booktabs} % For better looking tables
-\usepackage{tabularx, multirow}
-\usepackage{tabularx, multirow, booktabs}
 \usepackage{subcaption}
 \usepackage{algorithm}
 \usepackage{algorithmic}
@@ -45,7 +41,6 @@
 % Following three lines are needed for this document.
 % If you are not loading colors or url, then these are
 % not required.
-\usepackage{url}
 \usepackage{xcolor}
 % Define a new centered column type with a fixed width
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
@@ -134,10 +129,37 @@ Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrat
 \subsection{Ekert 91 Protocol}
 \label{sec:e91}
 
-\subsection{SHA3-256}
+\subsection{SHA3 - 256 Hash Function}
 \label{sec:sha3}
+SHA-3 is the latest member \cite{nistHashFunctions} of the Secure Hash Algorithm (SHA) family of cryptographic hash functions. Based on the K\textsc{eecak} algorithm \cite{Bbbbbbb2011}, the SHA-3 standard differs fundamentally from it's MD-5 \cite{rivest1992md5} like structured predecessors - SHA-1 and SHA-2 \cite{penard2008secure}. In its essence, the SHA-3 standard is a hash function, that is, for any length of binary data input, there is an output of fixed length. The output is called the \textit{digest} or \textit{hash value}. Depending on the digest length, the four hash functions are called SHA3-224, SHA3-256, SHA3-384 and SHA3-512. The suffixes after the dash indicate the fixed length of the digest, for example, SHA3-256 - which is of interest to our methodology - produces 256 bits long digest. As the digest length is constant irrespective of input length, SHA3 is ideal for integrity and signature verification, as well as password hashing, that is not storing password in clear-text format, rather storing the hash of the password for verification.
 
-\subsection{ChaCha20-poly1305}
+SHA-3 works by using the sponge construction \cite{keccakKeccakTeam}. Here, data is "absorbed" into the sponge and the result is "squeezed" out, as sown in Figure \ref{fig:sponge}. For an input bit string $N$, a padding function $pad$, and a permutation function $f$ yields the spnge construction $Z=\text{sponge}[f,pad,r](N,d)$. Here, the permutation function $f$ operates on a bit block of width $b$, rate $r$ and yields and output of length $d$. From the sponge construct, we have capacity $c=b-r$ and digest $Z$ of length $b$. The block permutation $f$ is Keccak-f[1600] that utilizes XOR, AND and NOT operations. It is defined for any power-of-two word size, $w=2^l$. The basic block permutation function consists of $12+2l$ rounds of five steps: $\theta$ (parity computation), $\rho$ (bitwise rotation), $\phi$ (permuatation), $\chi$ (bitwise combination) and $\iota$ (XOR).
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{SpongeConstruction.pdf}
+    \caption{\raggedright The sponge construction for SHA-3. By \url{http://sponge.noekeon.org/}, CC BY 3.0, \url{https://commons.wikimedia.org/w/index.php?curid=13463547}}
+    \label{fig:sponge}
+\end{figure}
+
+The process of retrieving the digest $Z$ from input $N$ is described below --
+\begin{itemize}
+    \item The input $N$ is padded using the padding function, $pad$. This yields in a padded bit strength $P$ the length of which is devisable by $r$ ($n=\text{len}(P)/r$).
+    \item $P$ is broken into $n$ consecutive pieces, each piece of length $r$, so that $P \to P_{0},\ldots,P_{n-1}$
+    \item State $S$ is initialized with sting of $b$ zero bits.
+    \item The input is absorbed into the state: for each block $P_{i}$, \begin{itemize}
+              \item $P_{i}$ is extended at the end by $c$ zero bits, so that the length is $b$.
+              \item The resulting bit string is XORed with $S$.
+              \item The block permutation $f$ is applied on the result, yielding a new state $S$.
+          \end{itemize}
+    \item $Z$ is initialized with empty string
+    \item while \textit{length}$(Z)<d$:\begin{itemize}
+              \item The first $r$ bits of $S$ is appended to $Z$.
+              \item \textit{if} $(\textit{length}(Z)<d)$, apply $f$ to $S$, yielding a new $S$.
+          \end{itemize}
+    \item $Z$ is truncated to $d$ bits.
+\end{itemize}
+\subsection{ChaCha20-Poly1305}
 \label{sec:chacha20}
 
 \subsection{LSB Steganography}
