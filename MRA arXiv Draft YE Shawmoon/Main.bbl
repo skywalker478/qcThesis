@@ -99,4 +99,15 @@ T.~sponge and duplex constructions, ``Team keccak - guido bertoni, joan daemen,
   \url{https://keccak.team/sponge_duplex.html}.
 \newblock [Accessed 26-12-2024].
 
+\bibitem{robshaw1995stream}
+M.~J. Robshaw, ``Stream ciphers,'' {\em RSA Labratories}, vol.~25, 1995.
+
+\bibitem{bernstein2005salsa20}
+D.~J. Bernstein, ``Salsa20,'' {\em eSTREAM, ECRYPT Stream Cipher Project,
+  Report}, vol.~25, p.~2005, 2005.
+
+\bibitem{bernstein2008chachaFamily}
+D.~J. Bernstein, ``The chacha family of stream ciphers,'' {\em DJ Bernstein’s
+  webpage: http://cr. yp. to/chacha. html}, 2008.
+
 \end{thebibliography}

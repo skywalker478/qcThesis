@@ -8,6 +8,7 @@
 \usepackage[none]{hyphenat}
 \usepackage{tikz}
 \usetikzlibrary{quantikz2}
+\usepackage{listings}
 \usepackage{url}            % simple URL typesetting
 \usepackage{booktabs}       % professional-quality tables
 \usepackage{amsfonts}       % blackboard math symbols
@@ -105,7 +106,7 @@
 
 \section{Introduction}
 \label{sec:introduction}
-The most simplest, as well as the most important, form of exchange for human beings is verbal communications. The invention of the Telephone by Alexander Graham Bell in 1876 transformed the verbal communication demography - making the transmission of human voice, which are essentially audio signals, over long distances possible. In the subsequent centuries, technological improvements has broadened the scope of audio transmission. With the rise of the Internet, the amount of information exchanged through audio signals increased rapidly. This increase number audio transmission resulted in the development of different encryption techniques and cryptographic algorithms. The most popular among these algorithms are the symmetric AES and the asymmetric RSA encryption schemes. AES \cite{rijmen2001advanced} is a block cipher scheme that utilizes multiple matrix operation to encrypt and decrypt data using the same key. Without any knowledge of the cipher key, it is computationally infeasible to reverse the orations performed during encryption. RSA \cite{rivest1978method}, on the other hand, utilizes prime number factorization to generate public-private key-pairs for each user that are used to encrypt and decrypt data. The security of the RSA scheme relies on the insane amount of computational power required to obtain the private key from a public through prime number factoring.
+The simplest, as well as the most important, form of exchange for human beings is verbal communications. The invention of the Telephone by Alexander Graham Bell in 1876 transformed the verbal communication demography - making the transmission of human voice, which are essentially audio signals, over long distances possible. In the subsequent centuries, technological improvements has broadened the scope of audio transmission. With the rise of the Internet, the amount of information exchanged through audio signals increased rapidly. This increase number audio transmission resulted in the development of different encryption techniques and cryptographic algorithms. The most popular among these algorithms are the symmetric AES and the asymmetric RSA encryption schemes. AES \cite{rijmen2001advanced} is a block cipher scheme that utilizes multiple matrix operation to encrypt and decrypt data using the same key. Without any knowledge of the cipher key, it is computationally infeasible to reverse the orations performed during encryption. RSA \cite{rivest1978method}, on the other hand, utilizes prime number factorization to generate public-private key-pairs for each user that are used to encrypt and decrypt data. The security of the RSA scheme relies on the insane amount of computational power required to obtain the private key from a public through prime number factoring.
 
 However, with the advent of Quantum Computers with increasing number of functional qubits, these classical cryptography and encryption schemes face an imposing threat \cite{bernstein2017post}. In 1996, Lov K. Grover proposed an algorithm to search an unordered database of size $N$ using $\sqrt{N}$ quantum queries \cite{grover1996fast}. Using Grover's algorithm, the number of trials required to brute-force a key of length $k$ reduces from $2^{k}$ to $2^{k/2}$. This reduction in number of brute-force trials effectively reduces the security level of symmetric encryption schemes such as AES \cite{Daemen2002}. For example, the AES-128 encryption scheme with a pre-quantum security level of 128 reduces to a post-quantum security level of 64, which is much easier to brute-force. In 1994, P.W. Shor presented a quantum algorithm that can quickly find the prime factorization of any positive integer $N$ \cite{Shor1997}. As the security of the RSA algorithm relies on the arduousness of prime number factorization to derive private key from public key, it is currently facing an existential threat due to the exponential speed of Shor's algorithm. It is estimated that the time complexity for Shor' algorithm is $\mathcal{O}(72(log(N))^{3})$, as opposed to $\mathcal{O}(N^3)$ for classical computers.
 
@@ -131,7 +132,7 @@ Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrat
 
 \subsection{SHA3 - 256 Hash Function}
 \label{sec:sha3}
-SHA-3 is the latest member \cite{nistHashFunctions} of the Secure Hash Algorithm (SHA) family of cryptographic hash functions. Based on the K\textsc{eecak} algorithm \cite{Bbbbbbb2011}, the SHA-3 standard differs fundamentally from it's MD-5 \cite{rivest1992md5} like structured predecessors - SHA-1 and SHA-2 \cite{penard2008secure}. In its essence, the SHA-3 standard is a hash function, that is, for any length of binary data input, there is an output of fixed length. The output is called the \textit{digest} or \textit{hash value}. Depending on the digest length, the four hash functions are called SHA3-224, SHA3-256, SHA3-384 and SHA3-512. The suffixes after the dash indicate the fixed length of the digest, for example, SHA3-256 - which is of interest to our methodology - produces 256 bits long digest. As the digest length is constant irrespective of input length, SHA3 is ideal for integrity and signature verification, as well as password hashing, that is not storing password in clear-text format, rather storing the hash of the password for verification.
+SHA-3 is the latest member \cite{nistHashFunctions} of the Secure Hash Algorithm (SHA) family of cryptographic hash functions. Based on the K\textsc{eecak} algorithm \cite{Bbbbbbb2011}, the SHA-3 standard differs fundamentally from it's MD-5 \cite{rivest1992md5} like structured predecessors -- SHA-1 and SHA-2 \cite{penard2008secure}. In its essence, the SHA-3 standard is a hash function, that is, for any length of binary data input, there is an output of fixed length. The output is called the \textit{digest} or \textit{hash value}. Depending on the digest length, the four hash functions are called SHA3-224, SHA3-256, SHA3-384 and SHA3-512. The suffixes after the dash indicate the fixed length of the digest, for example, SHA3-256 - which is of interest to our methodology - produces 256 bits long digest. As the digest length is constant irrespective of input length, SHA3 is ideal for integrity and signature verification, as well as password hashing, that is not storing password in clear-text format, rather storing the hash of the password for verification.
 
 SHA-3 works by using the sponge construction \cite{keccakKeccakTeam}. Here, data is "absorbed" into the sponge and the result is "squeezed" out, as sown in Figure \ref{fig:sponge}. For an input bit string $N$, a padding function $pad$, and a permutation function $f$ yields the spnge construction $Z=\text{sponge}[f,pad,r](N,d)$. Here, the permutation function $f$ operates on a bit block of width $b$, rate $r$ and yields and output of length $d$. From the sponge construct, we have capacity $c=b-r$ and digest $Z$ of length $b$. The block permutation $f$ is Keccak-f[1600] that utilizes XOR, AND and NOT operations. It is defined for any power-of-two word size, $w=2^l$. The basic block permutation function consists of $12+2l$ rounds of five steps: $\theta$ (parity computation), $\rho$ (bitwise rotation), $\phi$ (permuatation), $\chi$ (bitwise combination) and $\iota$ (XOR).
 
@@ -159,12 +160,37 @@ The process of retrieving the digest $Z$ from input $N$ is described below --
           \end{itemize}
     \item $Z$ is truncated to $d$ bits.
 \end{itemize}
-\subsection{ChaCha20-Poly1305}
-\label{sec:chacha20}
 
+For example, for the following binary stream, $N=$
+\subsection{ChaCha20 -- Poly1305}
+\label{sec:chacha20}
+ChaCha20 -- Poly1305 is an authenticated encryption with associated data (AEAD) algorithm that provides a comparatively fast software performance. It is typically faster than AES -- GCM in the absence of hardware acceleration \cite{nir2015chacha20}. This algorithm combines the ChaCha20 stream cipher \cite{bernstein2008chacha} and the Poly1305 \cite{bernstein2005poly1305} universal hash family that acts as message authentication code -- both of which was developed independently by Daniel J. Bernstein.
+
+A stream cipher is a symmetric key cipher, that is an encryption and decryption algorithm, that combines plaintext data with a pseudorandom keystream \cite{robshaw1995stream}. Stream ciphers works by encrypting each plaintext digit one at a time with the corresponding keystream digit, as opposed to block ciphers where blocks of plaintext with a certain length is encrypted with the keystream. In 2008, Bernstein proposed the ChaCha20 stream cipher, a successor to the Salsa20 stream cipher \cite{bernstein2005salsa20} proposed by Bernstein in 2005. ChaCha20 was proposed as an alternative to Salsa20 \cite{bernstein2008chachaFamily} with slightly better performance. Similar to it's predecessor, the initial state of ChaCha20 includes a 128-bit constant, a 256-bit keystream, a 64-bit counter and a 64-bit nonce. ChaCha20 uses 4 additions, 4 XORs and 4 rotations to update 4 32-bit state words -- \text{\ttfamily{a,b,c,d}}. The update procedure is as follows --
+\begin{figure}[!h]
+    \centering
+    \begin{minipage}[!t]{0.45\textwidth}
+        \centering
+\begin{lstlisting}[basicstyle=\ttfamily,frame=none]
+    a += b; d ^= a; d <<<= 16;
+    c += d; b ^= c; b <<<= 12;
+    a += b; d ^= a; d <<<= 8;
+    c += d; b ^= c; b <<<= 7;
+\end{lstlisting}
+\subcaption{Mathematical representation of the state word update process of ChaCha20.}
+    \end{minipage}
+    \hspace{0.05\textwidth}
+    \begin{minipage}[!t]{0.45\textwidth}
+        \centering
+    \includesvg[width=\textwidth]{ChaCha_Cipher_Quarter_Round_Function.svg}
+    \subcaption{Graphical representation of the state word update process of ChaCha20.}
+    \end{minipage}
+    \caption{State word update process of ChaCha20.}
+\end{figure}
 \subsection{LSB Steganography}
 \label{sec:steganography}
 
+\pagebreak
 \section{Methodology}
 \label{sec:methodology}
 The architecture that we proposed is a system that integrates E91 QKD protocol with classical cryptographic schemes and lsb steganography to ensure a heavily secure audio data encryption system. The system utilizes the E91 for QKD to generate and exchange the cryptographic keys called the Ekert key, SHA3 to derive a high-entropy 256 bit key from the Ekert key for ChaCha20-Poly1305 encryption and LSB substitution for steganography. The architecture ensures augmented data security through the combination of classical and quantum techniques. Figure \ref{fig:methodology} provides a high level overview of our proposed system.
