@@ -168,22 +168,16 @@ For example, for the following binary stream, $N=$
 ChaCha20 -- Poly1305 is an authenticated encryption with associated data (AEAD) algorithm that provides a comparatively fast software performance. It is typically faster than AES -- GCM in the absence of hardware acceleration \cite{nir2015chacha20}. This algorithm combines the ChaCha20 stream cipher \cite{bernstein2008chacha} and the Poly1305 \cite{bernstein2005poly1305} universal hash family that acts as message authentication code -- both of which was developed independently by Daniel J. Bernstein.
 
 A stream cipher is a symmetric key cipher, that is an encryption and decryption algorithm, that combines plaintext data with a pseudorandom keystream \cite{robshaw1995stream}. Stream ciphers works by encrypting each plaintext digit one at a time with the corresponding keystream digit, as opposed to block ciphers where blocks of plaintext with a certain length is encrypted with the keystream. In 2008, Bernstein proposed the ChaCha stream cipher, a successor to the Salsa20 stream cipher \cite{bernstein2005salsa20} proposed by Bernstein in 2005. ChaCha was proposed as an alternative to Salsa20 \cite{bernstein2008chachaFamily} with slightly better performance. Similar to it's predecessor, the initial state of ChaCha is 512-bit long -- made up of a 128-bit constant, a 256-bit key, a 64-bit counter and a 64-bit nonce. The 128-bit constant is usually \textit{"expand 32-byte k"}. This 512-bit long input is arranged in a $4\times4$ matrix where each entry is a 32-bit word. The matrix arrangement is shown bellow --
-\begin{table}[!h]
-    \centering
-    \begin{tabular}{|c|c|c|c|}
-        \hline
-        \rowcolor[HTML]{eeeeee}
-        "expa"                           & "nd 3"                           & "2-by"                        & "te k"                        \\ \hline
-        \rowcolor[HTML]{ff6600}
-        Key                              & Key                              & Key                           & Key                           \\ \hline
-        \rowcolor[HTML]{ff6600}
-        Key                              & Key                              & Key                           & Key                           \\ \hline
-        \cellcolor[HTML]{008b8b} Counter & \cellcolor[HTML]{008b8b} Counter & \cellcolor[HTML]{c77fd4}Nonce & \cellcolor[HTML]{c77fd4}Nonce \\ \hline
-    \end{tabular}
-    \caption{Initial state of ChaCha}
-    \label{tab:chachaInitialState}
-\end{table}
-
+\begin{equation}\label{initialState}
+    \left[
+        \begin{array}{cccc}
+            \text{Consant}0 & \text{Consant}1 & \text{Consant}2 & \text{Consant}3 \\
+            \text{Key}0     & \text{Key}1     & \text{Key}2     & \text{Key}3     \\
+            \text{Key}4     & \text{Key}5     & \text{Key}6     & \text{Key}7     \\
+            \text{Conter}0  & \text{Conter}1  & \text{Nonce}0   & \text{Nonce}1
+        \end{array}
+        \right]
+\end{equation}
 The core operation of ChaCha, and it's predecessor Salsa20, is the quarter-round \text{\ttfamily{QR(a,b,c,d)}}. ChaCha uses 4 additions, 4 XORs and 4 rotations to update 4 32-bit state words -- \text{\ttfamily{a,b,c,d}}. The update procedure is as follows --
 \begin{lstlisting}[basicstyle=\ttfamily,frame=none]
     a += b; d ^= a; d <<<= 16;
@@ -191,18 +185,17 @@ The core operation of ChaCha, and it's predecessor Salsa20, is the quarter-round
     a += b; d ^= a; d <<<=  8;
     c += d; b ^= c; b <<<=  7;
 \end{lstlisting}
-If we index the initial state matrix elments of Table \ref{tab:chachaInitialState} from 0 to 15 as the folowing --
-\begin{table}[!h]
-    \centering
-    \begin{tabular}{|l|l|l|l|}
-        \hline
-        0  & 1  & 2  & 3  \\ \hline
-        4  & 5  & 6  & 7  \\ \hline
-        8  & 9  & 10 & 11 \\ \hline
-        12 & 13 & 14 & 15 \\ \hline
-    \end{tabular}
-\end{table}
-\\then a double round in ChaCha is defined as --
+
+If the elements of matrix \ref{initialState} is indexed from 0 to 15
+\[\left[
+    \begin{array}{cccc}
+        0  & 1  & 2  & 3  \\
+        4  & 5  & 6  & 7  \\
+        8  & 9  & 10 & 11 \\
+        12 & 13 & 14 & 15
+    \end{array}
+\right]\]
+a double round in ChaCha is defined as --
 \begin{lstlisting}[basicstyle=\ttfamily,frame=none]
     // Odd round
     QR(0, 4,  8, 12) // column 1
@@ -217,11 +210,11 @@ If we index the initial state matrix elments of Table \ref{tab:chachaInitialStat
 \end{lstlisting}
 ChaCha20 uses 10 iterations of the double round.
 
-Although the ChaCha quarter round contains the same number of adds, xors, and bit roattes as the Salsa20 quarter round, it is slightly fatser because two of the roate functions are multiples of 8, allowing for a small optimization for $x86$ and other architectuires. Each word is updated twice in ChaCha20's quarter rounds, as opposed to Salsa20 where each word is updated only once. This results in an average of $12.5$ output bits to change in each quarter round of ChaCha20, while the Salsa20 quarter-round changes 8 output bits.
+Although the ChaCha quarter round contains the same number of adds, xors, and bit roattes as the Salsa20 quarter round, it is slightly fatser because two of the roate functions are multiples of 8, allowing for a small optimization for x86 and other architectuires. Each word is updated twice in ChaCha20's quarter rounds, as opposed to Salsa20 where each word is updated only once. This results in an average of $12.5$ output bits to change in each quarter round of ChaCha20, while the Salsa20 quarter-round changes 8 output bits.
 \begin{figure}[!h]
     \centering
-    \includesvg[width=0.25\textwidth]{ChaCha_Cipher_Quarter_Round_Function.svg}
-    \caption{Graphical representation of the state word update process of ChaCha20. By Tony Arcieri - Own work, CC BY-SA 4.0, \url{https://commons.wikimedia.org/w/index.php?curid=90771650}}
+    \includesvg[width=0.5\textwidth]{ChaCha_Cipher_Quarter_Round_Function.svg}
+    \caption{The ChaCha quarter-round function. By Tony Arcieri - Own work, CC BY-SA 4.0, \url{https://commons.wikimedia.org/w/index.php?curid=90771650}}
 \end{figure}
 
 \subsection{LSB Steganography}
