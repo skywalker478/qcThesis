@@ -62,8 +62,8 @@
 \title{\Large A novel approach of secure audio transmission in Post-quantum Era.}
 %\date{September 9, 1985}	% Here you can change the date presented in the paper title
 %\date{} 					% Or removing it
-\author[1]{\large Md. Mizanur Rahman}
 \author[2]{\large Md. Raisul Islam Rifat}
+\author[1]{\large Md. Mizanur Rahman}
 \author[2]{\large Md. Abdul Kader Nayon}
 \author[3, *]{\large M.R.C. Mahdy}
 \affil[1]{Department of CSE, RUET}
@@ -165,16 +165,16 @@ The process of retrieving the digest $Z$ from input $N$ is described below --
 For example, for the following binary stream, $N=$
 \subsection{ChaCha20-Poly1305}
 \label{sec:chacha20}
-ChaCha20 -- Poly1305 is an authenticated encryption with associated data (AEAD) algorithm that provides a comparatively fast software performance. It is typically faster than AES -- GCM in the absence of hardware acceleration \cite{nir2015chacha20}. This algorithm combines the ChaCha20 stream cipher \cite{bernstein2008chacha} and the Poly1305 \cite{bernstein2005poly1305} universal hash family that acts as message authentication code -- both of which was developed independently by Daniel J. Bernstein.
+ChaCha20-Poly1305 is an authenticated encryption with associated data (AEAD) algorithm that provides a comparatively fast software performance. It is typically faster than AES-GCM (Galois/Counter Mode) in the absence of hardware acceleration \cite{nir2015chacha20}. This algorithm combines the ChaCha20 stream cipher \cite{bernstein2008chacha} and the Poly1305 \cite{bernstein2005poly1305} universal hash family that acts as message authentication code -- both of which was developed independently by Daniel J. Bernstein.
 
 A stream cipher is a symmetric key cipher, that is an encryption and decryption algorithm, that combines plaintext data with a pseudorandom keystream \cite{robshaw1995stream}. Stream ciphers works by encrypting each plaintext digit one at a time with the corresponding keystream digit, as opposed to block ciphers where blocks of plaintext with a certain length is encrypted with the keystream. In 2008, Bernstein proposed the ChaCha family of stream ciphers, a successor to the Salsa20 stream cipher \cite{bernstein2005salsa20} proposed by Bernstein in 2005. ChaCha was proposed as an alternative to Salsa20 \cite{bernstein2008chachaFamily} with slightly better performance. Similar to it's predecessor, the initial state of ChaCha is 512-bit long -- made up of a 128-bit constant, a 256-bit key, a 64-bit counter and a 64-bit nonce. The 128-bit constant is usually \textit{"expand 32-byte k"}. This 512-bit long input is arranged in a $4\times4$ matrix where each entry is a 32-bit word. The matrix arrangement is shown bellow --
 \begin{equation}\label{initialState}
     \left[
         \begin{array}{cccc}
-            \text{Consant}0 & \text{Consant}1 & \text{Consant}2 & \text{Consant}3 \\
-            \text{Key}0     & \text{Key}1     & \text{Key}2     & \text{Key}3     \\
-            \text{Key}4     & \text{Key}5     & \text{Key}6     & \text{Key}7     \\
-            \text{Conter}0  & \text{Conter}1  & \text{Nonce}0   & \text{Nonce}1
+            \text{Consant}[0] & \text{Consant}[1] & \text{Consant}[2] & \text{Consant}[3] \\
+            \text{Key}[0]     & \text{Key}[1]     & \text{Key}[2]     & \text{Key}[3]     \\
+            \text{Key}[4]     & \text{Key}[5]     & \text{Key}[6]     & \text{Key}[7]     \\
+            \text{Conter}[0]  & \text{Conter}[1]  & \text{Nonce}[0]   & \text{Nonce}[1]
         \end{array}
         \right]
 \end{equation}
@@ -208,7 +208,7 @@ a double round in ChaCha is defined as --
     QR(2, 7,  8, 13) // diagonal 3
     QR(3, 4,  9, 14) // diagonal 4
 \end{lstlisting}
-ChaCha20 uses 10 iterations of the double round -- an overall of 20 quarter-rounds. Hence the name ChaCha20.
+ChaCha20 uses 10 iterations of the double round -- an overall of 20 rounds. Hence the name ChaCha20.
 
 Each word is updated twice in ChaCha20's quarter rounds, as opposed to Salsa20 where each word is updated only once. This results in an average of $12.5$ output bits to change in each quarter round of ChaCha20, while the Salsa20 quarter-round changes 8 output bits. Although the ChaCha quarter round contains the same number of adds, xors, and bit roattes as the Salsa20 quarter round, it is slightly fatser because two of the roate functions are multiples of 8, allowing for a small optimization for x86 and other architectuires.
 
@@ -222,7 +222,7 @@ For decryption, the keystream, $K$, is XORed with the cipher, $C$, to retrieve t
     \caption{The ChaCha quarter-round function. By Tony Arcieri - Own work, CC BY-SA 4.0, \url{https://commons.wikimedia.org/w/index.php?curid=90771650}}
 \end{figure}
 
-
+A hash function is a special mathematical function that can data of arbitrary size to constant-sized values. The output of a hash function is called hash digest or simply hashes. A unique property of most hash functions is their ability to generate unique digests for each unique inputs. This makes hash functions invaluable for authentication and data integrity verification.In 2002, Bernstein designed the Poly1305 universal hash function, which was intended to provide a message authentication code to authenticate a message using a shared secret key \cite{bernstein2005protecting}. The original implementation of Poly1305 was in 2005 when Poly1305 hash was combined as Carter-Wegman authenticator \cite{carter1981new} with AES-128 to authenticate encrypted messages. 
 \subsection{LSB Steganography}
 \label{sec:steganography}
 

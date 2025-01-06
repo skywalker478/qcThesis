@@ -110,4 +110,14 @@ D.~J. Bernstein, ``Salsa20,'' {\em eSTREAM, ECRYPT Stream Cipher Project,
 D.~J. Bernstein, ``The chacha family of stream ciphers,'' {\em DJ Bernstein’s
   webpage: http://cr. yp. to/chacha. html}, 2008.
 
+\bibitem{bernstein2005protecting}
+D.~J. Bernstein, ``Protecting communications against forgery,'' {\em
+  Algorithmic Number Theory, J. Buhler and P. Stevenhagan (Ed.), to appear},
+  2005.
+
+\bibitem{carter1981new}
+J.~L. Carter and M.~N. Wegman, ``New hash functions and their use in
+  authentication and set equality,'' {\em Journal of computer and system
+  sciences}, vol.~22, no.~3, pp.~265--277, 1981.
+
 \end{thebibliography}
