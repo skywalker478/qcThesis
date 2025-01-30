@@ -31,6 +31,7 @@
 \usepackage{subcaption}
 \usepackage{algorithm}
 \usepackage{algorithmic}
+\usepackage{indentfirst}
 \usepackage{authblk}
 \usepackage{float}
 \usepackage[nameinlink, noabbrev]{cleveref} % Load cleveref after hyperref
@@ -113,7 +114,7 @@ However, with the advent of Quantum Computers with increasing number of function
 
 To address these arising challenges, new research is being done on the field of quantum augmented communication systems. These systems exploits the principles of quantum mechanics to attain secure data transmission. One of the most promising area of research in the field of quantum communications is Quantum Key Distribution (QKD). QKD protocols works by establishing a secure cryptographic key between two users over an insecure channel \cite{alleaume2014using}. QKD employ properties unique to quantum mechanics, such as the no-cloning theorem \cite{buvzek1996quantum} and the uncertainty principle \cite{sen2014uncertainty}, that ensures the detection of any eavesdropping attempts and thereby guarantees the security of the key. However, QKD itself does not provide security on its own, rather it facilitates the establishment and secure exchange of secret keys that are subsequently used by other cryptographic algorithms and encryption techniques to secure the transmitted information. In resemblance, the research being done on the field of steganography heralds the emergence of an effective information concealing technique to obscure sensitive information within seemingly harmless transmission. Steganography is the technique of hiding secret massage within another massage in such a manner that it is not discernible that a secret message is embedded \cite{Kahn1996}. However, the security of any steganographic technique is heavily dependent on the strength of cryptographic technique employed to encrypt the data \cite{anderson1998limits}.
 
-This paper introduces a novel approach to reinforce the security of digital audio communication by combining the competency of QKD, classical encryption schemes and steganography. Our system utilizes the E91 QKD protocol proposed by Artur K. Ekert in 1991 \cite{Ekert1991} to generate a shared key with increased security, which is then hashed to produce a fixed-length (256 bits), high-entropy key that is suitable for symmetric encryption by employing the Secure Hashing Algorithm-3 (SHA3-256) \cite{dworkin2015sha}. We inspect the use of ChaCha20-Poly1305 authenticated encryption with associated data (AEAD) algorithm \cite{nir2015chacha20} - which combines the stream cipher scheme, ChaCha20 \cite{bernstein2008chacha} with the message authentication code, Poly1305 \cite{bernstein2005poly1305} - to encrypt the steganographic audio. We performed least significant bit (LSB) substitution steganography to hide an audio signal inside another audio signal \cite{cvejic2002increasing}. The incorporation of QKD with classical symmetric encryption addresses various security concernment, providing protection against both classical and quantum threats.
+This paper introduces a novel approach to reinforce the security of digital audio communication by combining the competency of QKD, classical encryption schemes and steganography. Our system utilizes the E91 QKD protocol proposed by Artur K. Ekert in 1991 \cite{Ekert1991} to generate a shared key with increased security, which is then hashed to produce a fixed-length (256 bits), high-entropy key that is suitable for symmetric encryption by employing the Secure Hashing Algorithm-3 (SHA3-256) \cite{dworkin2015sha}. We inspect the use of ChaCha20-Poly1305 authenticated encryption with associated data (AEAD) algorithm \cite{rfc7539} - which combines the stream cipher scheme, ChaCha20 \cite{bernstein2008chacha} with the message authentication code, Poly1305 \cite{bernstein2005poly1305} - to encrypt the steganographic audio. We performed least significant bit (LSB) substitution steganography to hide an audio signal inside another audio signal \cite{cvejic2002increasing}. The incorporation of QKD with classical symmetric encryption addresses various security concernment, providing protection against both classical and quantum threats.
 
 The new vulnerabilities in secure data transmission due to quantum computer and the need to oppose them have been the motivation for our research. With the advancement in quantum computing technology, it is imperative to devise innovative cryptographic techniques that can keep the data secure in the prospect of an attack from these powerful computers. It is our aim to develop a vigorous solution for secure data communication by combining the strength of quantum communication with hash function, classical encryption and steganography. Hence, the objective our experimental work is to investigate the viability and credibility of integrating encrypted steganographic techniques with quantum protocols, specifically QKD, to strengthen the security and resilience of audio communication. This innovative amalgamation of steganography and quantum communication embodies a significant furtherance in the field, providing an exceptional and optimistic approach to secure data transmission. Our main contribution can be summarized as follows -
 \begin{itemize}
@@ -131,7 +132,7 @@ Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrat
 \subsection{Ekert 91 Protocol}
 \label{sec:e91}
 
-\subsection{SHA3 - 256 Hash Function}
+\subsection{SHA3 -- 256 Hash Function}
 \label{sec:sha3}
 SHA-3 is the latest member \cite{nistHashFunctions} of the Secure Hash Algorithm (SHA) family of cryptographic hash functions. Based on the K\textsc{eecak} algorithm \cite{Bbbbbbb2011}, the SHA-3 standard differs fundamentally from it's MD-5 \cite{rivest1992md5} like structured predecessors -- SHA-1 and SHA-2 \cite{penard2008secure}. In its essence, the SHA-3 standard is a hash function, that is, for any length of binary data input, there is an output of fixed length. The output is called the \textit{digest} or \textit{hash value}. Depending on the digest length, the four hash functions are called SHA3-224, SHA3-256, SHA3-384 and SHA3-512. The suffixes after the dash indicate the fixed length of the digest, for example, SHA3-256 - which is of interest to our methodology - produces 256 bits long digest. As the digest length is constant irrespective of input length, SHA3 is ideal for integrity and signature verification, as well as password hashing, that is not storing password in clear-text format, rather storing the hash of the password for verification.
 
@@ -165,7 +166,7 @@ The process of retrieving the digest $Z$ from input $N$ is described below --
 For example, for the following binary stream, $N=$
 \subsection{ChaCha20-Poly1305}
 \label{sec:chacha20}
-ChaCha20-Poly1305 is an authenticated encryption with associated data (AEAD) algorithm that provides a comparatively fast software performance. It is typically faster than AES-GCM (Galois/Counter Mode) in the absence of hardware acceleration \cite{nir2015chacha20}. This algorithm combines the ChaCha20 stream cipher \cite{bernstein2008chacha} and the Poly1305 \cite{bernstein2005poly1305} universal hash family that acts as message authentication code -- both of which was developed independently by Daniel J. Bernstein.
+ChaCha20-Poly1305 is an authenticated encryption with associated data (AEAD) algorithm that provides a comparatively fast software performance. It is typically faster than AES-GCM (Galois/Counter Mode) in the absence of hardware acceleration \cite{rfc7539}. This algorithm combines the ChaCha20 stream cipher \cite{bernstein2008chacha} and the Poly1305 \cite{bernstein2005poly1305} universal hash family that acts as message authentication code -- both of which was developed independently by Daniel J. Bernstein.
 
 A stream cipher is a symmetric key cipher, that is an encryption and decryption algorithm, that combines plaintext data with a pseudorandom keystream \cite{robshaw1995stream}. Stream ciphers works by encrypting each plaintext digit one at a time with the corresponding keystream digit, as opposed to block ciphers where blocks of plaintext with a certain length is encrypted with the keystream. In 2008, Bernstein proposed the ChaCha family of stream ciphers, a successor to the Salsa20 stream cipher \cite{bernstein2005salsa20} proposed by Bernstein in 2005. ChaCha was proposed as an alternative to Salsa20 \cite{bernstein2008chachaFamily} with slightly better performance. Similar to it's predecessor, the initial state of ChaCha is 512-bit long -- made up of a 128-bit constant, a 256-bit key, a 64-bit counter and a 64-bit nonce. The 128-bit constant is usually \textit{"expand 32-byte k"}. This 512-bit long input is arranged in a $4\times4$ matrix where each entry is a 32-bit word. The matrix arrangement is shown bellow --
 \begin{equation}\label{initialState}
@@ -188,13 +189,13 @@ The core operation of ChaCha, and it's predecessor Salsa20, is the quarter-round
 
 If the elements of matrix \ref{initialState} is indexed from 0 to 15
 \[\left[
-    \begin{array}{cccc}
-        0  & 1  & 2  & 3  \\
-        4  & 5  & 6  & 7  \\
-        8  & 9  & 10 & 11 \\
-        12 & 13 & 14 & 15
-    \end{array}
-\right]\]
+        \begin{array}{cccc}
+            0  & 1  & 2  & 3  \\
+            4  & 5  & 6  & 7  \\
+            8  & 9  & 10 & 11 \\
+            12 & 13 & 14 & 15
+        \end{array}
+        \right]\]
 a double round in ChaCha is defined as --
 \begin{lstlisting}[basicstyle=\ttfamily,frame=none]
     // Odd round
@@ -222,7 +223,51 @@ For decryption, the keystream, $K$, is XORed with the cipher, $C$, to retrieve t
     \caption{The ChaCha quarter-round function. By Tony Arcieri - Own work, CC BY-SA 4.0, \url{https://commons.wikimedia.org/w/index.php?curid=90771650}}
 \end{figure}
 
-A hash function is a special mathematical function that can data of arbitrary size to constant-sized values. The output of a hash function is called hash digest or simply hashes. A unique property of most hash functions is their ability to generate unique digests for each unique inputs. This makes hash functions invaluable for authentication and data integrity verification.In 2002, Bernstein designed the Poly1305 universal hash function, which was intended to provide a message authentication code to authenticate a message using a shared secret key \cite{bernstein2005protecting}. The original implementation of Poly1305 was in 2005 when Poly1305 hash was combined as Carter-Wegman authenticator \cite{carter1981new} with AES-128 to authenticate encrypted messages. 
+A hash function is a special mathematical function that can data of arbitrary size to constant-sized values. The output of a hash function is called hash digest or simply hashes. A unique property of most hash functions is their ability to generate unique digests for each unique inputs. This makes hash functions invaluable for authentication and data integrity verification.In 2002, Bernstein designed the Poly1305 universal hash function, which was intended to provide a message authentication code to authenticate a message using a shared secret key \cite{bernstein2005protecting}. The original implementation of Poly1305 was in 2005 when Poly1305 hash was combined as a Carter-Wegman authenticator \cite{carter1981new} with AES-128 to authenticate encrypted messages.
+
+Poly1305 provides a 128-bit long authentication tag from a 256-bit long one-time key, and a message of arbitrary length. The key has two portions -- $r$ and $s$. It is recommended that the pair $(r,s)$ to be unique. The first portion, $r$, is a 128-bit key produced form a symmetric encryption scheme similar to AES. The later portion, $s$, is a 128-bit long integer arranged as a 16-octet little-endian format. It is required that --
+\begin{itemize}
+    \item $r[3], r[7], r[11]$ and $r[15]$ have their top four bits clear (to be in $\{0,1,\ldots,15\}$).
+    \item $r[4], r[8]$ and $r[12]$ have their bottom four bits clear (to be in $\{0,4,8,\ldots,252\}$).
+\end{itemize}
+
+Each message is required to accompanied by a 128-bit Nonce generated from the accompanying encryption scheme. The process of producing the authenticator tag from the message and the key are briefly outlined here --
+\begin{itemize}
+    \item A variable called the "accumulator" is initialized with zeros
+    \item The message is divided into 128-bit long blocks. Each block is read in little-endian sequence.
+    \item Each block is appended by 1 byte so that each block is 136-bit long. If any of the block is not 136-bit long (usually the last block), the block is padded with zeros to make it of proper length.
+    \item Each 136-bit long message block is multiplied with a clamped value $r$ and the multiplication result is added to the accumulator.
+    \item The value stored in the accumulator is reduced using $mod(2^{128})$ and the reduced value is stored in the accumulator.
+    \item When the whole message is converted, the value in the accumulator is added to $s$.
+    \item From the result, the 128 least significant bits are formatted in little-endian format to produce the tag.
+\end{itemize}
+
+The ChaCha20-Poly1305 AEAD adopted for Internet Engineering Task Force (IETF) \cite{rfc8439} and subsequently as the standard for Transport Layer security (TLS) \cite{rfc7905} is slightly different from the original structures proposed by Daniel J. Bernstein. To be precise, the ChaCha20 symmetric encryption is slightly modified. As opposed to a 64-bit Nonce, the modified ChaCha20 has a 96-bit long Nonce. The modified matrix is shown below --
+\begin{equation}\label{initialState}
+    \left[
+        \begin{array}{cccc}
+            \text{Consant}[0] & \text{Consant}[1] & \text{Consant}[2] & \text{Consant}[3] \\
+            \text{Key}[0]     & \text{Key}[1]     & \text{Key}[2]     & \text{Key}[3]     \\
+            \text{Key}[4]     & \text{Key}[5]     & \text{Key}[6]     & \text{Key}[7]     \\
+            \text{Conter}[0]  & \text{Nonce}[0]   & \text{Nonce}[1]   & \text{Nonce}[2]
+        \end{array}
+        \right]
+\end{equation}
+
+The remaining portions of the ChaCha20 scheme remains unaltered. The same is true for the Poly1305 authenticator. A high level overview of this modified ChaCha20 encryption and Poly1305 authenticator tag generation is outlined below --
+\begin{itemize}
+    \item A 256-bit long string is used as key for the ChaCha20 key along with a unique 96-bit long Nonce.
+    \item Using the key and the nonce, the ChaCha20 block function is activated, which produces a 512-bit state.
+    \item The first 256 serialized bits of the 512-bit state is taken as the Poly1305 key -- the 128 bit as $r$ and the next 128 bit as $s$.
+    \item The 512-bit state is serialized in little-endian format to produce a keystream.
+    \item The keystream is XORed with the message to produce the ciphertext.
+    \item The Poly1305 function is called with the unencrypted and the previously derived key to produce the authenticator tag.
+\end{itemize}
+The output from the AEAD is the concatenation of the following --
+\begin{itemize}
+    \item A ciphertext which is as long as the plaintext message.
+    \item A 128-bit authenticator tag, generated by the Poly1305 function.
+\end{itemize}
 \subsection{LSB Steganography}
 \label{sec:steganography}
 
