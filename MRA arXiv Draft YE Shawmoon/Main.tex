@@ -273,7 +273,7 @@ The output from the AEAD is the concatenation of the following --
 
 \section{Methodology}
 \label{sec:methodology}
-The architecture that we proposed is a system that integrates E91 QKD protocol with classical cryptographic schemes and lsb steganography to ensure a heavily secure audio data encryption system. The system utilizes the E91 for QKD to generate and exchange the cryptographic keys called the Ekert key, SHA3 to derive a high-entropy 256 bit key from the Ekert key for ChaCha20-Poly1305 encryption and LSB substitution for steganography. The architecture ensures augmented data security through the combination of classical and quantum techniques. Figure \ref{fig:methodology} provides a high level overview of our proposed system.
+The architecture that we proposed is a system that integrates E91 QKD protocol with classical cryptographic schemes and lsb steganography to ensure a heavily secure audio data encryption system. The system utilizes the E91 for QKD to generate and exchange the cryptographic keys called the Ekert key, SHA3 to derive a high-entropy 256-bit key from the Ekert key for ChaCha20-Poly1305 encryption and LSB substitution for steganography. The architecture ensures augmented data security through the combination of classical and quantum techniques. Figure \ref{fig:methodology} provides a high level overview of our proposed system.
 \begin{figure}[!h]
     \begin{center}
         \includesvg[width=\textwidth]{methodology.svg}
@@ -281,6 +281,117 @@ The architecture that we proposed is a system that integrates E91 QKD protocol w
         \label{fig:methodology}
     \end{center}
 \end{figure}
+\subsection{Initialization}
+As outlined by Ekert \cite{Ekert1991}, an entangled pair generator, referred to as Charlie, produces pairs of entangled qubits and shares them with Alice and Bob. The circuit shown in Figure \ref{fig:singlet} is used to produce the entangled qubit pairs. The circuit applied a Hadamard $(H)$ gate to put a qubit in superposition and a CNOT $(\oplus)$ gate to control the other qubit. Here, $qr_{0}$ and $qr_{1}$ denotes quantum registers, that is, qubits, while $cr$ denotes classical register.
+\begin{figure}[!h]
+    \centering
+    \begin{quantikz}
+        \lstick{$qr_{0}$} & \gate{H} & \ctrl{1} & \\
+        \lstick{$qr_{1}$} & & \targ{} &  \\
+        \lstick{$cr$}\setwiretype{c} & & &
+    \end{quantikz}
+    \caption{Singlet circuit for creating entanglement qubit pairs.}
+    \label{fig:singlet}
+\end{figure}
+\subsection{Measurement}
+Alice and Bob independently create a random set of bases of length $n$. Using this set of random bases, Alice and Bob perform measurements on the qubits they received from Charlie. The respective measurement circuits are shown in Figures \ref{fig:aliceMeasurements} and \ref{fig:bobMeasurements}. After the completion of the measurements, both parties share their measurement bases over an unsecured Classical Channel. Upon comparison of these measurement bases, the states that lack a common base are discarded. The result is a secret key called the Final Ekert Key that is shared between Alice and Bob. The measurement process is illustrated in Figure \ref{fig:combined}.
+\begin{figure}[!h]
+    \begin{subfigure}[h]{0.5\textwidth}
+        \centering
+        \begin{quantikz}
+            \lstick{$qr_{0}$} & \gate{S} & \gate{H} & \gate{T} & \gate{H} & \meter{} \wire[d][2]{c} & \\
+            \lstick{$qr_{1}$} & & & & & & \\
+            \lstick{$cr$}\setwiretype{c} & & & & & &
+        \end{quantikz}
+        \caption{$W$ basis}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h]{0.5\textwidth}
+        \centering
+        \begin{quantikz}
+            \lstick{$qr_{0}$} & \gate{H} & \ctrl{1} & \meter{} \wire[d][2]{c} & \\
+            \lstick{$qr_{1}$} & & \targ{} & & \\
+            \lstick{$cr$}\setwiretype{c} & & & &
+        \end{quantikz}
+        \caption{$X$ basis}
+    \end{subfigure}
+    \vfill
+    \begin{subfigure}[h]{\textwidth}
+        \centering
+        \begin{quantikz}
+            \lstick{$qr_{0}$} & \meter{} \wire[d][2]{c} & \\
+            \lstick{$qr_{1}$} & & \\
+            \lstick{$cr$}\setwiretype{c} & &
+        \end{quantikz}
+        \caption{$Z$ basis}
+    \end{subfigure}
+    \caption{Alice's measurement circuits.}
+    \label{fig:aliceMeasurements}
+\end{figure}
+\begin{figure}[!h]
+    \begin{subfigure}[h]{0.5\textwidth}
+        \centering
+        \begin{quantikz}
+            \lstick{$qr_{0}$} & & & & & & \\
+            \lstick{$qr_{1}$} & \gate{S} & \gate{H} & \gate{T^\dag} & \gate{H} & \meter{} \wire[d][1]{c} & \\
+            \lstick{$cr$}\setwiretype{c} & & & & & &
+        \end{quantikz}
+        \caption{$V$ basis}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h]{0.5\textwidth}
+        \centering
+        \begin{quantikz}
+            \lstick{$qr_{0}$} & & & & & & \\
+            \lstick{$qr_{1}$} & \gate{S} & \gate{H} & \gate{T} & \gate{H} & \meter{} \wire[d][1]{c} & \\
+            \lstick{$cr$}\setwiretype{c} & & & & & &
+        \end{quantikz}
+        \caption{$W$ basis}
+    \end{subfigure}
+    \vfill
+    \begin{subfigure}[h]{\textwidth}
+        \centering
+        \begin{quantikz}
+            \lstick{$qr_{0}$} & & \\
+            \lstick{$qr_{1}$} & \meter{} \wire[d][1]{c} & \\
+            \lstick{$cr$}\setwiretype{c} & &
+        \end{quantikz}
+        \caption{$Z$ basis}
+    \end{subfigure}
+    \caption{Bob's measurement circuits.}
+    \label{fig:bobMeasurements}
+\end{figure}
+\begin{figure}[!h]
+    \begin{center}
+        \begin{quantikz}
+            \lstick{$qr_{0}$} & \gate{H}\gategroup[2,steps=2,style={dashed,rounded corners}]{Charlie} & \ctrl{1} & & \gate{A}\gategroup[3,steps=1,style={dashed,rounded corners}]{Alice} \wire[d][2]{q} & & & \\
+            \lstick{$qr_{1}$} & & \targ{} & & & & \gate{B}\gategroup[2,steps=1,style={dashed,rounded corners}]{Bob} \wire[d][1]{q} & \\
+            \lstick{$cr$}\setwiretype{c} & & & & & & &
+        \end{quantikz}
+        \caption{Combined circuit for E91 QKD protocol}
+        \label{fig:combined}
+    \end{center}
+\end{figure}
+\subsection{Encryption key generation}
+After the creation of the final Ekert key, Alice and Bob pass the key through the SHA3-256 hashing algorithm to generate another key of fixed length (256 bits) and high entropy. The use of the hashed key is instead of the original Ekert key provides an additional layer of security by obscuring the contents of the original key. If an eavesdropper gets hold of the hashed key, he/she will not be able distill the original key as the SHA3 hash function provides a vital protection against reverse calculation.
+
+For 500 singlet states, we may get a key like the following -- 
+
+$01011000100110100111011110111100001100111111000101110001100000011110111011000000100101110111$
+
+The hash digest of this key is $486340cb54e65a96edc02257b48f3415a0c374f771871a4240ef8097cecdeec2$.
+
+Similarly, for 128 singlet states, we may get a key like the following --
+
+$0001001110110110111000101100$
+
+The hash digest of this key is $9e0ae69c28e4f4e8ba13e1c496fb237284df4e0b6540e168b18bec0cde9ee70f$.
+\subsection{Steganography insertion}
+Prior encryption, the audio data is embedded in a cover audio using Steganography. 
+\subsection{Encryption and Authenticator generation}
+
+\subsection{Decryption and Authentication}
+\subsection{Steganography extraction}
 \section{Experiments and Results}
 \label{sec:experminats}
 \section{Findings and Discussion}
