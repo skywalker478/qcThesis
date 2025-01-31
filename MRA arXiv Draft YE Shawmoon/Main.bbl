@@ -129,4 +129,8 @@ A.~Langley, W.-T. Chang, N.~Mavrogiannopoulos, J.~Strombergson, and
   S.~Josefsson, ``{ChaCha20-Poly1305 Cipher Suites for Transport Layer Security
   (TLS)}.'' RFC 7905, June 2016.
 
+\bibitem{miller2015chacha20}
+D.~Miller, ``The chacha20-poly1305@ openssh. com authenticated encryption
+  cipher draft-josefsson-ssh-chacha20-poly1305-openssh-00,'' 2015.
+
 \end{thebibliography}

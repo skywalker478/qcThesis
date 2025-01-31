@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{367.17329407bp}%
+    \setlength{\unitlength}{720.75bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,39 +50,9 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.43778842)%
+  \begin{picture}(1,0.29656608)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{SpongeConstruction_svg-tex.pdf}}%
-    \put(0.0570156,0.24848335){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
-    \put(0.0570156,0.1098238){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{SpongeConstruction_svg-tex.pdf}}%
-    \put(0.10069099,0.35566514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}P\end{tabular}}}}%
-    \put(0.1202859,0.35015653){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
-    \put(0.27814689,0.35566514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}P\end{tabular}}}}%
-    \put(0.29774179,0.35015653){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{SpongeConstruction_svg-tex.pdf}}%
-    \put(0.67397977,0.35566514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Z\end{tabular}}}}%
-    \put(0.69845373,0.35015653){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{SpongeConstruction_svg-tex.pdf}}%
-    \put(0.85143566,0.35566514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Z\end{tabular}}}}%
-    \put(0.87354879,0.35015653){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}1\end{tabular}}}}%
-    \put(0.56459454,0.4068952){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}absorbing\end{tabular}}}}%
-    \put(0.58922589,0.4068952){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}squeezing\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=5]{SpongeConstruction_svg-tex.pdf}}%
-    \put(-0.00239868,0.24683077){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}r\end{tabular}}}}%
-    \put(-0.00200521,0.10824992){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}c\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=6]{SpongeConstruction_svg-tex.pdf}}%
-    \put(0.45969489,0.35566514){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}P\end{tabular}}}}%
-    \put(0.4792898,0.35015653){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}n−1\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=7]{SpongeConstruction_svg-tex.pdf}}%
-    \put(0.15585577,0.1493284){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f\end{tabular}}}}%
-    \put(0.33331167,0.1493284){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f\end{tabular}}}}%
-    \put(0.40366447,0.1493284){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}…\end{tabular}}}}%
-    \put(0.51084626,0.1493284){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f\end{tabular}}}}%
-    \put(0.72772805,0.1493284){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f\end{tabular}}}}%
-    \put(0.90518394,0.1493284){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}f\end{tabular}}}}%
-    \put(0.97553675,0.1493284){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}…\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=8]{SpongeConstruction_svg-tex.pdf}}%
   \end{picture}%
 \endgroup%

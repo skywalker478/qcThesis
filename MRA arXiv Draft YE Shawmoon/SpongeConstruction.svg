@@ -1,196 +1,1156 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg height="228.68185" viewBox="0 0 13289.7334 5935.7828" width="512" xmlns="http://www.w3.org/2000/svg">
-
-<desc>Translations are included for Chinese, English, Japanese, Polish, Portuguese, Russian, Spanish, Ukrainian, French. Other languages can easily be added.</desc>
-
-   <g transform="translate(-3845.9164 -11910.1085)">
-      <path d="m4684 13871h501v1007h-501z" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m4684 14878h501v2516h-501z" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <g stroke="#000" stroke-linejoin="round" stroke-width="26">
-         <path d="m5437 14250l-26 3-23 5-21 13-20 15-16 18-10 21-8 25-2 24 2 25 8 24 10 23 16 18 20 15 21 10 23 8 26 3 0 0 25-3 23-8 21-10 18-15 15-18 13-23 8-24 2-25-2-24-8-25-13-21-15-18-18-15-21-13-23-5z" fill="#fff"/>
-         <path d="m5311 14374h251"/>
-         <path d="m5437 14250v250"/>
-      </g>
-      <g font-family="DejaVu Sans" font-size="425" font-weight="400">
-         <text>
-            <tspan x="4828" y="14502">0</tspan>
-         </text>
-         <text>
-            <tspan x="4828" y="16264">0</tspan>
-         </text>
-      </g>
-      <path d="m5185 14374h542" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m5709 14451l228-77-228-75z"/>
-      <path d="m5185 16135h542" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m5709 16212l228-77-228-75z"/>
-      <path d="m5437 13369v670" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m5359 14018l78 232 77-232z"/>
-      <path d="m6438 14374h291" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m6711 14451l228-77-228-75z"/>
-      <path d="m6438 16135h291" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m6711 16212l228-77-228-75z"/>
-      <path d="m6939 13871h501v1007h-501z" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m7440 14878v2516h-501v-2516z" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <g stroke="#000" stroke-linejoin="round" stroke-width="26">
-         <path d="m7692 14250l-26 3-23 5-20 13-21 15-15 18-11 21-7 25-3 24 3 25 7 24 11 23 15 18 21 15 20 10 23 8 26 3 0 0 26-3 23-8 20-10 18-15 16-18 12-23 8-24 3-25-3-24-8-25-12-21-16-18-18-15-20-13-23-5z" fill="#fff"/>
-         <path d="m7566 14374h252"/>
-         <path d="m7692 14250v250"/>
-      </g>
-      <path d="m7440 14374h542" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m7964 14451l229-77-229-75z"/>
-      <path d="m7440 16135h542" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m7964 16212l229-77-229-75z"/>
-      <path d="m7692 13369v670" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m7615 14018l77 232 77-232z"/>
-      <text font-family="DejaVu Sans" font-size="497" font-weight="400">
-         <tspan x="5383" y="13140">P</tspan>
-      </text>
-      <text font-family="DejaVu Sans" font-size="332" font-weight="400">
-         <tspan x="5632" y="13210">0</tspan>
-      </text>
-      <text font-family="DejaVu Sans" font-size="497" font-weight="400">
-         <tspan x="7638" y="13140">P</tspan>
-      </text>
-      <text font-family="DejaVu Sans" font-size="332" font-weight="400">
-         <tspan x="7887" y="13210">1</tspan>
-      </text>
-      <path d="m10949 14374h794" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m11722 14451l229-77-229-75z"/>
-      <path d="m10949 16138h794" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m11722 16212l229-74-229-78z"/>
-      <path d="m12454 14374h542" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m12976 14451l228-77-228-75z"/>
-      <path d="m12454 16138h542" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m12976 16212l228-74-228-78z"/>
-      <path d="m12703 14374v-793" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m12781 13599l-78-230-77 230z"/>
-      <path d="m13705 14374h293" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m13978 14451l231-77-231-75z"/>
-      <path d="m13705 16138h293" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m13978 16212l231-74-231-78z"/>
-      <text font-family="DejaVu Sans" font-size="497" font-weight="400">
-         <tspan x="12668" y="13140">Z</tspan>
-      </text>
-      <text font-family="DejaVu Sans" font-size="332" font-weight="400">
-         <tspan x="12979" y="13210">0</tspan>
-      </text>
-      <path d="m11463 12110v178l-3 10-10 3-8-3-5-10v-178l5-8 8-5 10 5zm0 307v177l-3 11-10 2-8-2-5-11v-177l5-8 8-5 10 5zm0 306v178l-3 10-10 3-8-3-5-10v-178l5-10 8-3 10 3zm0 306v178l-3 10-10 3-8-3-5-10v-178l5-10 8-2 10 2zm0 307v178l-3 10-10 2-8-2-5-10v-178l5-10 8-3 10 3zm0 306v178l-3 10-10 3-8-3-5-10v-178l5-10 8-3 10 3zm0 307v177l-3 11-10 2-8-2-5-11v-177l5-11 8-2 10 2zm0 306v178l-3 10-10 3-8-3-5-10v-178l5-10 8-3 10 3zm0 307v177l-3 11-10 2-8-2-5-11v-177l5-11 8-2 10 2zm0 306v178l-3 10-10 3-8-3-5-10v-178l5-10 8-3 10 3zm0 304v180l-3 8-10 5-8-5-5-8v-180l5-8 8-2 10 2zm0 306v181l-3 7-10 5-8-5-5-7v-181l5-7 8-6 10 6zm0 307v180l-3 8-10 5-8-5-5-8v-180l5-8 8-5 10 5zm0 306v180l-3 8-10 5-8-5-5-8v-180l5-8 8-5 10 5zm0 307v180l-3 8-10 5-8-5-5-8v-180l5-8 8-5 10 5zm0 306v180l-3 8-10 5-8-5-5-8v-180l5-8 8-5 10 5zm0 306v181l-3 7-10 6-8-6-5-7v-181l5-7 8-5 10 5zm0 307v178l-3 10-10 2-8-2-5-10v-178l5-8 8-5 10 5zm0 306v23l-3 8-10 5-8-5-5-8v-23l5-7 8-6 10 6z" stroke="#000"/>
-      <path d="m14959 14376v-795" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m15036 13599l-77-230-75 230z"/>
-      <text font-family="DejaVu Sans" font-size="497" font-weight="400">
-         <tspan x="14923" y="13140">Z</tspan>
-      </text>
-      <text font-family="DejaVu Sans" font-size="332" font-weight="400">
-         <tspan x="15204" y="13210">1</tspan>
-      </text>
-      <g font-family="DejaVu Sans" font-size="425" font-weight="400">
-         <g transform="translate(11278,12489)" text-anchor="end">
-            <switch>
-               <text systemLanguage="en">absorbing</text>
-               <text systemLanguage="fr">absorption</text>
-               <text systemLanguage="es">absorción</text>
-               <text systemLanguage="ja">吸収</text>
-               <text systemLanguage="pl">wchłanianie</text>
-               <text systemLanguage="pt">absorção</text>
-               <text systemLanguage="ru">впитывание</text>
-               <text systemLanguage="uk">всмоктування</text>
-               <text systemLanguage="zh">吸收</text>
-               <text>absorbing</text>
-            </switch>
-         </g>
-         <g transform="translate(11591,12489)" text-anchor="start">
-            <switch>
-               <text systemLanguage="en">squeezing</text>
-               <text systemLanguage="fr">essorage</text>
-               <text systemLanguage="es">exprimir</text>
-               <text systemLanguage="ja">絞り出</text>
-               <text systemLanguage="pl">wyciskanie</text>
-               <text systemLanguage="pt">compressão</text>
-               <text systemLanguage="ru">выжимание</text>
-               <text systemLanguage="uk">віджимання</text>
-               <text systemLanguage="zh">擠出</text>
-               <text>squeezing</text>
-            </switch>
-         </g>
-      </g>
-      <g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26">
-         <path d="m4435 13871v1033"/>
-         <path d="m4358 14026l77-155 74 155"/>
-         <path d="m4509 14750l-74 154-77-154"/>
-      </g>
-      <g fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26">
-         <path d="m4435 14878v2516"/>
-         <path d="m4358 15030l77-152 74 152"/>
-         <path d="m4509 17242l-74 152-77-152"/>
-      </g>
-      <g font-family="DejaVu Sans" font-size="497" font-weight="400">
-         <text>
-            <tspan x="4073" y="14523">r</tspan>
-         </text>
-         <text>
-            <tspan x="4078" y="16284">c</tspan>
-         </text>
-      </g>
-      <path d="m14710 14376h542" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m15231 14451l229-75-229-77z"/>
-      <path d="m14710 16138h542" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m15231 16212l229-74-229-78z"/>
-      <path d="m15963 14376h290" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m16233 14451l231-75-231-77z"/>
-      <path d="m15963 16138h290" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m16233 16212l231-74-231-78z"/>
-      <path d="m8694 14374h290" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m8966 14451l229-77-229-75z"/>
-      <path d="m8694 16135h290" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m8966 16212l229-77-229-75z"/>
-      <g stroke="#000" stroke-linejoin="round" stroke-width="26">
-         <path d="m9947 14250l-25 3-24 7-20 11-18 15-16 18-12 23-8 23-3 24 3 25 8 24 12 23 16 18 18 15 20 13 24 5 25 3 0 0 26-3 23-5 21-13 20-15 16-18 10-23 8-24 2-25-2-24-8-23-10-23-16-18-20-15-21-11-23-7z" fill="#fff"/>
-         <path d="m9821 14374h252"/>
-         <path d="m9947 14250v250"/>
-      </g>
-      <path d="m9695 14374h542" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m10220 14451l228-77-228-75z"/>
-      <path d="m9695 16138h542" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m10220 16212l228-74-228-78z"/>
-      <path d="m9947 13369v670" fill="none" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m9870 14018l77 232 77-232z"/>
-      <text font-family="DejaVu Sans" font-size="497" font-weight="400">
-         <tspan x="9945" y="13140">P</tspan>
-      </text>
-      <text font-family="DejaVu Sans" font-size="332" font-weight="400">
-         <tspan x="10194" y="13210">n−1</tspan>
-      </text>
-      <path d="m6189 13871l26 3 23 3 49 15 41 23 38 31 31 36 23 44 13 46 5 26v26l0 0v3018 26l-5 25-13 49-23 41-31 39-38 31-41 23-49 13-23 5h-26-26l-25-5-46-13-44-23-36-31-31-39-23-41-15-49-3-25-3-26v-3018l3-26 3-26 15-46 23-44 31-36 36-31 44-23 46-15 25-3z" fill="#d2e1f7" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m8445 13871l25 3 23 3 49 15 41 23 39 31 31 36 23 44 13 46 5 26v26l0 0v3018 26l-5 25-13 49-23 41-31 39-39 31-41 23-49 13-23 5h-25-26l-26-5-46-13-44-23-36-31-31-39-23-41-15-49-3-25-2-26v-3018l2-26 3-26 15-46 23-44 31-36 36-31 44-23 46-15 26-3z" fill="#d2e1f7" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m10700 13871l26 3 23 3 48 15 42 23 38 31 31 36 23 44 13 46 5 26v26l0 0v3018 26l-5 25-13 49-23 41-31 39-38 31-42 23-48 13-23 5h-26-26l-26-5-46-13-43-23-36-31-31-39-23-41-16-49-2-25-3-26v-3018l3-26 2-26 16-46 23-44 31-36 36-31 43-23 46-15 26-3z" fill="#d2e1f7" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m13456 13871l26 3 25 3 47 15 41 23 38 31 31 36 23 44 13 46 5 26v26l0 0v3018 26l-5 25-13 49-23 41-31 39-38 31-41 23-47 13-25 5h-26-26l-25-5-47-13-43-23-36-31-31-39-23-41-15-49-3-25-3-26v-3018l3-26 3-26 15-46 23-44 31-36 36-31 43-23 47-15 25-3z" fill="#d2e1f7" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m15711 13871l26 3 26 3 46 15 44 23 36 31 31 36 23 44 15 46 3 26 2 26 0 0v3020l0 0-2 26-3 23-15 49-23 41-31 39-36 31-44 23-46 13-26 5h-26-25l-26-5-46-13-44-23-36-31-31-39-23-41-15-49-3-23-2-26 0 0v-3020l0 0 2-26 3-26 15-46 23-44 31-36 36-31 44-23 46-15 26-3z" fill="#d2e1f7" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <g font-family="DejaVu Sans" font-size="425" font-weight="400">
-         <text>
-            <tspan x="6084" y="15762">f</tspan>
-         </text>
-         <text>
-            <tspan x="8339" y="15762">f</tspan>
-         </text>
-         <text>
-            <tspan x="9233" y="15762">…</tspan>
-         </text>
-         <text>
-            <tspan x="10595" y="15762">f</tspan>
-         </text>
-         <text>
-            <tspan x="13351" y="15762">f</tspan>
-         </text>
-         <text>
-            <tspan x="15606" y="15762">f</tspan>
-         </text>
-         <text>
-            <tspan x="16500" y="15762">…</tspan>
-         </text>
-      </g>
-      <path d="m11951 13871h503v1007h-503z" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m12454 14878v2516h-503v-2516z" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m14209 13871h501v1007h-501z" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-      <path d="m14710 14878v2516h-501v-2516z" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="26"/>
-   </g>
+<svg
+   style="background: #ffffff; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color-scheme: light dark;"
+   version="1.1"
+   width="961px"
+   height="285px"
+   viewBox="-0.5 -0.5 961 285"
+   id="svg212"
+   sodipodi:docname="SpongeConstruction.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview212"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.6091578"
+     inkscape:cx="149.47352"
+     inkscape:cy="135.48433"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg212" />
+  <defs
+     id="defs1">
+    <style
+       type="text/css"
+       id="style1">@font-face {font-family: &quot;Computer Modern Serif&quot;;src: url(&quot;https://github.com/Manza12/Fonts/blob/master/Serif/cmunrm.woff&quot;)}
+</style>
+  </defs>
+  <rect
+     fill="#ffffff"
+     style="fill: light-dark(#ffffff, var(--ge-dark-color, #121212));"
+     width="100%"
+     height="100%"
+     x="0"
+     y="0"
+     id="rect1" />
+  <path
+     d="m 100,213.5 40,0.05 33.63,0.01"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path79" />
+  <path
+     d="m 178.88,213.56 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path80" />
+  <rect
+     x="186"
+     y="60"
+     width="55"
+     height="40"
+     fill="none"
+     stroke="#000000"
+     transform="matrix(0,1,1,0,0,0)"
+     pointer-events="all"
+     id="rect81" />
+  <g
+     transform="translate(-0.5,-0.5)"
+     id="g83">
+    <switch
+       id="switch82">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 214px; margin-left: 61px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 12px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+              <xhtml:font
+                 style="font-size: 20px;">0</xhtml:font>
+            </xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <image
+         x="61"
+         y="202.5"
+         width="38"
+         height="27"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAABsCAYAAACWwXsuAAAGJklEQVR4Xu2dO69MURTH56qJhIpGQUFCaDw+AYlQaFAqxOMDEJQKEiqVxydAp6QgUYhHRSIUV6GhIhFqrHXnnMzcM3vve/+z1zozrP8kO+6MdfY589u/WftxzpxZGPBBAo4EFhzrZtUkMKBglMCVAAVzxcvKKRgdcCVAwVzxsnIKRgdcCVAwV7ysnILRAVcCFMwVLyunYHTAlQAFc8XLyikYHXAlQMFc8bJyCkYHXAlQMFe8rJyC0QFXAhTMFS8rp2B0wJUABXPFy8opGB1wJUDBXPGycgpWdmCD/PdxKcek7JKyqQn/Jf++l/Jcyl0pn6hSmgAFS3NRsS5JOS9l7SrkeSgxVyjaJCkKNslkr7z0aCxbtRGvmoylz7dIOdyRT7PaBSl3ViFkmBAKtrypz8nT253W/yjPj2Sy02V5/VonXrPZiTAGrfBGKdgIUEouzVqaqb4XOC5tpyD/jIIoWcOCgg1BpOT6Kq/vXEGuVqkbTfc47uE9eXI2eiajYIOBjrmeSukO5g/Ja08AQb5IbDvLbDc7KX88AOr470Ip2GDwQVp1e6dltWs8ALZ2KgvqwH+PlLDLGNEFS3Vt6hWavVoXfyYyoWZBrS/kI7Jgutb1OSGEjr02T2mDdoe6MNt9TCvslIcxP5tFFiwnQ83gXJcn7iead5oud34sqTiSqILlsldN99g2w9hqxbKWCZnFogqWWiBtbahl8lIq2p/40Icci9XCrEieM900taSgB6Sr9jsqjyw3cdBqN0opLdpW7nr+No8omK57vc40hUWWyY3DdJd68jzUucqIgpUyzE0R4GJlHvAWuPLw+t08omCphdWWulWGyQ30dT+hmId6s41Fpca3mumlFlxbiffJH2/6zSOz21s0wQ4K6scF3Nvk/yxO6+RmkrprvTDx+uyavN89RxMsuTwxdqmNFY+SYDULuf3aYbA3K6AGh9JLFXr9/JnCnqx4aJbUbJl6hFrVtwLaix0GOyllFsuGL81ULdbaDFD0U0U0wUozyL4ECzWTjCZYaQZJwRySGgUbQaVgFKyaQCmDWazitwc4NgbrfB1kGBFmLSxcBks297DRnQRLfiisFnSrP3HeFYQTrACUgjnYRsFGUCkYBasmMIMxWPKYw3yww7zRppkpWPVnFKuAgvl0kaVTRVxoxRz9p6JLl9FY3k+idEpKv4y77p+iVnGw0TJYX+ci+9pPRdP3s2k0wfq6yqEkmMV1//3YYbCXaIKVrnKwPFVU6ootl0MMFPCtIppgpW/8WA6+S7PVUHfciSaYfqP7W+Eza8FjpX1YXZbtm3qMarcAanQovVWT+dLtGjmA3xbnCEvX/dfcWKU3QJY7iihY6bJpi+6r1A1bLoVYeuBWV0TBSgJYDMBLEwkLgd1k8Kg4omDKMTfLs5hJ5pZCQi2wtrJGFSzXTVpIkLuxSrju0XJa7pFdPevcKpUvZnZQcbXpeqn3x+LSzQEmFypCzR6jZzB9/7k7HNaMw1I3AtZ9WXS9nh84t7qjdpEKNJfFar63yHu0dlSNLJiiyI3FpukmcwusIcde7CKHBHL3ap1GitTyhE4a9IezQt3VcDyJRc9gyiK3LoYMynOihlv36g7mKNiQSKqrRC6rada+lk43tYxD3UUnN0ugYCMyqQH6au7lldpumi7WbSY3y4op2HL6KVk0E+l9xbrjKD2pfUtK93eOapY5ZumCy74p2CTW9GB9YfBCFk/fNuFHE2LplRKnpCC/0ObSqPNUKQVLt4Zmp6tSUj+o0N1CZ4r6K7m1d6eeJy/MjoWClVHqLclPS9ndkU0XY99JeSYl1H3vUfMoGEqM8RABCgbhYjBKgIKhxBgPEaBgEC4GowQoGEqM8RABCgbhYjBKgIKhxBgPEaBgEC4GowQoGEqM8RABCgbhYjBKgIKhxBgPEaBgEC4GowQoGEqM8RABCgbhYjBKgIKhxBgPEaBgEC4GowQoGEqM8RABCgbhYjBKgIKhxBgPEaBgEC4GowQoGEqM8RABCgbhYjBKgIKhxBgPEaBgEC4GowQoGEqM8RABCgbhYjBKgIKhxBgPEaBgEC4GowQoGEqM8RABCgbhYjBKgIKhxBgPEfgLmJ/hbeOLlHwAAAAASUVORK5CYII="
+         id="image82" />
+    </switch>
+  </g>
+  <rect
+     x="41"
+     y="60"
+     width="145"
+     height="40"
+     fill="none"
+     stroke="#000000"
+     transform="matrix(0,1,1,0,0,0)"
+     pointer-events="all"
+     id="rect85" />
+  <g
+     transform="translate(-0.5,-0.5)"
+     id="g87">
+    <switch
+       id="switch86">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 113px; margin-left: 61px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 12px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+              <xhtml:font
+                 style="font-size: 20px;">0</xhtml:font>
+            </xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <image
+         x="61"
+         y="101.5"
+         width="38"
+         height="27"
+         xlink:href="data:image/png;base64,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"
+         id="image86" />
+    </switch>
+  </g>
+  <path
+     d="M 40,179.63 V 47.37"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path89" />
+  <path
+     d="m 40,184.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path90" />
+  <path
+     d="m 40,42.12 3.5,7 -3.5,-1.75 -3.5,1.75 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path91" />
+  <path
+     d="M 40,234.63 V 192.37"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path92" />
+  <path
+     d="m 40,239.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path93" />
+  <path
+     d="m 40,187.12 3.5,7 -3.5,-1.75 -3.5,1.75 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path94" />
+  <rect
+     x="0"
+     y="98.5"
+     width="60"
+     height="30"
+     fill="none"
+     stroke="none"
+     pointer-events="all"
+     id="rect95" />
+  <g
+     transform="translate(-0.5,-0.5)"
+     id="g97">
+    <switch
+       id="switch96">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 113px; margin-left: 1px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 20px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">r</xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <image
+         x="1"
+         y="101.5"
+         width="58"
+         height="29"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOgAAAB0CAYAAACPDX5AAAAFJklEQVR4Xu3dsascVRiG8SR1LEwnBAJqERvRIkaw1z9BEQl2ERsrLSV1UllpaScKFpZaWEdSpdImRRpLIZBa/Q7swk2Y2ZyBHPKe3d+FwyV3z8y893m/h9mbhDvnz/lAAIFYAudjkwmGAALnCGoIEAgmQNDgckRDgKBmAIFgAgQNLkc0BAhqBhAIJkDQ4HJEQ4CgZgCBYAIEDS5HNAQIagYQCCZA0OByREOAoGYAgWACBA0uRzQECGoGEAgmQNDgckRDgKBmAIFgAgQNLkc0BAhqBhAIJkDQ4HJEQ4CgZgCBYAIEDS5HNAQIagYQCCZA0OByREOAoGYAgWACBA0uRzQECGoGEAgmQNDgckRDgKBmAIFgAgQNLkc0BAhqBhAIJkDQ4HJEQ4CgZgCBYAIEDS5HNAQIagYQCCZA0OByREOAoGYAgWACBA0uRzQECGoGEAgmQNDgcjqjfVb7Pq11vdYftd5dOO5Sfe1mrRu1ru5e/6s+f1Pru87r2PYCCBD0BUB/Dpd8rc7xVa2Pa108c74lQa/V67/UemXluj/V1z98DpmcYgABgg6AOvCUZ++WS5d5WtC2/85TEi8d1/Y04X2EESBoWCELcdrdsr09/eTAXXB/2FlB253z9w4527Ht7e4b+ShOLyFBszu/XfG+XIt4oV7498kX94K2nzkfdsrZzvC41kvZKE4zHUGze29vUd+u9fMu5qv1+dBb1r2gd2tf+0ujdme8VevlWl8fuAP/Vq99kI3iNNMRdL7em7TfrsRugn6/e73J+V6tf3Z72131h1rvLxz7Tn3t3nwojj8xQefs+L+V2E3Ky7vX3qrPDxb2tb+xbXfV9s8tbf8Xtdod1EcgAYIGltIR6c+dYGtbP6oXfuw4jy3hBAgaXtBKvP3PmEsvr/1nhTm/0xNPTdA5B+CQoK+vvLWd8zs98dQEnXMA1gR195yzz9XUBJ2zUILO2dvm1ATdjCziAIJG1DA+BEHHMx5xBYKOoBp4ToIGltIRiaAdkI5hC0HnbJGgc/a2OTVBNyOLOICgETWMD0HQ8YxHXIGgI6gGnpOggaV0RCJoB6Rj2ELQOVsk6Jy9bU5N0M3IIg4gaEQN40MQdDzjEVcg6AiqgeckaGApHZEI2gHpGLYQdM4WCTpnb5tTE3QzsogDCBpRw/gQBB3PeMQVCDqCauA5CRpYSkckgnZAOoYtBJ2zRYLO2dvm1ATdjCziAIJG1DA+BEHHMx5xBYKOoBp4ToIGltIR6dAvDdNpB8BZtihzlqaezPl3/XHtcYJ+J+6cnS6mJuh8ZbZHN/x6ILbf7Ddfp6uJCTpXmU3O9iClsw/tXfoO2qMcPq+19OiHub7jE09L0OwB2D8b9ErFfLPW/vH1vanb3fR+rUe1PKC3l1rQPoIGlbEQ5VlvZ7ek1/UWWiF7lRZShBgILBEgqLlAIJgAQYPLEQ0BgpoBBIIJEDS4HNEQIKgZQCCYAEGDyxENAYKaAQSCCRA0uBzRECCoGUAgmABBg8sRDQGCmgEEggkQNLgc0RAgqBlAIJgAQYPLEQ0BgpoBBIIJEDS4HNEQIKgZQCCYAEGDyxENAYKaAQSCCRA0uBzRECCoGUAgmABBg8sRDQGCmgEEggkQNLgc0RAgqBlAIJgAQYPLEQ0BgpoBBIIJEDS4HNEQIKgZQCCYAEGDyxENAYKaAQSCCRA0uBzRECCoGUAgmABBg8sRDQGCmgEEggkQNLgc0RAgqBlAIJgAQYPLEQ0BgpoBBIIJ/A/aAWV1aV1OgAAAAABJRU5ErkJggg=="
+         id="image96" />
+    </switch>
+  </g>
+  <rect
+     x="0"
+     y="198.5"
+     width="60"
+     height="30"
+     fill="none"
+     stroke="none"
+     pointer-events="all"
+     id="rect99" />
+  <g
+     transform="translate(-0.5,-0.5)"
+     id="g101">
+    <switch
+       id="switch100">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 214px; margin-left: 1px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 20px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">c</xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <image
+         x="1"
+         y="202.5"
+         width="58"
+         height="29"
+         xlink:href="data:image/png;base64,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"
+         id="image100" />
+    </switch>
+  </g>
+  <path
+     d="m 100,113.5 h 23.63"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path103" />
+  <path
+     d="m 128.88,113.5 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path104" />
+  <rect
+     x="50"
+     y="1"
+     width="60"
+     height="30"
+     rx="4.5"
+     ry="4.5"
+     fill="none"
+     stroke="#000000"
+     pointer-events="none"
+     id="rect105" />
+  <g
+     transform="translate(-0.5,-0.5)"
+     id="g107">
+    <switch
+       id="switch106">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 16px; margin-left: 51px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+              <xhtml:font
+                 face="Computer Modern Serif"
+                 data-font-src="https://github.com/Manza12/Fonts/blob/master/Serif/cmunrm.woff"
+                 style="font-size: 20px;">P</xhtml:font>
+            </xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <image
+         x="51"
+         y="4.5"
+         width="58"
+         height="27"
+         xlink:href="data:image/png;base64,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"
+         id="image106" />
+    </switch>
+  </g>
+  <path
+     d="m 110,16 30,0.09 v 81.04"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path109" />
+  <path
+     d="m 140,102.38 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path110" />
+  <g
+     id="g113">
+    <rect
+       x="100"
+       y="121"
+       width="200"
+       height="40"
+       rx="20"
+       ry="20"
+       fill="none"
+       stroke="#000000"
+       transform="rotate(90,200,141)"
+       pointer-events="all"
+       id="rect112" />
+  </g>
+  <g
+     id="g115">
+    <g
+       transform="translate(-0.5,-0.5)"
+       id="g114">
+      <switch
+         id="switch113">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 141px; margin-left: 181px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 20px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">f</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <image
+           x="181"
+           y="129.5"
+           width="38"
+           height="29"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAB0CAYAAAB5RPvYAAAE8UlEQVR4Xu2dPWsUURSGNzY2gmCnhY1N/AF+gCBiYRo7wY/GUvAHKPgHLLSwEPzoLFUQC0FQbAU/ShsLLbSxE0QbG/WcJGs2m5l57+TNhd3JM3BDdvecO7vPfXLu3Z3NzMKIDQIVCSxU7JuuITBCMCSoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTbOgcORFdno52Itj/a4kTX3+L3D9GeRnsc7fvW7Xa2e0Iwf3xSrOurcpX09iuC7ka7WhI87zEI5o3gjUi/MlWpvsbt3VMVrGkvH+POi9Hee09htrMRbHPjsyfSnkc7spqespyO9nmiu6xsd6Kd6thFVrOTQ5YMwfoLlnK9nqhQKdexaG3rqkfxWK7N2rZcn+3r/zTmIwPB+o/Ti6mqtBS3X4pupnOmwy/HHff6P5XZz0CwfmN0LcJzQT/eSqtPVr0v0Xa17O5m3D/IRT+ClQvWJEl+5HCusIuMe9gSSwUrhDjksOl3jPla+1aepj5yDXdwqOCoYOUj+zOnuB3x489aTl/BMjMr2a1oe6Pl2u1CtMF+8IpgZYK1TW/nIz3fJbK1EECwMjXuR9ilhtCSd5BlexhoFIKVDeybCBt/qDqZgWCCH4KVCba8/qKClcGajEKwMmZ/W8KoYFSwMoM6ovKY4icE2xxHKpjmlger81BP00YFo4Jpg0QEghkIqWAaHoJpRq0RCKbhIZhmhGDGNGjgXU7dzOEkd58zk08FWxmKrirlDhaCuQQHkH8oXsPtltfR9f36/CbED/H6H8Tjg/wyYcm4U8E0JdZgmhFrMIMRghnwqGAa3opgSWrjASM+aBX8EKxUsOY4BEMwbZCIYIo0EFLBNDwE04xY5BuMEMyARwXT8DYINrHeZw3GGkwbxBrMZsQUaSBkijTgMUVqeAimGVHBDEYIZsCjgml4CKYZUcEMRghmwKOCaXgIphlRwQxGCGbAo4JpeAimGVHBDEYIZsCjgml4DYL9P0sYh4o4VKQN4lCRzYgp0kDIFGnAY4rU8BBMM6KCGYwQzIBHBdPwEEwzooIZjNoF2zlaGv2WV/kwdj3/qVQwPYZUMM2ICmYw6hJssFfoMHitS6WCaZJNV+cYZ23rE5todKPl/1dm6ybQdaW0t5F6FIDtBBCs24486847IdDheHzQV611/oAQrJ1err2eRGu7BN84M69aeyaaumakM05zm4tga0OXa63c8nxgx6Mt9hzVPFfYs6mcV9tdPARbM6LtYgs9PVsXvu3fBCCYow+5kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEPgHhQ2TdfICP5gAAAAASUVORK5CYII="
+           id="image113" />
+      </switch>
+    </g>
+  </g>
+  <g
+     id="g117"
+     style="fill:#ffffff;fill-opacity:1">
+    <circle
+       cx="140"
+       cy="113.5"
+       fill="transparent"
+       stroke="#000000"
+       pointer-events="none"
+       id="ellipse116"
+       r="10"
+       style="fill:#ffffff;fill-opacity:1" />
+    <path
+       d="m 130,113.5 h 20"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path116"
+       style="fill:#ffffff;fill-opacity:1" />
+    <path
+       d="m 140,103.5 v 20"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path117"
+       style="fill:#ffffff;fill-opacity:1" />
+  </g>
+  <g
+     id="g119">
+    <path
+       d="m 150,113.5 23.63,0.04"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path118" />
+    <path
+       d="m 178.88,113.54 -7,3.49 1.75,-3.49 -1.74,-3.51 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path119" />
+  </g>
+  <g
+     id="g123">
+    <rect
+       x="220"
+       y="121"
+       width="200"
+       height="40"
+       rx="20"
+       ry="20"
+       fill="none"
+       stroke="#000000"
+       transform="rotate(90,320,141)"
+       pointer-events="all"
+       id="rect122" />
+  </g>
+  <g
+     id="g125">
+    <g
+       transform="translate(-0.5,-0.5)"
+       id="g124">
+      <switch
+         id="switch123">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 141px; margin-left: 301px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 20px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">f</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <image
+           x="301"
+           y="129.5"
+           width="38"
+           height="29"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAB0CAYAAAB5RPvYAAAE8UlEQVR4Xu2dPWsUURSGNzY2gmCnhY1N/AF+gCBiYRo7wY/GUvAHKPgHLLSwEPzoLFUQC0FQbAU/ShsLLbSxE0QbG/WcJGs2m5l57+TNhd3JM3BDdvecO7vPfXLu3Z3NzMKIDQIVCSxU7JuuITBCMCSoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTbOgcORFdno52Itj/a4kTX3+L3D9GeRnsc7fvW7Xa2e0Iwf3xSrOurcpX09iuC7ka7WhI87zEI5o3gjUi/MlWpvsbt3VMVrGkvH+POi9Hee09htrMRbHPjsyfSnkc7spqespyO9nmiu6xsd6Kd6thFVrOTQ5YMwfoLlnK9nqhQKdexaG3rqkfxWK7N2rZcn+3r/zTmIwPB+o/Ti6mqtBS3X4pupnOmwy/HHff6P5XZz0CwfmN0LcJzQT/eSqtPVr0v0Xa17O5m3D/IRT+ClQvWJEl+5HCusIuMe9gSSwUrhDjksOl3jPla+1aepj5yDXdwqOCoYOUj+zOnuB3x489aTl/BMjMr2a1oe6Pl2u1CtMF+8IpgZYK1TW/nIz3fJbK1EECwMjXuR9ilhtCSd5BlexhoFIKVDeybCBt/qDqZgWCCH4KVCba8/qKClcGajEKwMmZ/W8KoYFSwMoM6ovKY4icE2xxHKpjmlger81BP00YFo4Jpg0QEghkIqWAaHoJpRq0RCKbhIZhmhGDGNGjgXU7dzOEkd58zk08FWxmKrirlDhaCuQQHkH8oXsPtltfR9f36/CbED/H6H8Tjg/wyYcm4U8E0JdZgmhFrMIMRghnwqGAa3opgSWrjASM+aBX8EKxUsOY4BEMwbZCIYIo0EFLBNDwE04xY5BuMEMyARwXT8DYINrHeZw3GGkwbxBrMZsQUaSBkijTgMUVqeAimGVHBDEYIZsCjgml4CKYZUcEMRghmwKOCaXgIphlRwQxGCGbAo4JpeAimGVHBDEYIZsCjgml4DYL9P0sYh4o4VKQN4lCRzYgp0kDIFGnAY4rU8BBMM6KCGYwQzIBHBdPwEEwzooIZjNoF2zlaGv2WV/kwdj3/qVQwPYZUMM2ICmYw6hJssFfoMHitS6WCaZJNV+cYZ23rE5todKPl/1dm6ybQdaW0t5F6FIDtBBCs24486847IdDheHzQV611/oAQrJ1err2eRGu7BN84M69aeyaaumakM05zm4tga0OXa63c8nxgx6Mt9hzVPFfYs6mcV9tdPARbM6LtYgs9PVsXvu3fBCCYow+5kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEPgHhQ2TdfICP5gAAAAASUVORK5CYII="
+           id="image123" />
+      </switch>
+    </g>
+  </g>
+  <g
+     id="g127"
+     style="fill:#ffffff;fill-opacity:1">
+    <circle
+       cx="260"
+       cy="113.5"
+       fill="transparent"
+       stroke="#000000"
+       pointer-events="none"
+       id="ellipse126"
+       r="10"
+       style="fill:#ffffff;fill-opacity:1" />
+    <path
+       d="m 250,113.5 h 20"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path126"
+       style="fill:#ffffff;fill-opacity:1" />
+    <path
+       d="m 260,103.5 v 20"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path127"
+       style="fill:#ffffff;fill-opacity:1" />
+  </g>
+  <g
+     id="g129">
+    <path
+       d="m 270,113.5 23.63,0.04"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path128" />
+    <path
+       d="m 298.88,113.54 -7,3.49 1.75,-3.49 -1.74,-3.51 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path129" />
+  </g>
+  <g
+     id="g133">
+    <rect
+       x="340"
+       y="121"
+       width="200"
+       height="40"
+       rx="20"
+       ry="20"
+       fill="none"
+       stroke="#000000"
+       transform="rotate(90,440,141)"
+       pointer-events="all"
+       id="rect132" />
+  </g>
+  <g
+     id="g135">
+    <g
+       transform="translate(-0.5,-0.5)"
+       id="g134">
+      <switch
+         id="switch133">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 141px; margin-left: 421px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 20px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">f</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <image
+           x="421"
+           y="129.5"
+           width="38"
+           height="29"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAB0CAYAAAB5RPvYAAAE8UlEQVR4Xu2dPWsUURSGNzY2gmCnhY1N/AF+gCBiYRo7wY/GUvAHKPgHLLSwEPzoLFUQC0FQbAU/ShsLLbSxE0QbG/WcJGs2m5l57+TNhd3JM3BDdvecO7vPfXLu3Z3NzMKIDQIVCSxU7JuuITBCMCSoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTbOgcORFdno52Itj/a4kTX3+L3D9GeRnsc7fvW7Xa2e0Iwf3xSrOurcpX09iuC7ka7WhI87zEI5o3gjUi/MlWpvsbt3VMVrGkvH+POi9Hee09htrMRbHPjsyfSnkc7spqespyO9nmiu6xsd6Kd6thFVrOTQ5YMwfoLlnK9nqhQKdexaG3rqkfxWK7N2rZcn+3r/zTmIwPB+o/Ti6mqtBS3X4pupnOmwy/HHff6P5XZz0CwfmN0LcJzQT/eSqtPVr0v0Xa17O5m3D/IRT+ClQvWJEl+5HCusIuMe9gSSwUrhDjksOl3jPla+1aepj5yDXdwqOCoYOUj+zOnuB3x489aTl/BMjMr2a1oe6Pl2u1CtMF+8IpgZYK1TW/nIz3fJbK1EECwMjXuR9ilhtCSd5BlexhoFIKVDeybCBt/qDqZgWCCH4KVCba8/qKClcGajEKwMmZ/W8KoYFSwMoM6ovKY4icE2xxHKpjmlger81BP00YFo4Jpg0QEghkIqWAaHoJpRq0RCKbhIZhmhGDGNGjgXU7dzOEkd58zk08FWxmKrirlDhaCuQQHkH8oXsPtltfR9f36/CbED/H6H8Tjg/wyYcm4U8E0JdZgmhFrMIMRghnwqGAa3opgSWrjASM+aBX8EKxUsOY4BEMwbZCIYIo0EFLBNDwE04xY5BuMEMyARwXT8DYINrHeZw3GGkwbxBrMZsQUaSBkijTgMUVqeAimGVHBDEYIZsCjgml4CKYZUcEMRghmwKOCaXgIphlRwQxGCGbAo4JpeAimGVHBDEYIZsCjgml4DYL9P0sYh4o4VKQN4lCRzYgp0kDIFGnAY4rU8BBMM6KCGYwQzIBHBdPwEEwzooIZjNoF2zlaGv2WV/kwdj3/qVQwPYZUMM2ICmYw6hJssFfoMHitS6WCaZJNV+cYZ23rE5todKPl/1dm6ybQdaW0t5F6FIDtBBCs24486847IdDheHzQV611/oAQrJ1err2eRGu7BN84M69aeyaaumakM05zm4tga0OXa63c8nxgx6Mt9hzVPFfYs6mcV9tdPARbM6LtYgs9PVsXvu3fBCCYow+5kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEPgHhQ2TdfICP5gAAAAASUVORK5CYII="
+           id="image133" />
+      </switch>
+    </g>
+  </g>
+  <g
+     id="g137"
+     style="fill:#ffffff;fill-opacity:1">
+    <circle
+       cx="380"
+       cy="113.5"
+       fill="transparent"
+       stroke="#000000"
+       pointer-events="none"
+       id="ellipse136"
+       r="10"
+       style="fill:#ffffff;fill-opacity:1" />
+    <path
+       d="m 370,113.5 h 20"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path136"
+       style="fill:#ffffff;fill-opacity:1" />
+    <path
+       d="m 380,103.5 v 20"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path137"
+       style="fill:#ffffff;fill-opacity:1" />
+  </g>
+  <g
+     id="g139">
+    <path
+       d="m 390,113.5 23.63,0.04"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path138" />
+    <path
+       d="m 418.88,113.54 -7,3.49 1.75,-3.49 -1.74,-3.51 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path139" />
+  </g>
+  <path
+     d="M 500,281 V 1"
+     fill="none"
+     stroke="#000000"
+     stroke-width="3"
+     stroke-miterlimit="10"
+     stroke-dasharray="9, 9"
+     pointer-events="stroke"
+     id="path141" />
+  <path
+     d="m 220.48,113.6 23.15,-0.04"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path143" />
+  <path
+     d="m 248.88,113.55 -6.99,3.51 1.74,-3.5 -1.75,-3.5 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path144" />
+  <path
+     d="m 340.44,113.4 23.19,-0.03"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path145" />
+  <path
+     d="m 368.88,113.37 -6.99,3.5 1.74,-3.5 -1.75,-3.5 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path146" />
+  <path
+     d="m 110,16 150,0.09 v 81.04"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path147" />
+  <path
+     d="m 260,102.38 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path148" />
+  <path
+     d="m 110,16 270,0.09 v 81.04"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path149" />
+  <path
+     d="m 380,102.38 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path150" />
+  <path
+     d="m 220,213.36 h 40 33.63"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path151" />
+  <path
+     d="m 298.88,213.36 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path152" />
+  <path
+     d="m 340,213.36 h 20 53.63"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path153" />
+  <path
+     d="m 418.88,213.36 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path154" />
+  <rect
+     x="515"
+     y="251"
+     width="90"
+     height="30"
+     fill="none"
+     stroke="none"
+     pointer-events="all"
+     id="rect155" />
+  <g
+     transform="translate(-0.5,-0.5)"
+     id="g157">
+    <switch
+       id="switch156">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 88px; height: 1px; padding-top: 266px; margin-left: 516px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+              <xhtml:font
+                 face="Computer Modern Serif"
+                 style="font-size: 20px;">squeezing</xhtml:font>
+            </xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <image
+         x="516"
+         y="254.5"
+         width="88"
+         height="27"
+         xlink:href="data:image/png;base64,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"
+         id="image156" />
+    </switch>
+  </g>
+  <rect
+     x="400"
+     y="251"
+     width="90"
+     height="30"
+     fill="none"
+     stroke="none"
+     pointer-events="all"
+     id="rect159" />
+  <g
+     transform="translate(-0.5,-0.5)"
+     id="g161">
+    <switch
+       id="switch160">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 88px; height: 1px; padding-top: 266px; margin-left: 401px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+              <xhtml:font
+                 face="Computer Modern Serif"
+                 data-font-src="https://github.com/Manza12/Fonts/blob/master/Serif/cmunrm.woff"
+                 style="font-size: 20px;">absorbing</xhtml:font>
+            </xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <image
+         x="401"
+         y="254.5"
+         width="88"
+         height="27"
+         xlink:href="data:image/png;base64,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"
+         id="image160" />
+    </switch>
+  </g>
+  <g
+     id="g165">
+    <rect
+       x="460"
+       y="121"
+       width="200"
+       height="40"
+       rx="20"
+       ry="20"
+       fill="none"
+       stroke="#000000"
+       transform="rotate(90,560,141)"
+       pointer-events="all"
+       id="rect164" />
+  </g>
+  <g
+     id="g167">
+    <g
+       transform="translate(-0.5,-0.5)"
+       id="g166">
+      <switch
+         id="switch165">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 141px; margin-left: 541px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 20px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">f</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <image
+           x="541"
+           y="129.5"
+           width="38"
+           height="29"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAB0CAYAAAB5RPvYAAAE8UlEQVR4Xu2dPWsUURSGNzY2gmCnhY1N/AF+gCBiYRo7wY/GUvAHKPgHLLSwEPzoLFUQC0FQbAU/ShsLLbSxE0QbG/WcJGs2m5l57+TNhd3JM3BDdvecO7vPfXLu3Z3NzMKIDQIVCSxU7JuuITBCMCSoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTbOgcORFdno52Itj/a4kTX3+L3D9GeRnsc7fvW7Xa2e0Iwf3xSrOurcpX09iuC7ka7WhI87zEI5o3gjUi/MlWpvsbt3VMVrGkvH+POi9Hee09htrMRbHPjsyfSnkc7spqespyO9nmiu6xsd6Kd6thFVrOTQ5YMwfoLlnK9nqhQKdexaG3rqkfxWK7N2rZcn+3r/zTmIwPB+o/Ti6mqtBS3X4pupnOmwy/HHff6P5XZz0CwfmN0LcJzQT/eSqtPVr0v0Xa17O5m3D/IRT+ClQvWJEl+5HCusIuMe9gSSwUrhDjksOl3jPla+1aepj5yDXdwqOCoYOUj+zOnuB3x489aTl/BMjMr2a1oe6Pl2u1CtMF+8IpgZYK1TW/nIz3fJbK1EECwMjXuR9ilhtCSd5BlexhoFIKVDeybCBt/qDqZgWCCH4KVCba8/qKClcGajEKwMmZ/W8KoYFSwMoM6ovKY4icE2xxHKpjmlger81BP00YFo4Jpg0QEghkIqWAaHoJpRq0RCKbhIZhmhGDGNGjgXU7dzOEkd58zk08FWxmKrirlDhaCuQQHkH8oXsPtltfR9f36/CbED/H6H8Tjg/wyYcm4U8E0JdZgmhFrMIMRghnwqGAa3opgSWrjASM+aBX8EKxUsOY4BEMwbZCIYIo0EFLBNDwE04xY5BuMEMyARwXT8DYINrHeZw3GGkwbxBrMZsQUaSBkijTgMUVqeAimGVHBDEYIZsCjgml4CKYZUcEMRghmwKOCaXgIphlRwQxGCGbAo4JpeAimGVHBDEYIZsCjgml4DYL9P0sYh4o4VKQN4lCRzYgp0kDIFGnAY4rU8BBMM6KCGYwQzIBHBdPwEEwzooIZjNoF2zlaGv2WV/kwdj3/qVQwPYZUMM2ICmYw6hJssFfoMHitS6WCaZJNV+cYZ23rE5todKPl/1dm6ybQdaW0t5F6FIDtBBCs24486847IdDheHzQV611/oAQrJ1err2eRGu7BN84M69aeyaaumakM05zm4tga0OXa63c8nxgx6Mt9hzVPFfYs6mcV9tdPARbM6LtYgs9PVsXvu3fBCCYow+5kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEPgHhQ2TdfICP5gAAAAASUVORK5CYII="
+           id="image165" />
+      </switch>
+    </g>
+  </g>
+  <g
+     id="g169">
+    <path
+       d="m 460,213.26 20,0.1 53.63,-0.09"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path168" />
+    <path
+       d="m 538.88,213.26 -6.99,3.51 1.74,-3.5 -1.75,-3.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path169" />
+  </g>
+  <g
+     id="g171">
+    <path
+       d="m 460,113.26 20,0.1 53.63,-0.09"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path170" />
+    <path
+       d="m 538.88,113.26 -6.99,3.51 1.74,-3.5 -1.75,-3.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path171" />
+  </g>
+  <g
+     id="g175">
+    <rect
+       x="700"
+       y="121"
+       width="200"
+       height="40"
+       rx="20"
+       ry="20"
+       fill="none"
+       stroke="#000000"
+       transform="rotate(90,800,141)"
+       pointer-events="all"
+       id="rect174" />
+  </g>
+  <g
+     id="g177">
+    <g
+       transform="translate(-0.5,-0.5)"
+       id="g176">
+      <switch
+         id="switch175">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 141px; margin-left: 781px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 20px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">f</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <image
+           x="781"
+           y="129.5"
+           width="38"
+           height="29"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAB0CAYAAAB5RPvYAAAE8UlEQVR4Xu2dPWsUURSGNzY2gmCnhY1N/AF+gCBiYRo7wY/GUvAHKPgHLLSwEPzoLFUQC0FQbAU/ShsLLbSxE0QbG/WcJGs2m5l57+TNhd3JM3BDdvecO7vPfXLu3Z3NzMKIDQIVCSxU7JuuITBCMCSoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTbOgcORFdno52Itj/a4kTX3+L3D9GeRnsc7fvW7Xa2e0Iwf3xSrOurcpX09iuC7ka7WhI87zEI5o3gjUi/MlWpvsbt3VMVrGkvH+POi9Hee09htrMRbHPjsyfSnkc7spqespyO9nmiu6xsd6Kd6thFVrOTQ5YMwfoLlnK9nqhQKdexaG3rqkfxWK7N2rZcn+3r/zTmIwPB+o/Ti6mqtBS3X4pupnOmwy/HHff6P5XZz0CwfmN0LcJzQT/eSqtPVr0v0Xa17O5m3D/IRT+ClQvWJEl+5HCusIuMe9gSSwUrhDjksOl3jPla+1aepj5yDXdwqOCoYOUj+zOnuB3x489aTl/BMjMr2a1oe6Pl2u1CtMF+8IpgZYK1TW/nIz3fJbK1EECwMjXuR9ilhtCSd5BlexhoFIKVDeybCBt/qDqZgWCCH4KVCba8/qKClcGajEKwMmZ/W8KoYFSwMoM6ovKY4icE2xxHKpjmlger81BP00YFo4Jpg0QEghkIqWAaHoJpRq0RCKbhIZhmhGDGNGjgXU7dzOEkd58zk08FWxmKrirlDhaCuQQHkH8oXsPtltfR9f36/CbED/H6H8Tjg/wyYcm4U8E0JdZgmhFrMIMRghnwqGAa3opgSWrjASM+aBX8EKxUsOY4BEMwbZCIYIo0EFLBNDwE04xY5BuMEMyARwXT8DYINrHeZw3GGkwbxBrMZsQUaSBkijTgMUVqeAimGVHBDEYIZsCjgml4CKYZUcEMRghmwKOCaXgIphlRwQxGCGbAo4JpeAimGVHBDEYIZsCjgml4DYL9P0sYh4o4VKQN4lCRzYgp0kDIFGnAY4rU8BBMM6KCGYwQzIBHBdPwEEwzooIZjNoF2zlaGv2WV/kwdj3/qVQwPYZUMM2ICmYw6hJssFfoMHitS6WCaZJNV+cYZ23rE5todKPl/1dm6ybQdaW0t5F6FIDtBBCs24486847IdDheHzQV611/oAQrJ1err2eRGu7BN84M69aeyaaumakM05zm4tga0OXa63c8nxgx6Mt9hzVPFfYs6mcV9tdPARbM6LtYgs9PVsXvu3fBCCYow+5kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEPgHhQ2TdfICP5gAAAAASUVORK5CYII="
+           id="image175" />
+      </switch>
+    </g>
+  </g>
+  <g
+     id="g179">
+    <path
+       d="m 700,213.26 20,0.1 53.63,-0.09"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path178" />
+    <path
+       d="m 778.88,213.26 -6.99,3.51 1.74,-3.5 -1.75,-3.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path179" />
+  </g>
+  <g
+     id="g181">
+    <path
+       d="m 700,113.26 20,0.1 53.63,-0.09"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path180" />
+    <path
+       d="m 778.88,113.26 -6.99,3.51 1.74,-3.5 -1.75,-3.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path181" />
+  </g>
+  <path
+     d="M 860,111 V 16.09 l 33.63,-0.08"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path183" />
+  <path
+     d="m 898.88,16 -6.99,3.52 1.74,-3.51 -1.76,-3.49 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path184" />
+  <path
+     d="M 740,113 V 16.09 L 893.63,16"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path185" />
+  <path
+     d="m 898.88,16 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path186" />
+  <path
+     d="M 620,113 V 16.09 L 893.63,16"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path187" />
+  <path
+     d="m 898.88,16 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path188" />
+  <rect
+     x="900"
+     y="1"
+     width="60"
+     height="30"
+     rx="4.5"
+     ry="4.5"
+     fill="none"
+     stroke="#000000"
+     pointer-events="none"
+     id="rect189" />
+  <g
+     transform="translate(-0.5,-0.5)"
+     id="g191">
+    <switch
+       id="switch190">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 16px; margin-left: 901px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+              <xhtml:font
+                 face="Computer Modern Serif"
+                 style="font-size: 20px;">Z</xhtml:font>
+            </xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <image
+         x="901"
+         y="4.5"
+         width="58"
+         height="27"
+         xlink:href="data:image/png;base64,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"
+         id="image190" />
+    </switch>
+  </g>
+  <rect
+     x="41"
+     y="-700"
+     width="200"
+     height="40"
+     rx="20"
+     ry="20"
+     fill="none"
+     stroke="#000000"
+     transform="rotate(90)"
+     pointer-events="all"
+     id="rect193" />
+  <g
+     transform="translate(-0.5,-0.5)"
+     id="g195">
+    <switch
+       id="switch194">
+      <foreignObject
+         style="overflow: visible; text-align: left;"
+         pointer-events="none"
+         width="100%"
+         height="100%"
+         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+        <xhtml:div
+           style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 141px; margin-left: 661px;">
+          <xhtml:div
+             style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+            <xhtml:div
+               style="display: inline-block; font-size: 20px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">f</xhtml:div>
+          </xhtml:div>
+        </xhtml:div>
+      </foreignObject>
+      <image
+         x="661"
+         y="129.5"
+         width="38"
+         height="29"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAB0CAYAAAB5RPvYAAAE8UlEQVR4Xu2dPWsUURSGNzY2gmCnhY1N/AF+gCBiYRo7wY/GUvAHKPgHLLSwEPzoLFUQC0FQbAU/ShsLLbSxE0QbG/WcJGs2m5l57+TNhd3JM3BDdvecO7vPfXLu3Z3NzMKIDQIVCSxU7JuuITBCMCSoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTDgaoEEKwqXjpHMByoSgDBquKlcwTbOgcORFdno52Itj/a4kTX3+L3D9GeRnsc7fvW7Xa2e0Iwf3xSrOurcpX09iuC7ka7WhI87zEI5o3gjUi/MlWpvsbt3VMVrGkvH+POi9Hee09htrMRbHPjsyfSnkc7spqespyO9nmiu6xsd6Kd6thFVrOTQ5YMwfoLlnK9nqhQKdexaG3rqkfxWK7N2rZcn+3r/zTmIwPB+o/Ti6mqtBS3X4pupnOmwy/HHff6P5XZz0CwfmN0LcJzQT/eSqtPVr0v0Xa17O5m3D/IRT+ClQvWJEl+5HCusIuMe9gSSwUrhDjksOl3jPla+1aepj5yDXdwqOCoYOUj+zOnuB3x489aTl/BMjMr2a1oe6Pl2u1CtMF+8IpgZYK1TW/nIz3fJbK1EECwMjXuR9ilhtCSd5BlexhoFIKVDeybCBt/qDqZgWCCH4KVCba8/qKClcGajEKwMmZ/W8KoYFSwMoM6ovKY4icE2xxHKpjmlger81BP00YFo4Jpg0QEghkIqWAaHoJpRq0RCKbhIZhmhGDGNGjgXU7dzOEkd58zk08FWxmKrirlDhaCuQQHkH8oXsPtltfR9f36/CbED/H6H8Tjg/wyYcm4U8E0JdZgmhFrMIMRghnwqGAa3opgSWrjASM+aBX8EKxUsOY4BEMwbZCIYIo0EFLBNDwE04xY5BuMEMyARwXT8DYINrHeZw3GGkwbxBrMZsQUaSBkijTgMUVqeAimGVHBDEYIZsCjgml4CKYZUcEMRghmwKOCaXgIphlRwQxGCGbAo4JpeAimGVHBDEYIZsCjgml4DYL9P0sYh4o4VKQN4lCRzYgp0kDIFGnAY4rU8BBMM6KCGYwQzIBHBdPwEEwzooIZjNoF2zlaGv2WV/kwdj3/qVQwPYZUMM2ICmYw6hJssFfoMHitS6WCaZJNV+cYZ23rE5todKPl/1dm6ybQdaW0t5F6FIDtBBCs24486847IdDheHzQV611/oAQrJ1err2eRGu7BN84M69aeyaaumakM05zm4tga0OXa63c8nxgx6Mt9hzVPFfYs6mcV9tdPARbM6LtYgs9PVsXvu3fBCCYow+5kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEEAwhx65kgCCSUQEOAQQzKFHriSAYBIRAQ4BBHPokSsJIJhERIBDAMEceuRKAggmERHgEPgHhQ2TdfICP5gAAAAASUVORK5CYII="
+         id="image194" />
+    </switch>
+  </g>
+  <g
+     id="g199">
+    <path
+       d="m 580,213.26 20,0.1 53.63,-0.09"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path198" />
+    <path
+       d="m 658.88,213.26 -6.99,3.51 1.74,-3.5 -1.75,-3.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path199" />
+  </g>
+  <g
+     id="g201">
+    <path
+       d="m 580,113.26 20,0.1 53.63,-0.09"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path200" />
+    <path
+       d="m 658.88,113.26 -6.99,3.51 1.74,-3.5 -1.75,-3.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path201" />
+  </g>
+  <path
+     d="m 820,211.36 h 20 53.63"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path203" />
+  <path
+     d="m 898.88,211.36 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path204" />
+  <path
+     d="m 820,111.36 h 20 53.63"
+     fill="none"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="stroke"
+     id="path205" />
+  <path
+     d="m 898.88,111.36 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+     fill="#000000"
+     stroke="#000000"
+     stroke-miterlimit="10"
+     pointer-events="all"
+     id="path206" />
+  <path
+     d="m 860,161 h 80"
+     fill="none"
+     stroke="#000000"
+     stroke-width="2"
+     stroke-miterlimit="10"
+     stroke-dasharray="2, 6"
+     pointer-events="stroke"
+     id="path207" />
 </svg>

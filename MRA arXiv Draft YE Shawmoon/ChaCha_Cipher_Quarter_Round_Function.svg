@@ -1,1 +1,1227 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 575 722"><defs><style>.a{fill:#fc0;}.b{fill:none;}.b,.c,.d{stroke:#000;stroke-miterlimit:10;}.c{fill:aqua;}.d{fill:lime;}</style></defs><title>ChaCha Cipher Quarter Round Function</title><rect class="a" x="53.5" y="108.5" width="35" height="35"/><path d="M88,109v34H54V109H88m1-1H53v36H89V108Z"/><line class="b" x1="53.5" y1="126" x2="88.5" y2="126"/><line class="b" x1="71" y1="108.5" x2="71" y2="143.5"/><line class="b" x1="71" y1="36" x2="71" y2="102.03"/><polygon points="67.3 99.22 71 100.8 74.7 99.22 71 108 67.3 99.22"/><path d="M90.81,51.05a5.65,5.65,0,0,1-3.33,2.45c-.67,0-1-.55-.53-2.74l.34-1.65a13.53,13.53,0,0,1-2.88,3.24,4.42,4.42,0,0,1-2.48,1.15c-.84,0-1.53-1-1.53-3a8.87,8.87,0,0,1,2.66-6.24,7.07,7.07,0,0,1,4.59-1.89,15.8,15.8,0,0,1,2.78.41C90,44.31,89.16,48,88.7,50.72c-.12.67-.07.93.12.93s.79-.31,1.66-1.2Zm-4.34-2a8.4,8.4,0,0,0,1.39-2.88,21,21,0,0,0,.53-2.35,4.79,4.79,0,0,0-1.82-.39c-2.84,0-4.16,3.65-4.16,6.77,0,1,.27,1.59.75,1.59C83.9,51.8,85,51.05,86.47,49.06Z"/><line class="b" x1="215" y1="36" x2="215.49" y2="281.53"/><polygon points="211.78 278.73 215.49 280.3 219.19 278.71 215.5 287.5 211.78 278.73"/><circle class="c" cx="215.5" cy="306" r="18"/><line class="b" x1="215.5" y1="288" x2="215.5" y2="324"/><line class="b" x1="197.5" y1="306" x2="233.5" y2="306"/><rect class="a" x="341.5" y="252.5" width="35" height="35"/><path d="M376,253v34H342V253h34m1-1H341v36h36V252Z"/><line class="b" x1="341.5" y1="270" x2="376.5" y2="270"/><line class="b" x1="359" y1="252.5" x2="359" y2="287.5"/><line class="b" x1="358.75" y1="35.5" x2="359.24" y2="246.53"/><polygon points="355.53 243.73 359.23 245.29 362.93 243.71 359.25 252.5 355.53 243.73"/><path d="M225.88,36.41a15.81,15.81,0,0,0,2.93-.6,2.22,2.22,0,0,1,.72-.2c.22,0,.24.24.12.75-.81,3.24-1.46,6.26-2.11,9.19,1.78-2.28,3.82-3.5,5.23-3.5s1.73,1.58,1.73,2.64a9,9,0,0,1-3.77,7.15,6.72,6.72,0,0,1-3.57,1.32,2.06,2.06,0,0,1-1.59-.65c-.5-.53-.89-1.46-.41-3.86.68-3.34,1.47-6.82,2.21-10.47.19-1,0-1-.69-1.08-.27,0-.7-.05-.94-.05Zm6.63,8.64c0-.87-.24-1.59-1-1.59s-2,.7-3.48,2.62a5.73,5.73,0,0,0-1.18,2.83c-.38,2.33.34,3.14,1.39,3.14C230.8,52.05,232.51,47.61,232.51,45.05Z"/><path d="M375.1,50.52a6.72,6.72,0,0,1-4.85,2.64c-1.61,0-2.71-1.27-2.71-3.55A8,8,0,0,1,370,43.85a6.34,6.34,0,0,1,3.81-1.8c1.06,0,1.85.55,1.88,1.1a1.4,1.4,0,0,1-.82,1.25.41.41,0,0,1-.55-.15,2.28,2.28,0,0,0-1.83-1c-1.82,0-2.92,3-2.92,5.86,0,1.75.67,2.64,1.77,2.64a5.59,5.59,0,0,0,3.41-1.83Z"/><circle class="c" cx="502.9" cy="180.33" r="18"/><line class="b" x1="502.9" y1="162.33" x2="502.9" y2="198.33"/><line class="b" x1="484.9" y1="180.33" x2="520.9" y2="180.33"/><line class="b" x1="71.25" y1="144" x2="71.74" y2="372.53"/><polygon points="68.03 369.73 71.73 371.3 75.43 369.71 71.75 378.5 68.03 369.73"/><rect class="a" x="54" y="378.5" width="35" height="35"/><path d="M88.5,379v34h-34V379h34m1-1h-36v36h36V378Z"/><line class="b" x1="54" y1="396" x2="89" y2="396"/><line class="b" x1="71.5" y1="378.5" x2="71.5" y2="413.5"/><line class="b" x1="71.07" y1="180.5" x2="478.53" y2="180.5"/><path d="M71.26,184.26A3.76,3.76,0,1,1,75,180.5,3.76,3.76,0,0,1,71.26,184.26Z"/><polygon points="475.72 184.2 477.3 180.5 475.72 176.8 484.5 180.5 475.72 184.2"/><line class="b" x1="215.43" y1="125.5" x2="93.97" y2="125.5"/><path d="M215.24,121.74a3.76,3.76,0,1,1-3.76,3.76A3.76,3.76,0,0,1,215.24,121.74Z"/><polygon points="96.78 121.8 95.2 125.5 96.78 129.2 88 125.5 96.78 121.8"/><line class="b" x1="503" y1="36" x2="503" y2="156.53"/><polygon points="499.3 153.72 503 155.29 506.7 153.72 503 162.5 499.3 153.72"/><path d="M524.65,50.78a5.8,5.8,0,0,1-3.36,2.4c-.7,0-1-.57-.53-2.85l.29-1.35c-1.39,2-3.65,4.2-5.35,4.2-.94,0-1.83-.84-1.83-3.09a8.72,8.72,0,0,1,2.81-6.32,7.42,7.42,0,0,1,4-1.7,4.28,4.28,0,0,1,1.75.31l.84-4.13c.19-1,0-1-.86-1.12-.24,0-.75-.05-.92-.05l.15-.65a16.94,16.94,0,0,0,3.05-.62,3.56,3.56,0,0,1,.69-.17c.19,0,.24.21.12.72-1.1,4.73-2.23,9.72-3,14.16-.12.65,0,.91.15.91s.89-.36,1.75-1.27Zm-4.13-2.3a6.65,6.65,0,0,0,1.13-2.55l.48-2.06a3.19,3.19,0,0,0-2.31-.74c-2.76,0-3.93,4-3.93,6.43,0,1.34.36,2,1,2C517.88,51.6,519.3,50.25,520.52,48.48Z"/><line class="b" x1="215.5" y1="324" x2="215.5" y2="336.03"/><polygon points="211.8 333.22 215.5 334.8 219.2 333.22 215.5 342 211.8 333.22"/><rect class="d" x="179.5" y="342.5" width="72" height="35.5"/><path d="M194.87,345.68v3.14l-10.36,4.91,10.36,4.91v3.12l-13.72-6.7v-2.69Z"/><path d="M212.15,345.68v3.14l-10.36,4.91,10.36,4.91v3.12l-13.72-6.7v-2.69Z"/><path d="M229.44,345.68v3.14l-10.37,4.91,10.37,4.91v3.12l-13.73-6.7v-2.69Z"/><path d="M233.82,373.28v-.48c1.75-.1,1.85-.2,1.85-1.39v-6.09c0-.81-.14-.85-.84-.92l-.73-.08v-.42a14,14,0,0,0,3.05-.79v8.3c0,1.21.09,1.29,1.86,1.39v.48Z"/><path d="M247.51,371.05c-.22.75-.5,1.62-.66,2.23h-6.11v-.4c.88-.85,1.83-1.8,2.62-2.71a6.3,6.3,0,0,0,1.93-3.83c0-1.29-.68-2-1.83-2a2.81,2.81,0,0,0-2.21,1.47l-.38-.34.93-1.34a2.92,2.92,0,0,1,2.24-1,2.65,2.65,0,0,1,2.76,2.79c0,1.34-.49,2.29-2,3.83-.67.7-1.66,1.65-2.33,2.28h3c.89,0,1.12-.08,1.67-1.09Z"/><rect class="d" x="466.55" y="215.6" width="72" height="35.5"/><path d="M481.92,218.78v3.15l-10.37,4.91,10.37,4.91v3.11l-13.73-6.7v-2.69Z"/><path d="M499.2,218.78v3.15l-10.36,4.91,10.36,4.91v3.11l-13.73-6.7v-2.69Z"/><path d="M516.48,218.78v3.15l-10.36,4.91,10.36,4.91v3.11l-13.73-6.7v-2.69Z"/><path d="M520.87,246.38v-.47c1.75-.11,1.85-.21,1.85-1.4v-6.08c0-.82-.14-.86-.84-.92l-.73-.08V237a13.9,13.9,0,0,0,3-.78v8.29c0,1.21.1,1.29,1.86,1.4v.47Z"/><path d="M530.66,240.33a2.31,2.31,0,0,1,1-.28,2.85,2.85,0,0,1,2.89,3,3.41,3.41,0,0,1-3.37,3.55c-1.92,0-3.38-1.55-3.38-4a6.5,6.5,0,0,1,4.41-6,15.62,15.62,0,0,1,1.91-.43l.1.55a9.72,9.72,0,0,0-1.74.55,5,5,0,0,0-2.88,3.62Zm.33.67a3.15,3.15,0,0,0-1.46.4,6.08,6.08,0,0,0-.1,1.13c0,2,.75,3.45,2.05,3.45s1.56-1.3,1.56-2.36C533,242.25,532.38,241,531,241Z"/><line class="b" x1="503" y1="198.5" x2="503" y2="209.53"/><polygon points="499.3 206.72 503 208.29 506.7 206.72 503 215.5 499.3 206.72"/><line class="b" x1="503" y1="251" x2="503" y2="425.53"/><polygon points="499.3 422.72 503 424.3 506.7 422.72 503 431.5 499.3 422.72"/><line class="b" x1="502.93" y1="270" x2="382.47" y2="270"/><path d="M502.74,266.24A3.76,3.76,0,1,1,499,270,3.76,3.76,0,0,1,502.74,266.24Z"/><polygon points="385.28 266.3 383.7 270 385.28 273.7 376.5 270 385.28 266.3"/><line class="b" x1="359" y1="287" x2="359" y2="515.53"/><polygon points="355.3 512.72 359 514.29 362.7 512.72 359 521.5 355.3 512.72"/><line class="b" x1="358.93" y1="306" x2="239.47" y2="306"/><path d="M358.74,302.24A3.76,3.76,0,1,1,355,306,3.76,3.76,0,0,1,358.74,302.24Z"/><polygon points="242.28 302.3 240.71 306 242.28 309.7 233.5 306 242.28 302.3"/><line class="b" x1="215.93" y1="395.5" x2="94.47" y2="395.5"/><path d="M215.74,391.74A3.76,3.76,0,1,1,212,395.5,3.76,3.76,0,0,1,215.74,391.74Z"/><polygon points="97.28 391.8 95.7 395.5 97.28 399.2 88.5 395.5 97.28 391.8"/><line class="b" x1="70.93" y1="414.41" x2="71.49" y2="678.53"/><polygon points="67.78 675.73 71.48 677.29 75.19 675.71 71.5 684.5 67.78 675.73"/><line class="b" x1="70.57" y1="450" x2="479.03" y2="450"/><path d="M70.76,453.76A3.76,3.76,0,1,1,74.52,450,3.76,3.76,0,0,1,70.76,453.76Z"/><polygon points="476.22 453.7 477.8 450 476.22 446.3 485 450 476.22 453.7"/><circle class="c" cx="503" cy="450" r="18"/><line class="b" x1="503" y1="432" x2="503" y2="468"/><line class="b" x1="485" y1="450" x2="521" y2="450"/><line class="b" x1="503" y1="468.5" x2="503" y2="479.53"/><polygon points="499.3 476.72 503 478.3 506.7 476.72 503 485.5 499.3 476.72"/><line class="b" x1="215.5" y1="377.95" x2="215.5" y2="550.58"/><polygon points="211.8 547.77 215.5 549.34 219.2 547.77 215.5 556.55 211.8 547.77"/><rect class="d" x="467" y="485.57" width="72" height="35.5"/><path d="M482.37,488.75v3.14L472,496.8l10.36,4.91v3.12l-13.72-6.7v-2.7Z"/><path d="M499.65,488.75v3.14l-10.36,4.91,10.36,4.91v3.12l-13.72-6.7v-2.7Z"/><path d="M516.94,488.75v3.14l-10.37,4.91,10.37,4.91v3.12l-13.73-6.7v-2.7Z"/><path d="M527.64,506.18a2.48,2.48,0,0,1,2.67,2.39,1.87,1.87,0,0,1-.46,1.28,12,12,0,0,1-1.3,1c1.11.61,2.18,1.38,2.18,2.77a3.11,3.11,0,0,1-3.28,2.93c-1.85,0-3.16-1-3.16-2.66a1.89,1.89,0,0,1,.72-1.56,15.32,15.32,0,0,1,1.45-1,2.93,2.93,0,0,1-1.77-2.51A2.75,2.75,0,0,1,527.64,506.18Zm0,9.79a1.61,1.61,0,0,0,1.67-1.83c0-1.25-1-1.86-2.36-2.52a2.4,2.4,0,0,0-1.26,2.14A2,2,0,0,0,527.64,516Zm-.21-9.24a1.43,1.43,0,0,0-1.41,1.61c0,1.15.78,1.59,2,2.24a2.27,2.27,0,0,0,1-1.94C529,507.29,528.23,506.73,527.43,506.73Z"/><rect class="a" x="341.5" y="522" width="35" height="35"/><path d="M376,522.5v34H342v-34h34m1-1H341v36h36v-36Z"/><line class="b" x1="341.5" y1="539.5" x2="376.5" y2="539.5"/><line class="b" x1="359" y1="522" x2="359" y2="557"/><line class="b" x1="503.18" y1="539.5" x2="381.22" y2="539.5"/><path d="M503,535.74a3.76,3.76,0,1,1-3.76,3.76A3.76,3.76,0,0,1,503,535.74Z"/><polygon points="384.03 535.8 382.45 539.5 384.03 543.2 375.25 539.5 384.03 535.8"/><line class="b" x1="358.75" y1="557.05" x2="359.23" y2="678.08"/><polygon points="355.51 675.28 359.22 676.84 362.92 675.25 359.25 684.05 355.51 675.28"/><line class="b" x1="503" y1="521" x2="503" y2="678.03"/><polygon points="499.3 675.22 503 676.79 506.7 675.22 503 684 499.3 675.22"/><circle class="c" cx="215.5" cy="575.05" r="18"/><line class="b" x1="215.5" y1="557.05" x2="215.5" y2="593.05"/><line class="b" x1="197.5" y1="575.05" x2="233.5" y2="575.05"/><line class="b" x1="358.93" y1="575.55" x2="238.47" y2="575.55"/><path d="M358.74,571.79a3.76,3.76,0,1,1-3.76,3.76A3.76,3.76,0,0,1,358.74,571.79Z"/><polygon points="241.28 571.84 239.71 575.55 241.28 579.25 232.5 575.55 241.28 571.84"/><rect class="d" x="180.73" y="611.11" width="72" height="35.5"/><path d="M196.1,614.29v3.15l-10.36,4.91,10.36,4.9v3.12l-13.73-6.7V621Z"/><path d="M213.38,614.29v3.15L203,622.35l10.36,4.9v3.12l-13.72-6.7V621Z"/><path d="M230.66,614.29v3.15l-10.36,4.91,10.36,4.9v3.12l-13.72-6.7V621Z"/><path d="M244.76,632.13c-1.54,3.25-3,6.48-4.58,9.79L239,642l-.12-.18a90.87,90.87,0,0,0,4.7-8.66h-3.41c-1.05,0-1.13.14-1.56,1.18H238c.17-1,.25-1.77.33-2.46h6.29Z"/><line class="b" x1="215.5" y1="592.55" x2="215.5" y2="605.58"/><polygon points="211.8 602.77 215.5 604.34 219.2 602.77 215.5 611.55 211.8 602.77"/><line class="b" x1="215" y1="646.55" x2="215" y2="677.58"/><polygon points="211.3 674.77 215 676.34 218.7 674.77 215 683.55 211.3 674.77"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="760"
+   height="300"
+   viewBox="-0.5 -0.5 760 300"
+   id="svg150"
+   sodipodi:docname="Untitled Diagram.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview150"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.857898"
+     inkscape:cx="379.99933"
+     inkscape:cy="149.90059"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg150" />
+  <defs
+     id="defs1">
+    <style
+       type="text/css"
+       id="style1">@font-face {font-family: &quot;Computer Modern Serif&quot;;src: url(&quot;https://github.com/Manza12/Fonts/blob/master/Serif/cmunrm.woff&quot;)}
+</style>
+  </defs>
+  <g
+     id="g150"
+     transform="matrix(0,-1,1.0133342,0,-0.5,299.5)">
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-11"
+       id="g3" />
+    <g
+       id="g28" />
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-92"
+       id="g30">
+      <g
+         id="g29">
+        <path
+           d="M 107,90.33 80,90.29 56.37,90.06"
+           fill="none"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="stroke"
+           id="path28" />
+        <circle
+           cx="110"
+           cy="90.330002"
+           fill="#000000"
+           stroke="#000000"
+           pointer-events="all"
+           id="ellipse28"
+           r="3" />
+        <path
+           d="m 51.12,90.01 7.03,-3.43 -1.78,3.48 1.71,3.52 z"
+           fill="#000000"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="all"
+           id="path29" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-50"
+       id="g32">
+      <g
+         id="g31">
+        <rect
+           x="10"
+           y="70"
+           width="40"
+           height="40"
+           fill="none"
+           stroke="#000000"
+           pointer-events="all"
+           id="rect30" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-53"
+       id="g34">
+      <g
+         id="g33">
+        <path
+           d="M 10,90 H 50"
+           fill="none"
+           stroke="#000000"
+           stroke-width="2"
+           stroke-miterlimit="10"
+           pointer-events="all"
+           id="path32" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-124"
+       id="g36">
+      <g
+         id="g35">
+        <path
+           d="m 30.05,30 0.09,20 -0.09,13.63"
+           fill="none"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="stroke"
+           id="path34" />
+        <path
+           d="m 30.01,68.88 -3.45,-7.02 3.49,1.77 3.51,-1.72 z"
+           fill="#000000"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="all"
+           id="path35" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-54"
+       id="g38">
+      <g
+         id="g37">
+        <path
+           d="M 10,90 H 50"
+           fill="none"
+           stroke="#000000"
+           stroke-width="2"
+           stroke-miterlimit="10"
+           transform="rotate(90,30,90)"
+           pointer-events="all"
+           id="path36" />
+      </g>
+    </g>
+    <g
+       id="g40" />
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-63"
+       id="g42">
+      <g
+         id="g41">
+        <rect
+           x="10"
+           y="390"
+           width="40"
+           height="40"
+           fill="none"
+           stroke="#000000"
+           pointer-events="all"
+           id="rect40" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-64"
+       id="g44">
+      <g
+         id="g43">
+        <path
+           d="M 10,410 H 50"
+           fill="none"
+           stroke="#000000"
+           stroke-width="2"
+           stroke-miterlimit="10"
+           pointer-events="all"
+           id="path42" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-68"
+       id="g46">
+      <g
+         id="g45">
+        <path
+           d="M 30,430 V 590 743.63"
+           fill="none"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="stroke"
+           id="path44" />
+        <path
+           d="m 30,748.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+           fill="#000000"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="all"
+           id="path45" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-65"
+       id="g48">
+      <g
+         id="g47">
+        <path
+           d="M 10,410 H 50"
+           fill="none"
+           stroke="#000000"
+           stroke-width="2"
+           stroke-miterlimit="10"
+           transform="rotate(90,30,410)"
+           pointer-events="all"
+           id="path46" />
+      </g>
+    </g>
+    <g
+       id="g50">
+      <path
+         d="M 30,110 V 383.63"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path49" />
+      <path
+         d="m 30,388.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path50" />
+    </g>
+    <g
+       id="g52">
+      <path
+         d="m 33,130.35 107.57,0.51 103.06,-0.81"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path51" />
+      <circle
+         cx="30"
+         cy="130.33"
+         fill="#000000"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse51"
+         r="3" />
+      <path
+         d="m 248.88,130.01 -6.97,3.55 1.72,-3.51 -1.78,-3.49 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path52" />
+    </g>
+    <g
+       id="g54">
+      <path
+         d="m 270,150 v 33.63"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path53" />
+      <path
+         d="m 270,188.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path54" />
+    </g>
+    <g
+       id="g56">
+      <path
+         d="m 269.78,30 0.08,40 0.12,33.63"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path55" />
+      <path
+         d="m 270,108.88 -3.53,-6.99 3.51,1.74 3.49,-1.76 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path56" />
+    </g>
+    <g
+       id="g58"
+       style="fill:#000000;fill-opacity:0">
+      <circle
+         cx="270"
+         cy="130"
+         fill="transparent"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse57"
+         r="20"
+         style="fill:#000000;fill-opacity:0" />
+      <path
+         d="m 250,130 h 40"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path57"
+         style="fill:#000000;fill-opacity:0" />
+      <path
+         d="m 270,110 v 40"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path58"
+         style="fill:#000000;fill-opacity:0" />
+    </g>
+    <g
+       id="g60">
+      <path
+         d="m 270,230 v 20 h -53.63"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path59" />
+      <path
+         d="m 211.12,250 7,-3.5 -1.75,3.5 1.75,3.5 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path60" />
+    </g>
+    <g
+       id="g62">
+      <rect
+         x="250"
+         y="190"
+         width="40"
+         height="40"
+         fill="none"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect61" />
+    </g>
+    <g
+       id="g64">
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g63">
+        <switch
+           id="switch62">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; writing-mode: vertical-lr;width: 1px; height: 36px; padding-top: 192px; margin-left: 270px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div>&lt;&lt;&lt;<xhtml:sub>16</xhtml:sub>
+<xhtml:br />
+</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <image
+             x="262"
+             y="192.5"
+             width="16"
+             height="39"
+             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAACcCAYAAADPla2KAAAHKElEQVR4Xu1dPYglRRCeXc7MH1wjRbhgDRQFBb1TDAwuOCNTNTxQ/AkMFc7AwOAERcRIvVxRQQwE4RQMFEFPBUFBg1M4kDPy38xj9fvem8Jhdnumq6erurnXA8W+fW96uvrr6qrqqu6erW7Dr60Nb3/XAGgSsOEItCGw4QLQlGAbAm0IbDgCbQgUFoAjqP8s6EHQWyV4KS0BbPT9oM9Bd20WAFd2O92fW7903b/S7hvw4QdvEEpKwPNo7JOgv0GXg94GPbBJAPzVN/xe/D3TA3EYf3/1BKGUBDyGRr4yGPuiC57Gd89tAgDfoZE3gh4HvQoSa/AzPl93qQNwvBf5cWM/w/d3glxNYokhEBJ3KsA3vU2iNwC73XZ3rttbaf6DFN4FfH8tyM0kegPwGhr3yITJO4nfTnmaRE8AdtCw873pC/Ww3EM96GISPQEQ0/cBGkfbH7pcTaInADK+2XiCELp28cM5kItJ9AIgZPpCIIhJFD/BzDXwAkDbIDeT6AGAiDRN3xWKrpQhcxRlvlCUU93qAYAotRfA2VMK7kRpms4SrQGIMX0hTIZlr8FNJrNEawBOIvNwCjGP1F4Ux0krPdGCZg3A0nFsbhItARjP+aN7ZXQjgyU0oyYm0RIArekLASQ+hEng1AqA3AGOpUMpKH1WAKSavhCjZibRCgCKLa8vM5kvmsQ7+mdOzSPUesYKADUjpQqUBoBm7nXQE5bu7hS4pQGQ5Eiqo7RYcEoDIMkRNsTM3a1VAkSzdwiUdgiUmrm7tQIgtp3ZIAZCXSJAYzBKDYFxhCiX16jWCaUAEP9ecoFuEaAaJGAYIRqGvs3c3dp0gMzxT4OxRwfMmbm7NQEwFSEa/HY9TOJPJhGg0kNAUl+h5AikYxupsz03k+itBOeSI+YRoJISIJr+ezBx08S4PAPH6DgcI5MIUEkAYm29aQSoFADa5MjcUFE7PKECXjpAGyFyM4keANC8YUHk6oqd8S1JqKikwwOA1Dm/lDM1iR4ApLq4Wr2h6nm52RqApckR0R1mJtEagKVr/8QkzvkOSb3PQpYAaFeFhBohq0rnltYkgWAJQK7FTqYm0QqA0Jw/qZdQSIKn2RdQWgGQavpCAJmZRCsAOO29GsTgR45dIJQoBk9+A2VdTm8FQKqou5crDUBLjaHLuW+opcYUE6Wsw6TkEPg/NbZukumkJ4RaSQBaagy9IvnA2HBZVvG3ngtMMdtSY0BnvG8oNW6wSCpK6ICWGkOXca/weGLjsjh6LC7eEhCRGlvtKnMzid4AzMX7W2oMvW+6OLrkEIi19S01hl6aGyqLTN+wsJcOaKmxHvVNTI0dQjzvYsqc3ywO6D0E1uP5su5o949q/19LjQG4lhrr/YKWGgMQLTUGELIftGTlBxikxrYxg9xrqTFIgWYD9qzHaCUBLTU2C30lN1hJQCXNm2ejATCP0aV9R5MARf8yUpN13+6gbloNhstdNkmkzgZ5+KeVxNDDuz23jY/pXE2DCEB2T6xnkp7j1yCX88OWSAAXMnDVZk5RZUKEx2vyeF23fICAoJWAGKlS30Mm+sN1Q+cMqp8ZWyABgAG7sbXo7nOVggQA2Jr9IKz3P2e5XPcQawFgZOZl0I9Zmhp+iJW53VejFgDXE1+NQV49XguA5n4P/hfXoWkQc3tFToBf3MqJB2gAsOSj2LMbAMWgr6TiJgGVdEQxNpoEZICeU1nO5G4DcTo7vD7GP1+BPgTlnEFmYHv9iCUSwAjRsyC+EyDmonv7IsjNzY1hKhUAWe0ZU8f4Hp4MWezwtDEzWgAYvPgUxNdj7J8T6qaE7u8TOai3tADIGj4+i8GLN0AfBcY4j9VknI/RHs4iV6CNrmJbZYQPDQByBggbzrO/YrevEbTfQQylUVk+A+JbJOQqCoIGADbkbtAxkOas7yOo5CxCXsOAKrfLMPKDlPcquDI+VOkAYbH5SgMAt69ytRdfi6O6oBouIFr0HgoNT46iPnkfJFbEbIv8FLMaAJbkBTiVvgp00PE5shDKPSBKYLwAkKWvofpEubrrAw0A7MWXQNr3AorynAJ8B4x8CxGjcoxdTaoahqGbNQAwf0cH5hZQrFtLb/GdtbKbPTFS9hG66gINALKlhcrwBGjKpWXDHwLR7MkVI94cKt+Apt5Ck6Xn5SEaAFhmKM6M338COj/g6B58vrnv8SGjVHCcLM1tpef64PtAU2eNFQWAlQ9seDQvceH0QzhE7eJqx4i2Y6IZGd+YVBHs2e4f6xOh52aClJIToNgZoJw6lcRXCgpLK6K//zDo1gEYbDTH8bsgjvtYhSn8cxhkXQs4BcxSAFJAr6pMA6Cq7ijATJOAAqBXVWWTgKq6owAzTQIKgF5VlU0CquqOAsw0CSgAelVVNgmoqjsKMNMkoADoVVXZJKCq7ijATJOAAqBXVWWTgKq6owAzTQIKgF5Vlf8BfKutrC2MVFoAAAAASUVORK5CYII="
+             id="image62" />
+        </switch>
+      </g>
+    </g>
+    <g
+       id="g66" />
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-126"
+       id="g68">
+      <g
+         id="g67">
+        <path
+           d="m 189.78,30 0.51,100.57 -0.27,93.06"
+           fill="none"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="stroke"
+           id="path66" />
+        <path
+           d="m 190,228.88 -3.48,-7.01 3.5,1.76 3.5,-1.74 z"
+           fill="#000000"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="all"
+           id="path67" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-75"
+       id="g70">
+      <g
+         id="g69">
+        <rect
+           x="170"
+           y="230"
+           width="40"
+           height="40"
+           fill="none"
+           stroke="#000000"
+           pointer-events="all"
+           id="rect68" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-76"
+       id="g72">
+      <g
+         id="g71">
+        <path
+           d="m 170,250 h 40"
+           fill="none"
+           stroke="#000000"
+           stroke-width="2"
+           stroke-miterlimit="10"
+           pointer-events="all"
+           id="path70" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-77"
+       id="g74">
+      <g
+         id="g73">
+        <path
+           d="m 170,250 h 40"
+           fill="none"
+           stroke="#000000"
+           stroke-width="2"
+           stroke-miterlimit="10"
+           transform="rotate(90,190,250)"
+           pointer-events="all"
+           id="path72" />
+      </g>
+    </g>
+    <g
+       id="g76">
+      <path
+         d="m 110,310 v 33.63"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path75" />
+      <path
+         d="m 110,348.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path76" />
+    </g>
+    <g
+       id="g78">
+      <path
+         d="m 109.78,30 0.51,120.57 -0.27,113.06"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path77" />
+      <path
+         d="m 110,268.88 -3.48,-7.01 3.5,1.76 3.5,-1.74 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path78" />
+    </g>
+    <g
+       id="g80"
+       style="fill:#000000;fill-opacity:0">
+      <circle
+         cx="110"
+         cy="290"
+         fill="transparent"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse79"
+         r="20"
+         style="fill:#000000;fill-opacity:0" />
+      <path
+         d="m 90,290 h 40"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path79"
+         style="fill:#000000;fill-opacity:0" />
+      <path
+         d="m 110,270 v 40"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path80"
+         style="fill:#000000;fill-opacity:0" />
+    </g>
+    <g
+       id="g82">
+      <path
+         d="m 110,390 v 20 H 56.37"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path81" />
+      <path
+         d="m 51.12,410 7,-3.5 -1.75,3.5 1.75,3.5 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path82" />
+    </g>
+    <g
+       id="g84">
+      <rect
+         x="90"
+         y="350"
+         width="40"
+         height="40"
+         fill="none"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect83" />
+    </g>
+    <g
+       id="g86">
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g85">
+        <switch
+           id="switch84">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; writing-mode: vertical-lr;width: 1px; height: 36px; padding-top: 352px; margin-left: 110px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div>&lt;&lt;&lt;<xhtml:sub>12</xhtml:sub>
+</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <image
+             x="102"
+             y="352.5"
+             width="16"
+             height="39"
+             xlink:href="data:image/png;base64,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"
+             id="image84" />
+        </switch>
+      </g>
+    </g>
+    <g
+       id="g88">
+      <path
+         d="m 190,270 v 20 h -53.63"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path87" />
+      <path
+         d="m 131.12,290 7,-3.5 -1.75,3.5 1.75,3.5 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path88" />
+    </g>
+    <g
+       id="g90">
+      <path
+         d="m 270.02,253 0.55,87.57 -0.53,83.06"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path89" />
+      <circle
+         cx="270"
+         cy="250"
+         fill="#000000"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse89"
+         r="3" />
+      <path
+         d="m 270.01,428.88 -3.46,-7.02 3.49,1.77 3.51,-1.73 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path90" />
+    </g>
+    <g
+       id="g92">
+      <path
+         d="m 269.95,470 0.05,21 -0.03,12.63"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path91" />
+      <path
+         d="m 269.95,508.88 -3.48,-7.01 3.5,1.76 3.5,-1.74 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path92" />
+    </g>
+    <g
+       id="g94">
+      <path
+         d="m 33,450.02 107.57,0.55 103.06,-0.54"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path93" />
+      <circle
+         cx="30"
+         cy="450"
+         fill="#000000"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse93"
+         r="3" />
+      <path
+         d="m 248.88,450.01 -6.98,3.53 1.73,-3.51 -1.77,-3.49 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path94" />
+    </g>
+    <g
+       id="g96"
+       style="fill:#000000;fill-opacity:0">
+      <circle
+         cx="270"
+         cy="450"
+         fill="transparent"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse95"
+         r="20"
+         style="fill:#000000;fill-opacity:0" />
+      <path
+         d="m 250,450 h 40"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path95"
+         style="fill:#000000;fill-opacity:0" />
+      <path
+         d="m 270,430 v 40"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path96"
+         style="fill:#000000;fill-opacity:0" />
+    </g>
+    <g
+       id="g98">
+      <rect
+         x="0"
+         y="0"
+         width="60"
+         height="30"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect97" />
+    </g>
+    <g
+       id="g100">
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g99">
+        <switch
+           id="switch98">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; writing-mode: vertical-lr;width: 1px; height: 26px; padding-top: 2px; margin-left: 30px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">a</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <image
+             x="23"
+             y="2.5"
+             width="14"
+             height="29"
+             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAB0CAYAAADQHPEJAAADIklEQVR4Xu2XP2sVURDF97VCEOyUoBAtFIJdoiA2KbQSwUL9BGIqKy1Si4qWFmqfIn4ErWzFzkYbCxtTGRHENjkD95rH5t0d372zzCScDcPb7M7On/Obvbs76Y74Njni/XVs8LATJkESDK4ARzQ4ILU8ElQlCu5AgsEBqeWRoCpRcAcSDA5ILY8EVYmCO5BgcEBqeSSoShTcgQSDA1LLI0FVouAOJBgckFoeCaoSBXcgweCA1PJIUJUouAMJBgeklkeCqkTBHUgwOCC1PBJUJQru0ErwPvp7ADuf+tzG7ybsGWxnoPeVdO7T2Pq0NPgWxd0uFPgVx68UmnyD4/emBLmJ/dEarW1QyL1S1P+I85dn+Oz2jv3B/2tjNVnb4JepsRzqcwMnn/YcfuD/k71jMtqnxhjX2ganKQiBh7DXqcCz+H2SxlfOnemNqtx/j2HHk/+l9Ls+FcOs17oGJ90u/vJ2FztyP/a3fK+9wIlHAxXncX8Pn+tmnaVAdQ12XR4zWUwuDBQlo7wIW1AKf4fzp5VYVb3XNpjplBaSXMw17Ejx2vg9h4+MeW09xeZrA55AxO8pqkZHKP6GzVpRc2HhGpTC7sC2/oNOvsfOwfdbQeq8KtcKbk4wB5RRvQFbhpXeXIT2T1hpsckCjPKosFBM1P+ciJaUlFX2Kiw/6+RRsQS7BctvQ6FWUSnwJSw/w4ojMscJbSGaI9S+ay3BWW8jVQWki2a9ELTE+3dtbYP998mWYg7Fu6g88OVRMM8m/h9gslANfVrNE/OAby3B/a+JY91q93e8z52m7nBxbYOSN38PrmJ/tO85zwZzkxexU/q4ba2v+foWgjm5jOuvRLS5IOsAFg1a12Qajw2ayukQjAQdRDdNSYKmcjoEI0EH0U1TkqCpnA7BSNBBdNOUJGgqp0MwEnQQ3TQlCZrK6RCMBB1EN01JgqZyOgQjQQfRTVOSoKmcDsFI0EF005QkaCqnQzASdBDdNCUJmsrpEIwEHUQ3TUmCpnI6BCNBB9FNU5KgqZwOwUjQQXTTlCRoKqdDMBJ0EN00JQmayukQjAQdRDdNuQdvdVd1xWB/iQAAAABJRU5ErkJggg=="
+             id="image98" />
+        </switch>
+      </g>
+    </g>
+    <g
+       id="g102">
+      <rect
+         x="80"
+         y="0"
+         width="60"
+         height="30"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect101" />
+    </g>
+    <g
+       id="g104">
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g103">
+        <switch
+           id="switch102">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; writing-mode: vertical-lr;width: 1px; height: 26px; padding-top: 2px; margin-left: 110px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div>b</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <image
+             x="103"
+             y="2.5"
+             width="14"
+             height="29"
+             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAB0CAYAAADQHPEJAAADLklEQVR4Xu1XsYoUURDcOwwF8Yw00EADDUQTUQwNFEwEQU0F4cQPUNAPUNAfUHNBDUyMNDBWTAUNNDAy8uC4C+W0WnZgdty57jdvSnqPGmj29l5vdVfVmzc9S5Mdfi3tcH4TEVx0h+WgHEyugLZocoPc9uSgK1HyBDmY3CC3PTnoSpQ8QQ4mN8htTw66EiVPkIPJDXLbk4OuRMkT5GByg9z25KArUfIEOZjcILc9OehKlDxBDiY3yG1PDroSJU+Qg8kNctuTg65EyRPkYDKDrqGfywj7DF2L5uAKWP1E7EOsRRguGsHzIPUGcQ/x4H8QPIUiVyKFIjm7kPSrP/EEls4idiN+IA5EMGsctO3yCbE/UoiQcwGYbz3cGoIPAX7bK0Bcfxk5bGoIbky3C5GDC+327yb0lLBj+vl07Qs+X7utzCbY/WQHxlPEeuFv2+l3vN8OJfgCwFcRm4hziI9eoTnrdhoeR1wa+PtQyaEEPwP9KOIRwlWxpxM7pL5P107i81uo48KkoQR/T+uEH7g9fT3B/1cRts2PFfYeSq8hOEZT7Xv5Fjp+HOq6IKmG4AfUOVNQa15qM5nY2hh4/9QYSvA9kA4iQtPENiLcxdr91vrQfnpLDAVsGgtNE9sQNKFOZyR4GE19Rdhj4hAiNNl3iHbdC8+XJbfFUAetRnMCDnkWdskZXmj0KiFnuTUEZ4ftZTS4NXkFTBsC5l2Wb8PB9c62bHKP4I/Rn4U1BK0xe116h7BXmPZlj5D2CLYH320w6LtsZLtZ6k4kv5bgDMllfNuKVJ3NoWzNpsQYBA3LDp1nf7deGcuaUS8k5VgEm2L24L6BuDhn2zY5dlra24e9T45+z3VZj02wjW/3595OQSNEJ9WuySQY2kLsJBFkK8zGl4Nshdn4cpCtMBtfDrIVZuPLQbbCbHw5yFaYjS8H2Qqz8eUgW2E2vhxkK8zGl4Nshdn4cpCtMBtfDrIVZuPLQbbCbHw5yFaYjS8H2Qqz8eUgW2E2vhxkK8zGl4Nshdn4cpCtMBtfDrIVZuPLQbbCbHw5yFaYjS8H2Qqz8eUgW2E2vhxkK8zGl4Nshdn4fwDJoUx1GgVFtwAAAABJRU5ErkJggg=="
+             id="image102" />
+        </switch>
+      </g>
+    </g>
+    <g
+       id="g106">
+      <rect
+         x="240"
+         y="0"
+         width="60"
+         height="30"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect105" />
+    </g>
+    <g
+       id="g108">
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g107">
+        <switch
+           id="switch106">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; writing-mode: vertical-lr;width: 1px; height: 26px; padding-top: 2px; margin-left: 270px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">d</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <image
+             x="263"
+             y="2.5"
+             width="14"
+             height="29"
+             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAB0CAYAAADQHPEJAAADa0lEQVR4Xu2az6tPURTF75OYPANmTBQGZEIGyhxlaEBh7McfQBgZSd4f4EfMUUak6JWRIinmDEyeGYkJCWt57+r7vO/97nPPuYvjtW7t0te+e++1Pueee65MNcv8mlrm+hoL/N8Jm6AJVu6Al2jlgMLxTDC0qPIEE6wcUDieCYYWVZ5ggpUDCsczwdCiyhNMsHJA4XgmGFpUeYIJVg4oHM8EQ4sqTzDBygGF45lgaFHlCSZYOaBwPBMMLao8wQQrBxSOZ4KhRZUnmGDlgMLxFAQ3oytjF2ItYhbxAfE8nEaQMJTAdZjtLOIYYn3HnJ/x+wPETcQjgZaxJYcQeBiVbyCmf/23oh9Joz9D1lHEm6TsgqRSgSfR+8po/26NK5D2fTSVRE8jrhbMH95aIpDkboUdJiXMaz6lFJkrkM/cWy7LP4i9w2/3EHc7njPetxdxEHFoRPv+jvwi/3hzrsBzuPfiaPeVTTPzrWku4bf3iVNxp72P2IqgMRsS7+uVlivwKbrsHumUu8xI9MmCyNwaEwXnChzdK2fQ4UwvWxcnk+TrhSXKpTroVSqQO+GaASZ6iBp7Bqq1aJxcgZ9QZRpxB8HdtPS6jAJ8ZeTO09k/tyAd34coXZ7tYNfwh+M1CWxf8EMRnFtQGu2k3L15rk0+HOQS5DzcSbcjNiJSXw3jllK7PK/jL09MXOur8Dh8bS4gZ1vqM1EikLvfSwSParm7aCuOm9UORHQ2bVdO8sEgVyCfP178JOIL/zziRaKrm5C3E42P4F3DjYoXlzq/MsZdzGdwpRxA8B5+jSS9UnIFJn0zLDleJzowNm1psS0JxLO35XYX/T1LbzHpn1ZdtsTPLO7MJcglSpH/8ko6ZOQKpDNzWKft1zs/YF8hPg6rGEf4Bkf47ivc3LIFouf8F8VqPOxf/t4/QfQ1sERg+01Y+h7sO3Ov/BKBbHQb8RiRfLLoNd0AyaUCBxhBW8ICtf7qq5ug3mNtBxPU+quvboJ6j7UdTFDrr766Ceo91nYwQa2/+uomqPdY28EEtf7qq5ug3mNtBxPU+quvboJ6j7UdTFDrr766Ceo91nYwQa2/+uomqPdY28EEtf7qq5ug3mNtBxPU+quvboJ6j7UdTFDrr766Ceo91nYwQa2/+uomqPdY28EEtf7qqy97gj8B3jRhde5w06YAAAAASUVORK5CYII="
+             id="image106" />
+        </switch>
+      </g>
+    </g>
+    <g
+       id="g110">
+      <rect
+         x="160"
+         y="0"
+         width="60"
+         height="30"
+         fill="none"
+         stroke="none"
+         pointer-events="all"
+         id="rect109" />
+    </g>
+    <g
+       id="g112">
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g111">
+        <switch
+           id="switch110">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; writing-mode: vertical-lr;width: 1px; height: 26px; padding-top: 2px; margin-left: 190px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">c</xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <image
+             x="183"
+             y="2.5"
+             width="14"
+             height="29"
+             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAB0CAYAAADQHPEJAAADCklEQVR4Xu2aO4sUURCFZzHVZI00MdBA0ETExy/QRBERFI2MlI1FQX+AwvoHFIxFE0NBAxPZQDQVN9DEQDMTTWU9hd3Q9s5Mdd/bpyiX01DMNNx6nPPdfgzMymyHHys7XN9MAv93wiIogskd0BZNDsgdTwRdi5IvEMHkgNzxRNC1KPkCEUwOyB1PBF2Lki8QweSA3PFE0LUo+QIRTA7IHU8EXYuSLxDB5IDc8UTQtSj5AhFMDsgdTwRdi5IvEMHkgNzxRNC1KPkCEUwOyB1PBF2Lki+YkuAqtN5EXEAcQezuaf+O87eIF4jnUb5MJXAd/5lam21tE7VIh4m9jnjNFlor0KhtIA4XDvoQeXcKcwel1QhcRfLG1nJxvzDFx94k/e1LFVkj8BUGPzPHRhP1FPEE8X6BzZZ3q5N/lrVdSwXagCawf9g1dRXxY9D+mc2uNEb8xOf+gTmjlpUKtLvg5V6nNZw/GtX972IT+QxRmr+0ZanAb6i6r1PZyNk2Kz0+IfFrZY25vUsF4t7yz3EIZ19K1SHvMeI8Y5tOIdCeabXXzzpq3EaUzrPQ29KC3S36DtVPV9Cz1PaaLp1ncoHdm0ytwBOY7k0z4Z5Ko7allzp2EJU+d6rtxfehjwZLM1HHEccQ1xB4b90Fo37X7oTJBFohuzHcaCqOucW311t/mDE1BoMuJWgNuu+h9vZyYCBFe6jP+6VxdGD+YHG2sEZgK/IlvpxCbCLOIbzHRf8RY3VOIha91o0S1F9cK7Ctdxdf7jUn9/H5YMlU3RuUkb+EoP1smkpgS9Ne3y424pa92bQv6R8Y27Jr7pQCq7YSK1kCWc5G1RXBKKdZfUSQ5WxUXRGMcprVRwRZzkbVFcEop1l9RJDlbFRdEYxymtVHBFnORtUVwSinWX1EkOVsVF0RjHKa1UcEWc5G1RXBKKdZfUSQ5WxUXRGMcprVRwRZzkbVFcEop1l9RJDlbFRdEYxymtVHBFnORtUVwSinWX1EkOVsVF0RjHKa1UcEWc5G1RXBKKdZfUSQ5WxU3T81mUp1cu5/6AAAAABJRU5ErkJggg=="
+             id="image110" />
+        </switch>
+      </g>
+    </g>
+    <g
+       id="g114">
+      <path
+         d="m 270,550 v 100 l -0.31,93.63"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path113" />
+      <path
+         d="m 269.67,748.88 -3.48,-7.01 3.5,1.76 3.5,-1.74 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path114" />
+    </g>
+    <g
+       id="g116">
+      <rect
+         x="250"
+         y="510"
+         width="40"
+         height="40"
+         fill="none"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect115" />
+    </g>
+    <g
+       id="g118">
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g117">
+        <switch
+           id="switch116">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; writing-mode: vertical-lr;width: 1px; height: 36px; padding-top: 512px; margin-left: 270px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div>&lt;&lt;&lt;<xhtml:sub>8</xhtml:sub>
+</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <image
+             x="262"
+             y="512.5"
+             width="16"
+             height="39"
+             xlink:href="data:image/png;base64,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"
+             id="image116" />
+        </switch>
+      </g>
+    </g>
+    <g
+       id="g120" />
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-108"
+       id="g122">
+      <g
+         id="g121">
+        <path
+           d="m 190.36,292.83 0.5,128.6 -0.82,124.2"
+           fill="none"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="stroke"
+           id="path120" />
+        <circle
+           cx="190.34"
+           cy="289.82999"
+           fill="#000000"
+           stroke="#000000"
+           pointer-events="all"
+           id="ellipse120"
+           r="3" />
+        <path
+           d="m 190.01,550.88 -3.46,-7.02 3.49,1.77 3.51,-1.72 z"
+           fill="#000000"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="all"
+           id="path121" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-116"
+       id="g124">
+      <g
+         id="g123">
+        <path
+           d="m 267,571.92 -27,-0.06 -23.63,0.11"
+           fill="none"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="stroke"
+           id="path122" />
+        <circle
+           cx="270"
+           cy="571.92999"
+           fill="#000000"
+           stroke="#000000"
+           pointer-events="all"
+           id="ellipse122"
+           r="3" />
+        <path
+           d="m 211.12,571.99 6.98,-3.53 -1.73,3.51 1.76,3.49 z"
+           fill="#000000"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="all"
+           id="path123" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-100"
+       id="g126">
+      <g
+         id="g125">
+        <rect
+           x="170"
+           y="552"
+           width="40"
+           height="40"
+           fill="none"
+           stroke="#000000"
+           pointer-events="all"
+           id="rect124" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-101"
+       id="g128">
+      <g
+         id="g127">
+        <path
+           d="m 170,572 h 40"
+           fill="none"
+           stroke="#000000"
+           stroke-width="2"
+           stroke-miterlimit="10"
+           pointer-events="all"
+           id="path126" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-112"
+       id="g130">
+      <g
+         id="g129">
+        <path
+           d="m 190,592 v 79 l 0.26,72.63"
+           fill="none"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="stroke"
+           id="path128" />
+        <path
+           d="m 190.28,748.88 -3.52,-6.99 3.5,1.74 3.5,-1.76 z"
+           fill="#000000"
+           stroke="#000000"
+           stroke-miterlimit="10"
+           pointer-events="all"
+           id="path129" />
+      </g>
+    </g>
+    <g
+       data-cell-id="VTgdmNcKE282F62j4poa-102"
+       id="g132">
+      <g
+         id="g131">
+        <path
+           d="m 170,572 h 40"
+           fill="none"
+           stroke="#000000"
+           stroke-width="2"
+           stroke-miterlimit="10"
+           transform="rotate(90,190,572)"
+           pointer-events="all"
+           id="path130" />
+      </g>
+    </g>
+    <g
+       id="g134">
+      <path
+         d="m 110.02,413 0.55,87.57 -0.53,83.06"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path133" />
+      <circle
+         cx="110"
+         cy="410"
+         fill="#000000"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse133"
+         r="3" />
+      <path
+         d="m 110.01,588.88 -3.46,-7.02 3.49,1.77 3.51,-1.73 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path134" />
+    </g>
+    <g
+       id="g136">
+      <path
+         d="m 110,630 v 33.63"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path135" />
+      <path
+         d="m 110,668.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path136" />
+    </g>
+    <g
+       id="g138">
+      <path
+         d="m 187,610.14 h -27 l -23.63,-0.11"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path137" />
+      <circle
+         cx="190"
+         cy="610.14001"
+         fill="#000000"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse137"
+         r="3" />
+      <path
+         d="m 131.12,610.01 7.01,-3.47 -1.76,3.49 1.73,3.51 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path138" />
+    </g>
+    <g
+       id="g140"
+       style="fill:#000000;fill-opacity:0">
+      <circle
+         cx="110"
+         cy="610"
+         fill="transparent"
+         stroke="#000000"
+         pointer-events="all"
+         id="ellipse139"
+         r="20"
+         style="fill:#000000;fill-opacity:0" />
+      <path
+         d="m 90,610 h 40"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path139"
+         style="fill:#000000;fill-opacity:0" />
+      <path
+         d="m 110,590 v 40"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path140"
+         style="fill:#000000;fill-opacity:0" />
+    </g>
+    <g
+       id="g142">
+      <path
+         d="m 110,710 v 20 l 0.19,13.63"
+         fill="none"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="stroke"
+         id="path141" />
+      <path
+         d="m 110.27,748.88 -3.6,-6.95 3.52,1.7 3.48,-1.8 z"
+         fill="#000000"
+         stroke="#000000"
+         stroke-miterlimit="10"
+         pointer-events="all"
+         id="path142" />
+    </g>
+    <g
+       id="g144">
+      <rect
+         x="90"
+         y="670"
+         width="40"
+         height="40"
+         fill="none"
+         stroke="#000000"
+         pointer-events="all"
+         id="rect143" />
+    </g>
+    <g
+       id="g146">
+      <g
+         transform="translate(-0.5,-0.5)"
+         id="g145">
+        <switch
+           id="switch144">
+          <foreignObject
+             style="overflow: visible; text-align: left;"
+             pointer-events="none"
+             width="100%"
+             height="100%"
+             requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+            <xhtml:div
+               style="display: flex; align-items: unsafe center; justify-content: unsafe center; writing-mode: vertical-lr;width: 1px; height: 36px; padding-top: 672px; margin-left: 110px;">
+              <xhtml:div
+                 style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+                <xhtml:div
+                   style="display: inline-block; font-size: 12px; font-family: &quot;Computer Modern Serif&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                  <xhtml:div>&lt;&lt;&lt;<xhtml:sub>7</xhtml:sub>
+</xhtml:div>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </foreignObject>
+          <image
+             x="102"
+             y="672.5"
+             width="16"
+             height="39"
+             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAACcCAYAAADPla2KAAAFIElEQVR4Xu1cvW4UMRDeBEQaQIJUICQKKOAFgCcIJaKBVJT8FJRBggcAKTwAPyUSCHgDqGiQQDSIhhRQ0IQKkIAmCBK+uayDL+TuvL6Z2XP2W2l0p2TPO/7mmxnbY+9U1fFrquP9rwgAGdBxBOgCHScAgyBdgC7QcQToAh0nALMAXYAu0HEE6AIdJwCzAF2ALtAuAkfw+IeQq5A3bajStgssotMLkKeQ810E4Ac6vbvu+Cw+v3qD0CYDLqOzd6IO38b3a10CYBmdPQC5AbkJ+Qw52BUA5tDRZ1GnX+H7ScgVyF1PENpyAem8gCDWv1UHwMf4fA05td0BkNT3AfITcjgKfMElTuBvbimxDQbcQwcvQu5DLkXWDkHRNSV6A7AfHf4EkdR3FPIxAiD+n1tK9Abgeh3xn+Pz9Ba+HtjhlhK9AQh+Lp0XEDZfIT64pURPAGSoK5F+CXJ8SKQPGcIlJXoCkJrrwxjBJSV6ARCnvj0JeX6UqyQ0kXaLFwBPoM45SGpwc0uJHgBIevtS2yM1vQ1Ll2mmTbzLA4DcOX/4XSprErvcf5sHALlD3KZxYyIBCL6cG9FD7DBLidYMWE99u6r56lclnWl69VIilFxaGz52aNruxv2WAGye8+cq+R4/PAYZNHrMbbf3O0sAAn3DnD9XUdOUaAXAoDl/Lgjri6czmEGu9M0gc9szd4Hc1DeoQ2Yp0YoBMu3dB5HpbTznz7TYDBi1Iosn3yCyhKZ2WQGgpqB1Q20DwNIYLMzSWE3z1ImSqle06QIsjcGULI0BBKkHpi6XqdLfeig8TFmWxoAOS2MAgaWxyE/+rQPurWar7z67RbzTIEtjdepjaWxIimBpDOAICLkLqY3GCl4xoOkSN0tjMKNsoTPfLeLBAJbGMuf8ZuuAcZDwYMDyNGZ9q1XVdPdX07jRKPiFm60BYGkMSMsO0HlIdmkMvx21rSbL+tbTYZbGgLDsCmFpDCCMew4gnCvYvLkym/rWQXARZdeFak1tIGOWEq2ygHJprJKUyNLY2HzfogErBqTq2vXS2E749m+Wxmq6sDQGIHhqLDV4aN3XVhDkqTFYkKfGAAJPjUW+bLofcFDM8I4BPDUGS8g5YZ4aq0HYzEyeGgMiLI3VILA0BiBMtsjHfueVBXhqrOGMj6fGAJjZOqC3C/DUGBDPjejb5NQYS2NjvR6Hp8bgQma7RazGATanxv5/78jYK2NWAPDUGEyjeGqMpbGxqT4pK0JmHclt2CoGpOojc/8XEDlgOe4egtRn9t3XNgAy6XkJOQR5VI//FU6apmPRNgCiqaTMt5DwZslB64XpvWpw5yQAIOqGV2gF1d30cnvQCKOEt0xNNABCVSv/DLXCiQYAr/HobVh8AJFd3JpgFANAzGRNMIoAQFKWbHw8i83Pc9j83A/GNJixms2MIgCIO7wBBv4oyo/LjHUAgCxAlMstOGs8SAOMmgGCgFyrGnqNSDzr/9Z90AwGNSs9N7kAkXf/pDIDAExhWCxx1kCvIVDoAtD/IEmbqWAUFwOS6BXdNAqMdzVY24oBg0AaBkYnAIiBGQSGpWv2GcbtQQk+0wNjR1Wd+eP4fvFJAiABI/1bCIA+pmW1SAaUZS99bckAfUzLapEMKMte+tqSAfqYltUiGVCWvfS1JQP0MS2rRTKgLHvpa0sG6GNaVotkQFn20teWDNDHtKwWyYCy7KWvLRmgj2lZLZIBZdlLX1syQB/TslokA8qyl762ZIA+pmW1+BeMyWessIqXWQAAAABJRU5ErkJggg=="
+             id="image144" />
+        </switch>
+      </g>
+    </g>
+  </g>
+</svg>

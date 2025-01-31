@@ -140,8 +140,9 @@ SHA-3 works by using the sponge construction \cite{keccakKeccakTeam}. Here, data
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.75\textwidth]{SpongeConstruction.pdf}
-    \caption{\raggedright The sponge construction for SHA-3. By \url{http://sponge.noekeon.org/}, CC BY 3.0, \url{https://commons.wikimedia.org/w/index.php?curid=13463547}}
+    \includesvg[width=\textwidth]{SpongeConstruction.svg}
+    % \includegraphics[width=0.75\textwidth]{SpongeConstruction.pdf}
+    \caption{The sponge construction for SHA-3.}
     \label{fig:sponge}
 \end{figure}
 
@@ -219,8 +220,8 @@ For decryption, the keystream, $K$, is XORed with the cipher, $C$, to retrieve t
 \[M = C \oplus K\]
 \begin{figure}[!h]
     \centering
-    \includesvg[width=0.5\textwidth]{ChaCha_Cipher_Quarter_Round_Function.svg}
-    \caption{The ChaCha quarter-round function. By Tony Arcieri - Own work, CC BY-SA 4.0, \url{https://commons.wikimedia.org/w/index.php?curid=90771650}}
+    \includesvg[width=\textwidth]{ChaCha_Cipher_Quarter_Round_Function.svg}
+    \caption{The ChaCha quarter-round function.}
 \end{figure}
 
 A hash function is a special mathematical function that can data of arbitrary size to constant-sized values. The output of a hash function is called hash digest or simply hashes. A unique property of most hash functions is their ability to generate unique digests for each unique inputs. This makes hash functions invaluable for authentication and data integrity verification.In 2002, Bernstein designed the Poly1305 universal hash function, which was intended to provide a message authentication code to authenticate a message using a shared secret key \cite{bernstein2005protecting}. The original implementation of Poly1305 was in 2005 when Poly1305 hash was combined as a Carter-Wegman authenticator \cite{carter1981new} with AES-128 to authenticate encrypted messages.
@@ -242,7 +243,7 @@ Each message is required to accompanied by a 128-bit Nonce generated from the ac
     \item From the result, the 128 least significant bits are formatted in little-endian format to produce the tag.
 \end{itemize}
 
-The ChaCha20-Poly1305 AEAD adopted for Internet Engineering Task Force (IETF) \cite{rfc8439} and subsequently as the standard for Transport Layer security (TLS) \cite{rfc7905} is slightly different from the original structures proposed by Daniel J. Bernstein. To be precise, the ChaCha20 symmetric encryption is slightly modified. As opposed to a 64-bit Nonce, the modified ChaCha20 has a 96-bit long Nonce. The modified matrix is shown below --
+The ChaCha20-Poly1305 AEAD adopted for Internet Engineering Task Force (IETF) \cite{rfc8439} and subsequently as the standard for Transport Layer security (TLS) \cite{rfc7905} and the OpenBSD Secure Shell (OpenSSH) \cite{miller2015chacha20} is slightly different from the original structures proposed by Daniel J. Bernstein. To be precise, the ChaCha20 symmetric encryption is slightly modified. As opposed to a 64-bit Nonce, the modified ChaCha20 has a 96-bit long Nonce. The modified matrix is shown below --
 \begin{equation}\label{initialState}
     \left[
         \begin{array}{cccc}
@@ -261,7 +262,7 @@ The remaining portions of the ChaCha20 scheme remains unaltered. The same is tru
     \item The first 256 serialized bits of the 512-bit state is taken as the Poly1305 key -- the 128 bit as $r$ and the next 128 bit as $s$.
     \item The 512-bit state is serialized in little-endian format to produce a keystream.
     \item The keystream is XORed with the message to produce the ciphertext.
-    \item The Poly1305 function is called with the unencrypted and the previously derived key to produce the authenticator tag.
+    \item The Poly1305 function is called with the ciphertext and the previously derived key as input to produce the authenticator tag.
 \end{itemize}
 The output from the AEAD is the concatenation of the following --
 \begin{itemize}
@@ -282,6 +283,7 @@ The architecture that we proposed is a system that integrates E91 QKD protocol w
     \end{center}
 \end{figure}
 \subsection{Initialization}
+\label{sec:init}
 As outlined by Ekert \cite{Ekert1991}, an entangled pair generator, referred to as Charlie, produces pairs of entangled qubits and shares them with Alice and Bob. The circuit shown in Figure \ref{fig:singlet} is used to produce the entangled qubit pairs. The circuit applied a Hadamard $(H)$ gate to put a qubit in superposition and a CNOT $(\oplus)$ gate to control the other qubit. Here, $qr_{0}$ and $qr_{1}$ denotes quantum registers, that is, qubits, while $cr$ denotes classical register.
 \begin{figure}[!h]
     \centering
@@ -294,6 +296,7 @@ As outlined by Ekert \cite{Ekert1991}, an entangled pair generator, referred to 
     \label{fig:singlet}
 \end{figure}
 \subsection{Measurement}
+\label{sec:measurement}
 Alice and Bob independently create a random set of bases of length $n$. Using this set of random bases, Alice and Bob perform measurements on the qubits they received from Charlie. The respective measurement circuits are shown in Figures \ref{fig:aliceMeasurements} and \ref{fig:bobMeasurements}. After the completion of the measurements, both parties share their measurement bases over an unsecured Classical Channel. Upon comparison of these measurement bases, the states that lack a common base are discarded. The result is a secret key called the Final Ekert Key that is shared between Alice and Bob. The measurement process is illustrated in Figure \ref{fig:combined}.
 \begin{figure}[!h]
     \begin{subfigure}[h]{0.5\textwidth}
@@ -373,9 +376,10 @@ Alice and Bob independently create a random set of bases of length $n$. Using th
     \end{center}
 \end{figure}
 \subsection{Encryption key generation}
+\label{sec:keyGen}
 After the creation of the final Ekert key, Alice and Bob pass the key through the SHA3-256 hashing algorithm to generate another key of fixed length (256 bits) and high entropy. The use of the hashed key is instead of the original Ekert key provides an additional layer of security by obscuring the contents of the original key. If an eavesdropper gets hold of the hashed key, he/she will not be able distill the original key as the SHA3 hash function provides a vital protection against reverse calculation.
 
-For 500 singlet states, we may get a key like the following -- 
+For 500 singlet states, we may get a key like the following --
 
 $01011000100110100111011110111100001100111111000101110001100000011110111011000000100101110111$
 
@@ -386,12 +390,24 @@ Similarly, for 128 singlet states, we may get a key like the following --
 $0001001110110110111000101100$
 
 The hash digest of this key is $9e0ae69c28e4f4e8ba13e1c496fb237284df4e0b6540e168b18bec0cde9ee70f$.
-\subsection{Steganography insertion}
-Prior encryption, the audio data is embedded in a cover audio using Steganography. 
+\subsection{Steganographic embedding}
+\label{sec:stegoEncode}
+Prior encryption, the audio data is embedded in a cover audio using Steganography. The technique of Least Significant Bit (LSB) substitution is used to produce the stego audio, that is, the audio file created from the cover audio that hides the message audio. First, the message and the cover audio is checked for compatibility. Upon success, the cover audio frames are modified through masking, which clears the LSB of each frame. They are subsequently replaced by the bits of the message audio.
 \subsection{Encryption and Authenticator generation}
+The hashed key generated in \ref{sec:keyGen} is used to encrypt the stego audio generated in \ref{sec:stegoEncode}. The encryption process is accompanied by the generation of an authenticator tag. The ChaCha20-Poly1305 AEAD is used to perform the encryption. The high-level over view of the process is shown in Figure \ref{fig:chacha20poly1305encryption}.
+\begin{figure}[!h]
+    \centering
+    \includesvg[width=0.5\textwidth]{chacha20poly1305.svg}
+    \caption{ChaCha20-Poly1305 Encryption and Authenticator tag generation.}
+    \label{fig:chacha20poly1305encryption}
+\end{figure}
 
+The 256-bit key derived from the SHA3-256 hashing algorithm is input along with a 96-bit Nonce and a 8-bit Counter to the ChaCha20 Block function. The function generates a 512-bit state after 20 rounds, which is serialized into a keystream in little-endian format. The first 256-bits of the keystream is input to the Poly1305 hash function along with other associated data. The keystream is XORed with the stego audio to produce the encrypted audio. The encrypted audio is put into the Poly1305 hash function which produces a 128-bit long authenticator tag.
 \subsection{Decryption and Authentication}
+\label{sec:chacha20poly1305decryption}
+The decryption process is the exact reverse of the encryption process. Similar to the encryption process, a 256-bit long key is derived from the shared Ekert key using the SHA3-256 hash function. The key is used to generate the ChaCha20 keystream, similar to the encryption process. The keystream is used in the Poly1305 hash function along with the received encrypted audio to generate a authenticator tag. The generated tag is compared with the received tag to verify the validity and integrity of the received data. Upon validation, the encrypted audio is XORed with the previously generated keystream to recover the stego audio.
 \subsection{Steganography extraction}
+The stego audio recovered in \ref{sec:chacha20poly1305decryption} is modified to isolate the cover audio and the message audio. As the least significant bits of each frame of the cover audio was replaced by the message audio bits, the LSBs of each frame was extracted in order to reconstruct the binary stream of the message audio. The reconstructed binary stream is modified according to bit-depth to form audio frames. From these frames the message audio is reconstructed.
 \section{Experiments and Results}
 \label{sec:experminats}
 \section{Findings and Discussion}
