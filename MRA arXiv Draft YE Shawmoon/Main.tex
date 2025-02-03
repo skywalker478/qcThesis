@@ -179,11 +179,11 @@ It is important to note that the measurements $A_1$ and $B_1$, as well as $A_3$ 
 
 In the next step, Alice and Bob announce the directions of their measurements. When their measurement directions match, such as $(A_1 , B_1)$ and $(A_3 , B_3)$, their results are perfectly anti-correlated. By flipping all the bits for one of them, they can generate the sifted key. The results from other combinations of measurements, like $(A_1 , B_3), (A_1 , B_2), (A_2 , B_3), \text{and} (A_2 , B_2)$, are used to assess how much an eavesdropper might know about the key. This is done by checking the CHSH inequality, a classical correlation bound that is part of the Bell inequalities. The CHSH inequality involves four random variables \( A1, A2, B2, B3 \), each taking values of \( +1 \) or \( -1 \). By evaluating these random variables, the inequality states that the sum of certain correlations must not exceed 2.
 
-In the quantum case, the measurement operators for \( A1, A2, B2, B3 \) are treated as quantum observables. The expectation values of their products are calculated using the state \( \rho = \ket{\psi^{-}}\). For example, the expectation value of \( A1B3 \) is found to be $\displaystyle  -\frac{1}{\sqrt{2}} $. By computing the sum of all these expectation values, we obtain a value of
-\[
-    S = \frac{2}{\sqrt{2}},
-\]
-which violates the CHSH inequality. This indicates that Alice and Bob share a maximally entangled state, and there is no information about the key that an eavesdropper could gain. If \( S \leq 2 \), it means the states are separable, and no secret key can be generated.
+% In the quantum case, the measurement operators for \( A1, A2, B2, B3 \) are treated as quantum observables. The expectation values of their products are calculated using the state \( \rho = \ket{\psi^{-}}\). For example, the expectation value of \( A1B3 \) is found to be $\displaystyle  -\frac{1}{\sqrt{2}} $. By computing the sum of all these expectation values, we obtain a value of
+% \[
+    % S = \frac{2}{\sqrt{2}},
+% \]
+% which violates the CHSH inequality. This indicates that Alice and Bob share a maximally entangled state, and there is no information about the key that an eavesdropper could gain. If \( S \leq 2 \), it means the states are separable, and no secret key can be generated.
 The remaining measurement results are used to generate a shared secret key. Only the measurement results obtained along compatible axes are used to establish the key.
 
 The security of the E91 protocol is derived from the following principles:
