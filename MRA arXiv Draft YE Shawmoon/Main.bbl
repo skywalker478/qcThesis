@@ -133,4 +133,14 @@ A.~Langley, W.-T. Chang, N.~Mavrogiannopoulos, J.~Strombergson, and
 D.~Miller, ``The chacha20-poly1305@ openssh. com authenticated encryption
   cipher draft-josefsson-ssh-chacha20-poly1305-openssh-00,'' 2015.
 
+\bibitem{jayaram2011information}
+P.~Jayaram, H.~Ranganatha, and H.~Anupama, ``Information hiding using audio
+  steganography--a survey,'' {\em The International Journal of Multimedia \&
+  Its Applications (IJMA) Vol}, vol.~3, pp.~86--96, 2011.
+
+\bibitem{hemeida2021comparative}
+F.~Hemeida, W.~Alexan, and S.~Mamdouh, ``A comparative study of audio
+  steganography schemes,'' {\em International Journal of Computing and Digital
+  Systems}, vol.~10, pp.~555--562, 2021.
+
 \end{thebibliography}

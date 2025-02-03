@@ -1,0 +1,556 @@
+<mxfile host="drawio.skyreach.duckdns.org" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.9">
+  <diagram name="Page-1" id="ywLh7MBf24h3s8Dh5-IK">
+    <mxGraphModel dx="1662" dy="958" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VTgdmNcKE282F62j4poa-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-1" target="VTgdmNcKE282F62j4poa-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-1" value="&lt;font face=&quot;Computer Modern Serif&quot;&gt;Final Ekert Key&lt;/font&gt;" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/key.svg;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="40" y="101.5" width="50" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" parent="1" source="VTgdmNcKE282F62j4poa-2" target="VTgdmNcKE282F62j4poa-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-11" value="256-bit Key" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="VTgdmNcKE282F62j4poa-6" vertex="1" connectable="0">
+          <mxGeometry x="-0.4052" y="-1" relative="1" as="geometry">
+            <mxPoint x="17" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-2" value="&lt;div&gt;&lt;font face=&quot;Computer Modern Serif&quot;&gt;SHA3-256&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Computer Modern Serif&quot;&gt;Hash&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Computer Modern Serif&quot;&gt;Function&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;shadow=0;dashed=0;strokeColor=default;align=center;verticalAlign=middle;spacingTop=3;fontFamily=Helvetica;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;labelPosition=center;verticalLabelPosition=middle;" parent="1" vertex="1">
+          <mxGeometry x="120" y="80" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-5" target="VTgdmNcKE282F62j4poa-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-5" value="&lt;div&gt;ChaCha20&lt;/div&gt;&lt;div&gt;Block&lt;/div&gt;&lt;div&gt;Function&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="280" y="80" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-12" target="VTgdmNcKE282F62j4poa-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-12" value="96-bit Nonce" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="400" y="105" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-14" target="VTgdmNcKE282F62j4poa-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-14" value="&lt;div&gt;ChaCha20&lt;/div&gt;&lt;div&gt;Keystream&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="280" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-16" value="&lt;div&gt;Stego&lt;/div&gt;&lt;div&gt;Audio&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="440" y="200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-17" target="VTgdmNcKE282F62j4poa-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-17" value="" style="verticalLabelPosition=middle;shadow=0;dashed=0;align=left;html=1;verticalAlign=middle;shape=mxgraph.electrical.logic_gates.logic_gate;operation=xor;rounded=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=south;labelPosition=right;" parent="1" vertex="1">
+          <mxGeometry x="370" y="280" width="60" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;endArrow=none;startFill=0;" parent="1" source="VTgdmNcKE282F62j4poa-14" target="VTgdmNcKE282F62j4poa-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;endArrow=none;startFill=0;" parent="1" source="VTgdmNcKE282F62j4poa-16" target="VTgdmNcKE282F62j4poa-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-21" target="VTgdmNcKE282F62j4poa-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-21" value="&lt;div&gt;Encrypted&lt;/div&gt;&lt;div&gt;Audio&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="360" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-23" target="VTgdmNcKE282F62j4poa-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-23" value="&lt;div&gt;Poly1305&lt;/div&gt;&lt;div&gt;Hash&lt;/div&gt;&lt;div&gt;Function&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="150" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-27" value="&lt;div&gt;Authenticator&lt;/div&gt;&lt;div&gt;Tag&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="150" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-29" target="VTgdmNcKE282F62j4poa-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-29" value="8-bit Counter" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="290" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-37" target="VTgdmNcKE282F62j4poa-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-37" value="&lt;div&gt;Associated&lt;/div&gt;&lt;div&gt;Data&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="20" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-36" value="first 256 bits" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="200" y="210" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-49" value="XOR" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" vertex="1">
+          <mxGeometry x="370" y="315" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-55" value="" style="group;html=1;whiteSpace=wrap;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="690" y="80" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=oval;startFill=1;" parent="VTgdmNcKE282F62j4poa-55" target="VTgdmNcKE282F62j4poa-50" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="20.33333333333337" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="70" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-50" value="" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="VTgdmNcKE282F62j4poa-55" vertex="1">
+          <mxGeometry width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-53" value="" style="line;strokeWidth=2;html=1;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;whiteSpace=wrap;" parent="VTgdmNcKE282F62j4poa-55" vertex="1">
+          <mxGeometry y="15" width="40" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="VTgdmNcKE282F62j4poa-55" target="VTgdmNcKE282F62j4poa-54" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20.052631578947285" y="-40" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="20" y="-20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-54" value="" style="line;strokeWidth=2;html=1;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=south;whiteSpace=wrap;" parent="VTgdmNcKE282F62j4poa-55" vertex="1">
+          <mxGeometry x="15" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-62" value="" style="group;html=1;whiteSpace=wrap;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="690" y="399.99999999999994" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-63" value="" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="VTgdmNcKE282F62j4poa-62" vertex="1">
+          <mxGeometry width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-64" value="" style="line;strokeWidth=2;html=1;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;whiteSpace=wrap;" parent="VTgdmNcKE282F62j4poa-62" vertex="1">
+          <mxGeometry y="15" width="40" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="VTgdmNcKE282F62j4poa-62" source="VTgdmNcKE282F62j4poa-65" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20" y="360.00000000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-65" value="" style="line;strokeWidth=2;html=1;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=south;whiteSpace=wrap;" parent="VTgdmNcKE282F62j4poa-62" vertex="1">
+          <mxGeometry x="15" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-50" target="VTgdmNcKE282F62j4poa-63" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=oval;startFill=1;" parent="1" target="VTgdmNcKE282F62j4poa-69" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="140.33333333333337" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-69" target="VTgdmNcKE282F62j4poa-72" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-127" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="VTgdmNcKE282F62j4poa-69" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="949.7826086956522" y="40" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="950" y="80" />
+              <mxPoint x="950" y="80" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-69" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.summing_function;rounded=0;align=center;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;aspect=fixed;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="930" y="120" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-72" target="VTgdmNcKE282F62j4poa-75" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-72" value="&lt;div&gt;&amp;lt;&amp;lt;&amp;lt;&lt;sub&gt;16&lt;/sub&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;textDirection=vertical-lr;" parent="1" vertex="1">
+          <mxGeometry x="930" y="200" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-74" value="" style="group;html=1;whiteSpace=wrap;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="850" y="239.99999999999994" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="VTgdmNcKE282F62j4poa-74" target="VTgdmNcKE282F62j4poa-75" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="19.782608695652243" y="-199.99999999999994" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-75" value="" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="VTgdmNcKE282F62j4poa-74" vertex="1">
+          <mxGeometry width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-76" value="" style="line;strokeWidth=2;html=1;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;whiteSpace=wrap;" parent="VTgdmNcKE282F62j4poa-74" vertex="1">
+          <mxGeometry y="15" width="40" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-77" value="" style="line;strokeWidth=2;html=1;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=south;whiteSpace=wrap;" parent="VTgdmNcKE282F62j4poa-74" vertex="1">
+          <mxGeometry x="15" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-79" target="VTgdmNcKE282F62j4poa-80" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="VTgdmNcKE282F62j4poa-79" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="789.7826086956522" y="40" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-79" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.summing_function;rounded=0;align=center;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;aspect=fixed;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="770" y="280" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-80" target="VTgdmNcKE282F62j4poa-63" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-80" value="&lt;div&gt;&amp;lt;&amp;lt;&amp;lt;&lt;sub&gt;12&lt;/sub&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;textDirection=vertical-lr;" parent="1" vertex="1">
+          <mxGeometry x="770" y="360" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-75" target="VTgdmNcKE282F62j4poa-79" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=oval;startFill=1;" parent="1" target="VTgdmNcKE282F62j4poa-87" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="949.95" y="480" as="sourcePoint" />
+            <mxPoint x="949.95" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="950" y="501" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=oval;startFill=1;" parent="1" target="VTgdmNcKE282F62j4poa-87" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="460" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-87" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.summing_function;rounded=0;align=center;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;aspect=fixed;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="930" y="440" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-93" value="a" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;textDirection=vertical-lr;" parent="1" vertex="1">
+          <mxGeometry x="680" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-94" value="&lt;div&gt;b&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;textDirection=vertical-lr;" parent="1" vertex="1">
+          <mxGeometry x="760" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-95" value="d" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;textDirection=vertical-lr;" parent="1" vertex="1">
+          <mxGeometry x="920" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-96" value="c" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;textDirection=vertical-lr;" parent="1" vertex="1">
+          <mxGeometry x="840" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-97" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="949.6666666666667" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-97" value="&lt;div&gt;&amp;lt;&amp;lt;&amp;lt;&lt;sub&gt;8&lt;/sub&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;textDirection=vertical-lr;" parent="1" vertex="1">
+          <mxGeometry x="930" y="520" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-99" value="" style="group;html=1;whiteSpace=wrap;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="850" y="562" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=oval;startFill=1;" parent="VTgdmNcKE282F62j4poa-99" target="VTgdmNcKE282F62j4poa-100" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20.344827586206975" y="-262.1724137931034" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;startArrow=oval;startFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="VTgdmNcKE282F62j4poa-99" target="VTgdmNcKE282F62j4poa-100" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="19.925925925925867" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="70" y="20" />
+              <mxPoint x="70" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-100" value="" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;" parent="VTgdmNcKE282F62j4poa-99" vertex="1">
+          <mxGeometry width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-101" value="" style="line;strokeWidth=2;html=1;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;whiteSpace=wrap;" parent="VTgdmNcKE282F62j4poa-99" vertex="1">
+          <mxGeometry y="15" width="40" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="VTgdmNcKE282F62j4poa-99" source="VTgdmNcKE282F62j4poa-102" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="20.28571428571422" y="198" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-102" value="" style="line;strokeWidth=2;html=1;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=south;whiteSpace=wrap;" parent="VTgdmNcKE282F62j4poa-99" vertex="1">
+          <mxGeometry x="15" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=oval;startFill=1;" parent="1" target="VTgdmNcKE282F62j4poa-104" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="420" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-104" target="VTgdmNcKE282F62j4poa-109" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;startArrow=oval;startFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="VTgdmNcKE282F62j4poa-104" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="620.1428571428571" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="840" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-104" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.summing_function;rounded=0;align=center;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;aspect=fixed;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="770" y="600" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-109" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790.2857142857142" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-109" value="&lt;div&gt;&amp;lt;&amp;lt;&amp;lt;&lt;sub&gt;7&lt;/sub&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;textDirection=vertical-lr;" parent="1" vertex="1">
+          <mxGeometry x="770" y="680" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-132" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280.00000000000006" y="1092.5581395348838" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-132" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;0&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=north;flipV=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="1065" width="40" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-135" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;0&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=north;flipV=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="920" width="40" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-144" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="1065" as="sourcePoint" />
+            <mxPoint x="140" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-145" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="1120" as="sourcePoint" />
+            <mxPoint x="140" y="1065" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-146" value="r" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Computer Modern Serif;fontSize=20;fontColor=default;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="100" y="977.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-147" value="c" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Computer Modern Serif;fontSize=20;fontColor=default;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="100" y="1077.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-135" target="VTgdmNcKE282F62j4poa-148" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-152" value="&lt;font style=&quot;font-size: 20px;&quot; data-font-src=&quot;https://github.com/Manza12/Fonts/blob/master/Serif/cmunrm.woff&quot; face=&quot;Computer Modern Serif&quot;&gt;P&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;pointerEvents=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;aspect=fixed;labelPosition=center;verticalLabelPosition=middle;" parent="1" vertex="1">
+          <mxGeometry x="150" y="880" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-152" target="VTgdmNcKE282F62j4poa-148" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-154" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="230" y="920" width="90" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-131" value="f" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=20;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=south;glass=0;arcSize=50;" parent="VTgdmNcKE282F62j4poa-154" vertex="1">
+          <mxGeometry x="50" width="40" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-148" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.summing_function;pointerEvents=0;align=center;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;aspect=fixed;" parent="VTgdmNcKE282F62j4poa-154" vertex="1">
+          <mxGeometry y="62.5" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-150" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.363;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="VTgdmNcKE282F62j4poa-154" source="VTgdmNcKE282F62j4poa-148" target="VTgdmNcKE282F62j4poa-131" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-155" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="350" y="920" width="90" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-156" value="f" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=20;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=south;glass=0;arcSize=50;" parent="VTgdmNcKE282F62j4poa-155" vertex="1">
+          <mxGeometry x="50" width="40" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-157" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.summing_function;pointerEvents=0;align=center;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;aspect=fixed;" parent="VTgdmNcKE282F62j4poa-155" vertex="1">
+          <mxGeometry y="62.5" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.363;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="VTgdmNcKE282F62j4poa-155" source="VTgdmNcKE282F62j4poa-157" target="VTgdmNcKE282F62j4poa-156" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-164" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="470" y="920" width="90" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-165" value="f" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=20;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=south;glass=0;arcSize=50;" parent="VTgdmNcKE282F62j4poa-164" vertex="1">
+          <mxGeometry x="50" width="40" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-166" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.summing_function;pointerEvents=0;align=center;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;aspect=fixed;" parent="VTgdmNcKE282F62j4poa-164" vertex="1">
+          <mxGeometry y="62.5" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.363;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="VTgdmNcKE282F62j4poa-164" source="VTgdmNcKE282F62j4poa-166" target="VTgdmNcKE282F62j4poa-165" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-168" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;strokeWidth=3;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="1160" as="sourcePoint" />
+            <mxPoint x="600" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.363;exitY=-0.012;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-131" target="VTgdmNcKE282F62j4poa-157" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-172" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.362;exitY=-0.011;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-156" target="VTgdmNcKE282F62j4poa-166" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-173" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-152" target="VTgdmNcKE282F62j4poa-157" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-174" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" source="VTgdmNcKE282F62j4poa-152" target="VTgdmNcKE282F62j4poa-166" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-176" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400.00000000000006" y="1092.36" as="targetPoint" />
+            <mxPoint x="320" y="1092.36" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="360" y="1092.36" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="1092.36" as="targetPoint" />
+            <mxPoint x="440" y="1092.36" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="460" y="1092" />
+              <mxPoint x="460" y="1092" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-178" value="&lt;font style=&quot;font-size: 20px;&quot; face=&quot;Computer Modern Serif&quot;&gt;squeezing&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="615" y="1130" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-179" value="&lt;font style=&quot;font-size: 20px;&quot; data-font-src=&quot;https://github.com/Manza12/Fonts/blob/master/Serif/cmunrm.woff&quot; face=&quot;Computer Modern Serif&quot;&gt;absorbing&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=12;fontColor=default;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="500" y="1130" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-183" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="560" y="920" width="120" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-180" value="f" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=20;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=south;glass=0;arcSize=50;" parent="VTgdmNcKE282F62j4poa-183" vertex="1">
+          <mxGeometry x="80" width="40" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-181" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="VTgdmNcKE282F62j4poa-183" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="172.26" as="targetPoint" />
+            <mxPoint y="172.26" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="20" y="171.9000000000001" />
+              <mxPoint x="20" y="171.9000000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="VTgdmNcKE282F62j4poa-183" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="72.25999999999999" as="targetPoint" />
+            <mxPoint y="72.25999999999999" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="20" y="71.90000000000009" />
+              <mxPoint x="20" y="71.90000000000009" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-188" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="800" y="920" width="120" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-189" value="f" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=20;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=south;glass=0;arcSize=50;" parent="VTgdmNcKE282F62j4poa-188" vertex="1">
+          <mxGeometry x="80" width="40" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-190" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="VTgdmNcKE282F62j4poa-188" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="172.26" as="targetPoint" />
+            <mxPoint y="172.26" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="20" y="171.9000000000001" />
+              <mxPoint x="20" y="171.9000000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="VTgdmNcKE282F62j4poa-188" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="72.25999999999999" as="targetPoint" />
+            <mxPoint y="72.25999999999999" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="20" y="71.90000000000009" />
+              <mxPoint x="20" y="71.90000000000009" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-197" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="VTgdmNcKE282F62j4poa-192" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="960" y="990" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="960" y="895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-198" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" parent="1" target="VTgdmNcKE282F62j4poa-192" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="992" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="840" y="895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-199" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="VTgdmNcKE282F62j4poa-192" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="992" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="720" y="895" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-192" value="&lt;font style=&quot;font-size: 20px;&quot; face=&quot;Computer Modern Serif&quot;&gt;Z&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;pointerEvents=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;aspect=fixed;labelPosition=center;verticalLabelPosition=middle;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="880" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-185" value="f" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Computer Modern Serif;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=20;fontColor=default;labelBackgroundColor=none;fillColor=none;gradientColor=none;direction=south;glass=0;arcSize=50;" parent="1" vertex="1">
+          <mxGeometry x="760" y="920" width="40" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-193" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="680" y="991.9000000000001" width="80" height="100.3599999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="VTgdmNcKE282F62j4poa-193" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="100.3599999999999" as="targetPoint" />
+            <mxPoint y="100.3599999999999" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="20" y="100" />
+              <mxPoint x="20" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-187" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="VTgdmNcKE282F62j4poa-193" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="0.35999999999989996" as="targetPoint" />
+            <mxPoint y="0.35999999999989996" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="20" />
+              <mxPoint x="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-195" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="1090.3600000000001" as="targetPoint" />
+            <mxPoint x="920" y="1090.3600000000001" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="940" y="1090" />
+              <mxPoint x="940" y="1090" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-196" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="990.36" as="targetPoint" />
+            <mxPoint x="920" y="990.36" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="940" y="990.0000000000001" />
+              <mxPoint x="940" y="990.0000000000001" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VTgdmNcKE282F62j4poa-200" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontFamily=Helvetica;fontSource=https%3A%2F%2Fgithub.com%2FManza12%2FFonts%2Fblob%2Fmaster%2FSerif%2Fcmunrm.woff;fontSize=12;fontColor=default;labelBackgroundColor=none;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="960" y="1040" as="sourcePoint" />
+            <mxPoint x="1040" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

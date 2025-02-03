@@ -127,11 +127,72 @@ The new vulnerabilities in secure data transmission due to quantum computer and 
 Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrates the present sate of the field through the review of existing research and their development, laying the foundation for our our proposed scheme. Section \ref{sec:preliminaries} describes the foundational concepts of our proposed schemes. Section \ref{sec:methodology} describes the proposed methodology, presenting a detailed piecemeal explanation of our proposed architecture. In section \ref{sec:experminats}, we present the experimental methods as well as the findings. Section \ref{sec:discussion} explore deeper into an extensive analysis of the results, construing the findings and excerpting key insights. Finally, section \ref{sec:conclusion} concludes the paper by indicating the direction of future work, highlighting the potential application and extension of our research.
 \section{Related Works}
 \label{sec:relatedWorks}
+
 \section{Preliminaries}
 \label{sec:preliminaries}
 \subsection{Ekert 91 Protocol}
 \label{sec:e91}
+The E91 protocol is a quantum key distribution (QKD) scheme that uses entangled photon pairs and the violation of Bell's inequality to securely distribute cryptographic keys between two parties, typically referred to as Alice and Bob.
+The Ekert91 protocol, based on the principles of quantum mechanics and entanglement, allows secure key distribution between two parties, Alice and Bob. The steps are as follows:
 
+\begin{enumerate}
+    \item Alice and Bob exchange several entangled Bell states, $\ket{\psi^{-}_{AB}}$, where Alice holds the first subsystem and Bob holds the second.
+    \item For each entangled state, they independently and randomly select a measurement direction from their respective sets $\{A_i\}$ and $\{B_i\}$.
+    \item After completing the measurements, Alice and Bob publicly share their chosen measurement bases. When their bases align (i.e., $(A_1, B_1)$ and $(A_3, B_3)$), the corresponding measurement outcomes are used to construct the sifted key.
+    \item The measurement outcomes from mismatched bases, such as $(A_1, B_3)$, $(A_1, B_2)$, $(A_2, B_3)$, and $(A_2, B_2)$, are analyzed to verify the violation of the CHSH inequality.
+    \item Finally, Alice and Bob perform error correction and privacy amplification processes to transform the sifted key into a secure shared secret key.
+\end{enumerate}
+
+A source, usually referred to as Charlie, generates entangled photon pairs in a singlet state:
+\[\ket{\psi^{-}_{AB}} = \frac{1}{\sqrt{2}}\left(\ket{01}_{AB}-\ket{10}_{AB}\right)
+\]
+where $\ket{0}$ and $\ket{1}$ represent the two possible polarization states of the photons.
+\begin{figure}[!h]
+    \includesvg[width=\textwidth]{measurement.svg}
+    \caption{Direction of measurement for Ekert Protocol}
+    \label{fig:ekertMeasurement}
+\end{figure}
+
+In the Ekert protocol, Alice and Bob each perform a random measurement on their respective parts of the entangled state. For each of these bipartite states $\ket{\psi^{-}_{AB}}$, they choose an observable from two sets, $\{A_i\}$ for Alice and $\{B_i\}$ for Bob. These observables correspond to spin components in the x-z plane of the Bloch sphere, as shown in \ref{fig:ekertMeasurement}. The measurement directions are defined by the angles $\varphi_A$ and $\varphi_B$ for Alice and Bob, respectively.
+
+The measurement operators for Alice and Bob are given by:
+\[
+    A_i = \cos(\varphi_A^i) + \sin(\varphi_A^i) \quad \text{for Alice, and} \quad B_i = \cos(\varphi_B^i) + \sin(\varphi_B^i) \quad \text{for Bob.}
+\]
+Here, $Z=\ket{0}\bra{0}-\ket{1}\bra{1}$ and $X=\ket{+}\bra{+}-\ket{-}\bra{-}$ are the Pauli operators for the measurement.
+
+For Alice, the angles are defined as:
+\[
+    \varphi_A^1 = 0, \quad \varphi_A^2 = \frac{\pi}{2}, \quad \varphi_A^3 = \frac{\pi}{4}.
+\]
+For Bob, the angles are:
+\[
+    \varphi_B^1 = 0, \quad \varphi_B^2 = -\frac{\pi}{4}, \quad \varphi_B^3 = \frac{\pi}{4}.
+\]
+
+In terms of the measurement operators, these can be expressed as:
+\[
+    A_1 = Z, \quad A_2 = X, \quad B_1 = Z, \quad B_2 = \frac{1}{\sqrt{2}} (Z - X), \quad A_3 = \frac{1}{\sqrt{2}} (Z + X), \quad B_3 = \frac{1}{\sqrt{2}} (Z + X).
+\]
+
+It is important to note that the measurements $A_1$ and $B_1$, as well as $A_3$ and $B_3$, are those where Alice and Bob choose the same measurement direction. These measurement choices are crucial for the key generation process, as they result in correlated outcomes that form the sifted key.
+
+In the next step, Alice and Bob announce the directions of their measurements. When their measurement directions match, such as $(A_1 , B_1)$ and $(A_3 , B_3)$, their results are perfectly anti-correlated. By flipping all the bits for one of them, they can generate the sifted key. The results from other combinations of measurements, like $(A_1 , B_3), (A_1 , B_2), (A_2 , B_3), \text{and} (A_2 , B_2)$, are used to assess how much an eavesdropper might know about the key. This is done by checking the CHSH inequality, a classical correlation bound that is part of the Bell inequalities. The CHSH inequality involves four random variables \( A1, A2, B2, B3 \), each taking values of \( +1 \) or \( -1 \). By evaluating these random variables, the inequality states that the sum of certain correlations must not exceed 2.
+
+In the quantum case, the measurement operators for \( A1, A2, B2, B3 \) are treated as quantum observables. The expectation values of their products are calculated using the state \( \rho = \ket{\psi^{-}}\). For example, the expectation value of \( A1B3 \) is found to be $\displaystyle  -\frac{1}{\sqrt{2}} $. By computing the sum of all these expectation values, we obtain a value of
+\[
+    S = \frac{2}{\sqrt{2}},
+\]
+which violates the CHSH inequality. This indicates that Alice and Bob share a maximally entangled state, and there is no information about the key that an eavesdropper could gain. If \( S \leq 2 \), it means the states are separable, and no secret key can be generated.
+The remaining measurement results are used to generate a shared secret key. Only the measurement results obtained along compatible axes are used to establish the key.
+
+The security of the E91 protocol is derived from the following principles:
+\begin{itemize}
+    \item \textit{Quantum Entanglement}: Any attempt at eavesdropping would disturb the entangled state, leading to detectable anomalies in the correlations.
+    \item \textit{Bell's Inequality}: The violation of Bell's inequality rules out classical explanations for the correlations, ensuring the integrity of the quantum channel.
+\end{itemize}
+
+By utilizing the properties of quantum entanglement, the E91 protocol achieves an unprecedented level of security, making it a cornerstone in the field of quantum cryptography.
 \subsection{SHA3 -- 256 Hash Function}
 \label{sec:sha3}
 SHA-3 is the latest member \cite{nistHashFunctions} of the Secure Hash Algorithm (SHA) family of cryptographic hash functions. Based on the K\textsc{eecak} algorithm \cite{Bbbbbbb2011}, the SHA-3 standard differs fundamentally from it's MD-5 \cite{rivest1992md5} like structured predecessors -- SHA-1 and SHA-2 \cite{penard2008secure}. In its essence, the SHA-3 standard is a hash function, that is, for any length of binary data input, there is an output of fixed length. The output is called the \textit{digest} or \textit{hash value}. Depending on the digest length, the four hash functions are called SHA3-224, SHA3-256, SHA3-384 and SHA3-512. The suffixes after the dash indicate the fixed length of the digest, for example, SHA3-256 - which is of interest to our methodology - produces 256 bits long digest. As the digest length is constant irrespective of input length, SHA3 is ideal for integrity and signature verification, as well as password hashing, that is not storing password in clear-text format, rather storing the hash of the password for verification.
@@ -244,7 +305,7 @@ Each message is required to accompanied by a 128-bit Nonce generated from the ac
 \end{itemize}
 
 The ChaCha20-Poly1305 AEAD adopted for Internet Engineering Task Force (IETF) \cite{rfc8439} and subsequently as the standard for Transport Layer security (TLS) \cite{rfc7905} and the OpenBSD Secure Shell (OpenSSH) \cite{miller2015chacha20} is slightly different from the original structures proposed by Daniel J. Bernstein. To be precise, the ChaCha20 symmetric encryption is slightly modified. As opposed to a 64-bit Nonce, the modified ChaCha20 has a 96-bit long Nonce. The modified matrix is shown below --
-\begin{equation}\label{initialState}
+\begin{equation}\label{initialStateMod}
     \left[
         \begin{array}{cccc}
             \text{Consant}[0] & \text{Consant}[1] & \text{Consant}[2] & \text{Consant}[3] \\
@@ -271,7 +332,34 @@ The output from the AEAD is the concatenation of the following --
 \end{itemize}
 \subsection{LSB Steganography}
 \label{sec:steganography}
+Steganography is the process where we don't encrypt the secrete message, rather we hide it in another file. Trough this process we can hide different types of secrete data like text, image, video, audio etc. within cover data which can also be in any different data types.\cite{jayaram2011information}\cite{hemeida2021comparative}
+\begin{figure}[!h]
+    \begin{center}
+        \includesvg[width=\textwidth]{steganographyApplication.svg}
+        \caption{Steganography Application Scenario}
+        \label{fig:stegoApplication}
+    \end{center}
+\end{figure}
 
+In Audio Steganography secret message is hidden in cover audio but there is no much change in the cover audio because it is it use of the psycho-acoustical masking phenomenon of the human auditory system(HAS). There are different methods of steganography. Among them some notables are: LSB Coding, Parity Coding, Phase coding, Spread sprectrum, Echo hiding etc.\cite{hemeida2021comparative} A very popular methodology among them is the LSB(Least Significant Bit) algorithm, which only replaces the least significant bits of the some of the bytes of the cover audio. Due to LSB substitution there is no much changes in the audio also.
+\begin{figure}[!h]
+    \begin{center}
+        \includesvg[width=\textwidth]{embedStego.svg}
+        \caption{Block Diagram of LSB Embedding implementation logic.}
+        \label{fig:stegoEmbed}
+    \end{center}
+\end{figure}
+
+LSB encoding embeds secret audio by replacing the least significant bits of carrier audio frames with bits from the secret audio. First, the carrier and secret audio are checked for compatibility in terms of channels and sample width. The secret audio frames are resized to fit the carrier’s capacity. A mask is applied to clear the carrier’s LSBs, which are then replaced with shifted bits from the secret audio. The result is a modified carrier audio with embedded data, saved as a new file.
+\begin{figure}[!h]
+    \begin{center}
+        \includesvg[width=\textwidth]{extractStego.svg}
+        \caption{Block Diagram for Steganalysis for extracting the embedded data.}
+        \label{fig:stegoExtract}
+    \end{center}
+\end{figure}
+
+Decoding isolates the embedded bits by applying a mask on the embedded audio and shifting these bits back to their original positions to reconstruct the secret audio. To improve quality, a low-pass filter reduces noise. The reconstructed audio is clipped to valid ranges and saved as the extracted secret.
 \section{Methodology}
 \label{sec:methodology}
 The architecture that we proposed is a system that integrates E91 QKD protocol with classical cryptographic schemes and lsb steganography to ensure a heavily secure audio data encryption system. The system utilizes the E91 for QKD to generate and exchange the cryptographic keys called the Ekert key, SHA3 to derive a high-entropy 256-bit key from the Ekert key for ChaCha20-Poly1305 encryption and LSB substitution for steganography. The architecture ensures augmented data security through the combination of classical and quantum techniques. Figure \ref{fig:methodology} provides a high level overview of our proposed system.
