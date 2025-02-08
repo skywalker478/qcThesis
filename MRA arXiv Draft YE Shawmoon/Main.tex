@@ -181,7 +181,7 @@ In the next step, Alice and Bob announce the directions of their measurements. W
 
 % In the quantum case, the measurement operators for \( A1, A2, B2, B3 \) are treated as quantum observables. The expectation values of their products are calculated using the state \( \rho = \ket{\psi^{-}}\). For example, the expectation value of \( A1B3 \) is found to be $\displaystyle  -\frac{1}{\sqrt{2}} $. By computing the sum of all these expectation values, we obtain a value of
 % \[
-    % S = \frac{2}{\sqrt{2}},
+% S = \frac{2}{\sqrt{2}},
 % \]
 % which violates the CHSH inequality. This indicates that Alice and Bob share a maximally entangled state, and there is no information about the key that an eavesdropper could gain. If \( S \leq 2 \), it means the states are separable, and no secret key can be generated.
 The remaining measurement results are used to generate a shared secret key. Only the measurement results obtained along compatible axes are used to establish the key.
@@ -496,7 +496,13 @@ The 256-bit key derived from the SHA3-256 hashing algorithm is input along with 
 The decryption process is the exact reverse of the encryption process. Similar to the encryption process, a 256-bit long key is derived from the shared Ekert key using the SHA3-256 hash function. The key is used to generate the ChaCha20 keystream, similar to the encryption process. The keystream is used in the Poly1305 hash function along with the received encrypted audio to generate a authenticator tag. The generated tag is compared with the received tag to verify the validity and integrity of the received data. Upon validation, the encrypted audio is XORed with the previously generated keystream to recover the stego audio.
 \subsection{Steganography extraction}
 The stego audio recovered in \ref{sec:chacha20poly1305decryption} is modified to isolate the cover audio and the message audio. As the least significant bits of each frame of the cover audio was replaced by the message audio bits, the LSBs of each frame was extracted in order to reconstruct the binary stream of the message audio. The reconstructed binary stream is modified according to bit-depth to form audio frames. From these frames the message audio is reconstructed.
+\section{Implementation Details}
+\label{sec:implementation}
 \section{Experiments and Results}
+\begin{figure}[!h]
+    \includesvg[width=\textwidth]{cover.svg}
+    \caption{Waveform of Cover audio.}
+\end{figure}
 \label{sec:experminats}
 \section{Findings and Discussion}
 \label{sec:discussion}
