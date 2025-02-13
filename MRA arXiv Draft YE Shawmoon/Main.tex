@@ -34,6 +34,7 @@
 \usepackage{indentfirst}
 \usepackage{authblk}
 \usepackage{float}
+\usepackage{arydshln}
 \usepackage[nameinlink, noabbrev]{cleveref} % Load cleveref after hyperref
 % Define the format and colors for different reference types
 \crefformat{figure}{#2{\color{red}Figure~#1}#3}
@@ -127,7 +128,19 @@ The new vulnerabilities in secure data transmission due to quantum computer and 
 Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrates the present sate of the field through the review of existing research and their development, laying the foundation for our our proposed scheme. Section \ref{sec:preliminaries} describes the foundational concepts of our proposed schemes. Section \ref{sec:methodology} describes the proposed methodology, presenting a detailed piecemeal explanation of our proposed architecture. In section \ref{sec:experminats}, we present the experimental methods as well as the findings. Section \ref{sec:discussion} explore deeper into an extensive analysis of the results, construing the findings and excerpting key insights. Finally, section \ref{sec:conclusion} concludes the paper by indicating the direction of future work, highlighting the potential application and extension of our research.
 \section{Related Works}
 \label{sec:relatedWorks}
+Post-Quantum cryptography (PQC) also known as Quantum resistant Cryptography is designed to secure the attacks against both classical and quantum computers. So basically Classical cryptography and Quantum Key Distribution(QKD) is combined here for a better and dependable data communication system.
 
+Classical cryptography is based on the hardness of mathematical problems and computer complexity for securing communication for decades. The classical cryptographic technics are- Advanced Encryption System(AES), Data Encryption Standard (DES), Asymmetric key algorithms- Rivest–Shamir–Adleman(RSA), Elliptic Curve Cryptography (ECC) and Hash Functions. These classical techniques could be the focus of brute force attack as they are not capable enough of handling the quantum attacks. Hence to solve this problem, the algorithms of Post Quantum Cryptography was proposed which is strong, reliable and secure against the quantum attacks.\cite{sharma2023post}
+
+E91 and BB84 are the methods of Quantum Key Distribution (QKD) based on the completeness of quantum mechanics. BB84 is the first QKD protocol relies on the Heisenberg uncertainty principle and the no-cloning theorem.On the other hand,  E91 is an entalglement based protocol basically generalized from of Bell’s theorem. The users (Alice and bob) can easily detect the eavesdropping attempt checking the Bell’s inequality by using this protocol. \cite{ekert1991quantum} Among them, E91 is considered as safer and reliable though it faces some technical difficulties.\cite{alvarez2016comparison}
+
+Hash functions are frequently used in modern cryptography in order to ensure authentication of the digital communication system. It takes an arbitrary length input and produces a fixed sized hashed value where any small changes in input resulting the complete hashed value. SHA-0, SHA-1, SHA-2, SHA-3 are the dedicated hash functions of the SHA family.\cite{madhuravani2013cryptographic} Among them, the SHA-3 family is based on permutation having an extendable output function. SHA3-224, SHA3-256, SHA3-384, SHA3-512 are known as cryptographic hash functions. SHA-3 provides resistance to collision, preimage and second preimage attacks which ensures the security attacks such as digital signature generation and verification, key derivation and pseudorandom bit generation. \cite{dworkin2015sha}
+
+Steganography is a common practice of hiding information. The main purpose of steganography is to secure the information completely undetectable\cite{amin2003information} There are many types of steganography using different types of cover objects such as text \cite{yang2018rnn}, audio \cite{jayaram2011information}\cite{hemeida2021comparative}\cite{djebbar2012comparative}, video, images (2D and 3D) \cite{farrag2020secure} and information matrices \cite{mashaly2019multiple}.Because of having high quality of redundancy and data transmission rate in signals and audio files, make it suitable for steganographic process.\cite{singh2014survey} The audio stenographic process are LSB codding, Parity codding, Phase codding, Spread spectrum, Echo hiding. Among them, LSB is the best audio steganography technique as it increases robustness against noise addition and MPEG compression, high capacity and simplicity.\cite{cvejic2004increasing}\cite{jayaram2011information}  When the QKD protocols are combined with this, it improves more data security. using  Bernstein-Vazirani algorithm and the BB84 protocol, it generates a secret key to ensure only authorized access to quantum messages. This quantum steganography method increases hidden channel capacity, resists attacks like intercept-resend, and reduces message detectability by using more Bell states and random information distribution.\cite{yalla2022novel}
+
+ChaCha, a variant of Salsa20, represent the ChaCha family of stream ciphers, which enhances the Salsa20 design. It increases the resistance to cryptoanalysis by improving the diffusion per round while maintaining performance. It also achieves better software speed compared to Salsa20 in certain platforms due to its efficient design that allows for SIMD operations.\cite{bernstein2008chacha} Chacha is a robust alternative to salsa20, with enhancements that could make it preferable for various cryptographic applications.
+
+The Poly1305-AES is a specific type of MAC(Message Authentication Protocol) which is a cryptographic tools used to verify the integrity and authenticity of a message.\cite{bernstein2005poly1305} It computes a 16-byte authenticator for variable-length messages using a 32-byte secret key, which includes a 16-byte AES key and a 16-byte addition key which helps in high-speed computations and making it suitable for various applications.\cite{bernstein2005poly1305} The probability of successful attack is also very low due to the uniqueness of nonces and the unpredictability of keys. For all the reasons, it is used widely for network protocols and secure communications.
 \section{Preliminaries}
 \label{sec:preliminaries}
 \subsection{Ekert 91 Protocol}
@@ -172,18 +185,20 @@ For Bob, the angles are:
 
 In terms of the measurement operators, these can be expressed as:
 \[
-    A_1 = Z, \quad A_2 = X, \quad B_1 = Z, \quad B_2 = \frac{1}{\sqrt{2}} (Z - X), \quad A_3 = \frac{1}{\sqrt{2}} (Z + X), \quad B_3 = \frac{1}{\sqrt{2}} (Z + X).
+    A_1 = Z, \quad A_2 = X, \quad A_3 = \frac{1}{\sqrt{2}} (Z + X)\]
+
+\[B_1 = Z, \quad B_2 = \frac{1}{\sqrt{2}} (Z - X),  \quad B_3 = \frac{1}{\sqrt{2}} (Z + X)
 \]
 
 It is important to note that the measurements $A_1$ and $B_1$, as well as $A_3$ and $B_3$, are those where Alice and Bob choose the same measurement direction. These measurement choices are crucial for the key generation process, as they result in correlated outcomes that form the sifted key.
 
 In the next step, Alice and Bob announce the directions of their measurements. When their measurement directions match, such as $(A_1 , B_1)$ and $(A_3 , B_3)$, their results are perfectly anti-correlated. By flipping all the bits for one of them, they can generate the sifted key. The results from other combinations of measurements, like $(A_1 , B_3), (A_1 , B_2), (A_2 , B_3), \text{and} (A_2 , B_2)$, are used to assess how much an eavesdropper might know about the key. This is done by checking the CHSH inequality, a classical correlation bound that is part of the Bell inequalities. The CHSH inequality involves four random variables \( A1, A2, B2, B3 \), each taking values of \( +1 \) or \( -1 \). By evaluating these random variables, the inequality states that the sum of certain correlations must not exceed 2.
 
-% In the quantum case, the measurement operators for \( A1, A2, B2, B3 \) are treated as quantum observables. The expectation values of their products are calculated using the state \( \rho = \ket{\psi^{-}}\). For example, the expectation value of \( A1B3 \) is found to be $\displaystyle  -\frac{1}{\sqrt{2}} $. By computing the sum of all these expectation values, we obtain a value of
-% \[
-% S = \frac{2}{\sqrt{2}},
-% \]
-% which violates the CHSH inequality. This indicates that Alice and Bob share a maximally entangled state, and there is no information about the key that an eavesdropper could gain. If \( S \leq 2 \), it means the states are separable, and no secret key can be generated.
+In the quantum case, the measurement operators for \( A1, A2, B2, B3 \) are treated as quantum observables. The expectation values of their products are calculated using the state \( \rho = \ket{\psi^{-}}\). For example, the expectation value of \( A1B3 \) is found to be $\displaystyle  -\frac{1}{\sqrt{2}} $. By computing the sum of all these expectation values, we obtain a value of
+\[
+    S = \frac{2}{\sqrt{2}},
+\]
+which violates the CHSH inequality. This indicates that Alice and Bob share a maximally entangled state, and there is no information about the key that an eavesdropper could gain. If \( S \leq 2 \), it means the states are separable, and no secret key can be generated.
 The remaining measurement results are used to generate a shared secret key. Only the measurement results obtained along compatible axes are used to establish the key.
 
 The security of the E91 protocol is derived from the following principles:
@@ -225,7 +240,8 @@ The process of retrieving the digest $Z$ from input $N$ is described below --
     \item $Z$ is truncated to $d$ bits.
 \end{itemize}
 
-For example, for the following binary stream, $N=$
+For example, for the following binary stream, \[N=00100000010001010100000110011000010001001111101010000001100011001111101101011110\]
+the digest is $43b3d090d2aebb7790183e58808b71fe890858b5ca3fd308efb2aeba2fde0b71$
 \subsection{ChaCha20-Poly1305}
 \label{sec:chacha20}
 ChaCha20-Poly1305 is an authenticated encryption with associated data (AEAD) algorithm that provides a comparatively fast software performance. It is typically faster than AES-GCM (Galois/Counter Mode) in the absence of hardware acceleration \cite{rfc7539}. This algorithm combines the ChaCha20 stream cipher \cite{bernstein2008chacha} and the Poly1305 \cite{bernstein2005poly1305} universal hash family that acts as message authentication code -- both of which was developed independently by Daniel J. Bernstein.
@@ -335,7 +351,7 @@ The output from the AEAD is the concatenation of the following --
 Steganography is the process where we don't encrypt the secrete message, rather we hide it in another file. Trough this process we can hide different types of secrete data like text, image, video, audio etc. within cover data which can also be in any different data types.\cite{jayaram2011information}\cite{hemeida2021comparative}
 \begin{figure}[H]
     \begin{center}
-        \includesvg[width=\textwidth]{steganographyApplication.svg}
+        \includesvg[width=0.75\textwidth]{steganographyApplication.svg}
         \caption{Steganography Application Scenario}
         \label{fig:stegoApplication}
     \end{center}
@@ -385,7 +401,51 @@ As outlined by Ekert \cite{Ekert1991}, an entangled pair generator, referred to 
 \end{figure}
 \subsection{Measurement}
 \label{sec:measurement}
-Alice and Bob independently create a random set of bases of length $n$. Using this set of random bases, Alice and Bob perform measurements on the qubits they received from Charlie. The respective measurement circuits are shown in Figures \ref{fig:aliceMeasurements} and \ref{fig:bobMeasurements}. After the completion of the measurements, both parties share their measurement bases over an unsecured Classical Channel. Upon comparison of these measurement bases, the states that lack a common base are discarded. The result is a secret key called the Final Ekert Key that is shared between Alice and Bob. The measurement process is illustrated in Figure \ref{fig:combined}.
+Alice and Bob independently create a random set of bases of length $n$. Using this set of random bases, Alice and Bob perform measurements on the qubits they received from Charlie. After the completion of the measurements, both parties share their measurement bases over an unsecured Classical Channel. Upon comparison of these measurement bases, the states that lack a common base are discarded. The result is a secret key called the Final Ekert Key that is shared between Alice and Bob. The measurement process is illustrated in Figure \ref{fig:combined}.
+\begin{figure}[!h]
+    \begin{center}
+        \begin{quantikz}
+            \lstick{$qr_{0}$} & \gate{H}\gategroup[2,steps=2,style={dashed,rounded corners}]{Charlie} & \ctrl{1} & & \gate{A}\gategroup[3,steps=1,style={dashed,rounded corners}]{Alice} \wire[d][2]{q} & & & \\
+            \lstick{$qr_{1}$} & & \targ{} & & & & \gate{B}\gategroup[2,steps=1,style={dashed,rounded corners}]{Bob} \wire[d][1]{q} & \\
+            \lstick{$cr$}\setwiretype{c} & & & & & & &
+        \end{quantikz}
+        \caption{Combined circuit for E91 QKD protocol}
+        \label{fig:combined}
+    \end{center}
+\end{figure}
+\subsection{Encryption key generation}
+\label{sec:keyGen}
+After the creation of the final Ekert key, Alice and Bob pass the key through the SHA3-256 hashing algorithm to generate another key of fixed length (256 bits) and high entropy. The use of the hashed key is instead of the original Ekert key provides an additional layer of security by obscuring the contents of the original key. If an eavesdropper gets hold of the hashed key, he/she will not be able distill the original key as the SHA3 hash function provides a vital protection against reverse calculation.
+
+For 500 singlet states, we may get a key like the following --\\
+$01011000100110100111011110111100001100111111000101110001100000011110111011000000100101110111$
+The hash digest of this key is $486340cb54e65a96edc02257b48f3415a0c374f771871a4240ef8097cecdeec2$.
+
+Similarly, for 128 singlet states, we may get a key like the following -- $0001001110110110111000101100$. \\
+The hash digest of this key is $9e0ae69c28e4f4e8ba13e1c496fb237284df4e0b6540e168b18bec0cde9ee70f$.
+\subsection{Steganographic embedding}
+\label{sec:stegoEncode}
+Prior encryption, the audio data is embedded in a cover audio using Steganography. The technique of Least Significant Bit (LSB) substitution is used to produce the stego audio, that is, the audio file created from the cover audio that hides the message audio. First, the message and the cover audio is checked for compatibility. Upon success, the cover audio frames are modified through masking, which clears the LSB of each frame. They are subsequently replaced by the bits of the message audio.
+\subsection{Encryption and Authenticator generation}
+\label{sec:chacha20poly1305encryption}
+The hashed key generated in \ref{sec:keyGen} is used to encrypt the stego audio generated in \ref{sec:stegoEncode}. The encryption process is accompanied by the generation of an authenticator tag. The ChaCha20-Poly1305 AEAD is used to perform the encryption. The high-level over view of the process is shown in Figure \ref{fig:chacha20poly1305encryption}.
+\begin{figure}[!h]
+    \centering
+    \includesvg[width=0.5\textwidth]{chacha20poly1305.svg}
+    \caption{ChaCha20-Poly1305 Encryption and Authenticator tag generation.}
+    \label{fig:chacha20poly1305encryption}
+\end{figure}
+
+The 256-bit key derived from the SHA3-256 hashing algorithm is input along with a 96-bit Nonce and a 8-bit Counter to the ChaCha20 Block function. The function generates a 512-bit state after 20 rounds, which is serialized into a keystream in little-endian format. The first 256-bits of the keystream is input to the Poly1305 hash function along with other associated data. The keystream is XORed with the stego audio to produce the encrypted audio. The encrypted audio is put into the Poly1305 hash function which produces a 128-bit long authenticator tag.
+\subsection{Decryption and Authentication}
+\label{sec:chacha20poly1305decryption}
+The decryption process is the exact reverse of the encryption process. Similar to the encryption process, a 256-bit long key is derived from the shared Ekert key using the SHA3-256 hash function. The key is used to generate the ChaCha20 keystream, similar to the encryption process. The keystream is used in the Poly1305 hash function along with the received encrypted audio to generate a authenticator tag. The generated tag is compared with the received tag to verify the validity and integrity of the received data. Upon validation, the encrypted audio is XORed with the previously generated keystream to recover the stego audio.
+\subsection{Steganography extraction}
+\label{sec:stegoExtract}
+The stego audio recovered in \ref{sec:chacha20poly1305decryption} is modified to isolate the cover audio and the message audio. As the least significant bits of each frame of the cover audio was replaced by the message audio bits, the LSBs of each frame was extracted in order to reconstruct the binary stream of the message audio. The reconstructed binary stream is modified according to bit-depth to form audio frames. From these frames the message audio is reconstructed.
+\section{Implementation Details}
+\label{sec:implementation}
+In the course of our research, we utilized an amalgamation of powerful tools and libraries in the pursuit of the effective implementation of our proposed scheme. The Qiskit SDK from IBM \cite{Wille2019IBMsQT} acted as one of the foundational columns of our research by enabling us to develop and simulate quantum circuits and thus properly implementing the E91 protocol. For our implementation, we specifically used Qiskit v0.39.2. Using Qiskit, we developed the singlet circuit for entangled pair generation \ref{fig:singlet}, the measurement circuits of Alice and Bob and the creation of the Final Ekert Key. The respective measurement circuits are shown in Figures \ref{fig:aliceMeasurements} and \ref{fig:bobMeasurements}.
 \begin{figure}[!h]
     \begin{subfigure}[h]{0.5\textwidth}
         \centering
@@ -452,58 +512,217 @@ Alice and Bob independently create a random set of bases of length $n$. Using th
     \caption{Bob's measurement circuits.}
     \label{fig:bobMeasurements}
 \end{figure}
+
+The key was then zero padded to make it divisible by 8. The zero padded key was converted into a high entropy 256-bit long encryption key using PyCryptodome's \cite{pycryptodome} hash function -- specifically the SHA3-256 function, as stated in \ref{sec:keyGen}.
+
+For our research, we used a single cover audio to hide two secret message audios using LSB steganography following the process detailed in \ref{sec:stegoEncode} using the computational tools and libraries provided by NumPy \cite{harris2020array}. For our cover audio, we chose \href{https://pixabay.com/music/beats-no-place-to-go-216744/}{No Place To Go}. The original audio was in \textit{.mp3} format. We converted it into \textit{.wav} format using FFmpeg \cite{newmarch2017ffmpeg} and stored it as \textit{cover.wav}. The waveform of the cover audio is shown in Figure \ref{fig:coverAudio}. For our secret audios, we chose \href{https://pixabay.com/music/future-bass-alone-296348/}{Alone} as secret audio 1 and \href{https://pixabay.com/music/future-bass-stylish-deep-electronic-262632/}{Stylish Deep Electronic} as secret audio 2. Similar to the cover audio, the secret audios were converted from \textit{.mp3} format to \textit{.wav} format using FFmpeg and was saved as \textit{secret1.wav} and \textit{secret2.wav}, respectively. Their respective waveforms are shown in Figure \ref{fig:secretAudio1} and \ref{fig:secretAudio2}. Using the LSB steganography technique, we embedded \textit{secret1.wav} and \textit{secret2.wav} inside \textit{cover.wav} and saved them as \textit{embedded1.wav} and \textit{embedded2.wav}. Their respective waveforms are shown in Figure \ref{fig:embeddedAudio1} and \ref{fig:embeddedAudio2}. From visual and auditory analysis of the waveforms, we found imperceptible differences between these three audio signals, indicating effective implementation of LSb steganography.
+
 \begin{figure}[!h]
     \begin{center}
-        \begin{quantikz}
-            \lstick{$qr_{0}$} & \gate{H}\gategroup[2,steps=2,style={dashed,rounded corners}]{Charlie} & \ctrl{1} & & \gate{A}\gategroup[3,steps=1,style={dashed,rounded corners}]{Alice} \wire[d][2]{q} & & & \\
-            \lstick{$qr_{1}$} & & \targ{} & & & & \gate{B}\gategroup[2,steps=1,style={dashed,rounded corners}]{Bob} \wire[d][1]{q} & \\
-            \lstick{$cr$}\setwiretype{c} & & & & & & &
-        \end{quantikz}
-        \caption{Combined circuit for E91 QKD protocol}
-        \label{fig:combined}
+        \begin{subfigure}[!h]{0.45\textwidth}
+            \includesvg[width=\textwidth]{cover.svg}
+            \caption{Waveform of Cover audio (\href{https://pixabay.com/music/beats-no-place-to-go-216744/}{\textit{cover.wav}.})}
+            \label{fig:coverAudio}
+        \end{subfigure}
     \end{center}
+    \begin{subfigure}[!h]{0.45\textwidth}
+        \begin{center}
+            \centering
+            \includesvg[width=\textwidth]{secret1.svg}
+            \caption{Waveform of Secret audio 1 (\href{https://pixabay.com/music/future-bass-alone-296348/}{\textit{secret1.wav}.})}
+            \label{fig:secretAudio1}
+        \end{center}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[!h]{0.45\textwidth}
+        \begin{center}
+            \includesvg[width=\textwidth]{secret2.svg}
+            \caption{Waveform of Secret audio 2 (\href{https://pixabay.com/music/future-bass-stylish-deep-electronic-262632/}{\textit{secret2.wav}}).}
+            \label{fig:secretAudio2}
+        \end{center}
+    \end{subfigure}
+    \caption{Waveforms of Cover audio and Secret audios.}
 \end{figure}
-\subsection{Encryption key generation}
-\label{sec:keyGen}
-After the creation of the final Ekert key, Alice and Bob pass the key through the SHA3-256 hashing algorithm to generate another key of fixed length (256 bits) and high entropy. The use of the hashed key is instead of the original Ekert key provides an additional layer of security by obscuring the contents of the original key. If an eavesdropper gets hold of the hashed key, he/she will not be able distill the original key as the SHA3 hash function provides a vital protection against reverse calculation.
-
-For 500 singlet states, we may get a key like the following --
-
-$01011000100110100111011110111100001100111111000101110001100000011110111011000000100101110111$
-
-The hash digest of this key is $486340cb54e65a96edc02257b48f3415a0c374f771871a4240ef8097cecdeec2$.
-
-Similarly, for 128 singlet states, we may get a key like the following --
-
-$0001001110110110111000101100$
-
-The hash digest of this key is $9e0ae69c28e4f4e8ba13e1c496fb237284df4e0b6540e168b18bec0cde9ee70f$.
-\subsection{Steganographic embedding}
-\label{sec:stegoEncode}
-Prior encryption, the audio data is embedded in a cover audio using Steganography. The technique of Least Significant Bit (LSB) substitution is used to produce the stego audio, that is, the audio file created from the cover audio that hides the message audio. First, the message and the cover audio is checked for compatibility. Upon success, the cover audio frames are modified through masking, which clears the LSB of each frame. They are subsequently replaced by the bits of the message audio.
-\subsection{Encryption and Authenticator generation}
-The hashed key generated in \ref{sec:keyGen} is used to encrypt the stego audio generated in \ref{sec:stegoEncode}. The encryption process is accompanied by the generation of an authenticator tag. The ChaCha20-Poly1305 AEAD is used to perform the encryption. The high-level over view of the process is shown in Figure \ref{fig:chacha20poly1305encryption}.
 \begin{figure}[!h]
-    \centering
-    \includesvg[width=0.5\textwidth]{chacha20poly1305.svg}
-    \caption{ChaCha20-Poly1305 Encryption and Authenticator tag generation.}
-    \label{fig:chacha20poly1305encryption}
+    \begin{subfigure}[!h]{0.45\textwidth}
+        \begin{center}
+            \centering
+            \includesvg[width=\textwidth]{embedded1.svg}
+            \caption{Waveform of Embedded audio 1 (\textit{embedded1.wav}.)}
+            \label{fig:embeddedAudio1}
+        \end{center}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[!h]{0.45\textwidth}
+        \begin{center}
+            \includesvg[width=\textwidth]{embedded2.svg}
+            \caption{Waveform of Embedded audio 2 (\textit{embedded2.wav}).}
+            \label{fig:embeddedAudio2}
+        \end{center}
+    \end{subfigure}
+    \caption{Waveforms of Embedded audios produced through LSB Steganography.}
 \end{figure}
 
-The 256-bit key derived from the SHA3-256 hashing algorithm is input along with a 96-bit Nonce and a 8-bit Counter to the ChaCha20 Block function. The function generates a 512-bit state after 20 rounds, which is serialized into a keystream in little-endian format. The first 256-bits of the keystream is input to the Poly1305 hash function along with other associated data. The keystream is XORed with the stego audio to produce the encrypted audio. The encrypted audio is put into the Poly1305 hash function which produces a 128-bit long authenticator tag.
-\subsection{Decryption and Authentication}
-\label{sec:chacha20poly1305decryption}
-The decryption process is the exact reverse of the encryption process. Similar to the encryption process, a 256-bit long key is derived from the shared Ekert key using the SHA3-256 hash function. The key is used to generate the ChaCha20 keystream, similar to the encryption process. The keystream is used in the Poly1305 hash function along with the received encrypted audio to generate a authenticator tag. The generated tag is compared with the received tag to verify the validity and integrity of the received data. Upon validation, the encrypted audio is XORed with the previously generated keystream to recover the stego audio.
-\subsection{Steganography extraction}
-The stego audio recovered in \ref{sec:chacha20poly1305decryption} is modified to isolate the cover audio and the message audio. As the least significant bits of each frame of the cover audio was replaced by the message audio bits, the LSBs of each frame was extracted in order to reconstruct the binary stream of the message audio. The reconstructed binary stream is modified according to bit-depth to form audio frames. From these frames the message audio is reconstructed.
-\section{Implementation Details}
-\label{sec:implementation}
-\section{Experiments and Results}
+The encryption key was used as the input key to PyCryptodome's ChaCha20-Poly1305 AEAD function in order to generate the cipher keystream as per the procedure stated in \ref{sec:chacha20poly1305encryption}. Using the keystream, the embedded audios, \textit{embedded1.wav} and \textit{embedded2.wav} was encrypted as ciphertext. From the the ciphertext, the authenticator tag was generated. The nonce used in producing the ciphertext, the ciphertext itself and the corresponding tag was stored in \textit{.bin} files, namely, \textit{encrypted1.bin} and \textit{encrypted2.bin}. The \textit{.bin} files were structured in such a way that the 96-bit nonce was followed by the ciphertext, which was in turn followed by the 128-bit tag. The waveforms of the encrypted audios are shown in Figure \ref{fig:encrypted1} and \ref{fig:encrypted2}.
+
 \begin{figure}[!h]
-    \includesvg[width=\textwidth]{cover.svg}
-    \caption{Waveform of Cover audio.}
+    \begin{subfigure}[h]{0.45\textwidth}
+        \begin{center}
+            \includesvg[width=\textwidth]{encrypted1.svg}
+            \caption{Waveform of Encrypted audio 1 (\textit{encrypted1.wav})}
+            \label{fig:encrypted1}
+        \end{center}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h]{0.45\textwidth}
+        \begin{center}
+            \includesvg[width=\textwidth]{encrypted2.svg}
+            \caption{Waveform of Encrypted audio 2 (\textit{encrypted2.wav})}
+            \label{fig:encrypted2}
+        \end{center}
+    \end{subfigure}
+    \caption{Waveforms of the Encrypted audios produced by encrypting the Embedded audios.}
 \end{figure}
-\label{sec:experminats}
+
+The encrypted file was received by the intended recipient, who decrypted the file and authenticated it by comparing the received tag and the newly computed tag, as illustrated in \ref{sec:chacha20poly1305decryption}. Upon decryption and successful authentication, the audio was stored in \textit{.wav} files, namely, \textit{decrypted1.wav} and \textit{decrypted2.wav}, corresponding to \textit{embedded1.wav} and \textit{embedded2.wav}. The waveforms of these decrypted audios are shown in Figure \ref{fig:decrypted1} and \ref{fig:decrypted2}. Upon analyzing both visually and aurally, we found the decrypted audios, \textit{decrypted1.wav} and \textit{decrypted2.wav} to be indistinguishable from their embedded counterparts, \textit{embedded1.wav} and \textit{embedded2.wav}.
+
+\begin{figure}[!h]
+    \begin{subfigure}[h]{0.45\textwidth}
+        \begin{center}
+            \includesvg[width=\textwidth]{decrypted1.svg}
+            \caption{Waveform of Decrypted audio 1 (\textit{decrypted1.wav})}
+            \label{fig:decrypted1}
+        \end{center}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h]{0.45\textwidth}
+        \begin{center}
+            \includesvg[width=\textwidth]{decrypted2.svg}
+            \caption{Waveform of Decrypted audio 2 (\textit{decrypted2.wav})}
+            \label{fig:decrypted2}
+        \end{center}
+    \end{subfigure}
+    \caption{Waveforms of the Decrypted audios produced by decrypting the Encrypted audios.}
+\end{figure}
+
+From the decrypted audios, we extracted the secret audio as detailed in \ref{sec:stegoExtract}. The extracted audios was stored as \textit{extracted1.wav} and \textit{extracted2.wav}, corresponding to \textit{decrypted1.wav} and \textit{decrypted2.wav}. The waveforms of these audios are shown in Figure \ref{fig:extracted1} and \ref{fig:extracted2}. Visual analysis depicted a slight variation between original secret audios and extracted audios, that is, between \ref{fig:secretAudio1} and \ref{fig:extracted1} as well as \ref{fig:secretAudio2} and \ref{fig:extracted2}. This chang was corroborated by the auditory analysis. Nevertheless, these slight variations did not make the extracted audio intelligible, rather, it felt like the amplitude of the audio signals was slightly decreased, proving an effective LSB steganographic extraction.
+
+All the waveforms shown in this section were generated using MATLAB \cite{MATLAB:R2016a}.
+\begin{figure}[H]
+    \begin{subfigure}[h]{0.45\textwidth}
+        \begin{center}
+            \includesvg[width=\textwidth]{extracted1.svg}
+            \caption{Waveform of Extracted audio 1 (\textit{extracted1.wav})}
+            \label{fig:extracted1}
+        \end{center}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[h]{0.45\textwidth}
+        \begin{center}
+            \includesvg[width=\textwidth]{extracted2.svg}
+            \caption{Waveform of Extracted audio 2 (\textit{extracted2.wav})}
+            \label{fig:extracted2}
+        \end{center}
+    \end{subfigure}
+    \caption{Waveforms of the Extracted audios produced through LSB extraction.}
+\end{figure}
+\section{Analysis}
+\label{sec:analysis}
+\subsection{Analysis of Audio Properties}
+With the help of the tools provided by NumPy, we calculated various properties of the audio signals obtained in different stages of our methodology. These properties ranges from entropy of the encrypted signal to histogram analysis.
+\subsubsection{Entropy Analysis}
+The randomness and unpredictability of a cipher can be measured by the Shanon entropy \cite{shannon1948mathematical}. In our scenario, the entropy of an encrypted audio signal is an indication of its unpredictability and randomness. The method of calculating entropy is as follows --
+\[H(x)=-\sum_{i=1}^{n}P(x_i)\log_{b}(P(x_i))\]
+Here, $H(x)$ is the entropy of the signal while $P(x_i)$ is the probability of the $i$th value of signal $x$. For a good encryption technique, it is desirable to have the entropy of the encrypted signal to be as close to $8$ as possible. Table \ref{table:entropy} shows the entropy values of the two encrypted signals, \textit{encrypted1.wav} and \textit{encrypted2.wav}, as well as those of the embedded signals, \textit{embedded1.wav} and \textit{embedded2.wav}.
+\begin{table}[!h]
+    \begin{center}
+        \caption{Entropy of audio signals.}
+        \begin{tabular}{cc}
+            \hline
+            Audio File              & Entropy             \\ \hline
+            \textit{embedded1.wav}  & $5.343236996344665$ \\
+            \textit{encrypted1.wav} & $7.999996690800791$ \\ \hdashline
+            \textit{embedded2.wav}  & $5.372078566472842$ \\
+            \textit{encrypted2.wav} & $7.999997028544158$ \\ \hline
+        \end{tabular}
+        \label{table:entropy}
+    \end{center}
+\end{table}
+
+From the table above, it can be seen that the entropy of the embedded signals are far below $8$, almost by a margin of $2.6$, while that of the encrypted signals are $\approx8$, indicating proper encryption.
+\subsubsection{Correlation Coefficient Calculation}
+Correlation coefficient provide an insight into the relationship between two random variables. For this research, we calculated the correlation coefficients between the embedded and the encrypted audio signals. The general formula of correlation coefficient is given by the following --
+\[r(x,y)=\frac{\sum_{i=1}^{n}(x_i-\overline{x})(y_i-\overline{y})}{\sqrt{\sum_{i=1}^{n}(x_i-\overline{x})^2\sum_{i=1}^{n}(y_i-\overline{y})^2}}\]
+
+Here, $x$ is the entity with respect to which the correlation coefficient is calculated, which in our case is the embedded audios
+, while $y$ is the entity whose correlation coefficient is being calculated, in this case the encrypted audios. $\overline{x}$ and $\overline{y}$ are the means of $x$ and $y$, respectively. The correlation coefficients between the embedded and the encrypted audio signals are shown in Table \ref{table:corrcoef}.
+\begin{table}[!h]
+    \begin{center}
+        \caption{Correlation coefficient between embedded and encrypted audio signals.}
+        \begin{tabular}{cc}
+            \hline
+            Audio File & Correlation Coefficient            \\ \hline
+            Audio 1    & $-4.515503267166404\times10^{-5}$  \\ \hdashline
+            Audio 2    & $-5.8256422990290715\times10^{-5}$ \\ \hline
+        \end{tabular}
+        \label{table:corrcoef}
+    \end{center}
+\end{table}
+
+From the table above, it is evident that both of the encrypted audio signals have very poor correlation with their corresponding embedded signals, as both correlation coefficients were well below zero.
+\subsubsection{Unified Average Changing Intensity (UACI)}
+Unified Average Changing Intensity is a measure of the average intensity change rate between the original and the modified signal. In this case, UACI measures the average intensity change rate between the embedded audio and the encrypted audio signals. A higher UACI value is preferred, as a higher UACI value indicates a considerable change in the encrypted audio from the original embedded audio. For 8 bit audio signals, UACI is calculated using the following formula --
+\[\text{UACI}=\frac{1}{N}\sum_{i=1}^{N}\left(\frac{|S_i-D_i|}{255}\right)\times100\]
+Here, $S_i$ is the samples of the embedded signal, $D_i$ is the samples of the encrypted signals and $N$ is the total number of samples, which is the same in both signals. The calculated values of UACI is shown in Table \ref{table:uaci}.
+\begin{table}[!h]
+    \begin{center}
+        \caption{UACI values of audio signals.}
+        \begin{tabular}{cc}
+            \hline
+            Audio File & UACI                \\ \hline
+            Audio 1    & $49.99981961917535$ \\ \hdashline
+            Audio 2    & $50.00009364535334$ \\ \hline
+        \end{tabular}
+        \label{table:uaci}
+    \end{center}
+\end{table}
+
+It can be gleaned with ease from the table above that the encrypted audios almost do not contain any patterns from the original embedded audios as the UACI values were comparatively high.
+\subsubsection{Number of samples change rate (NSCR)}
+Number of samples change rate (NSCR) calculates the percentage of the sample values that are in contrast between the original embedded audios and the encrypted audios. Higher NSCR values are an indication of higher number of samples being altered in the course of encryption and thus producing a signal substantially different from the original signal. The following formula is utilized to determine the value of NSCR --
+\[\text{NSCR}=\left(\frac{D}{N}\right)\times100\]
+Here, $D$ is the number of sample that are distinct between the original embedded signal and the encrypted audio signal and $N$ is the total number of samples, which is the same in both signals. The NSCR values that we determined is shown in Table \ref{table:nscr}.
+\begin{table}[!h]
+    \begin{center}
+        \caption{NSCR values of audio signals.}
+        \begin{tabular}{cc}
+            \hline
+            Audio File & NSCR                \\ \hline
+            Audio 1    & $99.61122960461951\%$ \\ \hdashline
+            Audio 2    & $99.61018917381404\%$ \\ \hline
+        \end{tabular}
+        \label{table:nscr}
+    \end{center}
+\end{table}
+
+It can be concluded that the encrypted audio signals bear very small resemblance to their original embedded counterpart, as the NSCR values of both signals were almost close to $100\%$.
+
+\begin{table}[!h]
+    \begin{center}
+        \caption{Summary of analysis of the audio properties.}
+        \begin{tabular}{ccc}
+            \hline
+            Analysis & Audio 1 & Audio 2 \\
+            metrics & (\textit{encrypted1.wav}) & (\textit{encrypted2.wav}) \\ \hline
+            Entropy    & $7.999996690800791$ & 7.999997028544158 \\
+            Correlation with original embedded audio    & $-4.515503267166404\times10^{-5}$ & $-5.8256422990290715\times10^{-5}$ \\
+            UACI & $49.99981961917535$ & $50.00009364535334$ \\
+            NSCR & $99.61122960461951\%$ & $99.61018917381404\%$ \\ \hline
+        \end{tabular}
+        \label{table:analysis}
+    \end{center}
+\end{table}
+\subsection{Security Analysis}
 \section{Findings and Discussion}
 \label{sec:discussion}
 \section{Conclusion and Future Work}

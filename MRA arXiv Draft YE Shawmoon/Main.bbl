@@ -77,6 +77,79 @@ N.~Cvejic and T.~Seppanen, ``Increasing the capacity of lsb-based audio
   steganography,'' in {\em 2002 IEEE Workshop on Multimedia Signal
   Processing.}, pp.~336--338, IEEE, 2002.
 
+\bibitem{sharma2023post}
+S.~Sharma, K.~Ramkumar, A.~Kaur, T.~Hasija, S.~Mittal, and B.~Singh,
+  ``Post-quantum cryptography: A solution to the challenges of classical
+  encryption algorithms,'' {\em Modern Electronics Devices and Communication
+  Systems: Select Proceedings of MEDCOM 2021}, pp.~23--38, 2023.
+
+\bibitem{ekert1991quantum}
+A.~K. Ekert, ``Quantum cryptography based on bell’s theorem,'' {\em Physical
+  review letters}, vol.~67, no.~6, p.~661, 1991.
+
+\bibitem{alvarez2016comparison}
+L.~C. Alvarez and P.~C. Caiconte, ``Comparison and analysis of bb84 and e91
+  quantum cryptography protocols security strengths,'' {\em International
+  Journal of Modern Communication Technologies and Research}, vol.~4, no.~9,
+  p.~265683, 2016.
+
+\bibitem{madhuravani2013cryptographic}
+B.~Madhuravani and D.~Murthy, ``Cryptographic hash functions: Sha family,''
+  {\em Int J Innov Technol Explor Eng}, vol.~2, pp.~326--9, 2013.
+
+\bibitem{amin2003information}
+M.~M. Amin, M.~Salleh, S.~Ibrahim, M.~R. Katmin, and M.~Shamsuddin,
+  ``Information hiding using steganography,'' in {\em 4th National Conference
+  of Telecommunication Technology, 2003. NCTT 2003 Proceedings.}, pp.~21--25,
+  IEEE, 2003.
+
+\bibitem{yang2018rnn}
+Z.-L. Yang, X.-Q. Guo, Z.-M. Chen, Y.-F. Huang, and Y.-J. Zhang, ``Rnn-stega:
+  Linguistic steganography based on recurrent neural networks,'' {\em IEEE
+  Transactions on Information Forensics and Security}, vol.~14, no.~5,
+  pp.~1280--1295, 2018.
+
+\bibitem{jayaram2011information}
+P.~Jayaram, H.~Ranganatha, and H.~Anupama, ``Information hiding using audio
+  steganography--a survey,'' {\em The International Journal of Multimedia \&
+  Its Applications (IJMA) Vol}, vol.~3, pp.~86--96, 2011.
+
+\bibitem{hemeida2021comparative}
+F.~Hemeida, W.~Alexan, and S.~Mamdouh, ``A comparative study of audio
+  steganography schemes,'' {\em International Journal of Computing and Digital
+  Systems}, vol.~10, pp.~555--562, 2021.
+
+\bibitem{djebbar2012comparative}
+F.~Djebbar, B.~Ayad, K.~A. Meraim, and H.~Hamam, ``Comparative study of digital
+  audio steganography techniques,'' {\em EURASIP Journal on Audio, Speech, and
+  Music Processing}, vol.~2012, pp.~1--16, 2012.
+
+\bibitem{farrag2020secure}
+S.~Farrag and W.~Alexan, ``Secure 3d data hiding technique based on a mesh
+  traversal algorithm,'' {\em Multimedia Tools and Applications}, vol.~79,
+  pp.~29289--29303, 2020.
+
+\bibitem{mashaly2019multiple}
+M.~Mashaly, A.~El~Saied, W.~Alexan, and A.~S. Khalifa, ``A multiple layer
+  security scheme utilizing information matrices,'' in {\em 2019 Signal
+  Processing: Algorithms, Architectures, Arrangements, and Applications (SPA)},
+  pp.~284--289, IEEE, 2019.
+
+\bibitem{singh2014survey}
+K.~U. Singh, ``A survey on audio steganography approaches,'' {\em International
+  Journal of Computer Applications}, vol.~95, no.~14, 2014.
+
+\bibitem{cvejic2004increasing}
+N.~Cvejic and T.~Seppanen, ``Increasing robustness of lsb audio steganography
+  using a novel embedding method,'' in {\em International Conference on
+  Information Technology: Coding and Computing, 2004. Proceedings. ITCC 2004.},
+  vol.~2, pp.~533--537, IEEE, 2004.
+
+\bibitem{yalla2022novel}
+S.~P. Yalla, S.~Hemanth, S.~T. Kumar, S.~Moulali, and S.~Dileep, ``Novel text
+  steganography approach using quantum key distribution: Survey paper,'' {\em
+  NeuroQuantology}, vol.~20, no.~13, p.~923, 2022.
+
 \bibitem{nistHashFunctions}
 ``{H}ash {F}unctions | {C}{S}{R}{C} | {C}{S}{R}{C} --- csrc.nist.gov.''
   \url{https://csrc.nist.gov/projects/hash-functions}, June 22, 2020.
@@ -133,14 +206,34 @@ A.~Langley, W.-T. Chang, N.~Mavrogiannopoulos, J.~Strombergson, and
 D.~Miller, ``The chacha20-poly1305@ openssh. com authenticated encryption
   cipher draft-josefsson-ssh-chacha20-poly1305-openssh-00,'' 2015.
 
-\bibitem{jayaram2011information}
-P.~Jayaram, H.~Ranganatha, and H.~Anupama, ``Information hiding using audio
-  steganography--a survey,'' {\em The International Journal of Multimedia \&
-  Its Applications (IJMA) Vol}, vol.~3, pp.~86--96, 2011.
+\bibitem{Wille2019IBMsQT}
+R.~Wille, R.~V. Meter, and Y.~Naveh, ``Ibm’s qiskit tool chain: Working with
+  and developing for real quantum computers,'' {\em 2019 Design, Automation \&
+  Test in Europe Conference \& Exhibition (DATE)}, pp.~1234--1240, 2019.
 
-\bibitem{hemeida2021comparative}
-F.~Hemeida, W.~Alexan, and S.~Mamdouh, ``A comparative study of audio
-  steganography schemes,'' {\em International Journal of Computing and Digital
-  Systems}, vol.~10, pp.~555--562, 2021.
+\bibitem{pycryptodome}
+{Pycryptodome Team}, ``{Pycryptodome: a Python library for cryptographic
+  primitives and recipes}.'' \url{https://pypi.org/project/pycryptodome/},
+  2022.
+
+\bibitem{harris2020array}
+C.~R. Harris, K.~J. Millman, S.~J. van~der Walt, R.~Gommers, P.~Virtanen,
+  D.~Cournapeau, E.~Wieser, J.~Taylor, S.~Berg, N.~J. Smith, R.~Kern, M.~Picus,
+  S.~Hoyer, M.~H. van Kerkwijk, M.~Brett, A.~Haldane, J.~F. del R{\'{i}}o,
+  M.~Wiebe, P.~Peterson, P.~G{\'{e}}rard-Marchant, K.~Sheppard, T.~Reddy,
+  W.~Weckesser, H.~Abbasi, C.~Gohlke, and T.~E. Oliphant, ``Array programming
+  with {NumPy},'' {\em Nature}, vol.~585, pp.~357--362, Sept. 2020.
+
+\bibitem{newmarch2017ffmpeg}
+J.~Newmarch and J.~Newmarch, ``Ffmpeg/libav,'' {\em Linux sound programming},
+  pp.~227--234, 2017.
+
+\bibitem{MATLAB:R2016a}
+The Mathworks, Inc., Natick, Massachusetts, {\em {MATLAB version 9.0.0.341360
+  (R2016a)}}, 2016.
+
+\bibitem{shannon1948mathematical}
+C.~E. Shannon, ``A mathematical theory of communication,'' {\em The Bell system
+  technical journal}, vol.~27, no.~3, pp.~379--423, 1948.
 
 \end{thebibliography}
