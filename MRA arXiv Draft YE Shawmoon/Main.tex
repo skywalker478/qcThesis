@@ -125,7 +125,7 @@ The new vulnerabilities in secure data transmission due to quantum computer and 
     \item Assessed the performance and reliability of the proposed scheme by measuring the security through end-to-end encryption.
 \end{itemize}
 
-Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrates the present sate of the field through the review of existing research and their development, laying the foundation for our our proposed scheme. Section \ref{sec:preliminaries} describes the foundational concepts of our proposed schemes. Section \ref{sec:methodology} describes the proposed methodology, presenting a detailed piecemeal explanation of our proposed architecture. In section \ref{sec:experminats}, we present the experimental methods as well as the findings. Section \ref{sec:discussion} explore deeper into an extensive analysis of the results, construing the findings and excerpting key insights. Finally, section \ref{sec:conclusion} concludes the paper by indicating the direction of future work, highlighting the potential application and extension of our research.
+Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrates the present sate of the field through the review of existing research and their development, laying the foundation for our our proposed scheme. Section \ref{sec:preliminaries} describes the foundational concepts of our proposed schemes. Section \ref{sec:methodology} describes the proposed methodology, presenting a detailed piecemeal explanation of our proposed architecture. In section \ref{sec:analysis}, we present the analysis methods as well as the findings. Section \ref{sec:discussion} explore deeper into an extensive analysis of the results, construing the findings and excerpting key insights. Finally, section \ref{sec:conclusion} concludes the paper by indicating the direction of future work, highlighting the potential application and extension of our research.
 \section{Related Works}
 \label{sec:relatedWorks}
 Post-Quantum cryptography (PQC) also known as Quantum resistant Cryptography is designed to secure the attacks against both classical and quantum computers. So basically Classical cryptography and Quantum Key Distribution(QKD) is combined here for a better and dependable data communication system.
@@ -143,6 +143,8 @@ ChaCha, a variant of Salsa20, represent the ChaCha family of stream ciphers, whi
 The Poly1305-AES is a specific type of MAC(Message Authentication Protocol) which is a cryptographic tools used to verify the integrity and authenticity of a message.\cite{bernstein2005poly1305} It computes a 16-byte authenticator for variable-length messages using a 32-byte secret key, which includes a 16-byte AES key and a 16-byte addition key which helps in high-speed computations and making it suitable for various applications.\cite{bernstein2005poly1305} The probability of successful attack is also very low due to the uniqueness of nonces and the unpredictability of keys. For all the reasons, it is used widely for network protocols and secure communications.
 \section{Preliminaries}
 \label{sec:preliminaries}
+In this section, we present the primary concepts employed in our methodology. We start with the quantum key distribution (QKD) protocol propsed by Artur Ekert in 1991, commonly known as the E91 key distribution protocol. Protected by Bell's inequality, E91 protocol provides a secure method of sharing generated key pairs. Then we proceed to the SHA3 family of hashing algorithms, specifically the SHA3-256 function, which can produce a unique 256-bit long hexstream for an input of any length. Next, we introduce the ChaCha20-Poly1305 AEAD, which combines the strong yet simple ChaCha20 stream cipher with Poly1305 MAC. Finally, we discuss the LSB steganography algorithm, which is essentially a technique of hiding an audio signal in the least significant bits of another, larger audio.
+% \newpage
 \subsection{Ekert 91 Protocol}
 \label{sec:e91}
 The E91 protocol is a quantum key distribution (QKD) scheme that uses entangled photon pairs and the violation of Bell's inequality to securely distribute cryptographic keys between two parties, typically referred to as Alice and Bob.
@@ -161,7 +163,8 @@ A source, usually referred to as Charlie, generates entangled photon pairs in a 
 \]
 where $\ket{0}$ and $\ket{1}$ represent the two possible polarization states of the photons.
 \begin{figure}[!h]
-    \includesvg[width=\textwidth]{measurement.svg}
+    \centering
+    \includesvg[width=0.75\textwidth]{measurement.svg}
     \caption{Direction of measurement for Ekert Protocol}
     \label{fig:ekertMeasurement}
 \end{figure}
@@ -198,6 +201,7 @@ In the quantum case, the measurement operators for \( A1, A2, B2, B3 \) are trea
 \[
     S = \frac{2}{\sqrt{2}},
 \]
+
 which violates the CHSH inequality. This indicates that Alice and Bob share a maximally entangled state, and there is no information about the key that an eavesdropper could gain. If \( S \leq 2 \), it means the states are separable, and no secret key can be generated.
 The remaining measurement results are used to generate a shared secret key. Only the measurement results obtained along compatible axes are used to establish the key.
 
@@ -210,13 +214,13 @@ The security of the E91 protocol is derived from the following principles:
 By utilizing the properties of quantum entanglement, the E91 protocol achieves an unprecedented level of security, making it a cornerstone in the field of quantum cryptography.
 \subsection{SHA3 -- 256 Hash Function}
 \label{sec:sha3}
-SHA-3 is the latest member \cite{nistHashFunctions} of the Secure Hash Algorithm (SHA) family of cryptographic hash functions. Based on the K\textsc{eecak} algorithm \cite{Bbbbbbb2011}, the SHA-3 standard differs fundamentally from it's MD-5 \cite{rivest1992md5} like structured predecessors -- SHA-1 and SHA-2 \cite{penard2008secure}. In its essence, the SHA-3 standard is a hash function, that is, for any length of binary data input, there is an output of fixed length. The output is called the \textit{digest} or \textit{hash value}. Depending on the digest length, the four hash functions are called SHA3-224, SHA3-256, SHA3-384 and SHA3-512. The suffixes after the dash indicate the fixed length of the digest, for example, SHA3-256 - which is of interest to our methodology - produces 256 bits long digest. As the digest length is constant irrespective of input length, SHA3 is ideal for integrity and signature verification, as well as password hashing, that is not storing password in clear-text format, rather storing the hash of the password for verification.
+SHA-3 is the latest member \cite{nistHashFunctions} of the Secure Hash Algorithm (SHA) family of cryptographic hash functions. Based on the K\textsc{eecak} algorithm \cite{Bbbbbbb2011}, the SHA-3 standard differs fundamentally from it's MD-5 \cite{rivest1992md5} like structured predecessors -- SHA-1 and SHA-2 \cite{penard2008secure}. In its essence, the SHA-3 standard is a hash function, that is, for any length of binary data input, there is an output of fixed length. The output is called the \textit{digest} or \textit{hash value}. Depending on the digest length, the four hash functions are called SHA3-224, SHA3-256, SHA3-384 and SHA3-512. The suffixes after the dash indicate the fixed length of the digest, for example, SHA3-256 -- which is of interest to our methodology -- produces 256 bits long digest. As the digest length is constant irrespective of input length, SHA3 is ideal for integrity and signature verification, as well as password hashing, that is not storing password in clear-text format, rather storing the hash of the password for verification.
 
 SHA-3 works by using the sponge construction \cite{keccakKeccakTeam}. Here, data is "absorbed" into the sponge and the result is "squeezed" out, as sown in Figure \ref{fig:sponge}. For an input bit string $N$, a padding function $pad$, and a permutation function $f$ yields the spnge construction $Z=\text{sponge}[f,pad,r](N,d)$. Here, the permutation function $f$ operates on a bit block of width $b$, rate $r$ and yields and output of length $d$. From the sponge construct, we have capacity $c=b-r$ and digest $Z$ of length $b$. The block permutation $f$ is Keccak-f[1600] that utilizes XOR, AND and NOT operations. It is defined for any power-of-two word size, $w=2^l$. The basic block permutation function consists of $12+2l$ rounds of five steps: $\theta$ (parity computation), $\rho$ (bitwise rotation), $\phi$ (permuatation), $\chi$ (bitwise combination) and $\iota$ (XOR).
 
 \begin{figure}[!h]
     \centering
-    \includesvg[width=\textwidth]{SpongeConstruction.svg}
+    \includesvg[width=0.75\textwidth]{SpongeConstruction.svg}
     % \includegraphics[width=0.75\textwidth]{SpongeConstruction.pdf}
     \caption{The sponge construction for SHA-3.}
     \label{fig:sponge}
@@ -289,17 +293,19 @@ a double round in ChaCha is defined as --
 \end{lstlisting}
 ChaCha20 uses 10 iterations of the double round -- an overall of 20 rounds. Hence the name ChaCha20.
 
+\begin{figure}[!h]
+    \centering
+    \includesvg[width=0.75\textwidth]{ChaCha_Cipher_Quarter_Round_Function.svg}
+    \caption{The ChaCha quarter-round function.}
+\end{figure}
+
 Each word is updated twice in ChaCha20's quarter rounds, as opposed to Salsa20 where each word is updated only once. This results in an average of $12.5$ output bits to change in each quarter round of ChaCha20, while the Salsa20 quarter-round changes 8 output bits. Although the ChaCha quarter round contains the same number of adds, xors, and bit roattes as the Salsa20 quarter round, it is slightly fatser because two of the roate functions are multiples of 8, allowing for a small optimization for x86 and other architectuires.
 
 After the 10 iterations, a keystream, $K$ is generated which is XORed with the message stream, $M$, to produce the cipher, C.
 \[C = K \oplus M\]
 For decryption, the keystream, $K$, is XORed with the cipher, $C$, to retrieve the message, $M$.
 \[M = C \oplus K\]
-\begin{figure}[!h]
-    \centering
-    \includesvg[width=\textwidth]{ChaCha_Cipher_Quarter_Round_Function.svg}
-    \caption{The ChaCha quarter-round function.}
-\end{figure}
+
 
 A hash function is a special mathematical function that can data of arbitrary size to constant-sized values. The output of a hash function is called hash digest or simply hashes. A unique property of most hash functions is their ability to generate unique digests for each unique inputs. This makes hash functions invaluable for authentication and data integrity verification.In 2002, Bernstein designed the Poly1305 universal hash function, which was intended to provide a message authentication code to authenticate a message using a shared secret key \cite{bernstein2005protecting}. The original implementation of Poly1305 was in 2005 when Poly1305 hash was combined as a Carter-Wegman authenticator \cite{carter1981new} with AES-128 to authenticate encrypted messages.
 
@@ -697,7 +703,7 @@ Here, $D$ is the number of sample that are distinct between the original embedde
         \caption{NSCR values of audio signals.}
         \begin{tabular}{cc}
             \hline
-            Audio File & NSCR                \\ \hline
+            Audio File & NSCR                  \\ \hline
             Audio 1    & $99.61122960461951\%$ \\ \hdashline
             Audio 2    & $99.61018917381404\%$ \\ \hline
         \end{tabular}
@@ -710,19 +716,98 @@ It can be concluded that the encrypted audio signals bear very small resemblance
 \begin{table}[!h]
     \begin{center}
         \caption{Summary of analysis of the audio properties.}
-        \begin{tabular}{ccc}
+        \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
             \hline
-            Analysis & Audio 1 & Audio 2 \\
-            metrics & (\textit{encrypted1.wav}) & (\textit{encrypted2.wav}) \\ \hline
-            Entropy    & $7.999996690800791$ & 7.999997028544158 \\
-            Correlation with original embedded audio    & $-4.515503267166404\times10^{-5}$ & $-5.8256422990290715\times10^{-5}$ \\
-            UACI & $49.99981961917535$ & $50.00009364535334$ \\
-            NSCR & $99.61122960461951\%$ & $99.61018917381404\%$ \\ \hline
-        \end{tabular}
+            Analysis metrics                         & Audio 1 (\textit{encrypted1.wav}) & Audio 2 (\textit{encrypted2.wav})  \\ \hline
+            Entropy                                  & $7.999996690800791$               & $7.999997028544158$                \\
+            Correlation with original embedded audio & $-4.515503267166404\times10^{-5}$ & $-5.8256422990290715\times10^{-5}$ \\
+            UACI                                     & $49.99981961917535$               & $50.00009364535334$                \\
+            NSCR                                     & $99.61122960461951\%$             & $99.61018917381404\%$              \\ \hline
+        \end{tabularx}
         \label{table:analysis}
     \end{center}
 \end{table}
 \subsection{Security Analysis}
+Although our encryption technique provided us with considerably robust encryptions, there exists two different security threat -- one in the quantum channel and the other in the classical channel. In the quantum channel, an eavesdropper, Eve, might perform her own measurement on the qubits intended for Alice and Bob. In this process, Eve may gain insight about Alice and Bob's keys. In the classical channel, the encrypted audio suffer from tampering, that is, a malicious party might intercept the encrypted signal and modify it before relaying it to the intended recipient. These scenarios and their solutions are discussed in the subsequent sections.
+\subsubsection{Eavesdropping Analysis}
+The E91 QKD is protected by Bell's inequality. In the presense of an eavesdropper, Eve, the Clauser -- Horne -- Shimony -- Holt (CHSH) correlation \cite{PhysRevLett.23.880} will be violated. This will alert Alice and Bob of Eve's presence, allowing them to discard the now obsolete key and take necessary steps. Here, we present the CHSH correlation values for different key lengths in the presence and absence of eavesdropping. Table \ref{table:chsheRsults} displays the CHSH correlation values for different key lengths without eavesdropping, which are close to $2\sqrt{2} \approx 2.828$, indicating that the qubits are maximally entangled and thus confirming the absence of an eavesdropper. In contrast, in Table \ref{table:chshEveKnowledge} the CHSH correlation value is below 2 indicating that the qubits are not maximally entangled and thus confirming the presence of an eavesdropper.
+\begin{table}[!h]
+    \begin{center}
+        \caption{CHSH correlation values for different key lengths in the absence of an eavesdropper}
+        \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+            \hline
+            Iterations & Key Length & Number of Mismatched Bits & CHSH    \\ \hline
+            $1$        & $109$      & $0$                       & $2.794$ \\
+            $2$        & $131$      & $0$                       & $2.754$ \\
+            $3$        & $215$      & $0$                       & $2.636$ \\
+            $4$        & $44$       & $0$                       & $3.009$ \\
+            \hline
+        \end{tabularx}
+        \label{table:chsheRsults}
+    \end{center}
+\end{table}
+\begin{table}[!h]
+    \begin{center}
+        \caption{CHSH correlation values for different key lengths in the presence of an eavesdropper}
+        \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+            \hline
+            Iterations & Key Length & Number of Mismatched Bits & CHSH    & Eve's Knowledge of Alice's Key & Eve's Knowledge of Bob's Key \\ \hline
+            $1$        & $126$      & $16$                      & $1.229$ & $88.1\%$                       & $96.03\%$                    \\
+            $2$        & $142$      & $12$                      & $1.346$ & $93.66\%$                      & $93.66\%$                    \\
+            $3$        & $243$      & $32$                      & $1.37$  & $93.83\%$                      & $90.53\%$                    \\
+            $4$        & $44$       & $7$                       & $1.48$  & $95.45\%$                      & $84.09\%$                    \\
+            \hline
+        \end{tabularx}
+        \label{table:chshEveKnowledge}
+    \end{center}
+\end{table}
+\subsubsection{Tampering Analysis}
+After storing the secret audio in the cover audio using steganography, we encrypted the embedded audio using the ChaCha20-Poly1305 AEAD. The ChaCha20-Poly1305 produces an encrypted file along with an authentication tag, which can be used to validate the authenticity of the encrypted file in the receiver end. If a malicious party modifies the encrypted file en route to the receiver, the authentication tag calculated by the receiver will be different from the tag sent by the sender, alerting the receiver of tampering. This will allow the receiver to take the necessary steps to mitigate the effects of the malicious party. Here, we present two different circumstances --
+
+\begin{enumerate}
+    \item The encrypted files, \textit{encrypted1.bin} and \textit{encrypted2.bin}, reaches their destination without any tampering by a malicious party.
+    \item The encrypted files, \textit{encrypted1.bin} and \textit{encrypted2.bin}, are intercepted by a malicious party, who perform random bit flip on the files and sends the modified files to their intended destination.
+\end{enumerate}
+In the first scenario, the encrypted files will be decrypted and verified successfully. For the second scenario, we simulated the random bit flips that the malicious party would have done. This resulted in verification failure and in turn decryption failure, alerting the recipient of the actions of the malicious party. Some of these alterations are shown in Table \ref{table:modified1} and \ref{table:modified2}.
+
+\begin{table}[!h]
+    \caption{Comparison between \textit{encrypted1.bin} and its modified counterpart.}
+    \begin{center}
+        \begin{tabular}{c:c|c:c}
+            \hline
+            \multicolumn{2}{c|}{Original File} & \multicolumn{2}{c}{Modified File}                                                                                                 \\ \hline
+            \texttt{Address}                   & \texttt{Hexdata}                                      & \texttt{Address}  & \texttt{Hexdata}                                      \\ \hline
+            \dotfill                           & \dotfill                                              & \dotfill          & \dotfill                                              \\
+            \texttt{000004a0}                  & \texttt{7f7af670c44b\underline{9f}fd15b38dc21140951e} & \texttt{000004a0} & \texttt{7f7af670c44b\underline{62}fd15b38dc21140951e} \\
+            \dotfill                           & \dotfill                                              & \dotfill          & \dotfill                                              \\
+            \texttt{000005e0}                  & \texttt{0ae68fb6740c4347dc\underline{fd}2b616643d69c} & \texttt{000005e0} & \texttt{0ae68fb6740c4347dc\underline{7c}2b616643d69c} \\
+            \dotfill                           & \dotfill                                              & \dotfill          & \dotfill                                              \\
+            \texttt{00000ae0}                  & \texttt{ea01590d92bac0\underline{33}b8412dce7cf8e7d7} & \texttt{00000ae0} & \texttt{ea01590d92bac0\underline{6c}b8412dce7cf8e7d7} \\
+            \dotfill                           & \dotfill                                              & \dotfill          & \dotfill                                              \\
+            \dotfill                           & \dotfill                                              & \dotfill          & \dotfill                                              \\ \hline
+        \end{tabular}
+        \label{table:modified1}
+    \end{center}
+\end{table}
+\begin{table}[!h]
+    \caption{Comparison between \textit{encrypted2.bin} and its modified counterpart.}
+    \begin{center}
+        \begin{tabular}{c:c|c:c}
+            \hline
+            \multicolumn{2}{c|}{Original File} & \multicolumn{2}{c}{Modified File}                                                                                                 \\ \hline
+            \texttt{Address}                   & \texttt{Hexdata}                                      & \texttt{Address}  & \texttt{Hexdata}                                      \\ \hline
+            \dotfill                           & \dotfill                                              & \dotfill          & \dotfill                                              \\
+            \texttt{00000770}                  & \texttt{84fa9cb31654d0\underline{21}5b870be20e14f533} & \texttt{00000770} & \texttt{84fa9cb31654d0\underline{ad}5b870be20e14f533} \\
+            \dotfill                           & \dotfill                                              & \dotfill          & \dotfill                                              \\
+            \texttt{00000a60}                  & \texttt{1d7f2184\underline{bd}0c5027713aac0e2aa71f64} & \texttt{00000a60} & \texttt{1d7f2184\underline{6d}0c5027713aac0e2aa71f64} \\
+            \dotfill                           & \dotfill                                              & \dotfill          & \dotfill                                              \\
+            \texttt{00000ed0}                  & \texttt{76911249292f57364d\underline{80}912cec5b5f42} & \texttt{00000ed0} & \texttt{76911249292f57364d\underline{17}912cec5b5f42} \\
+            \dotfill                           & \dotfill                                              & \dotfill          & \dotfill                                              \\
+            \dotfill                           & \dotfill                                              & \dotfill          & \dotfill                                              \\ \hline
+        \end{tabular}
+        \label{table:modified2}
+    \end{center}
+\end{table}
 \section{Findings and Discussion}
 \label{sec:discussion}
 \section{Conclusion and Future Work}

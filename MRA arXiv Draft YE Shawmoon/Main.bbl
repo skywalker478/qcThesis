@@ -236,4 +236,9 @@ The Mathworks, Inc., Natick, Massachusetts, {\em {MATLAB version 9.0.0.341360
 C.~E. Shannon, ``A mathematical theory of communication,'' {\em The Bell system
   technical journal}, vol.~27, no.~3, pp.~379--423, 1948.
 
+\bibitem{PhysRevLett.23.880}
+J.~F. Clauser, M.~A. Horne, A.~Shimony, and R.~A. Holt, ``Proposed experiment
+  to test local hidden-variable theories,'' {\em Phys. Rev. Lett.}, vol.~23,
+  pp.~880--884, Oct 1969.
+
 \end{thebibliography}
