@@ -765,8 +765,8 @@ The E91 QKD is protected by Bell's inequality. In the presense of an eavesdroppe
 After storing the secret audio in the cover audio using steganography, we encrypted the embedded audio using the ChaCha20-Poly1305 AEAD. The ChaCha20-Poly1305 produces an encrypted file along with an authentication tag, which can be used to validate the authenticity of the encrypted file in the receiver end. If a malicious party modifies the encrypted file en route to the receiver, the authentication tag calculated by the receiver will be different from the tag sent by the sender, alerting the receiver of tampering. This will allow the receiver to take the necessary steps to mitigate the effects of the malicious party. Here, we present two different circumstances --
 
 \begin{enumerate}
-    \item The encrypted files, \textit{encrypted1.bin} and \textit{encrypted2.bin}, reaches their destination without any tampering by a malicious party.
-    \item The encrypted files, \textit{encrypted1.bin} and \textit{encrypted2.bin}, are intercepted by a malicious party, who perform random bit flip on the files and sends the modified files to their intended destination.
+    \item The encrypted files, \textit{encrypted1.bin} and \textit{encrypted2.bin}, reaches their destination without any tampering by a malicious party. A brief depiction of this scenario is presented in Table \ref{table:scenario1}.
+    \item The encrypted files, \textit{encrypted1.bin} and \textit{encrypted2.bin}, are intercepted by a malicious party, who perform random bit flip on the files and sends the modified files to their intended destination. A brief depiction of this scenario is presented in Table \ref{table:scenario2}.
 \end{enumerate}
 In the first scenario, the encrypted files will be decrypted and verified successfully. For the second scenario, we simulated the random bit flips that the malicious party would have done. This resulted in verification failure and in turn decryption failure, alerting the recipient of the actions of the malicious party. Some of these alterations are shown in Table \ref{table:modified1} and \ref{table:modified2}.
 
@@ -806,6 +806,38 @@ In the first scenario, the encrypted files will be decrypted and verified succes
             \dotfill                           & \dotfill                                              & \dotfill          & \dotfill                                              \\ \hline
         \end{tabular}
         \label{table:modified2}
+    \end{center}
+\end{table}
+\begin{table}[!h]
+    \begin{center}
+        \caption{Scenario 1}
+        \begin{tabular}{c|l:l}
+            \hline
+                                              & \multicolumn{1}{c:}{\textit{encrypted1.bin}}     & \multicolumn{1}{c}{\textit{encrypted2.bin}}      \\ \hline
+            \multirow{2}{*}{Sender End}       & \texttt{Nonce}: $5e4ef364b086ab3e2d1118cb$       & \texttt{Nonce}: $d64f6fe0710ebeb0324e8cc6$       \\
+                                              & \texttt{Tag}: $416c6c92659047d2f0660c36f58c1fa5$ & \texttt{Tag}: $5977c55fe95a60173ff7476bfad4c29a$ \\ \hdashline
+            \multirow{2}{*}{Receiver End}     & \texttt{Nonce}: $5e4ef364b086ab3e2d1118cb$       & \texttt{Nonce}: $d64f6fe0710ebeb0324e8cc6$       \\
+                                              & \texttt{Tag}: $416c6c92659047d2f0660c36f58c1fa5$ & \texttt{Tag}: $5977c55fe95a60173ff7476bfad4c29a$ \\ \hdashline
+            \multirow{2}{*}{Operation Status} & \texttt{Verification successful!}                & \texttt{Verification successful!}                \\
+                                              & \texttt{Decryption successful!}                  & \texttt{Decryption successful!}                  \\ \hline
+        \end{tabular}
+        \label{table:scenario1}
+    \end{center}
+\end{table}
+\begin{table}[!h]
+    \begin{center}
+        \caption{Scenario 2}
+        \begin{tabular}{c|l:l}
+            \hline
+                                              & \multicolumn{1}{c:}{\textit{encrypted1.bin}}     & \multicolumn{1}{c}{\textit{encrypted2.bin}}      \\ \hline
+            \multirow{2}{*}{Sender End}       & \texttt{Nonce}: $5e4ef364b086ab3e2d1118cb$       & \texttt{Nonce}: $d64f6fe0710ebeb0324e8cc6$       \\
+                                              & \texttt{Tag}: $416c6c92659047d2f0660c36f58c1fa5$ & \texttt{Tag}: $5977c55fe95a60173ff7476bfad4c29a$ \\ \hdashline
+            \multirow{2}{*}{Receiver End}     & \texttt{Nonce}:\dotfill                          & \texttt{Nonce}:\dotfill                          \\
+                                              & \texttt{Tag}:\dotfill                            & \texttt{Tag}:\dotfill                            \\ \hdashline
+            \multirow{2}{*}{Operation Status} & \texttt{Verification failed!}                    & \texttt{Verification failed!}                    \\
+                                              & \texttt{Decryption failed!}                      & \texttt{Decryption failed!}                      \\ \hline
+        \end{tabular}
+        \label{table:scenario2}
     \end{center}
 \end{table}
 \section{Findings and Discussion}
