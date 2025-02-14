@@ -64,12 +64,13 @@
 \title{\Large A novel approach of secure audio transmission in Post-quantum Era.}
 %\date{September 9, 1985}	% Here you can change the date presented in the paper title
 %\date{} 					% Or removing it
-\author[2]{\large Md. Raisul Islam Rifat}
-\author[1]{\large Md. Mizanur Rahman}
-\author[2]{\large Md. Abdul Kader Nayon}
+\author[1]{\large Md. Raisul Islam Rifat}
+\author[2]{\large Md. Mizanur Rahman}
+\author[1]{\large Md. Abdul Kader Nayon}
+% \author[3]{Md Shawmoon Azad}
 \author[3, *]{\large M.R.C. Mahdy}
-\affil[1]{Department of CSE, RUET}
-\affil[2]{Department of EEE, CUET}
+\affil[1]{Department of Electrical and Electronic Engineering, Chittagong University of Engineering and Technology, Chattogram}
+\affil[2]{Department of Computer Science and Engineering, Rajshahi University of Engineering and Technology, Rahshahi}
 \affil[3]{Department of Electrical and Computer Engineering, North South University, Bashundhara, Dhaka}
 % Uncomment to remove the date
 %\date{}
@@ -94,11 +95,10 @@
 
 
 \begin{abstract}
+    The emergence of quantum computing possesses a significant security threat to the current classical system since it has the potential to outperform the current classical computer in some specific task due to their unique principle of operation. This necessitates finding a method which is resistive to quantum computers to securely transfer information. This research addresses these challenges by proposing a novel method combining quantum key distribution (QKD), specially E91 protocol with the classical encryption-authentication protocol i.e. Chacha20-Poly1305 and concealing information within another message through steganography to securely transfer audio messages. Through rigorous experiment, we validated the robustness of the proposed methodology in both classical and quantum attacks. We demonstrated the safety of the key shared using E91 protocol through CHSH inequality test. In addition, the security of secret audio also validated through the verification of the authentication tag generated during the encryption process through Chacha20-Poly1305. Our research offers  a novel framework for secure audio transmission, blending classical encryption and authentication methods with QKD to enhance confidentiality, integrity, and resilience against eavesdropping, ensuring robust end-to-end security.
 \end{abstract}
-\lipsum[1]
 % keywords can be removed
-\keywords{Lorem ipsum, Placeholder text, Text generation, Typography, LaTeX formatting, Document design, Content management, Semantic analysis, Latin text, Formatting templates, Filler content, Automated writing, Document structure
-}
+\keywords{Quantum Key Distribution, E91 protocol, CHSH inequality, Steganography, Chacha20-Poly1305, Encryption.}
 
 % Corresponding Author footnote
 \nonumfootnote{* Corresponding author.
@@ -147,71 +147,57 @@ In this section, we present the primary concepts employed in our methodology. We
 % \newpage
 \subsection{Ekert 91 Protocol}
 \label{sec:e91}
-The E91 protocol is a quantum key distribution (QKD) scheme that uses entangled photon pairs and the violation of Bell's inequality to securely distribute cryptographic keys between two parties, typically referred to as Alice and Bob.
-The Ekert91 protocol, based on the principles of quantum mechanics and entanglement, allows secure key distribution between two parties, Alice and Bob. The steps are as follows:
-
+The E91 protocol is a quantum key distribution (QKD) scheme that uses entangled photon pairs and the violation of Bell's inequality to securely distribute cryptographic keys between two parties, typically referred to as Alice and Bob. The E91 protocol, based on the principles of quantum mechanics and entanglement, allows secure key distribution between two parties, Alice and Bob. The steps are as follows:
 \begin{enumerate}
-    \item Alice and Bob exchange several entangled Bell states, $\ket{\psi^{-}_{AB}}$, where Alice holds the first subsystem and Bob holds the second.
-    \item For each entangled state, they independently and randomly select a measurement direction from their respective sets $\{A_i\}$ and $\{B_i\}$.
-    \item After completing the measurements, Alice and Bob publicly share their chosen measurement bases. When their bases align (i.e., $(A_1, B_1)$ and $(A_3, B_3)$), the corresponding measurement outcomes are used to construct the sifted key.
-    \item The measurement outcomes from mismatched bases, such as $(A_1, B_3)$, $(A_1, B_2)$, $(A_2, B_3)$, and $(A_2, B_2)$, are analyzed to verify the violation of the CHSH inequality.
-    \item Finally, Alice and Bob perform error correction and privacy amplification processes to transform the sifted key into a secure shared secret key.
+    \item Creating Entangled Pairs: Either alice or bob or any other third party, Charle, can initiates the process by generating pairs of strongly entangled quantum particles (Bell states). These states ensure that the measurements on the particles are perfectly correlated. There are four Bell states, which are below:
+          \[\ket{\Phi^{+}}=\frac{1}{\sqrt{2}}(\ket{00}+\ket{11})\]
+          \[\ket{\Phi^{-}}=\frac{1}{\sqrt{2}}(\ket{00}-\ket{11})\]
+          \[\ket{\Psi^{+}}=\frac{1}{\sqrt{2}}(\ket{01}+\ket{10})\]
+          \[\ket{\Psi^{-}}=\frac{1}{\sqrt{2}}(\ket{01}-\ket{10})\]
+          For notions such as $\ket{01}$ and $|\ket{11}$, the first digit in brackets refers to the first qubit, and the second digit refers to the second qubit.
+
+    \item Sharing the Particles: After generating the entangled pairs, Charlie sends one particle of each pair each to Alice and the other to Bob or if they produced entangled qubits without the help of third party then they will send one particle to another.
+    \item Performing Measurements: Alice and Bob, located far apart, independently measure their received particles using quantum measurement tools. Their devices are configured with randomly chosen azimuthal angles e.g.  \[
+              \varphi_{A_1} = 0, \quad \varphi_{A_2} = \frac{\pi}{2}, \quad \varphi_{A_3} = \frac{\pi}{4} \quad \text{for Alice;}
+          \]
+
+          \[
+              \varphi_{B_1} = 0, \quad \varphi_{B_2} = \frac{3\pi}{2}, \quad \varphi_{B_3} = \frac{\pi}{4} \quad \text{for Bob.}
+          \]
+
+          The outcomes (0 or 1) are inherently random due to quantum principles.
+          Figure~\ref{fig:mesurement_direction} shows the measurement direction:
+
+          \begin{figure}[!h]
+              \centering
+              \includesvg[width=0.75\textwidth]{measurement.svg}
+              \caption{Measurement Direction for Ekert Protocol\cite{wolf2021quantum}}
+              \label{fig:mesurement_direction}
+          \end{figure}
+
+    \item Comparing Results:  Alice and Bob will share their measurement bases over a classical channel. They discard results where their measurement angles differed and keep only those whose bases are aligned. This filtered data forms the raw material for their shared key.
+    \item Building the Shared key: For the matching bases, Alice and Bob use their correlated outcomes to construct an identical secret key. This key is a binary sequence that is used to securely encrypt/decrypt messages.
+    \item Checking for Evedropers: The protocol's security depends on the quantum entanglement. If an eavesdropper intercepts the particles, the entanglement is disrupted, altering the expected correlations. By testing a susbset of their results, Alice and Bob can detect anomalies. If inconsistencies arise, they abort the key and restart the process.
 \end{enumerate}
 
-A source, usually referred to as Charlie, generates entangled photon pairs in a singlet state:
-\[\ket{\psi^{-}_{AB}} = \frac{1}{\sqrt{2}}\left(\ket{01}_{AB}-\ket{10}_{AB}\right)
-\]
-where $\ket{0}$ and $\ket{1}$ represent the two possible polarization states of the photons.
-\begin{figure}[!h]
-    \centering
-    \includesvg[width=0.75\textwidth]{measurement.svg}
-    \caption{Direction of measurement for Ekert Protocol}
-    \label{fig:ekertMeasurement}
-\end{figure}
-
-In the Ekert protocol, Alice and Bob each perform a random measurement on their respective parts of the entangled state. For each of these bipartite states $\ket{\psi^{-}_{AB}}$, they choose an observable from two sets, $\{A_i\}$ for Alice and $\{B_i\}$ for Bob. These observables correspond to spin components in the x-z plane of the Bloch sphere, as shown in \ref{fig:ekertMeasurement}. The measurement directions are defined by the angles $\varphi_A$ and $\varphi_B$ for Alice and Bob, respectively.
-
-The measurement operators for Alice and Bob are given by:
+Alice and Bob can detect the presence of Eve using two steps. The first step is to check if, after measurement, they find that the measurement results differ despite using the same corresponding bases. They can also detect anomalies using the CHSH inequality test. If the measurement result don't violate CHSH inequality, then they can assume that there was an anomaly.
+The CHSH inequality quantifies correlations between two spatially separated particles measured in different bases. For an entangled pair, if measurements on the first particle are labeled with settings A and a (yielding outcomes $ \pm 1 $), and those on the second particle use settings B and b (yielding outcomes $ \pm 1 $), the CHSH parameter S is defined as:
 \[
-    A_i = \cos(\varphi_A^i) + \sin(\varphi_A^i) \quad \text{for Alice, and} \quad B_i = \cos(\varphi_B^i) + \sin(\varphi_B^i) \quad \text{for Bob.}
+    S = A(B - b) + a(B + b).
 \]
-Here, $Z=\ket{0}\bra{0}-\ket{1}\bra{1}$ and $X=\ket{+}\bra{+}-\ket{-}\bra{-}$ are the Pauli operators for the measurement.
-
-For Alice, the angles are defined as:
+Classically, the absolute average value is given by:
 \[
-    \varphi_A^1 = 0, \quad \varphi_A^2 = \frac{\pi}{2}, \quad \varphi_A^3 = \frac{\pi}{4}.
+    |\langle S \rangle| \leq 2 \quad \text{or} \quad \pm 2.
 \]
-For Bob, the angles are:
-\[
-    \varphi_B^1 = 0, \quad \varphi_B^2 = -\frac{\pi}{4}, \quad \varphi_B^3 = \frac{\pi}{4}.
-\]
-
-In terms of the measurement operators, these can be expressed as:
-\[
-    A_1 = Z, \quad A_2 = X, \quad A_3 = \frac{1}{\sqrt{2}} (Z + X)\]
-
-\[B_1 = Z, \quad B_2 = \frac{1}{\sqrt{2}} (Z - X),  \quad B_3 = \frac{1}{\sqrt{2}} (Z + X)
+It is bounded by 2, as one of the terms \( (B \pm b) \) necessarily cancels out, leaving \( S = \pm 2 \).
+Expanding S interms of A, a, B and b results in: \[
+    \left| \langle S_1 \rangle \right| = \left| \langle AB \rangle - \langle Ab \rangle + \langle aB \rangle + \langle ab \rangle \right| \leq 2.
 \]
 
-It is important to note that the measurements $A_1$ and $B_1$, as well as $A_3$ and $B_3$, are those where Alice and Bob choose the same measurement direction. These measurement choices are crucial for the key generation process, as they result in correlated outcomes that form the sifted key.
-
-In the next step, Alice and Bob announce the directions of their measurements. When their measurement directions match, such as $(A_1 , B_1)$ and $(A_3 , B_3)$, their results are perfectly anti-correlated. By flipping all the bits for one of them, they can generate the sifted key. The results from other combinations of measurements, like $(A_1 , B_3), (A_1 , B_2), (A_2 , B_3), \text{and} (A_2 , B_2)$, are used to assess how much an eavesdropper might know about the key. This is done by checking the CHSH inequality, a classical correlation bound that is part of the Bell inequalities. The CHSH inequality involves four random variables \( A1, A2, B2, B3 \), each taking values of \( +1 \) or \( -1 \). By evaluating these random variables, the inequality states that the sum of certain correlations must not exceed 2.
-
-In the quantum case, the measurement operators for \( A1, A2, B2, B3 \) are treated as quantum observables. The expectation values of their products are calculated using the state \( \rho = \ket{\psi^{-}}\). For example, the expectation value of \( A1B3 \) is found to be $\displaystyle  -\frac{1}{\sqrt{2}} $. By computing the sum of all these expectation values, we obtain a value of
-\[
-    S = \frac{2}{\sqrt{2}},
+Remarkably, quantum mechanics predicts violations of these classical bounds. Entangled particles, such as those in Bell states, exhibit stronger correlation due to nonlocal quantum interactions. When measured in specific non-commuting bases the CHSH parameter can reach \[
+    \left| \langle S \rangle \right| = 2\sqrt{2} \approx 2.828 \quad \left| \langle S \rangle \right|
 \]
-
-which violates the CHSH inequality. This indicates that Alice and Bob share a maximally entangled state, and there is no information about the key that an eavesdropper could gain. If \( S \leq 2 \), it means the states are separable, and no secret key can be generated.
-The remaining measurement results are used to generate a shared secret key. Only the measurement results obtained along compatible axes are used to establish the key.
-
-The security of the E91 protocol is derived from the following principles:
-\begin{itemize}
-    \item \textit{Quantum Entanglement}: Any attempt at eavesdropping would disturb the entangled state, leading to detectable anomalies in the correlations.
-    \item \textit{Bell's Inequality}: The violation of Bell's inequality rules out classical explanations for the correlations, ensuring the integrity of the quantum channel.
-\end{itemize}
-
-By utilizing the properties of quantum entanglement, the E91 protocol achieves an unprecedented level of security, making it a cornerstone in the field of quantum cryptography.
+In our experiment, we expect to obtain a CHSH value close to \( 2\sqrt{2} \); otherwise, we can claim that there were anomalies/eavesdroppers in the channel.
 \subsection{SHA3 -- 256 Hash Function}
 \label{sec:sha3}
 SHA-3 is the latest member \cite{nistHashFunctions} of the Secure Hash Algorithm (SHA) family of cryptographic hash functions. Based on the K\textsc{eecak} algorithm \cite{Bbbbbbb2011}, the SHA-3 standard differs fundamentally from it's MD-5 \cite{rivest1992md5} like structured predecessors -- SHA-1 and SHA-2 \cite{penard2008secure}. In its essence, the SHA-3 standard is a hash function, that is, for any length of binary data input, there is an output of fixed length. The output is called the \textit{digest} or \textit{hash value}. Depending on the digest length, the four hash functions are called SHA3-224, SHA3-256, SHA3-384 and SHA3-512. The suffixes after the dash indicate the fixed length of the digest, for example, SHA3-256 -- which is of interest to our methodology -- produces 256 bits long digest. As the digest length is constant irrespective of input length, SHA3 is ideal for integrity and signature verification, as well as password hashing, that is not storing password in clear-text format, rather storing the hash of the password for verification.
@@ -634,8 +620,8 @@ All the waveforms shown in this section were generated using MATLAB \cite{MATLAB
 \end{figure}
 \section{Analysis}
 \label{sec:analysis}
-\subsection{Analysis of Audio Properties}
-With the help of the tools provided by NumPy, we calculated various properties of the audio signals obtained in different stages of our methodology. These properties ranges from entropy of the encrypted signal to histogram analysis.
+\subsection{Analysis of Encryption Properties}
+With the help of the tools provided by NumPy, we calculated various properties of the encrypted audio signals obtained in the course of implementing our methodology. These properties ranges from entropy of the encrypted signal to sample change rate analysis.
 \subsubsection{Entropy Analysis}
 The randomness and unpredictability of a cipher can be measured by the Shanon entropy \cite{shannon1948mathematical}. In our scenario, the entropy of an encrypted audio signal is an indication of its unpredictability and randomness. The method of calculating entropy is as follows --
 \[H(x)=-\sum_{i=1}^{n}P(x_i)\log_{b}(P(x_i))\]
@@ -715,7 +701,7 @@ It can be concluded that the encrypted audio signals bear very small resemblance
 
 \begin{table}[!h]
     \begin{center}
-        \caption{Summary of analysis of the audio properties.}
+        \caption{Summary of analysis of the encrypted audio properties.}
         \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
             \hline
             Analysis metrics                         & Audio 1 (\textit{encrypted1.wav}) & Audio 2 (\textit{encrypted2.wav})  \\ \hline
@@ -766,9 +752,9 @@ After storing the secret audio in the cover audio using steganography, we encryp
 
 \begin{enumerate}
     \item The encrypted files, \textit{encrypted1.bin} and \textit{encrypted2.bin}, reaches their destination without any tampering by a malicious party. A brief depiction of this scenario is presented in Table \ref{table:scenario1}.
-    \item The encrypted files, \textit{encrypted1.bin} and \textit{encrypted2.bin}, are intercepted by a malicious party, who perform random bit flip on the files and sends the modified files to their intended destination. A brief depiction of this scenario is presented in Table \ref{table:scenario2}.
+    \item The encrypted files, \textit{encrypted1.bin} and \textit{encrypted2.bin}, are intercepted by a malicious party, who performs random byte modification on the files and sends the modified files to their intended destination. A brief depiction of this scenario is presented in Table \ref{table:scenario2}.
 \end{enumerate}
-In the first scenario, the encrypted files will be decrypted and verified successfully. For the second scenario, we simulated the random bit flips that the malicious party would have done. This resulted in verification failure and in turn decryption failure, alerting the recipient of the actions of the malicious party. Some of these alterations are shown in Table \ref{table:modified1} and \ref{table:modified2}.
+In the first scenario, the encrypted files will be decrypted and verified successfully. For the second scenario, we simulated the random byte modifications that the malicious party would have done. This resulted in verification failure and in turn decryption failure, alerting the recipient of the actions of the malicious party. Some of these alterations are shown in Table \ref{table:modified1} and \ref{table:modified2}.
 
 \begin{table}[!h]
     \caption{Comparison between \textit{encrypted1.bin} and its modified counterpart.}
@@ -842,10 +828,17 @@ In the first scenario, the encrypted files will be decrypted and verified succes
 \end{table}
 \section{Findings and Discussion}
 \label{sec:discussion}
+Our research strived to illustrate the effectiveness of the combination of E91 QKD, ChaCha20-Poly1305 AEAD and LSB steganography for secure exchange of audio messages. In the preceding sections, we performed different types of analysis to validate our proposed methodology. Figure \ref{fig:embeddedAudio1} and \ref{fig:embeddedAudio1} provides a visual testimony to our LSB embedding scheme, while Figure \ref{fig:encrypted1} and \ref{fig:encrypted2} demonstrates the effectivity of our chosen encryption scheme. Figure \ref{fig:decrypted1} and \ref{fig:decrypted2} illustrated the accuracy of the decryption scheme. Figure \ref{fig:extracted1} and \ref{fig:extracted2} depicts the potency of our LSB extraction scheme. We also measured a number of different evaluation metrics to depict the might of our encryption. Table \ref{table:entropy} exhibits the Entropy of the encrypted signals, which were both $\approx8$; a further evidence to the strength of the method of our encryption. Table \ref{table:corrcoef} gives tribute to the high randomness of our encrypted signals and their weak relationship with their original, unencrypted counterparts. Table \ref{table:uaci} presents the UACI values while Table \ref{table:nscr} construes the NSCR values. For both encrypted files, UACI values were $\approx50$, and NSCR values were $\approx100\%$. The obtained values of UACI and NSCR indicates a strong encryption while keeping the distortion low. Furthermore, we performed the CHSH correlation calculation to demonstrate the circumstance of the qubits not being maximally entangled due to the presence of an eavesdropper. In the absence of an eavesdropper, the qubits are maximally entangled, producing a CHSH value around $2\sqrt{2}$, as shown in \ref{table:chsheRsults}. However, in the presence of an eavesdropper, the qubits will no longer be maximally entangled, resulting in CHSH value that will deviate substantially from $2\sqrt{2}$. This condition is shown in Table \ref{table:chshEveKnowledge}. In addition, we performed authentication tag verification to demonstrate the effect of a malicious party altering the encrypted files en route to their destination. When the encrypted files arrive intact at their destination without modification, the recipient can successfully verify the integrity of the received file and decrypt it, as shown in Table \ref{table:scenario1}. Nonetheless, if the encrypted files were modified prior to reaching their destination, the integrity verification by the recipient will result in a failure, consequently causing the decryption process to fail. This is presented in Table \ref{table:scenario2}.
+
+Based on the discussion above, we can observe the following --
+\begin{enumerate}
+    \item The proposed technique is effective in encrypting audio signals.
+    \item The encrypted signals high entropy and randomness compared to their original counterparts.
+    \item The incorporation of E91 QKD with ChaCha20-Poly1305 AEAD augmented the security of the proposed technique against potential attacks in both key generation and transmission process.
+\end{enumerate}
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
-
+In this research, we have successfully demonstrated the viability of securely transmitting audio messages utilizing a combination of quantum key distribution, classical encryption and steganography. Exploiting the E91 QKD protocol, the ChaCha20-Poly1305 AEAD and LSB steganography, we established a secure method of audio message exchange. In the course of this research, we hid two different secret audio messages in a cover audio and encrypted them for secure transmission. Upon reception, the encrypted files were validated and the secret audios were recovered.
 \bibliographystyle{ieeetr}
 \bibliography{references}
-
 \end{document}
