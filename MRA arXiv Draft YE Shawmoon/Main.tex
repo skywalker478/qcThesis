@@ -67,10 +67,10 @@
 \author[1]{\large Md. Raisul Islam Rifat}
 \author[2]{\large Md. Mizanur Rahman}
 \author[1]{\large Md. Abdul Kader Nayon}
-% \author[3]{Md Shawmoon Azad}
+\author[3]{Md Shawmoon Azad}
 \author[3, *]{\large M.R.C. Mahdy}
-\affil[1]{Department of Electrical and Electronic Engineering, Chittagong University of Engineering and Technology, Chattogram}
-\affil[2]{Department of Computer Science and Engineering, Rajshahi University of Engineering and Technology, Rahshahi}
+\affil[1]{Department of Electrical and Electronic Engineering, Chittagong University of Engineering and Technology, Raojan, Chattogram}
+\affil[2]{Department of Computer Science and Engineering, Rajshahi University of Engineering and Technology, Rajshahi}
 \affil[3]{Department of Electrical and Computer Engineering, North South University, Bashundhara, Dhaka}
 % Uncomment to remove the date
 %\date{}
@@ -95,7 +95,7 @@
 
 
 \begin{abstract}
-    The emergence of quantum computing possesses a significant security threat to the current classical system since it has the potential to outperform the current classical computer in some specific task due to their unique principle of operation. This necessitates finding a method which is resistive to quantum computers to securely transfer information. This research addresses these challenges by proposing a novel method combining quantum key distribution (QKD), specially E91 protocol with the classical encryption-authentication protocol i.e. Chacha20-Poly1305 and concealing information within another message through steganography to securely transfer audio messages. Through rigorous experiment, we validated the robustness of the proposed methodology in both classical and quantum attacks. We demonstrated the safety of the key shared using E91 protocol through CHSH inequality test. In addition, the security of secret audio also validated through the verification of the authentication tag generated during the encryption process through Chacha20-Poly1305. Our research offers  a novel framework for secure audio transmission, blending classical encryption and authentication methods with QKD to enhance confidentiality, integrity, and resilience against eavesdropping, ensuring robust end-to-end security.
+    The emergence of quantum computing possesses a significant security threat to the current classical system since it has the potential to outperform the current classical computer in some specific task due to their unique principle of operation. This necessitates finding a method which is resistive to quantum computers to securely transfer information. This research addresses these challenges by proposing a novel method combining quantum key distribution (QKD), specifically E91 protocol with the classical encryption-authentication protocol i.e. Chacha20-Poly1305 and concealing information within another message through steganography to securely transfer audio messages. Through rigorous experiment, we validated the robustness of the proposed methodology in both classical and quantum attacks. We demonstrated the safety of the key shared using E91 protocol through CHSH inequality test. In addition, the security of secret audio also validated through the verification of the authentication tag generated during the encryption process through Chacha20-Poly1305. Our research offers  a novel framework for secure audio transmission, blending classical encryption and authentication methods with QKD to enhance confidentiality, integrity, and resilience against eavesdropping, ensuring robust end-to-end security.
 \end{abstract}
 % keywords can be removed
 \keywords{Quantum Key Distribution, E91 protocol, CHSH inequality, Steganography, Chacha20-Poly1305, Encryption.}
@@ -125,14 +125,14 @@ The new vulnerabilities in secure data transmission due to quantum computer and 
     \item Assessed the performance and reliability of the proposed scheme by measuring the security through end-to-end encryption.
 \end{itemize}
 
-Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrates the present sate of the field through the review of existing research and their development, laying the foundation for our our proposed scheme. Section \ref{sec:preliminaries} describes the foundational concepts of our proposed schemes. Section \ref{sec:methodology} describes the proposed methodology, presenting a detailed piecemeal explanation of our proposed architecture. In section \ref{sec:analysis}, we present the analysis methods as well as the findings. Section \ref{sec:discussion} explore deeper into an extensive analysis of the results, construing the findings and excerpting key insights. Finally, section \ref{sec:conclusion} concludes the paper by indicating the direction of future work, highlighting the potential application and extension of our research.
+Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrates the present sate of the field through the review of existing research and their development, laying the foundation for our our proposed scheme. Section \ref{sec:preliminaries} describes the foundational concepts of our proposed schemes. Section \ref{sec:methodology} describes the proposed methodology, presenting a detailed piecemeal explanation of our proposed architecture. Section \ref{sec:implementation} delves into the dtailed decription of our implementation. In section \ref{sec:analysis}, we present the analysis methods as well as the findings. Section \ref{sec:discussion} explore deeper into an extensive analysis of the results, construing the findings and excerpting key insights. Finally, section \ref{sec:conclusion} concludes the paper by indicating the direction of future work, highlighting the potential application and extension of our research.
 \section{Related Works}
 \label{sec:relatedWorks}
 Post-Quantum cryptography (PQC) also known as Quantum resistant Cryptography is designed to secure the attacks against both classical and quantum computers. So basically Classical cryptography and Quantum Key Distribution(QKD) is combined here for a better and dependable data communication system.
 
-Classical cryptography is based on the hardness of mathematical problems and computer complexity for securing communication for decades. The classical cryptographic technics are- Advanced Encryption System(AES), Data Encryption Standard (DES), Asymmetric key algorithms- Rivest–Shamir–Adleman(RSA), Elliptic Curve Cryptography (ECC) and Hash Functions. These classical techniques could be the focus of brute force attack as they are not capable enough of handling the quantum attacks. Hence to solve this problem, the algorithms of Post Quantum Cryptography was proposed which is strong, reliable and secure against the quantum attacks.\cite{sharma2023post}
+Classical cryptography is based on the hardness of mathematical problems and computer complexity for securing communication for decades. The classical cryptographic technics are- Advanced Encryption System(AES), Data Encryption Standard (DES), Asymmetric key algorithms- Rivest-Shamir-Adleman(RSA), Elliptic Curve Cryptography (ECC) and Hash Functions. These classical techniques could be the focus of brute force attack as they are not capable enough of handling the quantum attacks. Hence to solve this problem, the algorithms of Post Quantum Cryptography was proposed which is strong, reliable and secure against the quantum attacks.\cite{sharma2023post}
 
-E91 and BB84 are the methods of Quantum Key Distribution (QKD) based on the completeness of quantum mechanics. BB84 is the first QKD protocol relies on the Heisenberg uncertainty principle and the no-cloning theorem.On the other hand,  E91 is an entalglement based protocol basically generalized from of Bell’s theorem. The users (Alice and bob) can easily detect the eavesdropping attempt checking the Bell’s inequality by using this protocol. \cite{ekert1991quantum} Among them, E91 is considered as safer and reliable though it faces some technical difficulties.\cite{alvarez2016comparison}
+E91 and BB84 are the methods of Quantum Key Distribution (QKD) based on the completeness of quantum mechanics. BB84 is the first QKD protocol relies on the Heisenberg uncertainty principle and the no-cloning theorem.On the other hand,  E91 is an entalglement based protocol basically generalized from of Bell’s theorem. The users (Alice and bob) can easily detect the eavesdropping attempt checking the Bell's inequality by using this protocol. \cite{ekert1991quantum} Among them, E91 is considered as safer and reliable though it faces some technical difficulties.\cite{alvarez2016comparison}
 
 Hash functions are frequently used in modern cryptography in order to ensure authentication of the digital communication system. It takes an arbitrary length input and produces a fixed sized hashed value where any small changes in input resulting the complete hashed value. SHA-0, SHA-1, SHA-2, SHA-3 are the dedicated hash functions of the SHA family.\cite{madhuravani2013cryptographic} Among them, the SHA-3 family is based on permutation having an extendable output function. SHA3-224, SHA3-256, SHA3-384, SHA3-512 are known as cryptographic hash functions. SHA-3 provides resistance to collision, preimage and second preimage attacks which ensures the security attacks such as digital signature generation and verification, key derivation and pseudorandom bit generation. \cite{dworkin2015sha}
 
@@ -171,7 +171,7 @@ The E91 protocol is a quantum key distribution (QKD) scheme that uses entangled 
           \begin{figure}[!h]
               \centering
               \includesvg[width=0.75\textwidth]{measurement.svg}
-              \caption{Measurement Direction for Ekert Protocol\cite{wolf2021quantum}}
+              \caption{Measurement Direction for Ekert Protocol}
               \label{fig:mesurement_direction}
           \end{figure}
 
@@ -182,9 +182,9 @@ The E91 protocol is a quantum key distribution (QKD) scheme that uses entangled 
 
 Alice and Bob can detect the presence of Eve using two steps. The first step is to check if, after measurement, they find that the measurement results differ despite using the same corresponding bases. They can also detect anomalies using the CHSH inequality test. If the measurement result don't violate CHSH inequality, then they can assume that there was an anomaly.
 The CHSH inequality quantifies correlations between two spatially separated particles measured in different bases. For an entangled pair, if measurements on the first particle are labeled with settings A and a (yielding outcomes $ \pm 1 $), and those on the second particle use settings B and b (yielding outcomes $ \pm 1 $), the CHSH parameter S is defined as:
-\[
-    S = A(B - b) + a(B + b).
-\]
+\begin{equation}
+    S = A(B - b) + a(B + b)
+\end{equation}
 Classically, the absolute average value is given by:
 \[
     |\langle S \rangle| \leq 2 \quad \text{or} \quad \pm 2.
@@ -350,6 +350,7 @@ Steganography is the process where we don't encrypt the secrete message, rather 
 \end{figure}
 
 In Audio Steganography secret message is hidden in cover audio but there is no much change in the cover audio because it is it use of the psycho-acoustical masking phenomenon of the human auditory system(HAS). There are different methods of steganography. Among them some notables are: LSB Coding, Parity Coding, Phase coding, Spread sprectrum, Echo hiding etc.\cite{hemeida2021comparative} A very popular methodology among them is the LSB(Least Significant Bit) algorithm, which only replaces the least significant bits of the some of the bytes of the cover audio. Due to LSB substitution there is no much changes in the audio also.
+
 \begin{figure}[!h]
     \begin{center}
         \includesvg[width=\textwidth]{embedStego.svg}
@@ -358,7 +359,8 @@ In Audio Steganography secret message is hidden in cover audio but there is no m
     \end{center}
 \end{figure}
 
-LSB encoding embeds secret audio by replacing the least significant bits of carrier audio frames with bits from the secret audio. First, the carrier and secret audio are checked for compatibility in terms of channels and sample width. The secret audio frames are resized to fit the carrier’s capacity. A mask is applied to clear the carrier’s LSBs, which are then replaced with shifted bits from the secret audio. The result is a modified carrier audio with embedded data, saved as a new file.
+LSB encoding embeds secret audio by replacing the least significant bits of carrier audio frames with bits from the secret audio. First, the carrier and secret audio are checked for compatibility in terms of channels and sample width. The secret audio frames are resized to fit the carrier's capacity. A mask is applied to clear the carrier's LSBs, which are then replaced with shifted bits from the secret audio. The result is a modified carrier audio with embedded data, saved as a new file.
+
 \begin{figure}[!h]
     \begin{center}
         \includesvg[width=\textwidth]{extractStego.svg}
@@ -624,7 +626,9 @@ All the waveforms shown in this section were generated using MATLAB \cite{MATLAB
 With the help of the tools provided by NumPy, we calculated various properties of the encrypted audio signals obtained in the course of implementing our methodology. These properties ranges from entropy of the encrypted signal to sample change rate analysis.
 \subsubsection{Entropy Analysis}
 The randomness and unpredictability of a cipher can be measured by the Shanon entropy \cite{shannon1948mathematical}. In our scenario, the entropy of an encrypted audio signal is an indication of its unpredictability and randomness. The method of calculating entropy is as follows --
-\[H(x)=-\sum_{i=1}^{n}P(x_i)\log_{b}(P(x_i))\]
+\begin{equation}
+    H(x)=-\sum_{i=1}^{n}P(x_i)\log_{b}(P(x_i))
+\end{equation}
 Here, $H(x)$ is the entropy of the signal while $P(x_i)$ is the probability of the $i$th value of signal $x$. For a good encryption technique, it is desirable to have the entropy of the encrypted signal to be as close to $8$ as possible. Table \ref{table:entropy} shows the entropy values of the two encrypted signals, \textit{encrypted1.wav} and \textit{encrypted2.wav}, as well as those of the embedded signals, \textit{embedded1.wav} and \textit{embedded2.wav}.
 \begin{table}[!h]
     \begin{center}
@@ -644,7 +648,9 @@ Here, $H(x)$ is the entropy of the signal while $P(x_i)$ is the probability of t
 From the table above, it can be seen that the entropy of the embedded signals are far below $8$, almost by a margin of $2.6$, while that of the encrypted signals are $\approx8$, indicating proper encryption.
 \subsubsection{Correlation Coefficient Calculation}
 Correlation coefficient provide an insight into the relationship between two random variables. For this research, we calculated the correlation coefficients between the embedded and the encrypted audio signals. The general formula of correlation coefficient is given by the following --
-\[r(x,y)=\frac{\sum_{i=1}^{n}(x_i-\overline{x})(y_i-\overline{y})}{\sqrt{\sum_{i=1}^{n}(x_i-\overline{x})^2\sum_{i=1}^{n}(y_i-\overline{y})^2}}\]
+\begin{equation}
+    r(x,y)=\frac{\sum_{i=1}^{n}(x_i-\overline{x})(y_i-\overline{y})}{\sqrt{\sum_{i=1}^{n}(x_i-\overline{x})^2\sum_{i=1}^{n}(y_i-\overline{y})^2}}
+\end{equation}
 
 Here, $x$ is the entity with respect to which the correlation coefficient is calculated, which in our case is the embedded audios
 , while $y$ is the entity whose correlation coefficient is being calculated, in this case the encrypted audios. $\overline{x}$ and $\overline{y}$ are the means of $x$ and $y$, respectively. The correlation coefficients between the embedded and the encrypted audio signals are shown in Table \ref{table:corrcoef}.
@@ -664,7 +670,9 @@ Here, $x$ is the entity with respect to which the correlation coefficient is cal
 From the table above, it is evident that both of the encrypted audio signals have very poor correlation with their corresponding embedded signals, as both correlation coefficients were well below zero.
 \subsubsection{Unified Average Changing Intensity (UACI)}
 Unified Average Changing Intensity is a measure of the average intensity change rate between the original and the modified signal. In this case, UACI measures the average intensity change rate between the embedded audio and the encrypted audio signals. A higher UACI value is preferred, as a higher UACI value indicates a considerable change in the encrypted audio from the original embedded audio. For 8 bit audio signals, UACI is calculated using the following formula --
-\[\text{UACI}=\frac{1}{N}\sum_{i=1}^{N}\left(\frac{|S_i-D_i|}{255}\right)\times100\]
+\begin{equation}
+    \text{UACI}=\frac{1}{N}\sum_{i=1}^{N}\left(\frac{|S_i-D_i|}{255}\right)\times100
+\end{equation}
 Here, $S_i$ is the samples of the embedded signal, $D_i$ is the samples of the encrypted signals and $N$ is the total number of samples, which is the same in both signals. The calculated values of UACI is shown in Table \ref{table:uaci}.
 \begin{table}[!h]
     \begin{center}
@@ -682,7 +690,9 @@ Here, $S_i$ is the samples of the embedded signal, $D_i$ is the samples of the e
 It can be gleaned with ease from the table above that the encrypted audios almost do not contain any patterns from the original embedded audios as the UACI values were comparatively high.
 \subsubsection{Number of samples change rate (NSCR)}
 Number of samples change rate (NSCR) calculates the percentage of the sample values that are in contrast between the original embedded audios and the encrypted audios. Higher NSCR values are an indication of higher number of samples being altered in the course of encryption and thus producing a signal substantially different from the original signal. The following formula is utilized to determine the value of NSCR --
-\[\text{NSCR}=\left(\frac{D}{N}\right)\times100\]
+\begin{equation}
+    \text{NSCR}=\left(\frac{D}{N}\right)\times100
+\end{equation}
 Here, $D$ is the number of sample that are distinct between the original embedded signal and the encrypted audio signal and $N$ is the total number of samples, which is the same in both signals. The NSCR values that we determined is shown in Table \ref{table:nscr}.
 \begin{table}[!h]
     \begin{center}
