@@ -245,4 +245,19 @@ J.~F. Clauser, M.~A. Horne, A.~Shimony, and R.~A. Holt, ``Proposed experiment
   to test local hidden-variable theories,'' {\em Phys. Rev. Lett.}, vol.~23,
   pp.~880--884, Oct 1969.
 
+\bibitem{nurhadi2018quantum}
+a.~i. nurhadi and n.~r. syambas, ``quantum key distribution (qkd) protocols: a
+  survey,'' in {\em 2018 4th international conference on wireless and
+  telematics (icwt)}, pp.~1--5, ieee, 2018.
+
+\bibitem{devitt2013quantum}
+s.~j. devitt, w.~j. munro, and k.~nemoto, ``quantum error correction for
+  beginners,'' {\em reports on progress in physics}, vol.~76, no.~7, p.~076001,
+  2013.
+
+\bibitem{nagata2017quantum}
+k.~nagata and t.~nakamura, ``quantum cryptography, quantum communication, and
+  quantum computer in a noisy environment,'' {\em international journal of
+  theoretical physics}, vol.~56, pp.~2086--2100, 2017.
+
 \end{thebibliography}
