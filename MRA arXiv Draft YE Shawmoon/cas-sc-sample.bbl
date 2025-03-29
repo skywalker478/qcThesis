@@ -268,19 +268,19 @@
 \newblock \bibinfo{title}{Proposed experiment to test local hidden-variable theories},
 \newblock \bibinfo{journal}{Phys. Rev. Lett.} \bibinfo{volume}{23} (\bibinfo{year}{1969}) \bibinfo{pages}{880--884}.
 %Type = Inproceedings
-\bibitem[{nurhadi and syambas(2018)}]{nurhadi2018quantum}
-\bibinfo{author}{a.~i. nurhadi}, \bibinfo{author}{n.~r. syambas},
-\newblock \bibinfo{title}{quantum key distribution (qkd) protocols: a survey},
+\bibitem[{Nurhadi and Ayambas(2018)}]{nurhadi2018quantum}
+\bibinfo{author}{A.~I. Nurhadi}, \bibinfo{author}{N.~R. Ayambas},
+\newblock \bibinfo{title}{Quantum key distribution (qkd) protocols: a survey},
 \newblock in: \bibinfo{booktitle}{2018 4th international conference on wireless and telematics (icwt)}, \bibinfo{organization}{ieee}, pp. \bibinfo{pages}{1--5}.
 %Type = Article
-\bibitem[{devitt et~al.(2013)devitt, munro, and nemoto}]{devitt2013quantum}
-\bibinfo{author}{s.~j. devitt}, \bibinfo{author}{w.~j. munro}, \bibinfo{author}{k.~nemoto},
-\newblock \bibinfo{title}{quantum error correction for beginners},
+\bibitem[{Devitt et~al.(2013)Devitt, Munro, and Nemoto}]{devitt2013quantum}
+\bibinfo{author}{S.~J. Devitt}, \bibinfo{author}{W.~J. Munro}, \bibinfo{author}{K.~Nemoto},
+\newblock \bibinfo{title}{Quantum error correction for beginners},
 \newblock \bibinfo{journal}{reports on progress in physics} \bibinfo{volume}{76} (\bibinfo{year}{2013}) \bibinfo{pages}{076001}.
 %Type = Article
-\bibitem[{nagata and nakamura(2017)}]{nagata2017quantum}
-\bibinfo{author}{k.~nagata}, \bibinfo{author}{t.~nakamura},
-\newblock \bibinfo{title}{quantum cryptography, quantum communication, and quantum computer in a noisy environment},
+\bibitem[{Nagata and Nakamura(2017)}]{nagata2017quantum}
+\bibinfo{author}{K.~Nagata}, \bibinfo{author}{T.~Nakamura},
+\newblock \bibinfo{title}{Quantum cryptography, quantum communication, and quantum computer in a noisy environment},
 \newblock \bibinfo{journal}{international journal of theoretical physics} \bibinfo{volume}{56} (\bibinfo{year}{2017}) \bibinfo{pages}{2086--2100}.
 
 \end{thebibliography}
