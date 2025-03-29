@@ -1,4 +1,4 @@
-\begin{thebibliography}{53}
+\begin{thebibliography}{61}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\bibinfo}[2]{#2}
 \ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
@@ -222,6 +222,46 @@
 \bibinfo{author}{C.~E. Shannon},
 \newblock \bibinfo{title}{A mathematical theory of communication},
 \newblock \bibinfo{journal}{The Bell system technical journal} \bibinfo{volume}{27} (\bibinfo{year}{1948}) \bibinfo{pages}{379--423}.
+%Type = Article
+\bibitem[{Farsana et~al.(2023)Farsana, Devi, and Gopakumar}]{farsana2023audio}
+\bibinfo{author}{F.~Farsana}, \bibinfo{author}{V.~Devi}, \bibinfo{author}{K.~Gopakumar},
+\newblock \bibinfo{title}{An audio encryption scheme based on fast walsh hadamard transform and mixed chaotic keystreams},
+\newblock \bibinfo{journal}{Applied Computing and Informatics} \bibinfo{volume}{19} (\bibinfo{year}{2023}) \bibinfo{pages}{239--264}.
+%Type = Article
+\bibitem[{Shah et~al.(2021)Shah, Shah, Hazzazi, Haider, Aljaedi, and Hussain}]{shah2021efficient}
+\bibinfo{author}{D.~Shah}, \bibinfo{author}{T.~Shah}, \bibinfo{author}{M.~M. Hazzazi}, \bibinfo{author}{M.~I. Haider}, \bibinfo{author}{A.~Aljaedi}, \bibinfo{author}{I.~Hussain},
+\newblock \bibinfo{title}{An efficient audio encryption scheme based on finite fields},
+\newblock \bibinfo{journal}{IEEE Access} \bibinfo{volume}{9} (\bibinfo{year}{2021}) \bibinfo{pages}{144385--144394}.
+%Type = Article
+\bibitem[{Abdelfatah(2020)}]{abdelfatah2020audio}
+\bibinfo{author}{R.~I. Abdelfatah},
+\newblock \bibinfo{title}{Audio encryption scheme using self-adaptive bit scrambling and two multi chaotic-based dynamic dna computations},
+\newblock \bibinfo{journal}{IEEE Access} \bibinfo{volume}{8} (\bibinfo{year}{2020}) \bibinfo{pages}{69894--69907}.
+%Type = Article
+\bibitem[{Lima and da~Silva~Neto(2016)}]{lima2016audio}
+\bibinfo{author}{J.~B. Lima}, \bibinfo{author}{E.~F. da~Silva~Neto},
+\newblock \bibinfo{title}{Audio encryption based on the cosine number transform},
+\newblock \bibinfo{journal}{Multimedia Tools and Applications} \bibinfo{volume}{75} (\bibinfo{year}{2016}) \bibinfo{pages}{8403--8418}.
+%Type = Article
+\bibitem[{Naskar et~al.(2021)Naskar, Bhattacharyya, and Chaudhuri}]{naskar2021audio}
+\bibinfo{author}{P.~K. Naskar}, \bibinfo{author}{S.~Bhattacharyya}, \bibinfo{author}{A.~Chaudhuri},
+\newblock \bibinfo{title}{An audio encryption based on distinct key blocks along with pwlcm and eca},
+\newblock \bibinfo{journal}{Nonlinear dynamics} \bibinfo{volume}{103} (\bibinfo{year}{2021}) \bibinfo{pages}{2019--2042}.
+%Type = Article
+\bibitem[{Adeel et~al.(2020)Adeel, Ahmad, Larijani, and Hussain}]{adeel2020novel}
+\bibinfo{author}{A.~Adeel}, \bibinfo{author}{J.~Ahmad}, \bibinfo{author}{H.~Larijani}, \bibinfo{author}{A.~Hussain},
+\newblock \bibinfo{title}{A novel real-time, lightweight chaotic-encryption scheme for next-generation audio-visual hearing aids},
+\newblock \bibinfo{journal}{Cognitive Computation} \bibinfo{volume}{12} (\bibinfo{year}{2020}) \bibinfo{pages}{589--601}.
+%Type = Article
+\bibitem[{Aziz et~al.(2021)Aziz, Gilani, Hussain, Janjua, and Khurram}]{aziz2021noise}
+\bibinfo{author}{H.~Aziz}, \bibinfo{author}{S.~M.~M. Gilani}, \bibinfo{author}{I.~Hussain}, \bibinfo{author}{A.~K. Janjua}, \bibinfo{author}{S.~Khurram},
+\newblock \bibinfo{title}{A noise-tolerant audio encryption framework designed by the application of s8 symmetric group and chaotic systems},
+\newblock \bibinfo{journal}{Mathematical Problems in Engineering} \bibinfo{volume}{2021} (\bibinfo{year}{2021}) \bibinfo{pages}{5554707}.
+%Type = Article
+\bibitem[{Dai et~al.(2021)Dai, Xu, Song, and Li}]{dai2021audio}
+\bibinfo{author}{W.~Dai}, \bibinfo{author}{X.~Xu}, \bibinfo{author}{X.~Song}, \bibinfo{author}{G.~Li},
+\newblock \bibinfo{title}{Audio encryption algorithm based on chen memristor chaotic system},
+\newblock \bibinfo{journal}{Symmetry} \bibinfo{volume}{14} (\bibinfo{year}{2021}) \bibinfo{pages}{17}.
 %Type = Article
 \bibitem[{Clauser et~al.(1969)Clauser, Horne, Shimony, and Holt}]{PhysRevLett.23.880}
 \bibinfo{author}{J.~F. Clauser}, \bibinfo{author}{M.~A. Horne}, \bibinfo{author}{A.~Shimony}, \bibinfo{author}{R.~A. Holt},

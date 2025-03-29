@@ -148,7 +148,8 @@
 % }
 
 \begin{abstract}
-    The emergence of quantum computing possesses a significant security threat to the current classical system, since it has the potential to outperform the current classical computer in some specific task due to their unique principle of operation. This necessitates finding a method that is resistive to quantum computers to securely transfer information. This research addresses these challenges by proposing a novel method combining quantum key distribution (QKD), specifically the E91 protocol with the classical encryption-authentication protocol, i.e. ChaCha20-Poly1305 and concealing information within another message through steganography to securely transfer audio messages. A shared secret key is created between the communicating parties using E91 QKD, which exploits the stellar protection of quantum entanglement against eavesdropping. The shared key is hashed through the SHA-3 hash function to generate a fixed-length, high-entropy symmetric key. The audio message is hidden inside another audio signal through steganography. The steganographic signal is encrypted using ChaCha20-Poly1305 AEAD in order to provide another layer of obfuscation as well as a means to verify integrity. Through rigorous experiment, we validated the robustness of the proposed methodology in both classical and quantum attacks. The processing of secret audio signals of varying duration (00:01:32 to 00:01:36) exhibits consistent encryption results. The encrypted stego audios show high randomness, with an average entropy of $15.9984209099406865$, an average UACI of $49.997671320111918$, and an average NSCR of $99.99848969721785\%$.  We demonstrated the safety of the shared key using the CHSH inequality test, where in the presence of an eavesdropper the CHSH value is very less than $2\sqrt{2}$. In addition, the integrity of the secret audios is also validated through the verification of the authentication tag generated during the encryption process. Our research offers a novel framework for secure audio transmission, combining classical encryption and authentication methods with QKD to enhance confidentiality, integrity, and resilience against eavesdropping, ensuring robust end-to-end security.
+    The emergence of quantum computing possesses a significant security threat to the current classical system, since it has the potential to outperform the current classical computer in some specific task due to their unique principle of operation. This necessitates finding a method that is resistive to quantum computers to securely transfer information. This research addresses these challenges by proposing a novel method combining quantum key distribution (QKD), specifically the E91 protocol with the classical encryption-authentication protocol, i.e. ChaCha20-Poly1305 and concealing information within another message through steganography to securely transfer audio messages. A shared secret key is created between the communicating parties using E91 QKD, which exploits the stellar protection of quantum entanglement against eavesdropping. The shared key is hashed through the SHA-3 hash function to generate a fixed-length, high-entropy symmetric key. The audio message is hidden inside another audio signal through steganography. The steganographic signal is encrypted using ChaCha20-Poly1305 AEAD in order to provide another layer of obfuscation as well as a means to verify integrity. Through rigorous experiment, we validated the robustness of the proposed methodology in both classical and quantum attacks. The processing of secret audio signals of varying duration (00:01:32 to 00:01:36) exhibits consistent encryption results. The encrypted stego audios show high randomness, with an average entropy of $15.99842$, an average correlation of $0
+        .0000146272$, an average UACI of $49.99767132$, and an average NSCR of $99.998489697\%$.  We demonstrated the safety of the shared key using the CHSH inequality test, where in the presence of an eavesdropper the CHSH value is very less than $2\sqrt{2}$. In addition, the integrity of the secret audios is also validated through the verification of the authentication tag generated during the encryption process. Our research offers a novel framework for secure audio transmission, combining classical encryption and authentication methods with QKD to enhance confidentiality, integrity, and resilience against eavesdropping, ensuring robust end-to-end security.
 
     % \noindent\texttt{\textbackslash begin{abstract}} \dots 
     % \texttt{\textbackslash end{abstract}} and
@@ -247,7 +248,14 @@ ChaCha, a variant of Salsa20, represent the ChaCha family of stream ciphers, whi
 
 The Poly1305 is a specific type of MAC(Message Authentication Protocol) which is a cryptographic tools used to verify the integrity and authenticity of a message \cite{bernstein2005poly1305}. It computes a 16-byte authenticator for variable-length messages using a 32-byte secret key, which includes a 16-byte key derived from some symmetric encryption and a 16-byte additional randomly generated key which helps in high-speed computations and making it suitable for various applications \cite{bernstein2005poly1305}. The probability of successful attack is also very low due to the uniqueness of nonces and the unpredictability of keys. For all the reasons, it is used widely for network protocols and secure communications.
 \subsection{Novel Contributions to Existing Literature Gap}
-The mentioned works offer valuable contributions, but they all their shortcomings as well. QKD by itself can not provide any data security. Classical cryptography along with hash function as integrity verifier provides good data security, but this method is not competent enough to stave off against quantum attacks. The consolidation of quantum and classical cryptography offers a promising avenue for reinforcing security, as the combined strengths of these two approaches can lead to more robust and resilient cryptographic systems. To that end, we introduce a cryptography scheme combining Quantum Key Distribution and Classical cryptography, added with Steganography technique. This mixture of different types of information securing technique provides a system that is resilient against both classical and quantum attacks while providing efficient data security. Our main contribution can be summarized as follows -
+The mentioned works offer valuable contributions, but they all have shortcomings as well. QKD by itself can not
+provide any data security. Classical cryptography along with hash function as an integrity verifier provides good data
+security, but this method is not competent enough to stave off quantum attacks. The consolidation of quantum
+and classical cryptography offers a promising avenue for reinforcing security, as the combined strengths of these two
+approaches can lead to more robust and resilient cryptographic systems. To that end, we introduce a cryptography
+scheme combining Quantum Key Distribution and Classical cryptography, added with Steganography technique. This
+mixture of different types of information-securing techniques provides a system that is resilient against both classical
+and quantum attacks while providing efficient data security.   Our main contribution can be summarized as follows -
 \begin{itemize}
     \item Proposed an original architecture that successfully combines E91 QKD protocol, ChaCha20-Poly1305 AEAD and audio steganography using LSB.
     \item Utilized E91 as the key distribution protocol which employs principles of quantum mechanics for secure key exchange.
@@ -548,7 +556,9 @@ The decryption process is the exact reverse of the encryption process. Similar t
 \subsection{Steganography extraction}
 \label{sec:stegoExtract}
 The stego audio recovered in \ref{sec:chacha20poly1305decryption} is modified to isolate the cover audio and the message audio. As the least significant bits of each frame of the cover audio was replaced by the message audio bits, the LSBs of each frame was extracted in order to reconstruct the binary stream of the message audio. The reconstructed binary stream is modified according to bit-depth to form audio frames. From these frames the message audio is reconstructed.
-\newpage
+
+In summary, Charlie creates entangled pairs of qubits which are shared with Alice and Bob. They perform measurements on the received qubits, resulting in the creation of the Final Ekert Key. This key is hashed using SHA3-256 to produce 256-bit high-entropy symmetric encryption key. Alice embeds the secret audio file in a cover audio file through LSB steganography. This embedded audio is encrypted using ChaCha20-Poly1305 AEAD, which uses the symmetric encryption key. The encrypted audio is decrypted by Bob using the same key through ChaCha20-Poly1305 decryption and authenticates the validity of the message. Finally, through LSB extraction, Bob reproduces the secret audio from the decrypted audio.
+% \newpage
 \section{Implementation Details}
 \label{sec:implementation}
 In the course of our research, we utilized an amalgamation of powerful tools and libraries in the pursuit of the effective implementation of our proposed scheme. The Qiskit SDK from IBM \cite{Wille2019IBMsQT} acted as one of the foundational columns of our research by enabling us to develop and simulate quantum circuits and thus properly implementing the E91 protocol. For our implementation, we specifically used Qiskit v0.39.2. Using Qiskit, we developed the singlet circuit for entangled pair generation \ref{fig:singlet}, the measurement circuits of Alice and Bob and the creation of the Final Ekert Key. The respective measurement circuits are shown in Figures \ref{fig:aliceMeasurements} and \ref{fig:bobMeasurements}.
@@ -778,7 +788,7 @@ Correlation coefficient provide an insight into the relationship between two ran
     r(x,y)=\frac{\sum_{i=1}^{n}(x_i-\overline{x})(y_i-\overline{y})}{\sqrt{\sum_{i=1}^{n}(x_i-\overline{x})^2\sum_{i=1}^{n}(y_i-\overline{y})^2}}
 \end{equation}
 
-Here, $x$ is the entity with respect to which the correlation coefficient is calculated, which in our case is one sample of both the embedded and encrypted audios, while $y$ is the entity whose correlation coefficient is being calculated, in this case the adjacent sample of both the embedded and the encrypted audios. $\overline{x}$ and $\overline{y}$ are the means of $x$ and $y$, respectively. The correlation coefficients between the embedded and the encrypted audio signals are shown in Table \ref{table:corrcoef}.
+Here, $x$ is each sample of both the embedded and encrypted audios, while $y$ is the adjacent sample of both the embedded and the encrypted audios. $\overline{x}$ and $\overline{y}$ are the means of $x$ and $y$, respectively. The correlation coefficients between the embedded and the encrypted audio signals are shown in Table \ref{table:corrcoef}.
 \begin{table}[pos=h]
     \begin{center}
         \caption{Correlation between adjacent samples of original embedded audios before encryption, after encryption and after decryption.}
@@ -787,6 +797,7 @@ Here, $x$ is the entity with respect to which the correlation coefficient is cal
             \multicolumn{1}{c|}{Audio File} & \multicolumn{1}{c}{Original} & \multicolumn{1}{c}{Encrypted} & \multicolumn{1}{c}{Decrypted} \\ \hline
             \multicolumn{1}{c|}{Audio 1}    & $0.543752985460514$          & $-0.000019216$                & $0.543752985460514$           \\
             \multicolumn{1}{c|}{Audio 2}    & $0.5437499517001024$         & $0.0000484704$                & $0.5437499517001024$          \\ \hline
+            & & \textit{avg.:}$\mathbf{0.0000146272}$ & \\ 
         \end{tabular}
         \label{table:corrcoef}
     \end{center}
@@ -958,7 +969,7 @@ Key Sensitivity is a measure of the response to the slightest change in key of a
     \item \textbf{Scenario -- 1:} The stego-audio is encrypted using K1 key and decrypted using the same key (Figure \ref{fig:keySensitivityK1}).
     \item \textbf{Scenario -- 2:} The stego-audio is encrypted using K1 key but decryption is attempted using K2 key, which differs from K1 by a single bit.(Figure \ref{fig:keySensitivityK2})
 \end{itemize}
-For instance, let $K1=\mathbf{0}0001000000100001010001011000011$ and $K2=\mathbf{1}0001000000100001010001011000011$. The hash output are $\text{SHA3}_{K1}=e57179067dc01f3d3434e4e1447d0368cd716894c71ca9e59da3d7b9a5be6fce$ and $\text{SHA3}_{K2}=a2b702be844ae3adea1fd88c1c6e2452fdde129988fd78f047ebacf5c5d2aa67$. Due to the mismatch in computed hashdigest, decryption attempt with $K2$ will fail.
+For instance, let $K1=\mathbf{0}0001000000100001010001011000011$ and $K2=\mathbf{1}0001000000100001010001011000011$. The hash output are $\text{SHA3}_{K1}=e57179067dc01f3d3434e4e1447d0368cd716894c71ca9e59da3d7b9a5be6fce$ and $\text{SHA3}_{K2}=a2b702be844ae3adea1fd88c1c6e2452fdde129988fd78f047ebacf5c5d2aa67$. Due to the mismatch in computed hexdigest, decryption attempt with $K2$ will fail.
 \begin{figure}[pos=h]
     \begin{center}
         \includesvg[width=\textwidth]{keySensitivityK1.svg}
@@ -1016,20 +1027,29 @@ Here, $D$ is the number of sample that are distinct between the original embedde
 
 It can be concluded that the encrypted audio signals bear very small resemblance to their original embedded counterpart, as the NSCR values of both signals were almost close to $100\%$.
 
-% \begin{table}[pos=H]
-%     \begin{center}
-%         \caption{Summary of analysis of the encrypted audio properties.}
-%         \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
-%             \hline
-%             Analysis metrics                         & Audio 1 (\textit{encrypted1.wav}) & Audio 2 (\textit{encrypted2.wav})  \\ \hline
-%             Entropy                                  & $7.999996690800791$               & $7.999997028544158$                \\
-%             Correlation with original embedded audio & $-4.515503267166404\times10^{-5}$ & $-5.8256422990290715\times10^{-5}$ \\
-%             UACI                                     & $49.99981961917535$               & $50.00009364535334$                \\
-%             NSCR                                     & $99.61122960461951\%$             & $99.61018917381404\%$              \\ \hline
-%         \end{tabularx}
-%         \label{table:analysis}
-%     \end{center}
-% \end{table}
+\begin{table}[pos=H]
+    \begin{center}
+        \caption{Comparison of encrypted audio properties for different encryption schemes.}
+        \begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+            \toprule
+            \textbf{Scheme}                 & \textbf{Entropy}    & \textbf{Correlation}    & \textbf{UACI}          & \textbf{NSCR}             \\
+            \midrule
+            Ref. \cite{farsana2023audio}    & $N/A$               & $0.00971$               & $33.3$                 & $99.9995\%$               \\
+            Ref. \cite{shah2021efficient}   & $15.3695181$        & $-0.0026$               & $33.205726$            & $99.99168727\%$           \\
+            Ref. \cite{abdelfatah2020audio} & $N/A$               & $0.000053$              & $35.5483$              & $99.9948\%$               \\
+            Ref. \cite{lima2016audio}       & $15.9725$           & $N/A$                   & $33.3192$              & $99.9992125\%$            \\
+            Ref. \cite{naskar2021audio}     & $N/A$               & $0.0002951832$          & $33.5599931566$        & $99.99950878\%$           \\
+            Ref. \cite{adeel2020novel}      & $7.9983$            & $0.00022$               & $33.39$                & $99.95\%$                 \\
+            Ref. \cite{aziz2021noise}       & $7.9438333$         & $-0.00667$              & $25.585$               & $99.583467\%$             \\
+            Ref. \cite{dai2021audio}        & $N/A$               & $0.00095$               & $32.8242$              & $99.920275\%$             \\
+            Proposed                        & $\mathbf{15.99842}$ & $\mathbf{0.0000146272}$ & $\mathbf{49.99767132}$ & $\mathbf{99.998489697\%}$ \\
+            \bottomrule
+        \end{tabularx}
+        \label{table:analysis}
+    \end{center}
+\end{table}
+
+Table \ref{table:analysis} presents a definitive comparison of encrypted audio properties of existing works with our proposed scheme. It is evident that our encryption scheme provides improved entropy, correlation and UACI -- all hallmarks of a robust encryption system. And although the NSCR of our scheme is not the highest, it is still close enough to the expected $100\%$ that indicate high grade encryption.
 \subsection{Security Analysis}
 Although our encryption technique provided us with considerably robust encryptions, there exists two different security threat -- one in the quantum channel and the other in the classical channel. In the quantum channel, an eavesdropper, Eve, might perform her own measurement on the qubits intended for Alice and Bob. In this process, Eve may gain insight about Alice and Bob's keys. In the classical channel, the encrypted audio suffer from tampering, that is, a malicious party might intercept the encrypted signal and modify it before relaying it to the intended recipient. These scenarios and their solutions are discussed in the subsequent sections.
 \subsubsection{Eavesdropping Analysis}
@@ -1071,7 +1091,7 @@ After storing the secret audio in the cover audio using steganography, we encryp
     \item The encrypted files, \textit{encrypted1.bin} and \textit{encrypted2.bin}, reaches their destination without any tampering by a malicious party. A brief depiction of this scenario is presented in Table \ref{table:scenario1}.
     \item The encrypted files, \textit{encrypted1.bin} and \textit{encrypted2.bin}, are intercepted by a malicious party, who performs random byte modification on the files and sends the modified files to their intended destination. A brief depiction of this scenario is presented in Table \ref{table:scenario2}.
 \end{enumerate}
-In the first scenario, the encrypted files will be decrypted and verified successfully. For the second scenario, we simulated the random byte modifications that the malicious party would have done. This resulted in verification failure and in turn decryption failure, alerting the recipient of the actions of the malicious party. Some of these alterations are shown in Table \ref{table:modified1} and \ref{table:modified2}.
+In the first scenario, the encrypted files will be decrypted and verified successfully. For the second scenario, we simulated the random byte modifications that the malicious party would have done. As the encrypted file is modified, the recalculated MAC is different from the one sent alongside the message. This resulted in verification failure and in turn decryption failure, alerting the recipient of the actions of the malicious party. Some of these alterations are shown in Table \ref{table:modified1} and \ref{table:modified2}.
 
 \begin{table}[pos=h]
     \caption{Comparison between \textit{encrypted1.bin} and its modified counterpart.}
@@ -1155,7 +1175,9 @@ Based on the discussion above, we can observe the following --
 \end{enumerate}
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
-In our research, we proposed a noble approach of securing digital audio transmission combining the Quantum Key Distribution (QKD) specifically E91 with classical encryption system, secure hash function and audio steganography using LSB. We also introduce ChaCha20-Poly 1305 which is an authenticated encryption scheme enhances secrecy and integrity providing robustness of the overall system. By means of E91 protocol, entangled pair of photons are generated known as Ekert Key send to Alice and Bob. Then SHA generates a random 256 bit key from the Ekert Key for LSB steganography and ChaCha20-Poly1305. One of our primary concern is about quantum attacks in future and the incapability of classical computer or the classical encryption system to deal against those attacks. So, we checked the stability of our proposed signal by illustrating different types of attacks such as - Clauser -- Horne -- Shimony -- Holt (CHSH) inequality and Tampering analysis. Besides, signal quality after encryption and decryption also provides a satisfactory result. However, our system depicts the practical combination of classical cryptographic system and QKD(Quantum Key distribution) also known as Post quantum cryptography alongside with steganography and ChaCha20-Poly1305 resulting in an audio encryption technique which adds an extra layer of protection to keep data safe and intact. Our future work involves using different quantum key distribution such as - B92, COW(Coherent One-Way protocol), SARG04  etc instead of E91 protocol which may bring up a better output.\cite{nurhadi2018quantum}Again, modification of the steganography technique such as - phase steganography can improve the robustness of the hidden data against the attacks. In addition, we can also transmit text, images and video by filtering our proposed algorithm which indicates the diversity of our model. Finally, introducing Quantum error correction techniques \cite{devitt2013quantum} will increase the effectiveness of QKD in noisy condition \cite{nagata2017quantum} and  hence we can improve the key generation and distribution over long distance audio transmission.
+Our research presents a novel and practical framework for securing digital audio transmission by integrating Quantum Key Distribution, particularly the E91 protocol, with classical cryptographic methods, secure hashing and audio steganography using the Least Significant Bit technique. To enhance both confidentiality and integrity, we integrated the ChaCha20-Poly1305, a modern authenticated encryption scheme known for its performance and security. In our system, entangled photon pairs are generated via the E91 protocol and distributed between Alice and Bob, forming what is known as the Ekert key. This shared quantum key is then processed using the SHA-3 hash function to derive a high-entropy 256-bit symmetric key. This key is used for both steganographic embedding of the audio message and ChaCha20-Poly1305 encryption, creating a multi-layered security model. Anticipating the challenges posed by future quantum attacks—which could compromise traditional encryption - we tested the robustness of the system through the CHSH inequality test and tampering analysis. These evaluations confirmed the system's resistance to both quantum and classical threats. Furthermore, the audio quality remained consistent after encryption and decryption, supporting the practicality of our approach.
+
+Our future work will focus on (I) experimenting with alternative QKD protocols such as B92, SARG04, and Coherent One-Way, which may offer improved efficiency or better adaptability to different environments.\cite{nurhadi2018quantum} (II) Enhancing the steganography technique—such as employing phase or echo-based methods—could improve resistance to detection and data loss. We also plan to (III) extend this framework to support the secure transmission of other data types, such as video. Furthermore, (IV) integrating quantum error correction techniques\cite{devitt2013quantum} will help maintain key integrity in noisy channels and enable reliable long-distance key distribution\cite{nagata2017quantum}, making the system more scalable and robust for real-world deployment.
 % \section{Installation}
 
 % The package is available at author resources page at Elsevier
