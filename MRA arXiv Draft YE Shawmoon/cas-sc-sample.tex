@@ -548,6 +548,7 @@ The decryption process is the exact reverse of the encryption process. Similar t
 \subsection{Steganography extraction}
 \label{sec:stegoExtract}
 The stego audio recovered in \ref{sec:chacha20poly1305decryption} is modified to isolate the cover audio and the message audio. As the least significant bits of each frame of the cover audio was replaced by the message audio bits, the LSBs of each frame was extracted in order to reconstruct the binary stream of the message audio. The reconstructed binary stream is modified according to bit-depth to form audio frames. From these frames the message audio is reconstructed.
+\newpage
 \section{Implementation Details}
 \label{sec:implementation}
 In the course of our research, we utilized an amalgamation of powerful tools and libraries in the pursuit of the effective implementation of our proposed scheme. The Qiskit SDK from IBM \cite{Wille2019IBMsQT} acted as one of the foundational columns of our research by enabling us to develop and simulate quantum circuits and thus properly implementing the E91 protocol. For our implementation, we specifically used Qiskit v0.39.2. Using Qiskit, we developed the singlet circuit for entangled pair generation \ref{fig:singlet}, the measurement circuits of Alice and Bob and the creation of the Final Ekert Key. The respective measurement circuits are shown in Figures \ref{fig:aliceMeasurements} and \ref{fig:bobMeasurements}.
