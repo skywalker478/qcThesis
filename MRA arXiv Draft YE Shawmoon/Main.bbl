@@ -1,259 +1,172 @@
+\providecommand{\newblock}{}
 \begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+% Bibliography created with iopart-num v2.1
+% /biblio/bibtex/contrib/iopart-num
 
 \bibitem{rijmen2001advanced}
-V.~Rijmen and J.~Daemen, ``Advanced encryption standard,'' {\em Proceedings of
-  federal information processing standards publications, national institute of
-  standards and technology}, vol.~19, p.~22, 2001.
+Rijmen V and Daemen J 2001 {\em Proceedings of federal information processing standards publications, national institute of standards and technology\/} {\bf 19} 22
 
 \bibitem{rivest1978method}
-R.~L. Rivest, A.~Shamir, and L.~Adleman, ``A method for obtaining digital
-  signatures and public-key cryptosystems,'' {\em Communications of the ACM},
-  vol.~21, no.~2, pp.~120--126, 1978.
+Rivest R~L, Shamir A and Adleman L 1978 {\em Communications of the ACM\/} {\bf 21} 120--126
 
 \bibitem{bernstein2017post}
-D.~J. Bernstein and T.~Lange, ``Post-quantum cryptography,'' {\em Nature},
-  vol.~549, no.~7671, pp.~188--194, 2017.
+Bernstein D~J and Lange T 2017 {\em Nature\/} {\bf 549} 188--194
 
 \bibitem{grover1996fast}
-L.~K. Grover, ``A fast quantum mechanical algorithm for database search,'' in
-  {\em Proceedings of the twenty-eighth annual ACM symposium on Theory of
-  computing}, pp.~212--219, 1996.
+Grover L~K 1996 A fast quantum mechanical algorithm for database search {\em Proceedings of the twenty-eighth annual ACM symposium on Theory of computing\/} pp 212--219
 
 \bibitem{Daemen2002}
-J.~Daemen and V.~Rijmen, {\em The Design of Rijndael}.
-\newblock Springer Berlin Heidelberg, 2002.
+Daemen J and Rijmen V 2002 {\em The Design of Rijndael\/} (Springer Berlin Heidelberg) ISBN 9783662047224 \urlprefix\url{http://dx.doi.org/10.1007/978-3-662-04722-4}
 
 \bibitem{Shor1997}
-P.~W. Shor, ``Polynomial-time algorithms for prime factorization and discrete
-  logarithms on a quantum computer,'' {\em SIAM Journal on Computing}, vol.~26,
-  p.~1484–1509, Oct. 1997.
+Shor P~W 1997 {\em SIAM Journal on Computing\/} {\bf 26} 1484–1509 ISSN 1095-7111 \urlprefix\url{http://dx.doi.org/10.1137/s0097539795293172}
 
 \bibitem{alleaume2014using}
-R.~All{\'e}aume, C.~Branciard, J.~Bouda, T.~Debuisschert, M.~Dianati, N.~Gisin,
-  M.~Godfrey, P.~Grangier, T.~L{\"a}nger, N.~L{\"u}tkenhaus, {\em et~al.},
-  ``Using quantum key distribution for cryptographic purposes: a survey,'' {\em
-  Theoretical Computer Science}, vol.~560, pp.~62--81, 2014.
+All{\'e}aume R, Branciard C, Bouda J, Debuisschert T, Dianati M, Gisin N, Godfrey M, Grangier P, L{\"a}nger T, L{\"u}tkenhaus N {\em et~al.\/} 2014 {\em Theoretical Computer Science\/} {\bf 560} 62--81
 
 \bibitem{buvzek1996quantum}
-V.~Bu{\v{z}}ek and M.~Hillery, ``Quantum copying: Beyond the no-cloning
-  theorem,'' {\em Physical Review A}, vol.~54, no.~3, p.~1844, 1996.
+Bu{\v{z}}ek V and Hillery M 1996 {\em Physical Review A\/} {\bf 54} 1844
 
 \bibitem{sen2014uncertainty}
-D.~Sen, ``The uncertainty relations in quantum mechanics,'' {\em Current
-  Science}, pp.~203--218, 2014.
+Sen D 2014 {\em Current Science\/}  203--218
 
 \bibitem{Kahn1996}
-D.~Kahn, {\em The history of steganography}, p.~1–5.
-\newblock Springer Berlin Heidelberg, 1996.
+Kahn D 1996 {\em The history of steganography\/} (Springer Berlin Heidelberg) p 1–5 ISBN 9783540495895 \urlprefix\url{http://dx.doi.org/10.1007/3-540-61996-8_27}
 
 \bibitem{anderson1998limits}
-R.~J. Anderson and F.~A. Petitcolas, ``On the limits of steganography,'' {\em
-  IEEE Journal on selected areas in communications}, vol.~16, no.~4,
-  pp.~474--481, 1998.
+Anderson R~J and Petitcolas F~A 1998 {\em IEEE Journal on selected areas in communications\/} {\bf 16} 474--481
 
 \bibitem{Ekert1991}
-A.~K. Ekert, ``Quantum cryptography based on bell’s theorem,'' {\em Physical
-  Review Letters}, vol.~67, p.~661–663, Aug. 1991.
+Ekert A~K 1991 {\em Physical Review Letters\/} {\bf 67} 661–663 ISSN 0031-9007 \urlprefix\url{http://dx.doi.org/10.1103/PhysRevLett.67.661}
 
 \bibitem{dworkin2015sha}
-M.~J. Dworkin, ``Sha-3 standard: Permutation-based hash and extendable-output
-  functions,'' 2015.
+Dworkin M~J 2015
 
 \bibitem{rfc7539}
-Y.~Nir and A.~Langley, ``{ChaCha20 and Poly1305 for IETF Protocols}.'' RFC
-  7539, May 2015.
+Nir Y and Langley A 2015 {ChaCha20 and Poly1305 for IETF Protocols} RFC 7539 \urlprefix\url{https://www.rfc-editor.org/info/rfc7539}
 
 \bibitem{bernstein2008chacha}
-D.~J. Bernstein {\em et~al.}, ``Chacha, a variant of salsa20,'' in {\em
-  Workshop record of SASC}, vol.~8, pp.~3--5, Citeseer, 2008.
+Bernstein D~J {\em et~al.\/} 2008 Chacha, a variant of salsa20 {\em Workshop record of SASC\/} vol~8 (Citeseer) pp 3--5
 
 \bibitem{bernstein2005poly1305}
-D.~J. Bernstein, ``The poly1305-aes message-authentication code,'' in {\em
-  International workshop on fast software encryption}, pp.~32--49, Springer,
-  2005.
+Bernstein D~J 2005 The poly1305-aes message-authentication code {\em International workshop on fast software encryption\/} (Springer) pp 32--49
 
 \bibitem{cvejic2002increasing}
-N.~Cvejic and T.~Seppanen, ``Increasing the capacity of lsb-based audio
-  steganography,'' in {\em 2002 IEEE Workshop on Multimedia Signal
-  Processing.}, pp.~336--338, IEEE, 2002.
+Cvejic N and Seppanen T 2002 Increasing the capacity of lsb-based audio steganography {\em 2002 IEEE Workshop on Multimedia Signal Processing.\/} (IEEE) pp 336--338
 
 \bibitem{sharma2023post}
-S.~Sharma, K.~Ramkumar, A.~Kaur, T.~Hasija, S.~Mittal, and B.~Singh,
-  ``Post-quantum cryptography: A solution to the challenges of classical
-  encryption algorithms,'' {\em Modern Electronics Devices and Communication
-  Systems: Select Proceedings of MEDCOM 2021}, pp.~23--38, 2023.
+Sharma S, Ramkumar K, Kaur A, Hasija T, Mittal S and Singh B 2023 {\em Modern Electronics Devices and Communication Systems: Select Proceedings of MEDCOM 2021\/}  23--38
 
 \bibitem{ekert1991quantum}
-A.~K. Ekert, ``Quantum cryptography based on bell’s theorem,'' {\em Physical
-  review letters}, vol.~67, no.~6, p.~661, 1991.
+Ekert A~K 1991 {\em Physical review letters\/} {\bf 67} 661
 
 \bibitem{alvarez2016comparison}
-L.~C. Alvarez and P.~C. Caiconte, ``Comparison and analysis of bb84 and e91
-  quantum cryptography protocols security strengths,'' {\em International
-  Journal of Modern Communication Technologies and Research}, vol.~4, no.~9,
-  p.~265683, 2016.
+Alvarez L~C and Caiconte P~C 2016 {\em International Journal of Modern Communication Technologies and Research\/} {\bf 4} 265683
 
 \bibitem{madhuravani2013cryptographic}
-B.~Madhuravani and D.~Murthy, ``Cryptographic hash functions: Sha family,''
-  {\em Int J Innov Technol Explor Eng}, vol.~2, pp.~326--9, 2013.
+Madhuravani B and Murthy D 2013 {\em Int J Innov Technol Explor Eng\/} {\bf 2} 326--9
 
 \bibitem{amin2003information}
-M.~M. Amin, M.~Salleh, S.~Ibrahim, M.~R. Katmin, and M.~Shamsuddin,
-  ``Information hiding using steganography,'' in {\em 4th National Conference
-  of Telecommunication Technology, 2003. NCTT 2003 Proceedings.}, pp.~21--25,
-  IEEE, 2003.
+Amin M~M, Salleh M, Ibrahim S, Katmin M~R and Shamsuddin M 2003 Information hiding using steganography {\em 4th National Conference of Telecommunication Technology, 2003. NCTT 2003 Proceedings.\/} (IEEE) pp 21--25
 
 \bibitem{yang2018rnn}
-Z.-L. Yang, X.-Q. Guo, Z.-M. Chen, Y.-F. Huang, and Y.-J. Zhang, ``Rnn-stega:
-  Linguistic steganography based on recurrent neural networks,'' {\em IEEE
-  Transactions on Information Forensics and Security}, vol.~14, no.~5,
-  pp.~1280--1295, 2018.
+Yang Z~L, Guo X~Q, Chen Z~M, Huang Y~F and Zhang Y~J 2018 {\em IEEE Transactions on Information Forensics and Security\/} {\bf 14} 1280--1295
 
 \bibitem{jayaram2011information}
-P.~Jayaram, H.~Ranganatha, and H.~Anupama, ``Information hiding using audio
-  steganography--a survey,'' {\em The International Journal of Multimedia \&
-  Its Applications (IJMA) Vol}, vol.~3, pp.~86--96, 2011.
+Jayaram P, Ranganatha H and Anupama H 2011 {\em The International Journal of Multimedia \& Its Applications (IJMA) Vol\/} {\bf 3} 86--96
 
 \bibitem{hemeida2021comparative}
-F.~Hemeida, W.~Alexan, and S.~Mamdouh, ``A comparative study of audio
-  steganography schemes,'' {\em International Journal of Computing and Digital
-  Systems}, vol.~10, pp.~555--562, 2021.
+Hemeida F, Alexan W and Mamdouh S 2021 {\em International Journal of Computing and Digital Systems\/} {\bf 10} 555--562
 
 \bibitem{djebbar2012comparative}
-F.~Djebbar, B.~Ayad, K.~A. Meraim, and H.~Hamam, ``Comparative study of digital
-  audio steganography techniques,'' {\em EURASIP Journal on Audio, Speech, and
-  Music Processing}, vol.~2012, pp.~1--16, 2012.
+Djebbar F, Ayad B, Meraim K~A and Hamam H 2012 {\em EURASIP Journal on Audio, Speech, and Music Processing\/} {\bf 2012} 1--16
 
 \bibitem{farrag2020secure}
-S.~Farrag and W.~Alexan, ``Secure 3d data hiding technique based on a mesh
-  traversal algorithm,'' {\em Multimedia Tools and Applications}, vol.~79,
-  pp.~29289--29303, 2020.
+Farrag S and Alexan W 2020 {\em Multimedia Tools and Applications\/} {\bf 79} 29289--29303
 
 \bibitem{mashaly2019multiple}
-M.~Mashaly, A.~El~Saied, W.~Alexan, and A.~S. Khalifa, ``A multiple layer
-  security scheme utilizing information matrices,'' in {\em 2019 Signal
-  Processing: Algorithms, Architectures, Arrangements, and Applications (SPA)},
-  pp.~284--289, IEEE, 2019.
+Mashaly M, El~Saied A, Alexan W and Khalifa A~S 2019 A multiple layer security scheme utilizing information matrices {\em 2019 Signal Processing: Algorithms, Architectures, Arrangements, and Applications (SPA)\/} (IEEE) pp 284--289
 
 \bibitem{singh2014survey}
-K.~U. Singh, ``A survey on audio steganography approaches,'' {\em International
-  Journal of Computer Applications}, vol.~95, no.~14, 2014.
+Singh K~U 2014 {\em International Journal of Computer Applications\/} {\bf 95}
 
 \bibitem{cvejic2004increasing}
-N.~Cvejic and T.~Seppanen, ``Increasing robustness of lsb audio steganography
-  using a novel embedding method,'' in {\em International Conference on
-  Information Technology: Coding and Computing, 2004. Proceedings. ITCC 2004.},
-  vol.~2, pp.~533--537, IEEE, 2004.
+Cvejic N and Seppanen T 2004 Increasing robustness of lsb audio steganography using a novel embedding method {\em International Conference on Information Technology: Coding and Computing, 2004. Proceedings. ITCC 2004.\/} vol~2 (IEEE) pp 533--537
 
 \bibitem{yalla2022novel}
-S.~P. Yalla, S.~Hemanth, S.~T. Kumar, S.~Moulali, and S.~Dileep, ``Novel text
-  steganography approach using quantum key distribution: Survey paper,'' {\em
-  NeuroQuantology}, vol.~20, no.~13, p.~923, 2022.
+Yalla S~P, Hemanth S, Kumar S~T, Moulali S and Dileep S 2022 {\em NeuroQuantology\/} {\bf 20} 923
 
 \bibitem{nistHashFunctions}
-``{H}ash {F}unctions | {C}{S}{R}{C} | {C}{S}{R}{C} --- csrc.nist.gov.''
-  \url{https://csrc.nist.gov/projects/hash-functions}, June 22, 2020.
+ June 22, 2020 {H}ash {F}unctions | {C}{S}{R}{C} | {C}{S}{R}{C} --- csrc.nist.gov \url{https://csrc.nist.gov/projects/hash-functions}
 
 \bibitem{Bbbbbbb2011}
-M.~P. Guido~Bertoni, Joan~Daemen and G.~van Assche, ``The keccak sha-3
-  submission,'' 2011.
-\newblock [Accessed 26-12-2024].
+Guido~Bertoni Joan~Daemen M~P and van Assche G 2011 The keccak sha-3 submission [Accessed 26-12-2024] \urlprefix\url{http://keccak.noekeon.org/}
 
 \bibitem{rivest1992md5}
-R.~Rivest, ``The md5 message-digest algorithm,'' tech. rep., 1992.
+Rivest R 1992 The md5 message-digest algorithm Tech. rep.
 
 \bibitem{penard2008secure}
-W.~Penard and T.~Van~Werkhoven, ``On the secure hash algorithm family,'' {\em
-  Cryptography in context}, pp.~1--18, 2008.
+Penard W and Van~Werkhoven T 2008 {\em Cryptography in context\/}  1--18
 
 \bibitem{keccakKeccakTeam}
-T.~sponge and duplex constructions, ``Team keccak - guido bertoni, joan daemen,
-  seth hoffert, michaël peeters, gilles van assche and ronny van keer.''
-  \url{https://keccak.team/sponge_duplex.html}.
-\newblock [Accessed 26-12-2024].
+sponge T and duplex constructions Team keccak - guido bertoni, joan daemen, seth hoffert, michaël peeters, gilles van assche and ronny van keer \url{https://keccak.team/sponge_duplex.html} [Accessed 26-12-2024]
 
 \bibitem{robshaw1995stream}
-M.~J. Robshaw, ``Stream ciphers,'' {\em RSA Labratories}, vol.~25, 1995.
+Robshaw M~J 1995 {\em RSA Labratories\/} {\bf 25}
 
 \bibitem{bernstein2005salsa20}
-D.~J. Bernstein, ``Salsa20,'' {\em eSTREAM, ECRYPT Stream Cipher Project,
-  Report}, vol.~25, p.~2005, 2005.
+Bernstein D~J 2005 {\em eSTREAM, ECRYPT Stream Cipher Project, Report\/} {\bf 25} 2005
 
 \bibitem{bernstein2008chachaFamily}
-D.~J. Bernstein, ``The chacha family of stream ciphers,'' {\em DJ Bernstein’s
-  webpage: http://cr. yp. to/chacha. html}, 2008.
+Bernstein D~J 2008 {\em DJ Bernstein’s webpage: http://cr. yp. to/chacha. html\/}
 
 \bibitem{bernstein2005protecting}
-D.~J. Bernstein, ``Protecting communications against forgery,'' {\em
-  Algorithmic Number Theory, J. Buhler and P. Stevenhagan (Ed.), to appear},
-  2005.
+Bernstein D~J 2005 {\em Algorithmic Number Theory, J. Buhler and P. Stevenhagan (Ed.), to appear\/}
 
 \bibitem{carter1981new}
-J.~L. Carter and M.~N. Wegman, ``New hash functions and their use in
-  authentication and set equality,'' {\em Journal of computer and system
-  sciences}, vol.~22, no.~3, pp.~265--277, 1981.
+Carter J~L and Wegman M~N 1981 {\em Journal of computer and system sciences\/} {\bf 22} 265--277
 
 \bibitem{rfc8439}
-Y.~Nir and A.~Langley, ``{ChaCha20 and Poly1305 for IETF Protocols}.'' RFC
-  8439, June 2018.
+Nir Y and Langley A 2018 {ChaCha20 and Poly1305 for IETF Protocols} RFC 8439 \urlprefix\url{https://www.rfc-editor.org/info/rfc8439}
 
 \bibitem{rfc7905}
-A.~Langley, W.-T. Chang, N.~Mavrogiannopoulos, J.~Strombergson, and
-  S.~Josefsson, ``{ChaCha20-Poly1305 Cipher Suites for Transport Layer Security
-  (TLS)}.'' RFC 7905, June 2016.
+Langley A, Chang W~T, Mavrogiannopoulos N, Strombergson J and Josefsson S 2016 {ChaCha20-Poly1305 Cipher Suites for Transport Layer Security (TLS)} RFC 7905 \urlprefix\url{https://www.rfc-editor.org/info/rfc7905}
 
 \bibitem{miller2015chacha20}
-D.~Miller, ``The chacha20-poly1305@ openssh. com authenticated encryption
-  cipher draft-josefsson-ssh-chacha20-poly1305-openssh-00,'' 2015.
+Miller D 2015 The chacha20-poly1305@ openssh. com authenticated encryption cipher draft-josefsson-ssh-chacha20-poly1305-openssh-00
 
 \bibitem{Wille2019IBMsQT}
-R.~Wille, R.~V. Meter, and Y.~Naveh, ``Ibm’s qiskit tool chain: Working with
-  and developing for real quantum computers,'' {\em 2019 Design, Automation \&
-  Test in Europe Conference \& Exhibition (DATE)}, pp.~1234--1240, 2019.
+Wille R, Meter R~V and Naveh Y 2019 {\em 2019 Design, Automation \& Test in Europe Conference \& Exhibition (DATE)\/}  1234--1240 \urlprefix\url{https://api.semanticscholar.org/CorpusID:155108078}
 
 \bibitem{pycryptodome}
-{Pycryptodome Team}, ``{Pycryptodome: a Python library for cryptographic
-  primitives and recipes}.'' \url{https://pypi.org/project/pycryptodome/},
-  2022.
+{Pycryptodome Team} 2022 {Pycryptodome: a Python library for cryptographic primitives and recipes} \url{https://pypi.org/project/pycryptodome/}
 
 \bibitem{harris2020array}
-C.~R. Harris, K.~J. Millman, S.~J. van~der Walt, R.~Gommers, P.~Virtanen,
-  D.~Cournapeau, E.~Wieser, J.~Taylor, S.~Berg, N.~J. Smith, R.~Kern, M.~Picus,
-  S.~Hoyer, M.~H. van Kerkwijk, M.~Brett, A.~Haldane, J.~F. del R{\'{i}}o,
-  M.~Wiebe, P.~Peterson, P.~G{\'{e}}rard-Marchant, K.~Sheppard, T.~Reddy,
-  W.~Weckesser, H.~Abbasi, C.~Gohlke, and T.~E. Oliphant, ``Array programming
-  with {NumPy},'' {\em Nature}, vol.~585, pp.~357--362, Sept. 2020.
+Harris C~R, Millman K~J, van~der Walt S~J, Gommers R, Virtanen P, Cournapeau D, Wieser E, Taylor J, Berg S, Smith N~J, Kern R, Picus M, Hoyer S, van Kerkwijk M~H, Brett M, Haldane A, del R{\'{i}}o J~F, Wiebe M, Peterson P, G{\'{e}}rard-Marchant P, Sheppard K, Reddy T, Weckesser W, Abbasi H, Gohlke C and Oliphant T~E 2020 {\em Nature\/} {\bf 585} 357--362 \urlprefix\url{https://doi.org/10.1038/s41586-020-2649-2}
 
 \bibitem{newmarch2017ffmpeg}
-J.~Newmarch and J.~Newmarch, ``Ffmpeg/libav,'' {\em Linux sound programming},
-  pp.~227--234, 2017.
+Newmarch J and Newmarch J 2017 {\em Linux sound programming\/}  227--234
 
 \bibitem{MATLAB:R2016a}
-The Mathworks, Inc., Natick, Massachusetts, {\em {MATLAB version 9.0.0.341360
-  (R2016a)}}, 2016.
+The Mathworks, Inc. Natick, Massachusetts 2016 {\em {MATLAB version 9.0.0.341360 (R2016a)}\/}
 
 \bibitem{shannon1948mathematical}
-C.~E. Shannon, ``A mathematical theory of communication,'' {\em The Bell system
-  technical journal}, vol.~27, no.~3, pp.~379--423, 1948.
+Shannon C~E 1948 {\em The Bell system technical journal\/} {\bf 27} 379--423
 
 \bibitem{PhysRevLett.23.880}
-J.~F. Clauser, M.~A. Horne, A.~Shimony, and R.~A. Holt, ``Proposed experiment
-  to test local hidden-variable theories,'' {\em Phys. Rev. Lett.}, vol.~23,
-  pp.~880--884, Oct 1969.
+Clauser J~F, Horne M~A, Shimony A and Holt R~A 1969 {\em Phys. Rev. Lett.\/} {\bf 23}(15) 880--884 \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.23.880}
 
 \bibitem{nurhadi2018quantum}
-a.~i. nurhadi and n.~r. syambas, ``quantum key distribution (qkd) protocols: a
-  survey,'' in {\em 2018 4th international conference on wireless and
-  telematics (icwt)}, pp.~1--5, ieee, 2018.
+nurhadi a~i and syambas n~r 2018 quantum key distribution (qkd) protocols: a survey {\em 2018 4th international conference on wireless and telematics (icwt)\/} (ieee) pp 1--5
 
 \bibitem{devitt2013quantum}
-s.~j. devitt, w.~j. munro, and k.~nemoto, ``quantum error correction for
-  beginners,'' {\em reports on progress in physics}, vol.~76, no.~7, p.~076001,
-  2013.
+devitt s~j, munro w~j and nemoto k 2013 {\em reports on progress in physics\/} {\bf 76} 076001
 
 \bibitem{nagata2017quantum}
-k.~nagata and t.~nakamura, ``quantum cryptography, quantum communication, and
-  quantum computer in a noisy environment,'' {\em international journal of
-  theoretical physics}, vol.~56, pp.~2086--2100, 2017.
+nagata k and nakamura t 2017 {\em international journal of theoretical physics\/} {\bf 56} 2086--2100
 
 \end{thebibliography}

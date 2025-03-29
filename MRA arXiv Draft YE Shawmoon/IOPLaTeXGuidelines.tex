@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    INSTITUTE OF PHYSICS PUBLISHING                                   %
+%                                                                      %
+%   `Preparing an article for publication in an Institute of Physics   %
+%    Publishing journal using LaTeX'                                   %
+%                                                                      %
+%    LaTeX source code `ioplau2e.tex' used to generate `author         %
+%    guidelines', the documentation explaining and demonstrating use   %
+%    of the Institute of Physics Publishing LaTeX preprint files       %
+%    `iopart.cls, iopart12.clo and iopart10.clo'.                      %
+%                                                                      %
+%    `ioplau2e.tex' itself uses LaTeX with `iopart.cls'                %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% First we have a character check
+%
+% ! exclamation mark    " double quote  
+% # hash                ` opening quote (grave)
+% & ampersand           ' closing quote (acute)
+% $ dollar              % percent       
+% ( open parenthesis    ) close paren.  
+% - hyphen              = equals sign
+% | vertical bar        ~ tilde         
+% @ at sign             _ underscore
+% { open curly brace    } close curly   
+% [ open square         ] close square bracket
+% + plus sign           ; semi-colon    
+% * asterisk            : colon
+% < open angle bracket  > close angle   
+% , comma               . full stop
+% ? question mark       / forward slash 
+% \ backslash           ^ circumflex
+%
+% ABCDEFGHIJKLMNOPQRSTUVWXYZ 
+% abcdefghijklmnopqrstuvwxyz 
+% 1234567890
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\documentclass[12pt]{article}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{svg}
+% \usepackage{citesort}
+% \usepackage{iopams}
+\usepackage{hyperref}
+% \newcommand{\gguide}{{\it Preparing graphics for IOP Publishing journals}}
+%Uncomment next line if AMS fonts required
+%\usepackage{iopams}  
+\begin{document}
+\title[A Quantum-Assisted Framework for Secure Audio Communication]{A Quantum-Assisted Framework for Secure Audio Communication: Integrating Quantum Key Distribution with Steganography and Authenticated Classical Cryptography.}
+\author{Md. Raisul Islam Rifat$^{1,3}$, Md. Mizanur Rahman$^{2,3}$, Md. Abdul Kader Nayon$^{1,3}$, Md Shawmoon Azad$^{4}$ and M.R.C. Mahdy$^{4}$}
+% \address{$^1$ Department of Electrical and Electronic Engineering, Chittagong University of Engineering and
+% Technology, Raozan, Chattogram, 4349, Bangladesh}
+% \address{$^2$ Department of Computer Science and Engineering, Rajshahi University of Engineering and Technology, Station Rd, 6204, Rajshahi, Bangladesh}
+% \address{$^3$ Mahdy's Research Academy, Bashundhara R/A, Dhaka, 1229, Bangladesh}
+% \address{$^4$ Department of Electrical and Computer Engineering, North South University, Bashundhara R/A, Dhaka, 1229, Bangladesh}
+% \ead{\href{mailto:mahdy.chowdhury@northsouth.edu}{mahdy.chowdhury@northsouth.edu} (M.R.C. Mahdy).}
+% \vspace{10pt}
+% \begin{indented}
+%   \item[]August 2017 (minor update March 2024)
+% \end{indented}
+\begin{abstract}
+  The emergence of quantum computing poses a significant security threat to the current classical system since it has the potential to outperform the current classical computer in some specific tasks due to its unique principle of operation. This necessitates finding a method resistant to quantum computers to securely transfer information. This research addresses these challenges by proposing a novel method combining quantum key distribution (QKD), specifically the E91 protocol with the classical encryption-authentication protocol, i.e. ChaCha20-Poly1305 and concealing information within another message through steganography to securely transfer audio messages. A shared secret key is created between the communicating parties using E91 QKD, which exploits the stellar protection of quantum entanglement against eavesdropping. The shared key is hashed through the SHA-3 hash function to generate a fixed-length, high-entropy symmetric key. The audio message is hidden inside another audio signal through steganography. The steganographic signal is encrypted using ChaCha20-Poly1305 AEAD in order to provide another layer of obfuscation as well as a means to verify integrity. Through rigorous experiments, we validated the robustness of the proposed methodology in both classical and quantum attacks. The processing of secret audio signals of varying duration (00:01:32 to 00:01:36) exhibits consistent encryption results. The encrypted stego audios show high randomness, with an average entropy of $7.9999968$, an average UACI of $49.999956$, and an average NSCR of $99.6107\%$.  We demonstrated the safety of the shared key using the CHSH inequality test, wherein the presence of an eavesdropper, the CHSH value is very less than $2\sqrt{2}$. In addition, the integrity of the secret audios is also validated through the verification of the authentication tag generated during the encryption process. Our research offers a novel framework for secure audio transmission, combining classical encryption and authentication methods with QKD to enhance confidentiality, integrity, and resilience against eavesdropping, ensuring robust end-to-end security.
+\end{abstract}
+%
+% Uncomment for keywords
+%\vspace{2pc}
+\noindent{\it Keywords}: Quantum Key Distribution (QKD),E91 Protocol, Entanglement, CHSH inequality, Steganography, ChaCha20-Poly1305 AEAD, Secure Hash Algorithm (SHA), Encryption, Decryption, Authentication.
+%
+% Uncomment for Submitted to journal title message
+%\submitto{\JPA}
+%
+% Uncomment if a separate title page is required
+%\maketitle
+% 
+% For two-column output uncomment the next line and choose [10pt] rather than [12pt] in the \documentclass declaration
+%\ioptwocol
+%
+\section{Introduction}
+The simplest, as well as the most important, form of exchange for human beings is verbal communications. The invention of the Telephone by Alexander Graham Bell in 1876 transformed the verbal communication demography - making the transmission of human voice, which are essentially audio signals, over long distances possible. In the subsequent centuries, technological improvements has broadened the scope of audio transmission. With the rise of the Internet, the amount of information exchanged through audio signals increased rapidly. This increase number audio transmission resulted in the development of different encryption techniques and cryptographic algorithms. The most popular among these algorithms are the symmetric AES and the asymmetric RSA encryption schemes. AES \cite{rijmen2001advanced} is a block cipher scheme that utilizes multiple matrix operation to encrypt and decrypt data using the same key. Without any knowledge of the cipher key, it is computationally infeasible to reverse the orations performed during encryption. RSA \cite{rivest1978method}, on the other hand, utilizes prime number factorization to generate public-private key-pairs for each user that are used to encrypt and decrypt data. The security of the RSA scheme relies on the insane amount of computational power required to obtain the private key from a public through prime number factoring.
+
+However, with the advent of Quantum Computers with increasing number of functional qubits, these classical cryptography and encryption schemes face an imposing threat \cite{bernstein2017post}. In 1996, Lov K. Grover proposed an algorithm to search an unordered database of size $N$ using $\sqrt{N}$ quantum queries \cite{grover1996fast}. Using Grover's algorithm, the number of trials required to brute-force a key of length $k$ reduces from $2^{k}$ to $2^{k/2}$. This reduction in number of brute-force trials effectively reduces the security level of symmetric encryption schemes such as AES \cite{Daemen2002}. For example, the AES-128 encryption scheme with a pre-quantum security level of 128 reduces to a post-quantum security level of 64, which is much easier to brute-force. In 1994, P.W. Shor presented a quantum algorithm that can quickly find the prime factorization of any positive integer $N$ \cite{Shor1997}. As the security of the RSA algorithm relies on the arduousness of prime number factorization to derive private key from public key, it is currently facing an existential threat due to the exponential speed of Shor's algorithm. It is estimated that the time complexity for Shor's algorithm is $\mathcal{O}(72(log(N))^{3})$, as opposed to $\mathcal{O}(N^3)$ for classical computers.
+
+To address these arising challenges, new research is being done on the field of quantum augmented communication systems. These systems exploits the principles of quantum mechanics to attain secure data transmission. One of the most promising area of research in the field of quantum communications is Quantum Key Distribution (QKD). QKD protocols works by establishing a secure cryptographic key between two users over an insecure channel \cite{alleaume2014using}. QKD employ properties unique to quantum mechanics, such as the no-cloning theorem \cite{buvzek1996quantum} and the uncertainty principle \cite{sen2014uncertainty}, that ensures the detection of any eavesdropping attempts and thereby guarantees the security of the key. However, QKD itself does not provide security on its own, rather it facilitates the establishment and secure exchange of secret keys that are subsequently used by other cryptographic algorithms and encryption techniques to secure the transmitted information. In resemblance, the research being done on the field of steganography heralds the emergence of an effective information concealing technique to obscure sensitive information within seemingly harmless transmission. Steganography is the technique of hiding secret massage within another massage in such a manner that it is not discernible that a secret message is embedded \cite{Kahn1996}. However, the security of any steganographic technique is heavily dependent on the strength of cryptographic technique employed to encrypt the data \cite{anderson1998limits}.
+
+This paper introduces a novel approach to reinforce the security of digital audio communication by combining the competency of QKD, classical encryption schemes and steganography. Our system utilizes the E91 QKD protocol proposed by Artur K. Ekert in 1991 \cite{Ekert1991} to generate a shared key with increased security, which is then hashed to produce a fixed-length (256 bits), high-entropy key that is suitable for symmetric encryption by employing the Secure Hashing Algorithm-3 (SHA3-256) \cite{dworkin2015sha}. We inspect the use of ChaCha20-Poly1305 authenticated encryption with associated data (AEAD) algorithm \cite{rfc7539} - which combines the stream cipher scheme, ChaCha20 \cite{bernstein2008chacha} with the message authentication code, Poly1305 \cite{bernstein2005poly1305} - to encrypt the steganographic audio. We performed least significant bit (LSB) substitution steganography to hide an audio signal inside another audio signal \cite{cvejic2002increasing}. The incorporation of QKD with classical symmetric encryption addresses various security concernment, providing protection against both classical and quantum threats.
+
+The new vulnerabilities in secure data transmission due to quantum computer and the need to oppose them have been the motivation for our research. With the advancement in quantum computing technology, it is imperative to devise innovative cryptographic techniques that can keep the data secure in the prospect of an attack from these powerful computers. It is our aim to develop a vigorous solution for secure data communication by combining the strength of quantum communication with hash function, classical encryption and steganography. Hence, the objective our experimental work is to investigate the viability and credibility of integrating encrypted steganographic techniques with quantum protocols, specifically QKD, to strengthen the security and resilience of audio communication. This innovative amalgamation of steganography and quantum communication embodies a significant furtherance in the field, providing an exceptional and optimistic approach to secure data transmission. Our main contribution can be summarized as follows -
+\begin{itemize}
+  \item Proposed an original architecture that successfully combines E91 QKD protocol, ChaCha20-Poly1305 AEAD and audio steganography using LSB.
+  \item Utilized E91 as the key distribution protocol which employs principles of quantum mechanics for secure key exchange.
+  \item Assimilated audio steganography using LSB substitution into the architecture to augment the security and robustness of the overall system.
+  \item Assessed the performance and reliability of the proposed scheme by measuring the security through end-to-end encryption.
+\end{itemize}
+
+Our paper is organized is as follows - Section \ref{sec:relatedWorks} demonstrates the present sate of the field through the review of existing research and their development, laying the foundation for our our proposed scheme. Section \ref{sec:preliminaries} describes the foundational concepts of our proposed schemes. Section \ref{sec:methodology} describes the proposed methodology, presenting a detailed piecemeal explanation of our proposed architecture. Section \ref{sec:implementation} delves into the detailed description of our implementation. In section \ref{sec:analysis}, we present the analysis methods as well as the findings. Section \ref{sec:discussion} explore deeper into an extensive analysis of the results, construing the findings and excerpting key insights. Finally, section \ref{sec:conclusion} concludes the paper by indicating the direction of future work, highlighting the potential application and extension of our research.
+\section{Related Works}
+\label{sec:relatedWorks}
+Post-Quantum cryptography (PQC), also known as Quantum resistant Cryptography, is designed to stave off attacks by both classical and quantum computers. In other words, to design a dependable and future-proof data communication system, a blending of Classical Cryptography and Quantum Cryptography is imperative. One such type of blending could be combining some form of symmetric encryption with quantum key distribution (QKD).
+
+Classical cryptography is based on the hardness of mathematical problems and computer complexity to secure communication for decades. The classical cryptographic techniques, such as Advanced Encryption System(AES), Data Encryption Standard (DES), Asymmetric key algorithms -- Rivest-Shamir-Adleman(RSA), Elliptic Curve Cryptography (ECC) and Hash Functions, could be the focus of brute force attack as they are not capable enough to handle quantum attacks. Hence, to solve this problem, the algorithms of Post Quantum Cryptography was proposed which is strong, reliable and secure against quantum attacks.\cite{sharma2023post}
+
+E91 and BB84 are the methods of Quantum Key Distribution (QKD) based on the completeness of quantum mechanics. BB84 is the first QKD protocol that relies on the Heisenberg uncertainty principle and the no-cloning theorem. On the other hand,  E91 is an entanglement based protocol basically generalized from of Bell's theorem. The users (Alice and Bob) can easily detect the eavesdropping attempt checking the Bell's inequality by using this protocol. \cite{ekert1991quantum} Among them, E91 is considered safer and more reliable though it faces some technical difficulties.\cite{alvarez2016comparison}
+
+Hash functions are frequently used in modern cryptography in order to ensure authentication of the digital communication system. It takes an arbitrary length input and produces a fixed sized hashed value where any small changes in input resulting the complete hashed value. SHA-0, SHA-1, SHA-2, SHA-3 are the dedicated hash functions of the SHA family.\cite{madhuravani2013cryptographic} Among them, the SHA-3 family is based on permutation having an extendable output function. SHA3-224, SHA3-256, SHA3-384, SHA3-512 are known as cryptographic hash functions. SHA-3 provides resistance to collision, preimage and second preimage attacks which ensures the security attacks such as digital signature generation and verification, key derivation and pseudorandom bit generation. \cite{dworkin2015sha}
+
+Steganography is a common practice of hiding information. The main purpose of steganography is to secure the information completely undetectable\cite{amin2003information} There are many types of steganography using different types of cover objects such as text \cite{yang2018rnn}, audio \cite{jayaram2011information}\cite{hemeida2021comparative}\cite{djebbar2012comparative}, video, images (2D and 3D) \cite{farrag2020secure} and information matrices \cite{mashaly2019multiple}.Because of having high quality of redundancy and data transmission rate in signals and audio files, make it suitable for steganographic process.\cite{singh2014survey} The audio stenographic process are LSB codding, Parity codding, Phase codding, Spread spectrum, Echo hiding. Among them, LSB is the best audio steganography technique as it increases robustness against noise addition and MPEG compression, high capacity and simplicity.\cite{cvejic2004increasing}\cite{jayaram2011information}  When the QKD protocols are combined with this, it improves more data security. Using Bernstein-Vazirani algorithm and the BB84 protocol, it generates a secret key to ensure only authorized access to quantum messages. This quantum steganography method increases hidden channel capacity, resists attacks such as intercept-resend, and reduces message detectability by using more Bell states and random information distribution.\cite{yalla2022novel}
+
+ChaCha, a variant of Salsa20, represents the ChaCha family of stream ciphers, which enhances the Salsa20 design. It increases resistance to cryptoanalysis by improving the diffusion per round while maintaining performance. It also achieves better software speed compared to Salsa20 in certain platforms due to its efficient design that allow for SIMD operations.\cite{bernstein2008chacha} ChaCha is a robust alternative to salsa20, with enhancements that could make it preferable for various cryptographic applications.
+
+The Poly1305 is a specific type of MAC(Message Authentication Protocol) which is a cryptographic tools used to verify the integrity and authenticity of a message.\cite{bernstein2005poly1305} It computes a 16-byte authenticator for variable-length messages using a 32-byte secret key, which includes a 16-byte AES key and a 16-byte addition key which helps in high-speed computations and making it suitable for various applications.\cite{bernstein2005poly1305} The probability of successful attack is also very low due to the uniqueness of nonces and the unpredictability of keys. For all the reasons, it is used widely for network protocols and secure communications.
+\section{Preliminaries}
+\label{sec:preliminaries}
+In this section, we present the primary concepts employed in our methodology. We start with the quantum key distribution (QKD) protocol proposed by Artur Ekert in 1991, commonly known as the E91 key distribution protocol. Protected by Bell's inequality, E91 protocol provides a secure method of sharing generated key pairs. Then we proceed to the SHA3 family of hashing algorithms, specifically the SHA3-256 function, which can produce a unique 256-bit long hexstream for an input of any length. Next, we introduce the ChaCha20-Poly1305 AEAD, which combines the strong yet simple ChaCha20 stream cipher with Poly1305 MAC. Finally, we discuss the LSB steganography algorithm, which is essentially a technique of hiding an audio signal in the least significant bits of another, larger audio.
+\subsection{Ekert 91 Protocol}
+\label{sec:e91}
+The E91 protocol is a quantum key distribution (QKD) scheme that uses entangled photon pairs and the violation of Bell's inequality to securely distribute cryptographic keys between two parties, typically referred to as Alice and Bob. The E91 protocol, based on the principles of quantum mechanics and entanglement, allows secure key distribution between two parties, Alice and Bob. The steps are as follows:
+\begin{enumerate}
+  \item Creating Entangled Pairs: Either alice or bob or any other third party, Charlie, can initiates the process by generating pairs of strongly entangled quantum particles (Bell states). These states ensure that the measurements on the particles are perfectly correlated. There are four Bell states, which are below:
+        \[\ket{\Phi^{+}}=\frac{1}{\sqrt{2}}(\ket{00}+\ket{11})\]
+        \[\ket{\Phi^{-}}=\frac{1}{\sqrt{2}}(\ket{00}-\ket{11})\]
+        \[\ket{\Psi^{+}}=\frac{1}{\sqrt{2}}(\ket{01}+\ket{10})\]
+        \[\ket{\Psi^{-}}=\frac{1}{\sqrt{2}}(\ket{01}-\ket{10})\]
+        For notions such as $\ket{01}$ and $|\ket{11}$, the first digit in brackets refers to the first qubit, and the second digit refers to the second qubit.
+
+  \item Sharing the Particles: After generating the entangled pairs, Charlie sends one particle of each pair each to Alice and the other to Bob or if they produced entangled qubits without the help of third party then they will send one particle to another.
+  \item Performing Measurements: Alice and Bob, located far apart, independently measure their received particles using quantum measurement tools. Their devices are configured with randomly chosen azimuthal angles e.g.  \[
+          \varphi_{A_1} = 0, \quad \varphi_{A_2} = \frac{\pi}{2}, \quad \varphi_{A_3} = \frac{\pi}{4} \quad \text{for Alice;}
+        \]
+
+        \[
+          \varphi_{B_1} = 0, \quad \varphi_{B_2} = \frac{3\pi}{2}, \quad \varphi_{B_3} = \frac{\pi}{4} \quad \text{for Bob.}
+        \]
+
+        The outcomes (0 or 1) are inherently random due to quantum principles.
+        Figure~\ref{fig:mesurement_direction} shows the measurement direction:
+
+        \begin{figure}[h]
+          \centering
+          \includesvg[width=0.75\textwidth]{measurement.svg}
+          \caption{Measurement Direction for Ekert Protocol}
+          \label{fig:mesurement_direction}
+        \end{figure}
+
+  \item Comparing Results:  Alice and Bob will share their measurement bases over a classical channel. They discard results where their measurement angles differed and keep only those whose bases are aligned. This filtered data forms the raw material for their shared key.
+  \item Building the Shared key: For the matching bases, Alice and Bob use their correlated outcomes to construct an identical secret key. This key is a binary sequence that is used to securely encrypt/decrypt messages.
+  \item Checking for Eavesdroppers: The protocol's security depends on the quantum entanglement. If an eavesdropper intercepts the particles, the entanglement is disrupted, altering the expected correlations. By testing a subset of their results, Alice and Bob can detect anomalies. If inconsistencies arise, they abort the key and restart the process.
+\end{enumerate}
+
+Alice and Bob can detect the presence of Eve using two steps. The first step is to check if, after measurement, they find that the measurement results differ despite using the same corresponding bases. They can also detect anomalies using the CHSH inequality test. If the measurement result don't violate CHSH inequality, then they can assume that there was an anomaly.
+The CHSH inequality quantifies correlations between two spatially separated particles measured in different bases. For an entangled pair, if measurements on the first particle are labeled with settings A and a (yielding outcomes $ \pm 1 $), and those on the second particle use settings B and b (yielding outcomes $ \pm 1 $), the CHSH parameter S is defined as:
+\begin{equation}
+  S = A(B - b) + a(B + b)
+\end{equation}
+Classically, the absolute average value is given by:
+\[
+  |\langle S \rangle| \leq 2 \quad \text{or} \quad \pm 2.
+\]
+It is bounded by 2, as one of the terms \( (B \pm b) \) necessarily cancels out, leaving \( S = \pm 2 \).
+Expanding S in terms of A, a, B and b results in:
+\[
+  \left| \langle S_1 \rangle \right| = \left| \langle AB \rangle - \langle Ab \rangle + \langle aB \rangle + \langle ab \rangle \right| \leq 2.
+\]
+
+Remarkably, quantum mechanics predicts violations of these classical bounds. Entangled particles, such as those in Bell states, exhibit stronger correlation due to nonlocal quantum interactions. When measured in specific non-commuting bases the CHSH parameter can reach
+\[
+  \left| \langle S \rangle \right| = 2\sqrt{2} \approx 2.828 \quad \left| \langle S \rangle \right|
+\]
+In our experiment, we expect to obtain a CHSH value close to \( 2\sqrt{2} \); otherwise, we can claim that there were anomalies/eavesdroppers in the channel.
+
+\newpage
+% \section*{References}
+\bibliographystyle{ieeetr}
+\bibliography{cas-refs}
+
+\end{document}
+

@@ -1,0 +1,246 @@
+\begin{thebibliography}{53}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Rijmen and Daemen(2001)}]{rijmen2001advanced}
+\bibinfo{author}{V.~Rijmen}, \bibinfo{author}{J.~Daemen},
+\newblock \bibinfo{title}{Advanced encryption standard},
+\newblock \bibinfo{journal}{Proceedings of federal information processing standards publications, national institute of standards and technology} \bibinfo{volume}{19} (\bibinfo{year}{2001}) \bibinfo{pages}{22}.
+%Type = Article
+\bibitem[{Rivest et~al.(1978)Rivest, Shamir, and Adleman}]{rivest1978method}
+\bibinfo{author}{R.~L. Rivest}, \bibinfo{author}{A.~Shamir}, \bibinfo{author}{L.~Adleman},
+\newblock \bibinfo{title}{A method for obtaining digital signatures and public-key cryptosystems},
+\newblock \bibinfo{journal}{Communications of the ACM} \bibinfo{volume}{21} (\bibinfo{year}{1978}) \bibinfo{pages}{120--126}.
+%Type = Article
+\bibitem[{Bernstein and Lange(2017)}]{bernstein2017post}
+\bibinfo{author}{D.~J. Bernstein}, \bibinfo{author}{T.~Lange},
+\newblock \bibinfo{title}{Post-quantum cryptography},
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{549} (\bibinfo{year}{2017}) \bibinfo{pages}{188--194}.
+%Type = Inproceedings
+\bibitem[{Grover(1996)}]{grover1996fast}
+\bibinfo{author}{L.~K. Grover},
+\newblock \bibinfo{title}{A fast quantum mechanical algorithm for database search},
+\newblock in: \bibinfo{booktitle}{Proceedings of the twenty-eighth annual ACM symposium on Theory of computing}, pp. \bibinfo{pages}{212--219}.
+%Type = Book
+\bibitem[{Daemen and Rijmen(2002)}]{Daemen2002}
+\bibinfo{author}{J.~Daemen}, \bibinfo{author}{V.~Rijmen}, \bibinfo{title}{The Design of Rijndael}, \bibinfo{publisher}{Springer Berlin Heidelberg}, \bibinfo{year}{2002}.
+%Type = Article
+\bibitem[{Shor(1997)}]{Shor1997}
+\bibinfo{author}{P.~W. Shor},
+\newblock \bibinfo{title}{Polynomial-time algorithms for prime factorization and discrete logarithms on a quantum computer},
+\newblock \bibinfo{journal}{SIAM Journal on Computing} \bibinfo{volume}{26} (\bibinfo{year}{1997}) \bibinfo{pages}{1484–1509}.
+%Type = Article
+\bibitem[{All{\'e}aume et~al.(2014)All{\'e}aume, Branciard, Bouda, Debuisschert, Dianati, Gisin, Godfrey, Grangier, L{\"a}nger, L{\"u}tkenhaus et~al.}]{alleaume2014using}
+\bibinfo{author}{R.~All{\'e}aume}, \bibinfo{author}{C.~Branciard}, \bibinfo{author}{J.~Bouda}, \bibinfo{author}{T.~Debuisschert}, \bibinfo{author}{M.~Dianati}, \bibinfo{author}{N.~Gisin}, \bibinfo{author}{M.~Godfrey}, \bibinfo{author}{P.~Grangier}, \bibinfo{author}{T.~L{\"a}nger}, \bibinfo{author}{N.~L{\"u}tkenhaus}, et~al.,
+\newblock \bibinfo{title}{Using quantum key distribution for cryptographic purposes: a survey},
+\newblock \bibinfo{journal}{Theoretical Computer Science} \bibinfo{volume}{560} (\bibinfo{year}{2014}) \bibinfo{pages}{62--81}.
+%Type = Article
+\bibitem[{Bu{\v{z}}ek and Hillery(1996)}]{buvzek1996quantum}
+\bibinfo{author}{V.~Bu{\v{z}}ek}, \bibinfo{author}{M.~Hillery},
+\newblock \bibinfo{title}{Quantum copying: Beyond the no-cloning theorem},
+\newblock \bibinfo{journal}{Physical Review A} \bibinfo{volume}{54} (\bibinfo{year}{1996}) \bibinfo{pages}{1844}.
+%Type = Article
+\bibitem[{Sen(2014)}]{sen2014uncertainty}
+\bibinfo{author}{D.~Sen},
+\newblock \bibinfo{title}{The uncertainty relations in quantum mechanics},
+\newblock \bibinfo{journal}{Current Science}  (\bibinfo{year}{2014}) \bibinfo{pages}{203--218}.
+%Type = Inbook
+\bibitem[{Kahn(1996)}]{Kahn1996}
+\bibinfo{author}{D.~Kahn}, \bibinfo{title}{The history of steganography}, \bibinfo{publisher}{Springer Berlin Heidelberg}, p. \bibinfo{pages}{1–5}.
+%Type = Article
+\bibitem[{Anderson and Petitcolas(1998)}]{anderson1998limits}
+\bibinfo{author}{R.~J. Anderson}, \bibinfo{author}{F.~A. Petitcolas},
+\newblock \bibinfo{title}{On the limits of steganography},
+\newblock \bibinfo{journal}{IEEE Journal on selected areas in communications} \bibinfo{volume}{16} (\bibinfo{year}{1998}) \bibinfo{pages}{474--481}.
+%Type = Article
+\bibitem[{Ekert(1991)}]{Ekert1991}
+\bibinfo{author}{A.~K. Ekert},
+\newblock \bibinfo{title}{Quantum cryptography based on bell’s theorem},
+\newblock \bibinfo{journal}{Physical Review Letters} \bibinfo{volume}{67} (\bibinfo{year}{1991}) \bibinfo{pages}{661–663}.
+%Type = Article
+\bibitem[{Dworkin(2015)}]{dworkin2015sha}
+\bibinfo{author}{M.~J. Dworkin},
+\newblock \bibinfo{title}{Sha-3 standard: Permutation-based hash and extendable-output functions}  (\bibinfo{year}{2015}).
+%Type = Inproceedings
+\bibitem[{Cvejic and Seppanen(2002)}]{cvejic2002increasing}
+\bibinfo{author}{N.~Cvejic}, \bibinfo{author}{T.~Seppanen},
+\newblock \bibinfo{title}{Increasing the capacity of lsb-based audio steganography},
+\newblock in: \bibinfo{booktitle}{2002 IEEE Workshop on Multimedia Signal Processing.}, \bibinfo{organization}{IEEE}, pp. \bibinfo{pages}{336--338}.
+%Type = Misc
+\bibitem[{Nir and Langley(2015)}]{rfc7539}
+\bibinfo{author}{Y.~Nir}, \bibinfo{author}{A.~Langley}, \bibinfo{title}{{ChaCha20 and Poly1305 for IETF Protocols}}, \bibinfo{howpublished}{RFC 7539}, \bibinfo{year}{2015}.
+%Type = Inproceedings
+\bibitem[{Bernstein et~al.(2008)}]{bernstein2008chacha}
+\bibinfo{author}{D.~J. Bernstein}, et~al.,
+\newblock \bibinfo{title}{Chacha, a variant of salsa20},
+\newblock in: \bibinfo{booktitle}{Workshop record of SASC}, volume~\bibinfo{volume}{8}, \bibinfo{organization}{Citeseer}, pp. \bibinfo{pages}{3--5}.
+%Type = Inproceedings
+\bibitem[{Bernstein(2005)}]{bernstein2005poly1305}
+\bibinfo{author}{D.~J. Bernstein},
+\newblock \bibinfo{title}{The poly1305-aes message-authentication code},
+\newblock in: \bibinfo{booktitle}{International workshop on fast software encryption}, \bibinfo{organization}{Springer}, pp. \bibinfo{pages}{32--49}.
+%Type = Article
+\bibitem[{Sharma et~al.(2023)Sharma, Ramkumar, Kaur, Hasija, Mittal, and Singh}]{sharma2023post}
+\bibinfo{author}{S.~Sharma}, \bibinfo{author}{K.~Ramkumar}, \bibinfo{author}{A.~Kaur}, \bibinfo{author}{T.~Hasija}, \bibinfo{author}{S.~Mittal}, \bibinfo{author}{B.~Singh},
+\newblock \bibinfo{title}{Post-quantum cryptography: A solution to the challenges of classical encryption algorithms},
+\newblock \bibinfo{journal}{Modern Electronics Devices and Communication Systems: Select Proceedings of MEDCOM 2021}  (\bibinfo{year}{2023}) \bibinfo{pages}{23--38}.
+%Type = Article
+\bibitem[{Alvarez and Caiconte(2016)}]{alvarez2016comparison}
+\bibinfo{author}{L.~C. Alvarez}, \bibinfo{author}{P.~C. Caiconte},
+\newblock \bibinfo{title}{Comparison and analysis of bb84 and e91 quantum cryptography protocols security strengths},
+\newblock \bibinfo{journal}{International Journal of Modern Communication Technologies and Research} \bibinfo{volume}{4} (\bibinfo{year}{2016}) \bibinfo{pages}{265683}.
+%Type = Article
+\bibitem[{Madhuravani and Murthy(2013)}]{madhuravani2013cryptographic}
+\bibinfo{author}{B.~Madhuravani}, \bibinfo{author}{D.~Murthy},
+\newblock \bibinfo{title}{Cryptographic hash functions: Sha family},
+\newblock \bibinfo{journal}{Int J Innov Technol Explor Eng} \bibinfo{volume}{2} (\bibinfo{year}{2013}) \bibinfo{pages}{326--9}.
+%Type = Inproceedings
+\bibitem[{Amin et~al.(2003)Amin, Salleh, Ibrahim, Katmin, and Shamsuddin}]{amin2003information}
+\bibinfo{author}{M.~M. Amin}, \bibinfo{author}{M.~Salleh}, \bibinfo{author}{S.~Ibrahim}, \bibinfo{author}{M.~R. Katmin}, \bibinfo{author}{M.~Shamsuddin},
+\newblock \bibinfo{title}{Information hiding using steganography},
+\newblock in: \bibinfo{booktitle}{4th National Conference of Telecommunication Technology, 2003. NCTT 2003 Proceedings.}, \bibinfo{organization}{IEEE}, pp. \bibinfo{pages}{21--25}.
+%Type = Article
+\bibitem[{Yang et~al.(2018)Yang, Guo, Chen, Huang, and Zhang}]{yang2018rnn}
+\bibinfo{author}{Z.-L. Yang}, \bibinfo{author}{X.-Q. Guo}, \bibinfo{author}{Z.-M. Chen}, \bibinfo{author}{Y.-F. Huang}, \bibinfo{author}{Y.-J. Zhang},
+\newblock \bibinfo{title}{Rnn-stega: Linguistic steganography based on recurrent neural networks},
+\newblock \bibinfo{journal}{IEEE Transactions on Information Forensics and Security} \bibinfo{volume}{14} (\bibinfo{year}{2018}) \bibinfo{pages}{1280--1295}.
+%Type = Article
+\bibitem[{Jayaram et~al.(2011)Jayaram, Ranganatha, and Anupama}]{jayaram2011information}
+\bibinfo{author}{P.~Jayaram}, \bibinfo{author}{H.~Ranganatha}, \bibinfo{author}{H.~Anupama},
+\newblock \bibinfo{title}{Information hiding using audio steganography--a survey},
+\newblock \bibinfo{journal}{The International Journal of Multimedia \& Its Applications (IJMA) Vol} \bibinfo{volume}{3} (\bibinfo{year}{2011}) \bibinfo{pages}{86--96}.
+%Type = Article
+\bibitem[{Hemeida et~al.(2021)Hemeida, Alexan, and Mamdouh}]{hemeida2021comparative}
+\bibinfo{author}{F.~Hemeida}, \bibinfo{author}{W.~Alexan}, \bibinfo{author}{S.~Mamdouh},
+\newblock \bibinfo{title}{A comparative study of audio steganography schemes},
+\newblock \bibinfo{journal}{International Journal of Computing and Digital Systems} \bibinfo{volume}{10} (\bibinfo{year}{2021}) \bibinfo{pages}{555--562}.
+%Type = Article
+\bibitem[{Djebbar et~al.(2012)Djebbar, Ayad, Meraim, and Hamam}]{djebbar2012comparative}
+\bibinfo{author}{F.~Djebbar}, \bibinfo{author}{B.~Ayad}, \bibinfo{author}{K.~A. Meraim}, \bibinfo{author}{H.~Hamam},
+\newblock \bibinfo{title}{Comparative study of digital audio steganography techniques},
+\newblock \bibinfo{journal}{EURASIP Journal on Audio, Speech, and Music Processing} \bibinfo{volume}{2012} (\bibinfo{year}{2012}) \bibinfo{pages}{1--16}.
+%Type = Article
+\bibitem[{Farrag and Alexan(2020)}]{farrag2020secure}
+\bibinfo{author}{S.~Farrag}, \bibinfo{author}{W.~Alexan},
+\newblock \bibinfo{title}{Secure 3d data hiding technique based on a mesh traversal algorithm},
+\newblock \bibinfo{journal}{Multimedia Tools and Applications} \bibinfo{volume}{79} (\bibinfo{year}{2020}) \bibinfo{pages}{29289--29303}.
+%Type = Inproceedings
+\bibitem[{Mashaly et~al.(2019)Mashaly, El~Saied, Alexan, and Khalifa}]{mashaly2019multiple}
+\bibinfo{author}{M.~Mashaly}, \bibinfo{author}{A.~El~Saied}, \bibinfo{author}{W.~Alexan}, \bibinfo{author}{A.~S. Khalifa},
+\newblock \bibinfo{title}{A multiple layer security scheme utilizing information matrices},
+\newblock in: \bibinfo{booktitle}{2019 Signal Processing: Algorithms, Architectures, Arrangements, and Applications (SPA)}, \bibinfo{organization}{IEEE}, pp. \bibinfo{pages}{284--289}.
+%Type = Article
+\bibitem[{Singh(2014)}]{singh2014survey}
+\bibinfo{author}{K.~U. Singh},
+\newblock \bibinfo{title}{A survey on audio steganography approaches},
+\newblock \bibinfo{journal}{International Journal of Computer Applications} \bibinfo{volume}{95} (\bibinfo{year}{2014}).
+%Type = Inproceedings
+\bibitem[{Cvejic and Seppanen(2004)}]{cvejic2004increasing}
+\bibinfo{author}{N.~Cvejic}, \bibinfo{author}{T.~Seppanen},
+\newblock \bibinfo{title}{Increasing robustness of lsb audio steganography using a novel embedding method},
+\newblock in: \bibinfo{booktitle}{International Conference on Information Technology: Coding and Computing, 2004. Proceedings. ITCC 2004.}, volume~\bibinfo{volume}{2}, \bibinfo{organization}{IEEE}, pp. \bibinfo{pages}{533--537}.
+%Type = Article
+\bibitem[{Yalla et~al.(2022)Yalla, Hemanth, Kumar, Moulali, and Dileep}]{yalla2022novel}
+\bibinfo{author}{S.~P. Yalla}, \bibinfo{author}{S.~Hemanth}, \bibinfo{author}{S.~T. Kumar}, \bibinfo{author}{S.~Moulali}, \bibinfo{author}{S.~Dileep},
+\newblock \bibinfo{title}{Novel text steganography approach using quantum key distribution: Survey paper},
+\newblock \bibinfo{journal}{NeuroQuantology} \bibinfo{volume}{20} (\bibinfo{year}{2022}) \bibinfo{pages}{923}.
+%Type = Misc
+\bibitem[{nis(2020)}]{nistHashFunctions}
+\bibinfo{title}{{H}ash {F}unctions | {C}{S}{R}{C} | {C}{S}{R}{C} --- csrc.nist.gov}, \bibinfo{howpublished}{\url{https://csrc.nist.gov/projects/hash-functions}}, \bibinfo{year}{June 22, 2020}.
+%Type = Misc
+\bibitem[{Guido~Bertoni and van Assche(2011)}]{Bbbbbbb2011}
+\bibinfo{author}{M.~P. Guido~Bertoni, Joan~Daemen}, \bibinfo{author}{G.~van Assche}, \bibinfo{title}{The keccak sha-3 submission}, \bibinfo{year}{2011}. \bibinfo{note}{[Accessed 26-12-2024]}.
+%Type = Techreport
+\bibitem[{Rivest(1992)}]{rivest1992md5}
+\bibinfo{author}{R.~Rivest}, \bibinfo{title}{The MD5 message-digest algorithm}, \bibinfo{type}{Technical Report}, \bibinfo{year}{1992}.
+%Type = Article
+\bibitem[{Penard and Van~Werkhoven(2008)}]{penard2008secure}
+\bibinfo{author}{W.~Penard}, \bibinfo{author}{T.~Van~Werkhoven},
+\newblock \bibinfo{title}{On the secure hash algorithm family},
+\newblock \bibinfo{journal}{Cryptography in context}  (\bibinfo{year}{2008}) \bibinfo{pages}{1--18}.
+%Type = Misc
+\bibitem[{sponge and duplex constructions(????)}]{keccakKeccakTeam}
+\bibinfo{author}{T.~sponge}, \bibinfo{author}{duplex constructions}, \bibinfo{title}{Team keccak - guido bertoni, joan daemen, seth hoffert, michaël peeters, gilles van assche and ronny van keer}, \bibinfo{howpublished}{\url{https://keccak.team/sponge_duplex.html}}, ???? \bibinfo{note}{[Accessed 26-12-2024]}.
+%Type = Article
+\bibitem[{Robshaw(1995)}]{robshaw1995stream}
+\bibinfo{author}{M.~J. Robshaw},
+\newblock \bibinfo{title}{Stream ciphers},
+\newblock \bibinfo{journal}{RSA Labratories} \bibinfo{volume}{25} (\bibinfo{year}{1995}).
+%Type = Article
+\bibitem[{Bernstein(2005)}]{bernstein2005salsa20}
+\bibinfo{author}{D.~J. Bernstein},
+\newblock \bibinfo{title}{Salsa20},
+\newblock \bibinfo{journal}{eSTREAM, ECRYPT Stream Cipher Project, Report} \bibinfo{volume}{25} (\bibinfo{year}{2005}) \bibinfo{pages}{2005}.
+%Type = Article
+\bibitem[{Bernstein(2008)}]{bernstein2008chachaFamily}
+\bibinfo{author}{D.~J. Bernstein},
+\newblock \bibinfo{title}{The chacha family of stream ciphers},
+\newblock \bibinfo{journal}{DJ Bernstein’s webpage: http://cr. yp. to/chacha. html}  (\bibinfo{year}{2008}).
+%Type = Article
+\bibitem[{Bernstein(2005)}]{bernstein2005protecting}
+\bibinfo{author}{D.~J. Bernstein},
+\newblock \bibinfo{title}{Protecting communications against forgery},
+\newblock \bibinfo{journal}{Algorithmic Number Theory, J. Buhler and P. Stevenhagan (Ed.), to appear}  (\bibinfo{year}{2005}).
+%Type = Article
+\bibitem[{Carter and Wegman(1981)}]{carter1981new}
+\bibinfo{author}{J.~L. Carter}, \bibinfo{author}{M.~N. Wegman},
+\newblock \bibinfo{title}{New hash functions and their use in authentication and set equality},
+\newblock \bibinfo{journal}{Journal of computer and system sciences} \bibinfo{volume}{22} (\bibinfo{year}{1981}) \bibinfo{pages}{265--277}.
+%Type = Misc
+\bibitem[{Nir and Langley(2018)}]{rfc8439}
+\bibinfo{author}{Y.~Nir}, \bibinfo{author}{A.~Langley}, \bibinfo{title}{{ChaCha20 and Poly1305 for IETF Protocols}}, \bibinfo{howpublished}{RFC 8439}, \bibinfo{year}{2018}.
+%Type = Misc
+\bibitem[{Langley et~al.(2016)Langley, Chang, Mavrogiannopoulos, Strombergson, and Josefsson}]{rfc7905}
+\bibinfo{author}{A.~Langley}, \bibinfo{author}{W.-T. Chang}, \bibinfo{author}{N.~Mavrogiannopoulos}, \bibinfo{author}{J.~Strombergson}, \bibinfo{author}{S.~Josefsson}, \bibinfo{title}{{ChaCha20-Poly1305 Cipher Suites for Transport Layer Security (TLS)}}, \bibinfo{howpublished}{RFC 7905}, \bibinfo{year}{2016}.
+%Type = Misc
+\bibitem[{Miller(2015)}]{miller2015chacha20}
+\bibinfo{author}{D.~Miller}, \bibinfo{title}{The chacha20-poly1305@ openssh. com authenticated encryption cipher draft-josefsson-ssh-chacha20-poly1305-openssh-00}, \bibinfo{year}{2015}.
+%Type = Article
+\bibitem[{Wille et~al.(2019)Wille, Meter, and Naveh}]{Wille2019IBMsQT}
+\bibinfo{author}{R.~Wille}, \bibinfo{author}{R.~V. Meter}, \bibinfo{author}{Y.~Naveh},
+\newblock \bibinfo{title}{Ibm’s qiskit tool chain: Working with and developing for real quantum computers},
+\newblock \bibinfo{journal}{2019 Design, Automation \& Test in Europe Conference \& Exhibition (DATE)}  (\bibinfo{year}{2019}) \bibinfo{pages}{1234--1240}.
+%Type = Misc
+\bibitem[{{Pycryptodome Team}(2022)}]{pycryptodome}
+\bibinfo{author}{{Pycryptodome Team}}, \bibinfo{title}{{Pycryptodome: a Python library for cryptographic primitives and recipes}}, \bibinfo{howpublished}{\url{https://pypi.org/project/pycryptodome/}}, \bibinfo{year}{2022}.
+%Type = Article
+\bibitem[{Harris et~al.(2020)Harris, Millman, van~der Walt, Gommers, Virtanen, Cournapeau, Wieser, Taylor, Berg, Smith, Kern, Picus, Hoyer, van Kerkwijk, Brett, Haldane, del R{\'{i}}o, Wiebe, Peterson, G{\'{e}}rard-Marchant, Sheppard, Reddy, Weckesser, Abbasi, Gohlke, and Oliphant}]{harris2020array}
+\bibinfo{author}{C.~R. Harris}, \bibinfo{author}{K.~J. Millman}, \bibinfo{author}{S.~J. van~der Walt}, \bibinfo{author}{R.~Gommers}, \bibinfo{author}{P.~Virtanen}, \bibinfo{author}{D.~Cournapeau}, \bibinfo{author}{E.~Wieser}, \bibinfo{author}{J.~Taylor}, \bibinfo{author}{S.~Berg}, \bibinfo{author}{N.~J. Smith}, \bibinfo{author}{R.~Kern}, \bibinfo{author}{M.~Picus}, \bibinfo{author}{S.~Hoyer}, \bibinfo{author}{M.~H. van Kerkwijk}, \bibinfo{author}{M.~Brett}, \bibinfo{author}{A.~Haldane}, \bibinfo{author}{J.~F. del R{\'{i}}o}, \bibinfo{author}{M.~Wiebe}, \bibinfo{author}{P.~Peterson}, \bibinfo{author}{P.~G{\'{e}}rard-Marchant}, \bibinfo{author}{K.~Sheppard}, \bibinfo{author}{T.~Reddy}, \bibinfo{author}{W.~Weckesser}, \bibinfo{author}{H.~Abbasi}, \bibinfo{author}{C.~Gohlke}, \bibinfo{author}{T.~E. Oliphant},
+\newblock \bibinfo{title}{Array programming with {NumPy}},
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{585} (\bibinfo{year}{2020}) \bibinfo{pages}{357--362}.
+%Type = Article
+\bibitem[{Newmarch and Newmarch(2017)}]{newmarch2017ffmpeg}
+\bibinfo{author}{J.~Newmarch}, \bibinfo{author}{J.~Newmarch},
+\newblock \bibinfo{title}{Ffmpeg/libav},
+\newblock \bibinfo{journal}{Linux sound programming}  (\bibinfo{year}{2017}) \bibinfo{pages}{227--234}.
+%Type = Manual
+\bibitem[{MAT(2016)}]{MATLAB:R2016a}
+\bibinfo{title}{{MATLAB version 9.0.0.341360 (R2016a)}}, \bibinfo{organization}{The Mathworks, Inc.}, \bibinfo{address}{Natick, Massachusetts}, \bibinfo{year}{2016}.
+%Type = Article
+\bibitem[{Shannon(1948)}]{shannon1948mathematical}
+\bibinfo{author}{C.~E. Shannon},
+\newblock \bibinfo{title}{A mathematical theory of communication},
+\newblock \bibinfo{journal}{The Bell system technical journal} \bibinfo{volume}{27} (\bibinfo{year}{1948}) \bibinfo{pages}{379--423}.
+%Type = Article
+\bibitem[{Clauser et~al.(1969)Clauser, Horne, Shimony, and Holt}]{PhysRevLett.23.880}
+\bibinfo{author}{J.~F. Clauser}, \bibinfo{author}{M.~A. Horne}, \bibinfo{author}{A.~Shimony}, \bibinfo{author}{R.~A. Holt},
+\newblock \bibinfo{title}{Proposed experiment to test local hidden-variable theories},
+\newblock \bibinfo{journal}{Phys. Rev. Lett.} \bibinfo{volume}{23} (\bibinfo{year}{1969}) \bibinfo{pages}{880--884}.
+%Type = Inproceedings
+\bibitem[{nurhadi and syambas(2018)}]{nurhadi2018quantum}
+\bibinfo{author}{a.~i. nurhadi}, \bibinfo{author}{n.~r. syambas},
+\newblock \bibinfo{title}{quantum key distribution (qkd) protocols: a survey},
+\newblock in: \bibinfo{booktitle}{2018 4th international conference on wireless and telematics (icwt)}, \bibinfo{organization}{ieee}, pp. \bibinfo{pages}{1--5}.
+%Type = Article
+\bibitem[{devitt et~al.(2013)devitt, munro, and nemoto}]{devitt2013quantum}
+\bibinfo{author}{s.~j. devitt}, \bibinfo{author}{w.~j. munro}, \bibinfo{author}{k.~nemoto},
+\newblock \bibinfo{title}{quantum error correction for beginners},
+\newblock \bibinfo{journal}{reports on progress in physics} \bibinfo{volume}{76} (\bibinfo{year}{2013}) \bibinfo{pages}{076001}.
+%Type = Article
+\bibitem[{nagata and nakamura(2017)}]{nagata2017quantum}
+\bibinfo{author}{k.~nagata}, \bibinfo{author}{t.~nakamura},
+\newblock \bibinfo{title}{quantum cryptography, quantum communication, and quantum computer in a noisy environment},
+\newblock \bibinfo{journal}{international journal of theoretical physics} \bibinfo{volume}{56} (\bibinfo{year}{2017}) \bibinfo{pages}{2086--2100}.
+
+\end{thebibliography}
